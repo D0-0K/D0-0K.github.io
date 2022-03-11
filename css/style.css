@@ -173,6 +173,11 @@ a.active {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Symbola";
+  src: url("fonts/Symbola.ttf") format("truetype");
+}
+
 body {
   text-rendering: optimizeSpeed;
   min-height: 100vh;
@@ -197,7 +202,7 @@ a {
 
 .name {
   position: relative;
-  font-family: "CMRDD";
+  font-family: "CMRDD", "Symbola";
   font-size: 20px;
   font-weight: 600;
   text-align: left;
