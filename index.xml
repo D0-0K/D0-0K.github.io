@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D00k</title>
+    <link>http://example.org/</link>
+    <description>Recent content on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Thu, 10 Mar 2022 19:24:32 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring</title>
+      <link>http://example.org/gallery/trichrome/spring/</link>
+      <pubDate>Thu, 10 Mar 2022 19:24:32 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/trichrome/spring/</guid>
+      <description>   Bright Bush 1       Bright Bush 2       Spring Flower 1       Spring Flower 2       Spring Flower 3       Spring Flower 4       Red Poppy     </description>
+    </item>
+    
+    <item>
+      <title>Winter</title>
+      <link>http://example.org/gallery/trichrome/winter/</link>
+      <pubDate>Thu, 10 Mar 2022 19:24:17 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/trichrome/winter/</guid>
+      <description>   Snowy Branch       Snowy Plant 1       Snowy Plant 2       Snowy Plant 3       Snowy Plant 4       Snowy Tree     </description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>http://example.org/about/music/</link>
+      <pubDate>Tue, 08 Mar 2022 19:32:17 +0000</pubDate>
+      
+      <guid>http://example.org/about/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bookmarks</title>
+      <link>http://example.org/about/bookmarks/</link>
+      <pubDate>Tue, 08 Mar 2022 19:32:12 +0000</pubDate>
+      
+      <guid>http://example.org/about/bookmarks/</guid>
+      <description>A small library of various bookmarks and websites I&amp;rsquo;ve kept over the years. Neatly sorted for ease of use!
+ Webring ∙ XXIIVV Wiki.
+∙ RitualDust.
+∙ Thomasorus.
+∙ Kokorobot.
+∙ Fdisk.
+ Web Magazines ∙ Low Tech Magazine.
+∙ Real Life Mag.
+∙ Compost.
+∙ the Orphenyade.
+ Pools of Knowledge ∙ Practical Self Reliance.
+∙ Hundred Rabbits.
+ Fun Web Stuff ∙ Marginalia Search Engine.
+∙ Kicks Condor.</description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>http://example.org/about/now/</link>
+      <pubDate>Tue, 08 Mar 2022 19:32:01 +0000</pubDate>
+      
+      <guid>http://example.org/about/now/</guid>
+      <description>March 2022 ∙ Learning digital art using Krita.
+∙ Doing a big clean-out of everything I own.
+∙ Hopefully picking up where I left off learning the Linux Command Line.
+∙ Heading on my first break away in years, hoping to get some nice shots in a new environment.
+  What&amp;rsquo;s Playing? ∙ Vibing to Japanese 80&amp;rsquo;s City Pop music.
+∙ Re-watching Full Metal Alchemist Brotherhood.
+∙ Playing Pokemon Legends Arceus.</description>
+    </item>
+    
+    <item>
+      <title>Colophon</title>
+      <link>http://example.org/about/colophon/</link>
+      <pubDate>Tue, 08 Mar 2022 19:31:55 +0000</pubDate>
+      
+      <guid>http://example.org/about/colophon/</guid>
+      <description>A comprehensive dive into the design, and creation of this website
+ Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
+ The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it.</description>
+    </item>
+    
+    <item>
+      <title>Streetwalker</title>
+      <link>http://example.org/projects/streetwalker/</link>
+      <pubDate>Wed, 23 Feb 2022 18:17:07 +0000</pubDate>
+      
+      <guid>http://example.org/projects/streetwalker/</guid>
+      <description>Streetwalker was a project started in 2016 in an attempt to learn lua and the pico-8 virtual console. After experiencing Graphics Exercise by Mason Lindroth, I was inspired to create my own walking sim with the goal of filling the system&amp;rsquo;s 1024x512 pixel map space.
+      The game&amp;rsquo;s design takes heavy inspiration from digital maps as well as the brutalist architecture movement.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Gallery</title>
+      <link>http://example.org/projects/virtual-gallery/</link>
+      <pubDate>Tue, 22 Feb 2022 18:17:46 +0000</pubDate>
+      
+      <guid>http://example.org/projects/virtual-gallery/</guid>
+      <description>The Virtual Gallery was born in the summer of 2020 after the cancellation of an exhibition that an art course I was attending hosted. Not wanting the work and effort of everyone I did the course with to go to waste, I set out to make a platform for them to share with their friends and family.
+ The Exhibition      Work took several months to build a basic site from scratch using HTML and CSS, largely due to my inexperience however I learned a lot.</description>
+    </item>
+    
+    <item>
+      <title>Origami</title>
+      <link>http://example.org/knowledge/origami/</link>
+      <pubDate>Tue, 22 Feb 2022 18:08:20 +0000</pubDate>
+      
+      <guid>http://example.org/knowledge/origami/</guid>
+      <description>Origami is the art of folding paper into various forms and objects. There are many different kinds of Origami other than traditional folding including modular designs like the Kusudamas, wet folding which allows creative sculpting, or even weaving with strip folding.
+      The beautiful Origami Firework was the first design I ever made. Following a video tutorial, I struggled immensely to complete it but having no one to turn was an incredibly liberating experience as a teenager and the satisfaction of finishing it is something I still remember.</description>
+    </item>
+    
+    <item>
+      <title>Origami Designs</title>
+      <link>http://example.org/projects/origami-designs/</link>
+      <pubDate>Tue, 22 Feb 2022 18:07:35 +0000</pubDate>
+      
+      <guid>http://example.org/projects/origami-designs/</guid>
+      <description>Origami Modular Festive Tree      The Origami festive tree is a modular origami tree with little slots in the leaves to put whatever you want! It was designed as a modular, flat-packable festive tree that could be practical, allowing you to put different decorations or items in it. The design still needs some tweaking before I&amp;rsquo;m happy with posting instructions, I&amp;rsquo;ll probably get around to it soon.</description>
+    </item>
+    
+    <item>
+      <title>Gamejams</title>
+      <link>http://example.org/projects/gamejams/</link>
+      <pubDate>Tue, 22 Feb 2022 12:57:36 +0000</pubDate>
+      
+      <guid>http://example.org/projects/gamejams/</guid>
+      <description>Tiny-TV Jam       Tiny-TV Jam ran for a week in January 2017. The goal of the jam was to make a small game that fit within the 10x11 resolution of the TV in the pico-8 cart provided. I entered the jam almost by accident, having no programming knowledge, I had messed around with the cart and designed a detailed recreation of a Macintosh 128k pc. I decided to make a game, Tiny Cookie Clicker, and the jam provided some great design challenges.</description>
+    </item>
+    
+    <item>
+      <title>Famicase Exhibition</title>
+      <link>http://example.org/projects/famicase/</link>
+      <pubDate>Mon, 21 Feb 2022 18:17:36 +0000</pubDate>
+      
+      <guid>http://example.org/projects/famicase/</guid>
+      <description>The Famicase Exhibition is an annual exhibition hosted by the Super Meteor store located in Tokyo, Japan. Entry is open to anyone worldwide, and the goal is create a cover for a fictional Famicom game of your creation.
+ Famicase Exhibition 2021 entry - Become       The 2021 Famicase Exhibition took place between April 29th and May 31st.
+ ∙ Famicase Website
+∙ Purchase the Famicase 2021 Zine</description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>http://example.org/about/setup/</link>
+      <pubDate>Mon, 21 Feb 2022 18:10:09 +0000</pubDate>
+      
+      <guid>http://example.org/about/setup/</guid>
+      <description>A breakdown of the hardware and software I use for making things, or getting things done.
+ Hardware    Modified Dell Keyboard    ∙ Lenovo Thinkpad E580 Laptop.
+Cpu - Intel Core I5-8250U
+Memory - 12GB
+Storage - 256GB Samsung SSD
+Display - 1920x1080 LCD
+OS - Fedora Linux
+ ∙ Generic Dell Keyboard.
+ A full sized, classic membrane Dell Keyboard from the early noughties.</description>
+    </item>
+    
+    <item>
+      <title>Trichrome Technique</title>
+      <link>http://example.org/knowledge/trichrome/</link>
+      <pubDate>Mon, 21 Feb 2022 18:10:09 +0000</pubDate>
+      
+      <guid>http://example.org/knowledge/trichrome/</guid>
+      <description>Trichrome is a method of taking colour photography using different coloured filters (usually red, blue and green) to form a complete image. It was invented by Louis Ducos du Hauron in the late 19th century. It is most commonly used in black &amp;amp; white film photography to create atmospheric images, however the technique is usable with digital photography as well.
+ How does it work?</description>
+    </item>
+    
+    <item>
+      <title>Beach Fossils</title>
+      <link>http://example.org/knowledge/beachfossils/</link>
+      <pubDate>Mon, 21 Feb 2022 18:09:22 +0000</pubDate>
+      
+      <guid>http://example.org/knowledge/beachfossils/</guid>
+      <description>Beaches are filled with a vast number of different types of rocks and stones, but the ones that have always fascinated me are beach fossils. Fossil types can vary greatly based on your located, plants, shells and coral are all common types the can be found. Even chalk chunks are technically fossils!
+ In my area, coral fossils are by far the most common. I&amp;rsquo;ve found ones of different shapes, sizes and quantities.</description>
+    </item>
+    
+    <item>
+      <title>Year Review 2021</title>
+      <link>http://example.org/journal/year-review-2021/</link>
+      <pubDate>Fri, 18 Feb 2022 10:52:41 +0000</pubDate>
+      
+      <guid>http://example.org/journal/year-review-2021/</guid>
+      <description>At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.</description>
+    </item>
+    
+    <item>
+      <title>Self Portraiture</title>
+      <link>http://example.org/gallery/experiments/selfportraiture/</link>
+      <pubDate>Thu, 17 Feb 2022 20:36:19 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/selfportraiture/</guid>
+      <description>   Double Exposure Portrait 01       Double Exposure Portrait 02       Double Exposure Portrait 03       Refracted Portrait 01       Refracted Portrait 02    </description>
+    </item>
+    
+    <item>
+      <title>Low Resolution</title>
+      <link>http://example.org/gallery/experiments/lowres/</link>
+      <pubDate>Thu, 17 Feb 2022 20:28:42 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/lowres/</guid>
+      <description>   Pixel Blossoms 01       Pixel Blossoms 01       Faint Daffodils       Drop Reflection       Mossy Branch    </description>
+    </item>
+    
+    <item>
+      <title>Light</title>
+      <link>http://example.org/gallery/experiments/light/</link>
+      <pubDate>Thu, 17 Feb 2022 11:46:49 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/light/</guid>
+      <description>   Light Portrait 01       Light Portrait 02       Sea of Light       Light Painting 01       Light Painting 02    </description>
+    </item>
+    
+    <item>
+      <title>Autumn</title>
+      <link>http://example.org/gallery/trichrome/autumn/</link>
+      <pubDate>Thu, 17 Feb 2022 11:20:34 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/trichrome/autumn/</guid>
+      <description>   Autumn Plant 1       Autumn Bloom 1       Plentiful Harvest       Autumn Plant 2       Autumn Bloom 2       Autumn Bloom 3     </description>
+    </item>
+    
+    <item>
+      <title>Summer</title>
+      <link>http://example.org/gallery/trichrome/summer/</link>
+      <pubDate>Tue, 15 Feb 2022 13:42:36 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/trichrome/summer/</guid>
+      <description>   Wheat Field 1       Wheat Field 2       Abandoned Trolley       Scorched Tree       Forgotten Shoe       Flame of the Forest       Powerlines Adventure       Shade of the Tree       Scorched Tree 2     </description>
+    </item>
+    
+  </channel>
+</rss>

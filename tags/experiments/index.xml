@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>experiments on D00k</title>
+    <link>http://example.org/tags/experiments/</link>
+    <description>Recent content in experiments on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Thu, 17 Feb 2022 20:36:19 +0000</lastBuildDate><atom:link href="http://example.org/tags/experiments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self Portraiture</title>
+      <link>http://example.org/gallery/experiments/selfportraiture/</link>
+      <pubDate>Thu, 17 Feb 2022 20:36:19 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/selfportraiture/</guid>
+      <description>   Double Exposure Portrait 01       Double Exposure Portrait 02       Double Exposure Portrait 03       Refracted Portrait 01       Refracted Portrait 02    </description>
+    </item>
+    
+    <item>
+      <title>Low Resolution</title>
+      <link>http://example.org/gallery/experiments/lowres/</link>
+      <pubDate>Thu, 17 Feb 2022 20:28:42 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/lowres/</guid>
+      <description>   Pixel Blossoms 01       Pixel Blossoms 01       Faint Daffodils       Drop Reflection       Mossy Branch    </description>
+    </item>
+    
+    <item>
+      <title>Light</title>
+      <link>http://example.org/gallery/experiments/light/</link>
+      <pubDate>Thu, 17 Feb 2022 11:46:49 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/light/</guid>
+      <description>   Light Portrait 01       Light Portrait 02       Sea of Light       Light Painting 01       Light Painting 02    </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>setup on D00k</title>
+    <link>http://example.org/tags/setup/</link>
+    <description>Recent content in setup on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Mon, 21 Feb 2022 18:10:09 +0000</lastBuildDate><atom:link href="http://example.org/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>http://example.org/about/setup/</link>
+      <pubDate>Mon, 21 Feb 2022 18:10:09 +0000</pubDate>
+      
+      <guid>http://example.org/about/setup/</guid>
+      <description>A breakdown of the hardware and software I use for making things, or getting things done.
+ Hardware    Modified Dell Keyboard    ∙ Lenovo Thinkpad E580 Laptop.
+Cpu - Intel Core I5-8250U
+Memory - 12GB
+Storage - 256GB Samsung SSD
+Display - 1920x1080 LCD
+OS - Fedora Linux
+ ∙ Generic Dell Keyboard.
+ A full sized, classic membrane Dell Keyboard from the early noughties.</description>
+    </item>
+    
+  </channel>
+</rss>

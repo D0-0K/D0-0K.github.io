@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>art on D00k</title>
+    <link>http://example.org/tags/art/</link>
+    <description>Recent content in art on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Tue, 22 Feb 2022 18:17:46 +0000</lastBuildDate><atom:link href="http://example.org/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtual Gallery</title>
+      <link>http://example.org/projects/virtual-gallery/</link>
+      <pubDate>Tue, 22 Feb 2022 18:17:46 +0000</pubDate>
+      
+      <guid>http://example.org/projects/virtual-gallery/</guid>
+      <description>The Virtual Gallery was born in the summer of 2020 after the cancellation of an exhibition that an art course I was attending hosted. Not wanting the work and effort of everyone I did the course with to go to waste, I set out to make a platform for them to share with their friends and family.
+ The Exhibition      Work took several months to build a basic site from scratch using HTML and CSS, largely due to my inexperience however I learned a lot.</description>
+    </item>
+    
+    <item>
+      <title>Origami</title>
+      <link>http://example.org/knowledge/origami/</link>
+      <pubDate>Tue, 22 Feb 2022 18:08:20 +0000</pubDate>
+      
+      <guid>http://example.org/knowledge/origami/</guid>
+      <description>Origami is the art of folding paper into various forms and objects. There are many different kinds of Origami other than traditional folding including modular designs like the Kusudamas, wet folding which allows creative sculpting, or even weaving with strip folding.
+      The beautiful Origami Firework was the first design I ever made. Following a video tutorial, I struggled immensely to complete it but having no one to turn was an incredibly liberating experience as a teenager and the satisfaction of finishing it is something I still remember.</description>
+    </item>
+    
+    <item>
+      <title>Famicase Exhibition</title>
+      <link>http://example.org/projects/famicase/</link>
+      <pubDate>Mon, 21 Feb 2022 18:17:36 +0000</pubDate>
+      
+      <guid>http://example.org/projects/famicase/</guid>
+      <description>The Famicase Exhibition is an annual exhibition hosted by the Super Meteor store located in Tokyo, Japan. Entry is open to anyone worldwide, and the goal is create a cover for a fictional Famicom game of your creation.
+ Famicase Exhibition 2021 entry - Become       The 2021 Famicase Exhibition took place between April 29th and May 31st.
+ ∙ Famicase Website
+∙ Purchase the Famicase 2021 Zine</description>
+    </item>
+    
+    <item>
+      <title>Self Portraiture</title>
+      <link>http://example.org/gallery/experiments/selfportraiture/</link>
+      <pubDate>Thu, 17 Feb 2022 20:36:19 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/experiments/selfportraiture/</guid>
+      <description>   Double Exposure Portrait 01       Double Exposure Portrait 02       Double Exposure Portrait 03       Refracted Portrait 01       Refracted Portrait 02    </description>
+    </item>
+    
+  </channel>
+</rss>

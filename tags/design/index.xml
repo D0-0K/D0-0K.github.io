@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design on D00k</title>
+    <link>http://example.org/tags/design/</link>
+    <description>Recent content in design on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Tue, 08 Mar 2022 19:31:55 +0000</lastBuildDate><atom:link href="http://example.org/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colophon</title>
+      <link>http://example.org/about/colophon/</link>
+      <pubDate>Tue, 08 Mar 2022 19:31:55 +0000</pubDate>
+      
+      <guid>http://example.org/about/colophon/</guid>
+      <description>A comprehensive dive into the design, and creation of this website
+ Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
+ The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Gallery</title>
+      <link>http://example.org/projects/virtual-gallery/</link>
+      <pubDate>Tue, 22 Feb 2022 18:17:46 +0000</pubDate>
+      
+      <guid>http://example.org/projects/virtual-gallery/</guid>
+      <description>The Virtual Gallery was born in the summer of 2020 after the cancellation of an exhibition that an art course I was attending hosted. Not wanting the work and effort of everyone I did the course with to go to waste, I set out to make a platform for them to share with their friends and family.
+ The Exhibition      Work took several months to build a basic site from scratch using HTML and CSS, largely due to my inexperience however I learned a lot.</description>
+    </item>
+    
+    <item>
+      <title>Origami Designs</title>
+      <link>http://example.org/projects/origami-designs/</link>
+      <pubDate>Tue, 22 Feb 2022 18:07:35 +0000</pubDate>
+      
+      <guid>http://example.org/projects/origami-designs/</guid>
+      <description>Origami Modular Festive Tree      The Origami festive tree is a modular origami tree with little slots in the leaves to put whatever you want! It was designed as a modular, flat-packable festive tree that could be practical, allowing you to put different decorations or items in it. The design still needs some tweaking before I&amp;rsquo;m happy with posting instructions, I&amp;rsquo;ll probably get around to it soon.</description>
+    </item>
+    
+    <item>
+      <title>Famicase Exhibition</title>
+      <link>http://example.org/projects/famicase/</link>
+      <pubDate>Mon, 21 Feb 2022 18:17:36 +0000</pubDate>
+      
+      <guid>http://example.org/projects/famicase/</guid>
+      <description>The Famicase Exhibition is an annual exhibition hosted by the Super Meteor store located in Tokyo, Japan. Entry is open to anyone worldwide, and the goal is create a cover for a fictional Famicom game of your creation.
+ Famicase Exhibition 2021 entry - Become       The 2021 Famicase Exhibition took place between April 29th and May 31st.
+ ∙ Famicase Website
+∙ Purchase the Famicase 2021 Zine</description>
+    </item>
+    
+  </channel>
+</rss>

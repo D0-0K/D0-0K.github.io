@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on D00k</title>
+    <link>http://example.org/tags/about/</link>
+    <description>Recent content in about on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Wed, 26 Jan 2022 14:08:17 +0000</lastBuildDate><atom:link href="http://example.org/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to the Blog</title>
+      <link>http://example.org/journal/welcome-to-the-blog/</link>
+      <pubDate>Wed, 26 Jan 2022 14:08:17 +0000</pubDate>
+      
+      <guid>http://example.org/journal/welcome-to-the-blog/</guid>
+      <description>Here&amp;rsquo;s a quick post about the blog! Time for some random text.
+If you can keep your head when all about you Are losing theirs and blaming it on you, If you can trust yourself when all men doubt you, But make allowance for their doubting too; If you can wait and not be tired by waiting, Or being lied about, don’t deal in lies, Or being hated, don’t give way to hating, And yet don’t look too good, nor talk too wise:</description>
+    </item>
+    
+  </channel>
+</rss>

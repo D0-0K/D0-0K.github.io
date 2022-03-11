@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>origami on D00k</title>
+    <link>http://example.org/tags/origami/</link>
+    <description>Recent content in origami on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Tue, 22 Feb 2022 18:08:20 +0000</lastBuildDate><atom:link href="http://example.org/tags/origami/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Origami</title>
+      <link>http://example.org/knowledge/origami/</link>
+      <pubDate>Tue, 22 Feb 2022 18:08:20 +0000</pubDate>
+      
+      <guid>http://example.org/knowledge/origami/</guid>
+      <description>Origami is the art of folding paper into various forms and objects. There are many different kinds of Origami other than traditional folding including modular designs like the Kusudamas, wet folding which allows creative sculpting, or even weaving with strip folding.
+      The beautiful Origami Firework was the first design I ever made. Following a video tutorial, I struggled immensely to complete it but having no one to turn was an incredibly liberating experience as a teenager and the satisfaction of finishing it is something I still remember.</description>
+    </item>
+    
+    <item>
+      <title>Origami Designs</title>
+      <link>http://example.org/projects/origami-designs/</link>
+      <pubDate>Tue, 22 Feb 2022 18:07:35 +0000</pubDate>
+      
+      <guid>http://example.org/projects/origami-designs/</guid>
+      <description>Origami Modular Festive Tree      The Origami festive tree is a modular origami tree with little slots in the leaves to put whatever you want! It was designed as a modular, flat-packable festive tree that could be practical, allowing you to put different decorations or items in it. The design still needs some tweaking before I&amp;rsquo;m happy with posting instructions, I&amp;rsquo;ll probably get around to it soon.</description>
+    </item>
+    
+  </channel>
+</rss>

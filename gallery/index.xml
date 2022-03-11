@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gallery on D00k</title>
+    <link>http://example.org/gallery/</link>
+    <description>Recent content in Gallery on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Sat, 12 Feb 2022 15:17:00 +0000</lastBuildDate><atom:link href="http://example.org/gallery/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
