@@ -176,7 +176,7 @@ a.active {
 body {
   text-rendering: optimizeSpeed;
   min-height: 100vh;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 header {
@@ -185,7 +185,7 @@ header {
 
 main {
   margin: 45px;
-  margin: calc(27px + 1.2%);
+  margin: calc(17px + 1.2%);
 }
 
 a {
