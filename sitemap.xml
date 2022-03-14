@@ -4,7 +4,27 @@
   
   <url>
     <loc>http://example.org/</loc>
-    <lastmod>2022-03-10T19:24:32+00:00</lastmod>
+    <lastmod>2022-03-14T12:20:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/ireland/</loc>
+    <lastmod>2022-03-14T12:20:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/gallery/places/loughderg/</loc>
+    <lastmod>2022-03-14T12:20:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2022-03-14T12:20:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/trichrome/</loc>
+    <lastmod>2022-03-14T12:20:31+00:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +34,6 @@
   
   <url>
     <loc>http://example.org/gallery/trichrome/spring/</loc>
-    <lastmod>2022-03-10T19:24:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2022-03-10T19:24:32+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/trichrome/</loc>
     <lastmod>2022-03-10T19:24:32+00:00</lastmod>
   </url>
   

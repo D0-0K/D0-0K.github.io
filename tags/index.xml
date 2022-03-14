@@ -6,22 +6,31 @@
     <description>Recent content in Tags on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Thu, 10 Mar 2022 19:24:32 +0000</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Mar 2022 12:20:31 +0000</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>seasons</title>
-      <link>http://example.org/tags/seasons/</link>
-      <pubDate>Thu, 10 Mar 2022 19:24:32 +0000</pubDate>
+      <title>ireland</title>
+      <link>http://example.org/tags/ireland/</link>
+      <pubDate>Mon, 14 Mar 2022 12:20:31 +0000</pubDate>
       
-      <guid>http://example.org/tags/seasons/</guid>
+      <guid>http://example.org/tags/ireland/</guid>
       <description></description>
     </item>
     
     <item>
       <title>trichrome</title>
       <link>http://example.org/tags/trichrome/</link>
-      <pubDate>Thu, 10 Mar 2022 19:24:32 +0000</pubDate>
+      <pubDate>Mon, 14 Mar 2022 12:20:31 +0000</pubDate>
       
       <guid>http://example.org/tags/trichrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seasons</title>
+      <link>http://example.org/tags/seasons/</link>
+      <pubDate>Thu, 10 Mar 2022 19:24:32 +0000</pubDate>
+      
+      <guid>http://example.org/tags/seasons/</guid>
       <description></description>
     </item>
     
