@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>music on D00k</title>
-    <link>http://example.org/tags/music/</link>
+    <link>https://d00k.net/tags/music/</link>
     <description>Recent content in music on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 08 Mar 2022 19:32:01 +0000</lastBuildDate><atom:link href="http://example.org/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 19:32:01 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/music/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Now</title>
-      <link>http://example.org/about/now/</link>
+      <link>https://d00k.net/about/now/</link>
       <pubDate>Tue, 08 Mar 2022 19:32:01 +0000</pubDate>
       
-      <guid>http://example.org/about/now/</guid>
+      <guid>https://d00k.net/about/now/</guid>
       <description>March 2022 ∙ Learning digital art using Krita.
 ∙ Doing a big clean-out of everything I own.
 ∙ Hopefully picking up where I left off learning the Linux Command Line.

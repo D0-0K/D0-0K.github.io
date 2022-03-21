@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>programming on D00k</title>
-    <link>http://example.org/tags/programming/</link>
+    <link>https://d00k.net/tags/programming/</link>
     <description>Recent content in programming on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 23 Feb 2022 18:17:07 +0000</lastBuildDate><atom:link href="http://example.org/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Feb 2022 18:17:07 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streetwalker</title>
-      <link>http://example.org/projects/streetwalker/</link>
+      <link>https://d00k.net/projects/streetwalker/</link>
       <pubDate>Wed, 23 Feb 2022 18:17:07 +0000</pubDate>
       
-      <guid>http://example.org/projects/streetwalker/</guid>
+      <guid>https://d00k.net/projects/streetwalker/</guid>
       <description>Streetwalker was a project started in 2016 in an attempt to learn lua and the pico-8 virtual console. After experiencing Graphics Exercise by Mason Lindroth, I was inspired to create my own walking sim with the goal of filling the system&amp;rsquo;s 1024x512 pixel map space.
       The game&amp;rsquo;s design takes heavy inspiration from digital maps as well as the brutalist architecture movement.</description>
     </item>
     
     <item>
       <title>Gamejams</title>
-      <link>http://example.org/projects/gamejams/</link>
+      <link>https://d00k.net/projects/gamejams/</link>
       <pubDate>Tue, 22 Feb 2022 12:57:36 +0000</pubDate>
       
-      <guid>http://example.org/projects/gamejams/</guid>
+      <guid>https://d00k.net/projects/gamejams/</guid>
       <description>Tiny-TV Jam       Tiny-TV Jam ran for a week in January 2017. The goal of the jam was to make a small game that fit within the 10x11 resolution of the TV in the pico-8 cart provided. I entered the jam almost by accident, having no programming knowledge, I had messed around with the cart and designed a detailed recreation of a Macintosh 128k pc. I decided to make a game, Tiny Cookie Clicker, and the jam provided some great design challenges.</description>
     </item>
     

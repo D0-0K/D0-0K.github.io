@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>beach on D00k</title>
-    <link>http://example.org/tags/beach/</link>
+    <link>https://d00k.net/tags/beach/</link>
     <description>Recent content in beach on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Mon, 21 Feb 2022 18:09:22 +0000</lastBuildDate><atom:link href="http://example.org/tags/beach/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 18:09:22 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/beach/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beach Fossils</title>
-      <link>http://example.org/knowledge/beachfossils/</link>
+      <link>https://d00k.net/knowledge/beachfossils/</link>
       <pubDate>Mon, 21 Feb 2022 18:09:22 +0000</pubDate>
       
-      <guid>http://example.org/knowledge/beachfossils/</guid>
+      <guid>https://d00k.net/knowledge/beachfossils/</guid>
       <description>Beaches are filled with a vast number of different types of rocks and stones, but the ones that have always fascinated me are beach fossils. Fossil types can vary greatly based on your located, plants, shells and coral are all common types the can be found. Even chalk chunks are technically fossils!
  In my area, coral fossils are by far the most common. I&amp;rsquo;ve found ones of different shapes, sizes and quantities.</description>
     </item>

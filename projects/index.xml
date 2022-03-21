@@ -2,55 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on D00k</title>
-    <link>http://example.org/projects/</link>
+    <link>https://d00k.net/projects/</link>
     <description>Recent content in Projects on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 16 Feb 2022 21:39:18 +0000</lastBuildDate><atom:link href="http://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Feb 2022 21:39:18 +0000</lastBuildDate><atom:link href="https://d00k.net/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streetwalker</title>
-      <link>http://example.org/projects/streetwalker/</link>
+      <link>https://d00k.net/projects/streetwalker/</link>
       <pubDate>Wed, 23 Feb 2022 18:17:07 +0000</pubDate>
       
-      <guid>http://example.org/projects/streetwalker/</guid>
+      <guid>https://d00k.net/projects/streetwalker/</guid>
       <description>Streetwalker was a project started in 2016 in an attempt to learn lua and the pico-8 virtual console. After experiencing Graphics Exercise by Mason Lindroth, I was inspired to create my own walking sim with the goal of filling the system&amp;rsquo;s 1024x512 pixel map space.
       The game&amp;rsquo;s design takes heavy inspiration from digital maps as well as the brutalist architecture movement.</description>
     </item>
     
     <item>
       <title>Virtual Gallery</title>
-      <link>http://example.org/projects/virtual-gallery/</link>
+      <link>https://d00k.net/projects/virtual-gallery/</link>
       <pubDate>Tue, 22 Feb 2022 18:17:46 +0000</pubDate>
       
-      <guid>http://example.org/projects/virtual-gallery/</guid>
+      <guid>https://d00k.net/projects/virtual-gallery/</guid>
       <description>The Virtual Gallery was born in the summer of 2020 after the cancellation of an exhibition that an art course I was attending hosted. Not wanting the work and effort of everyone I did the course with to go to waste, I set out to make a platform for them to share with their friends and family.
  The Exhibition      Work took several months to build a basic site from scratch using HTML and CSS, largely due to my inexperience however I learned a lot.</description>
     </item>
     
     <item>
       <title>Origami Designs</title>
-      <link>http://example.org/projects/origami-designs/</link>
+      <link>https://d00k.net/projects/origami-designs/</link>
       <pubDate>Tue, 22 Feb 2022 18:07:35 +0000</pubDate>
       
-      <guid>http://example.org/projects/origami-designs/</guid>
+      <guid>https://d00k.net/projects/origami-designs/</guid>
       <description>Origami Modular Festive Tree      The Origami festive tree is a modular origami tree with little slots in the leaves to put whatever you want! It was designed as a modular, flat-packable festive tree that could be practical, allowing you to put different decorations or items in it. The design still needs some tweaking before I&amp;rsquo;m happy with posting instructions, I&amp;rsquo;ll probably get around to it soon.</description>
     </item>
     
     <item>
       <title>Gamejams</title>
-      <link>http://example.org/projects/gamejams/</link>
+      <link>https://d00k.net/projects/gamejams/</link>
       <pubDate>Tue, 22 Feb 2022 12:57:36 +0000</pubDate>
       
-      <guid>http://example.org/projects/gamejams/</guid>
+      <guid>https://d00k.net/projects/gamejams/</guid>
       <description>Tiny-TV Jam       Tiny-TV Jam ran for a week in January 2017. The goal of the jam was to make a small game that fit within the 10x11 resolution of the TV in the pico-8 cart provided. I entered the jam almost by accident, having no programming knowledge, I had messed around with the cart and designed a detailed recreation of a Macintosh 128k pc. I decided to make a game, Tiny Cookie Clicker, and the jam provided some great design challenges.</description>
     </item>
     
     <item>
       <title>Famicase Exhibition</title>
-      <link>http://example.org/projects/famicase/</link>
+      <link>https://d00k.net/projects/famicase/</link>
       <pubDate>Mon, 21 Feb 2022 18:17:36 +0000</pubDate>
       
-      <guid>http://example.org/projects/famicase/</guid>
+      <guid>https://d00k.net/projects/famicase/</guid>
       <description>The Famicase Exhibition is an annual exhibition hosted by the Super Meteor store located in Tokyo, Japan. Entry is open to anyone worldwide, and the goal is create a cover for a fictional Famicom game of your creation.
  Famicase Exhibition 2021 entry - Become       The 2021 Famicase Exhibition took place between April 29th and May 31st.
  ∙ Famicase Website
