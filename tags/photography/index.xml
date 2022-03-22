@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photography on D00k</title>
+    <link>https://d00k.net/tags/photography/</link>
+    <description>Recent content in Photography on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Mon, 21 Feb 2022 18:10:09 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup</title>
+      <link>https://d00k.net/about/setup/</link>
+      <pubDate>Mon, 21 Feb 2022 18:10:09 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/setup/</guid>
+      <description>A breakdown of the hardware and software I use for making things, or getting things done.
+ Hardware    Modified Dell Keyboard    ∙ Lenovo Thinkpad E580 Laptop.
+Cpu - Intel Core I5-8250U
+Memory - 12GB
+Storage - 256GB Samsung SSD
+Display - 1920x1080 LCD
+OS - Fedora Linux
+ ∙ Generic Dell Keyboard.
+ A full sized, classic membrane Dell Keyboard from the early noughties.</description>
+    </item>
+    
+    <item>
+      <title>Trichrome Technique</title>
+      <link>https://d00k.net/knowledge/trichrome/</link>
+      <pubDate>Mon, 21 Feb 2022 18:10:09 +0000</pubDate>
+      
+      <guid>https://d00k.net/knowledge/trichrome/</guid>
+      <description>Trichrome is a method of taking colour photography using different coloured filters (usually red, blue and green) to form a complete image. It was invented by Louis Ducos du Hauron in the late 19th century. It is most commonly used in black &amp;amp; white film photography to create atmospheric images, however the technique is usable with digital photography as well.
+ How does it work?</description>
+    </item>
+    
+  </channel>
+</rss>

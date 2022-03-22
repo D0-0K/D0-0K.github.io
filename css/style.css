@@ -1,0 +1,407 @@
+/* Box sizing rules */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+article,
+footer,
+input,
+svg,
+label {
+    max-width: none;
+}
+
+:root {
+  /* Text Colours */
+  --dark-brown: #311414;
+  --grey-text: #3D3D3D;
+  --brown: #4e3800;
+  --white: #fff;
+  --slate: #212121;
+  --dark-blue: #1B1626;
+  /* Background Colours */
+  --mint: #95fdd6;
+  --cream: #EBF0E4;
+  --pink: #EFC7C2;
+  --grey: #555;
+  --coffee: #D6D1B1;
+  --blue: #cedfd9;
+  /* Secondary Colours */
+  --mint-dark: #7fd7b6;
+  --cream-dark: #c8ccc2;
+  --pink-dark: #c6a5a1;
+  --grey-light: #808080;
+  --coffee-dark: #aba78e;
+  --blue-dark: #9abdb0;
+  /*Flex Positions*/
+  --center: center;
+  --left: left;
+}
+
+:root {
+  --text: var(--brown);
+  --background: var(--mint);
+  --accent: var(--mint-dark);
+  --flexpos: var(--center);
+}
+
+.home {
+  --text: var(--brown);
+  --background: var(--mint);
+  --accent: var(--mint-dark);
+  --flexpos: var(--center);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.gallery {
+  --text: var(--white);
+  --background: var(--grey);
+  --accent: var(--grey-light);
+  --flexpos: var(--left);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.knowledge {
+  --text: var(--slate);
+  --background: var(--coffee);
+  --accent: var(--coffee-dark);
+  --flexpos: var(--left);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.projects {
+  --text: var(--dark-blue);
+  --background: var(--blue);
+  --accent: var(--blue-dark);
+  --flexpos: var(--left);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.journal {
+  --text: var(--grey-text);
+  --background: var(--cream);
+  --accent: var(--cream-dark);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.about {
+  --text: var(--dark-brown);
+  --background: var(--pink);
+  --accent: var(--pink-dark);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+::selection {
+  background: orange;
+  color: white;
+}
+
+footer a, footer a:hover {
+  background-color: transparent;
+  color: initial;
+}
+
+a:hover {
+  background-color: var(--text);
+  color:var(--background);
+  transition: background-color .25s, color .25s;
+  border-radius: 31px;
+}
+
+a.active {
+  border:1px solid;
+  border-color: var(--text);
+  border-radius: 31px;
+}
+
+.rounded {
+  border:1px solid;
+  border-color: var(--text);
+  border-radius: 31px;
+}
+
+@font-face {
+ font-family:'LeagueSpartanVariable';
+ src:url(fonts/LeagueSpartan-VF.woff2) format("woff2-variations");
+ font-weight:200 900;
+ font-display:swap;
+}
+
+@font-face {
+  font-family: "CMRDD";
+  src: url("fonts/cmrdd-bold-webfont.woff2") format("woff2"),
+       url("fonts/cmrdd-bold-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/Barlow-Black.woff2") format("woff2"),
+    url("fonts/Barlow-Black.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Symbola";
+  src: url("fonts/Symbola.ttf") format("truetype");
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  line-height: 1.45;
+}
+
+header {
+  padding: 4vw;
+}
+
+main {
+  margin: 45px;
+  margin: calc(17px + 1.2%);
+}
+
+a {
+  color: var(--text);
+  padding: 5px 10px;
+  margin: -5px -10px;
+  font-weight: 500;
+}
+
+.name {
+  position: relative;
+  font-family: "CMRDD", "Symbola";
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+* {
+  max-width: 55ch;
+}
+
+nav {
+top: 3vh;
+text-align: left;
+}
+
+nav ul {
+display: inline-block;
+max-width: none;
+}
+
+nav li {
+display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.see-more {
+   font-size:16px;
+   display: block;
+   margin-top: 15px;
+   width: 100px;
+}
+
+hr {
+  background: var(--accent);
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 2px;
+    height: 4px;
+}
+
+
+footer {
+    padding: 30px 30px 0 30px;
+    margin: 0 0 30px 0;
+}
+
+footer img {
+  width: 35px;
+}
+
+footer hr {
+  max-width: 100%;
+  height: 1px;
+}
+
+html {
+  font-family: "LeagueSpartanVariable";
+}
+
+.box-text {
+  max-width: 500px;
+}
+
+.main-box h2{
+   font-size: 25px;
+   font-family: "CMRDD";
+}
+
+h1 {
+  font-size: 3.3em;
+  font-size: calc(2.3em + 2.5vw);
+  font-family: Barlow;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+.main-box {
+  font-size: 20px;
+  max-width: 425px;
+  margin: 20px .75vw 20px .75vw;
+}
+
+.flex-box {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: var(--flexpos);
+}
+
+.columns-2 {
+  columns: 425px 2;
+}
+
+.list-box a {
+  display: block;
+  padding: 10px;
+  margin: -10px;
+  border-radius: 10px;
+}
+
+.list-box p {
+  font-family: LeagueSpartanVariable;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.list-box {
+  display: inline-block;
+}
+
+.icon {
+  float: left;
+  width: 85px;
+  width: calc(80px + 1%);
+  margin-right: calc(11px + 1%);
+  image-rendering: pixelated;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+a {
+  cursor:pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-indent: 0;
+  font-family: "CMRDD";
+}
+
+.small-margin-top {
+  margin-top: calc(25px + 1.2vw)
+}
+
+.small-padding-right {
+  padding-right: 20px;
+}
+
+.title {
+/*  margin-bottom: -10px;*/
+}
+
+.no-top {
+  margin-top: 0;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.tags {
+  display: inline-block;
+  max-width: none;
+  margin-left: -5px;
+}
+
+.tags li {
+  display: inline-block;
+}
+
+.tags a {
+  display: inline-block;
+  margin: 0 0 10px 5px;
+}
+
+.back {
+  margin-top: 30px; 
+}
+
+figure { 
+  max-width: 700px;
+}
+
+figcaption {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+h2 hr, figure hr {
+  max-width: 30%;
+  height: 2px;
+  border-radius: 0;
+}

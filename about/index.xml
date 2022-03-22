@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About Me on D00k</title>
+    <link>https://d00k.net/about/</link>
+    <description>Recent content in About Me on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Thu, 10 Feb 2022 16:57:40 +0000</lastBuildDate><atom:link href="https://d00k.net/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Music</title>
+      <link>https://d00k.net/about/music/</link>
+      <pubDate>Tue, 08 Mar 2022 19:32:17 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/music/</guid>
+      <description>Currently listening to • Various Studio Ghibli soundtracks by Joe Hisaihi.
+• Dreamgirl, for some lo fi vibes.
+• Citypop compilations from Youtube.
+ Music Notes Currently, I&amp;rsquo;m beginning a journey to move away from Spotify. I&amp;rsquo;ve begun buying an album a month on Bandcamp, as well as buying CDs when I can (second hand stores are great). I&amp;rsquo;m hoping to purchase an iPod Classic for portable music, it might become a project as well to add some mods like flash storage.</description>
+    </item>
+    
+    <item>
+      <title>Bookmarks</title>
+      <link>https://d00k.net/about/bookmarks/</link>
+      <pubDate>Tue, 08 Mar 2022 19:32:12 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/bookmarks/</guid>
+      <description>A small library of various bookmarks and websites I&amp;rsquo;ve kept over the years. Neatly sorted for ease of use!
+ Webring ∙ XXIIVV Wiki.
+∙ RitualDust.
+∙ Thomasorus.
+∙ Kokorobot.
+∙ Fdisk.
+ Web Magazines ∙ Low Tech Magazine.
+∙ Real Life Mag.
+∙ Compost.
+∙ the Orphenyade.
+ Pools of Knowledge ∙ Practical Self Reliance.
+∙ Hundred Rabbits.
+ Fun Web Stuff ∙ Marginalia Search Engine.
+∙ Kicks Condor.</description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>https://d00k.net/about/now/</link>
+      <pubDate>Tue, 08 Mar 2022 19:32:01 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/now/</guid>
+      <description>March 2022 ∙ Learning digital art using Krita.
+∙ Doing a big clean-out of everything I own.
+∙ Hopefully picking up where I left off learning the Linux Command Line.
+∙ Heading on my first break away in years, hoping to get some nice shots in a new environment.
+  What&amp;rsquo;s Playing? ∙ Vibing to Japanese 80&amp;rsquo;s City Pop music.
+∙ Re-watching Full Metal Alchemist Brotherhood.
+∙ Playing Pokemon Legends Arceus.</description>
+    </item>
+    
+    <item>
+      <title>Colophon</title>
+      <link>https://d00k.net/about/colophon/</link>
+      <pubDate>Tue, 08 Mar 2022 19:31:55 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/colophon/</guid>
+      <description>A comprehensive dive into the design, and creation of this website
+ Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
+ The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it.</description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>https://d00k.net/about/setup/</link>
+      <pubDate>Mon, 21 Feb 2022 18:10:09 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/setup/</guid>
+      <description>A breakdown of the hardware and software I use for making things, or getting things done.
+ Hardware    Modified Dell Keyboard    ∙ Lenovo Thinkpad E580 Laptop.
+Cpu - Intel Core I5-8250U
+Memory - 12GB
+Storage - 256GB Samsung SSD
+Display - 1920x1080 LCD
+OS - Fedora Linux
+ ∙ Generic Dell Keyboard.
+ A full sized, classic membrane Dell Keyboard from the early noughties.</description>
+    </item>
+    
+  </channel>
+</rss>
