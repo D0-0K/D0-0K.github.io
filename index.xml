@@ -4,11 +4,82 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Mon, 21 Mar 2022 19:24:03 EST</lastBuildDate>
+    <lastBuildDate>Sat, 02 Apr 2022 18:13:21 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Reusing Technology</title>
+        <link>https://d00k.net/knowledge/reusingtech/</link>
+        <guid>https://d00k.net/knowledge/reusingtech/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sat, 02 Apr 2022 18:13:21 EST}</pubDate>
+        
+        <description>&lt;h2 id=&#34;our-world-has-a-tech-waste-problem&#34;&gt;Our world has a tech waste problem&lt;/h2&gt;
+&lt;p&gt;  There&amp;rsquo;s really no hiding the fact. Our world is built around fast fashion and fast tech, we buy and we throw out. Because of this, there&amp;rsquo;s loads of old, unused phones and other bits lying around the house that I&amp;rsquo;ve sought to utilise and solve problems with.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;smartphone-alarm-clock&#34;&gt;Smartphone Alarm Clock&lt;/h2&gt;
+&lt;p&gt;
+ &lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/reusingtech01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A small smartphone with bright yellow sides, the screen shows 51% charge&#34;&gt;
+     &lt;figcaption&gt;The Nokia 530&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+ &lt;/p&gt;
+&lt;p&gt;  My first smartphone was this Nokia 530 running Windows Phone. I still have a huge soft spot for it, being small, light and bright it&amp;rsquo;s hard not to have a smile on your face using it. Windows Phone 8 is an OS still unbeaten in simplicity and function, it&amp;rsquo;s live tiles are a big favourite of mine. I&amp;rsquo;ve used this phone recently for college emails and calender, to keep college life physically separate. During this time I got into the habit of using the phone as alarm clock, and still do despite not using it for college stuff anymore. Some strict settings are in place to draw out the 1430mAh battery, including Airplane mode, constant battery saver mode, low brightness and turning off the phone while I&amp;rsquo;m awake. All this has given me roughly 40 days on a single charge which is quite nice. On android devices, I think deeper changes could be made in order to out even more draw battery life for an alarm clock.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;media--music-player&#34;&gt;Media / Music Player&lt;/h2&gt;
+&lt;p&gt;
+ &lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/reusingtech02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;a samsung smartphone in a custom wooden box that looks like a retro tv&#34;&gt;
+     &lt;figcaption&gt;A Samsung Core Prime in a Custom Box&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+ &lt;/p&gt;
+&lt;p&gt;  When I used to run the Samsung Core Prime while I was in school, I made a nice TV-style box to fit it to watch stuff on it with. After getting a new phone, it still gets used! Especially for music it can be extremely useful to have a device hooked up to speakers. If you use Spotify, you can turn wired speakers into &amp;ldquo;smart&amp;rdquo; ones, controlling the music on another phone or computer. Building display boxes like this for smartphones is a great idea for making digital photo frames or movie players around the house, though battery life can sometimes be a bit dismal on older devices if their screens are always running.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;modification-and-new-software&#34;&gt;Modification and new Software&lt;/h2&gt;
+&lt;p&gt;  Modifying devices has become more and more popular over the years, today it&amp;rsquo;s possible to completely rebuild a Gameboy from the ground up with a modern display, better audio and a fancy shell to boot! Products like &lt;a href=&#34;https://www.iflash.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iFlash&lt;/a&gt; give new life to iPods, with faster, more reliable flash storage over old mini hard-drives. Replacement firmware &lt;a href=&#34;https://www.rockbox.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rockbox&lt;/a&gt; is also extremely popular upgrade for various media players. There&amp;rsquo;s also fantastic projects like Hundred Rabbit&amp;rsquo;s &lt;a href=&#34;https://100r.co/site/uxn.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Uxn&lt;/a&gt; ecosystem of smol tools and games. Uxn runs on many systems, even being ported to the Nintendo GBA and DS. The system has many fun tools like &lt;a href=&#34;https://100r.co/site/noodle.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;noodle&lt;/a&gt; a useful drawing app, a cute &lt;a href=&#34;https://wiki.xxiivv.com/site/catclock.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;catclock&lt;/a&gt; and &lt;a href=&#34;https://100r.co/site/orca.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;orca&lt;/a&gt; a livecoding environment used for making music. Uxn aims to give practical use to older, low-powered devices as well as newer ones that may otherwise be thrown away.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <content:encoded>&lt;h2 id=&#34;our-world-has-a-tech-waste-problem&#34;&gt;Our world has a tech waste problem&lt;/h2&gt;
+&lt;p&gt;  There&amp;rsquo;s really no hiding the fact. Our world is built around fast fashion and fast tech, we buy and we throw out. Because of this, there&amp;rsquo;s loads of old, unused phones and other bits lying around the house that I&amp;rsquo;ve sought to utilise and solve problems with.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;smartphone-alarm-clock&#34;&gt;Smartphone Alarm Clock&lt;/h2&gt;
+&lt;p&gt;
+ &lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/reusingtech01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A small smartphone with bright yellow sides, the screen shows 51% charge&#34;&gt;
+     &lt;figcaption&gt;The Nokia 530&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+ &lt;/p&gt;
+&lt;p&gt;  My first smartphone was this Nokia 530 running Windows Phone. I still have a huge soft spot for it, being small, light and bright it&amp;rsquo;s hard not to have a smile on your face using it. Windows Phone 8 is an OS still unbeaten in simplicity and function, it&amp;rsquo;s live tiles are a big favourite of mine. I&amp;rsquo;ve used this phone recently for college emails and calender, to keep college life physically separate. During this time I got into the habit of using the phone as alarm clock, and still do despite not using it for college stuff anymore. Some strict settings are in place to draw out the 1430mAh battery, including Airplane mode, constant battery saver mode, low brightness and turning off the phone while I&amp;rsquo;m awake. All this has given me roughly 40 days on a single charge which is quite nice. On android devices, I think deeper changes could be made in order to out even more draw battery life for an alarm clock.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;media--music-player&#34;&gt;Media / Music Player&lt;/h2&gt;
+&lt;p&gt;
+ &lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/reusingtech02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;a samsung smartphone in a custom wooden box that looks like a retro tv&#34;&gt;
+     &lt;figcaption&gt;A Samsung Core Prime in a Custom Box&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+ &lt;/p&gt;
+&lt;p&gt;  When I used to run the Samsung Core Prime while I was in school, I made a nice TV-style box to fit it to watch stuff on it with. After getting a new phone, it still gets used! Especially for music it can be extremely useful to have a device hooked up to speakers. If you use Spotify, you can turn wired speakers into &amp;ldquo;smart&amp;rdquo; ones, controlling the music on another phone or computer. Building display boxes like this for smartphones is a great idea for making digital photo frames or movie players around the house, though battery life can sometimes be a bit dismal on older devices if their screens are always running.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;modification-and-new-software&#34;&gt;Modification and new Software&lt;/h2&gt;
+&lt;p&gt;  Modifying devices has become more and more popular over the years, today it&amp;rsquo;s possible to completely rebuild a Gameboy from the ground up with a modern display, better audio and a fancy shell to boot! Products like &lt;a href=&#34;https://www.iflash.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iFlash&lt;/a&gt; give new life to iPods, with faster, more reliable flash storage over old mini hard-drives. Replacement firmware &lt;a href=&#34;https://www.rockbox.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rockbox&lt;/a&gt; is also extremely popular upgrade for various media players. There&amp;rsquo;s also fantastic projects like Hundred Rabbit&amp;rsquo;s &lt;a href=&#34;https://100r.co/site/uxn.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Uxn&lt;/a&gt; ecosystem of smol tools and games. Uxn runs on many systems, even being ported to the Nintendo GBA and DS. The system has many fun tools like &lt;a href=&#34;https://100r.co/site/noodle.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;noodle&lt;/a&gt; a useful drawing app, a cute &lt;a href=&#34;https://wiki.xxiivv.com/site/catclock.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;catclock&lt;/a&gt; and &lt;a href=&#34;https://100r.co/site/orca.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;orca&lt;/a&gt; a livecoding environment used for making music. Uxn aims to give practical use to older, low-powered devices as well as newer ones that may otherwise be thrown away.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+</content:encoded>
+      </item>
     
       <item>
         <title>Ecovillages</title>
@@ -702,31 +773,33 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
         <pubDate>Tue, 08 Mar 2022 19:32:01 EST}</pubDate>
         
         <description>&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&#34;march-2022&#34;&gt;March 2022&lt;/h2&gt;
+&lt;h2 id=&#34;april-2022&#34;&gt;April 2022&lt;/h2&gt;
 &lt;p&gt;∙ Learning digital art using Krita.&lt;/p&gt;
-&lt;p&gt;∙ Doing a big clean-out of everything I own.&lt;/p&gt;
-&lt;p&gt;∙ Hopefully picking up where I left off learning the Linux Command Line.&lt;/p&gt;
-&lt;p&gt;∙ Heading on my first break away in years, hoping to get some nice shots in a new environment.&lt;/p&gt;
+&lt;p&gt;∙ Modifying an iPod Classic.&lt;/p&gt;
+&lt;p&gt;∙ Working on a Minecraft Museum.&lt;/p&gt;
+&lt;p&gt;∙ Burning loads of CDs to Digital for my music collection.&lt;/p&gt;
+&lt;p&gt;∙ Mostly taking the month to rest and get back on my toes after a terrible health month.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;whats-playing&#34;&gt;What&amp;rsquo;s Playing?&lt;/h2&gt;
-&lt;p&gt;∙ Vibing to Japanese 80&amp;rsquo;s City Pop music.&lt;/p&gt;
-&lt;p&gt;∙ Re-watching Full Metal Alchemist Brotherhood.&lt;/p&gt;
-&lt;p&gt;∙ Playing Pokemon Legends Arceus.&lt;/p&gt;
+&lt;p&gt;∙ Vibing to Yot Club&amp;rsquo;s album, Bipolar.&lt;/p&gt;
+&lt;p&gt;∙ Re-watching some Ghibli movies.&lt;/p&gt;
+&lt;p&gt;∙ Still playing Pokemon Legends Arceus.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 </description>
         <content:encoded>&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&#34;march-2022&#34;&gt;March 2022&lt;/h2&gt;
+&lt;h2 id=&#34;april-2022&#34;&gt;April 2022&lt;/h2&gt;
 &lt;p&gt;∙ Learning digital art using Krita.&lt;/p&gt;
-&lt;p&gt;∙ Doing a big clean-out of everything I own.&lt;/p&gt;
-&lt;p&gt;∙ Hopefully picking up where I left off learning the Linux Command Line.&lt;/p&gt;
-&lt;p&gt;∙ Heading on my first break away in years, hoping to get some nice shots in a new environment.&lt;/p&gt;
+&lt;p&gt;∙ Modifying an iPod Classic.&lt;/p&gt;
+&lt;p&gt;∙ Working on a Minecraft Museum.&lt;/p&gt;
+&lt;p&gt;∙ Burning loads of CDs to Digital for my music collection.&lt;/p&gt;
+&lt;p&gt;∙ Mostly taking the month to rest and get back on my toes after a terrible health month.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;whats-playing&#34;&gt;What&amp;rsquo;s Playing?&lt;/h2&gt;
-&lt;p&gt;∙ Vibing to Japanese 80&amp;rsquo;s City Pop music.&lt;/p&gt;
-&lt;p&gt;∙ Re-watching Full Metal Alchemist Brotherhood.&lt;/p&gt;
-&lt;p&gt;∙ Playing Pokemon Legends Arceus.&lt;/p&gt;
+&lt;p&gt;∙ Vibing to Yot Club&amp;rsquo;s album, Bipolar.&lt;/p&gt;
+&lt;p&gt;∙ Re-watching some Ghibli movies.&lt;/p&gt;
+&lt;p&gt;∙ Still playing Pokemon Legends Arceus.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 </content:encoded>
       </item>
@@ -1334,7 +1407,7 @@ There are many different kinds of Origami other than traditional folding includi
 &lt;p&gt;
    &lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/trichrome.gif&#34; alt=&#34;Four images of a poppy flower. Red, blue, green and the three together&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/trichrome2.gif&#34; alt=&#34;Four images of a poppy flower. Red, blue, green and the three together&#34;&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
  &lt;/p&gt;
@@ -1343,7 +1416,7 @@ There are many different kinds of Origami other than traditional folding includi
 &lt;p&gt;
    &lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/photography_setup_1.jpg&#34; alt=&#34;A Set of Red, Blue and Green filters&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/trichrome1.jpg&#34; alt=&#34;A Set of Red, Blue and Green filters&#34;&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
  &lt;/p&gt;
@@ -1367,7 +1440,7 @@ Many photographers will point you towards often pricey acrylic lenses. However s
 &lt;p&gt;
    &lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/trichrome.gif&#34; alt=&#34;Four images of a poppy flower. Red, blue, green and the three together&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/trichrome2.gif&#34; alt=&#34;Four images of a poppy flower. Red, blue, green and the three together&#34;&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
  &lt;/p&gt;
@@ -1376,7 +1449,7 @@ Many photographers will point you towards often pricey acrylic lenses. However s
 &lt;p&gt;
    &lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/photography_setup_1.jpg&#34; alt=&#34;A Set of Red, Blue and Green filters&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/trichrome1.jpg&#34; alt=&#34;A Set of Red, Blue and Green filters&#34;&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
  &lt;/p&gt;
