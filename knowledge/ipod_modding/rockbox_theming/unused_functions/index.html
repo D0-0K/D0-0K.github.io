@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/img/assets/favicon.ico">
+
+    <title>4. Unused Functions</title>
+ </head>
+  <header>
+
+      
+<div class="fullwrap">
+<nav role="Main navigation">
+<ul class="name">
+	  	<li>
+  		<a class="name" href="/">🗦Dook🗧</a>
+  	</li>
+</ul>
+  <ul role="list">
+  
+    <li>
+      <a class="" href="/gallery/">
+        Gallery
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/projects/">
+        Projects
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/knowledge/">
+        Knowledge
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/journal/">
+        Journal
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/about/">
+        About
+      </a>
+    </li>
+   
+</ul>
+</nav>
+</div>
+
+  </header>
+
+  
+ <body class="knowledge">
+   <main class="no-top">
+      <ol start="0" class="guide">
+       
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/">Rockbox Theming</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/background_switching/">1. Backdrop Switching</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/lockscreen/">2. Lockscreen</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/overlay_images/">3. Overlay Images</a>
+         </li>
+        
+         <li>
+          <a  class="active" href="/knowledge/ipod_modding/rockbox_theming/unused_functions/">4. Unused Functions</a>
+         </li>
+        
+    </ol>
+    <h1 class="title">4. Unused Functions</h1>
+     <hr>
+    <p><strong>∘ The xd tag -</strong>
+  This might seem like an odd choice, the most used tag of all? But it actually has a different way using it that&rsquo;s almost never used! The usual way is labelling images by a single letter, this is incredibly handy for writing stuff like battery indicators
+manually. However, the label can actual be anything you want! As written <a href="https://www.rockbox.org/wiki/CustomWPS#xd_45_Display_a_preloaded_40sub_41image" target="_blank" rel="noopener">here</a> on the Wiki:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">  %xd(label, &lt;subimage number&gt; [, offset]) 
+</span></span></code></pre></div><p>  Using the tag like this opens a huge amount of functionality, as well as making your code more readable. If you replace the offset part with a tag like <strong>%mm</strong> for playback mode, it will automatically display the corresponding icon for the right mode of playback.</p>
+<p><strong>∘ Recording Screen Tags -</strong>
+  Surprisingly not in the manual for the iPod 5th gen, the Recording Screen has an array of tags available for theming and providing the user additional information. You can see the full list of functions on the Wiki <a href="https://www.rockbox.org/wiki/CustomWPS#Recording_Screen_tokens_40currently_only_usable_in_a_.sbs_skin_41" target="_blank" rel="noopener">here</a></p>
+<figure>
+ 	<div>
+     <img src="/img/knowledge/ipod_modding/unusedfunct01.jpg" loading="lazy" alt="A recording screen showing the time elapsed, file format and frequency">
+     <figcaption>Adwaitpod&#39;s recording screen.</figcaption>
+     <hr>
+ 	</div>
+ </figure>
+<p>One additional function that can be used here is the <strong>%pR</strong> and <strong>%pL</strong> Tags. When used in a Bar tag config, will show the frequency input graph while recording.</p>
+<p><strong>∘ Drawing the main viewport as a skin -</strong> This feature is a relatively recent addition to rockbox, it&rsquo;s also quite unfinished and buggy. However, in it&rsquo;s current state the things possible are quite impressive!</p>
+<figure>
+ 	<div>
+     <img src="/img/knowledge/ipod_modding/unusedfunct02.jpg" loading="lazy" alt="An ipod theme made up of icons that look like app icons">
+     <figcaption>PI5 theme.</figcaption>
+     <hr>
+ 	</div>
+ </figure>
+<p>  The one person pushing these new features in themes is P Poorten, their themes <a href="https://themes.rockbox.org/index.php?themeid=3185&amp;target=ipodvideo" target="_blank" rel="noopener">PI5</a> and <a href="https://themes.rockbox.org/index.php?themeid=3243&amp;target=ipodvideo" target="_blank" rel="noopener">wavy</a> both use this feature to create some incredibly interesting interfaces. To see the full list of the Tags, see the Wiki <a href="https://www.rockbox.org/wiki/Main/CustomWPS#Drawing_the_lists_using_a_skin" target="_blank" rel="noopener">here</a>.</p>
+
+    <div class="back">
+     
+     <a class="rounded" href="https://d00k.net/knowledge/ipod_modding/rockbox_theming/overlay_images/">〈 Back to 3. Overlay Images</a>
+
+        
+          <a class="next" href="https://d00k.net/knowledge/ipod_modding/rockbox_theming/conclusion/">Next 〉</a>
+        
+     </div>
+  </main>
+ </body>
+ 
+ <footer>
+  <hr>
+       <a href="https://webring.xxiivv.com/#d00k" target="_blank">
+        <img src="https://webring.xxiivv.com/icon.black.svg" alt="XXIIVV webring"/>
+      </a>
+      <a href="/index.xml" target="_blank" alt="RSS Feed">
+        <img src="/img/assets/rss.svg" alt="RSS Feed" style="width: 35px;" />
+      </a>
+   </footer>

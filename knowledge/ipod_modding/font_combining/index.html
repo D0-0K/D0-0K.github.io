@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/img/assets/favicon.ico">
+
+    <title>Font Combining</title>
+ </head>
+  <header>
+
+      
+<div class="fullwrap">
+<nav role="Main navigation">
+<ul class="name">
+	  	<li>
+  		<a class="name" href="/">🗦Dook🗧</a>
+  	</li>
+</ul>
+  <ul role="list">
+  
+    <li>
+      <a class="" href="/gallery/">
+        Gallery
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/projects/">
+        Projects
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/knowledge/">
+        Knowledge
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/journal/">
+        Journal
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/about/">
+        About
+      </a>
+    </li>
+   
+</ul>
+</nav>
+</div>
+
+  </header>
+
+  
+ <body class="knowledge">
+   <main class="no-top">
+    <h1 class="title">Font Combining</h1>
+          
+        <ul class="tags">
+          
+          <li><a class="rounded" href="/tags/rockbox/">rockbox</a></li>
+          
+          <li><a class="rounded" href="/tags/fonts/">fonts</a></li>
+          
+        </ul>
+      
+     <hr>
+    <figure>
+ 	<div>
+     <img src="/img/knowledge/ipod_modding/fonts02.jpg" loading="lazy" alt="A desktop running fontforge, with a text document and a file browser open.">
+     <figcaption>Fontforge&#39;s interface</figcaption>
+     <hr>
+ 	</div>
+ </figure>
+<p>  This is a method of combining two different .ttf fonts into one. Useful for making CJK supported fonts for Rockbox, or adding glyphs into a font for web purposes etc. Fontforge is the main application used, however if you intend to make fonts for Rockbox, you&rsquo;ll need convttf from their dev tools. This guide focuses on combining CJK fonts with non-CJK fonts.</p>
+<h2 id="preparing-the-secondary-font">Preparing the Secondary Font</h2>
+
+
+<ul class="extra">
+
+<li>∘ Download language specific .otf file - The best font to use here is <a href="https://github.com/googlefonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>. However make sure you download the <strong>Region Specific Subset OTF</strong> file for each language you want.</li>
+
+<li>∘ Open the file in Fontforge and flatten CID Layers.</li>
+
+<li>∘ Remove any unnecessary characters (non-CJK letters, emoji etc.)</li>
+
+<li>∘ Re-encode as Unicode Full.</li>
+
+<li>∘ Save as *.sfd.</li>
+</ul>
+
+<h2 id="combining-the-fonts">Combining the Fonts</h2>
+
+
+<ul class="extra">
+
+<li>∘ Open the Base Font, which we want to combine with.</li>
+
+<li>∘ Remove any unnecessary characters, like emoji.</li>
+
+<li>∘ Go to <strong>Element > Merge Fonts</strong> choose the .sfd Font we just made, and merge.</li>
+
+<li>∘  Go to <strong>Edit > Select > Changed Glyphs</strong>.</li>
+
+<li>∘ Go to <strong>Element > Transform</strong> and select Scale.</li>
+
+<li>∘ Select <strong>Origin: Glyph Origin > Scale: 250% 250%</strong> > select all boxes. (Note: Scale will differ on the font, so experiment)</li>
+
+<li>∘ Export the font by going to <strong>File >  Make Font</strong> choose true type and validate.</li>
+</ul>
+
+<h2 id="making-rockbox-fonts">Making Rockbox Fonts</h2>
+
+
+<ul class="extra">
+
+<li>∘ Start by cloning the <a href="https://github.com/Rockbox/rockbox" target="_blank" rel="noopener">Rockbox Github</a>.</li>
+
+<li>∘ In the tools folder, use <strong>Element > make convttf</strong>.</li>
+
+<li>- If you encounter errors with this, make sure "freetype-devel" and "freetype2" (or "ftgl") are installed.</li>
+
+&nbsp;
+
+<li>∘  To make the font, use <strong>./convttf -p size -c 1 fontname.ttf</strong>.</li>
+
+<li>- <strong>size</strong> should be the size of the font you want, this isn't however in pt or px, so experimentation is required. </li>
+
+<li>- <strong>-c</strong> is the spacing between letters, 1 is an all round good option for most sizes and fonts</li>
+
+<li>- If you want to have a padded font like seen in <a href="https://themes.rockbox.org/index.php?themeid=3225&amp;target=ipodvideo" target="_blank" rel="noopener">Interpod</a>, use <strong>-Ta '-3' -Td '-2'</strong>. Ta being the top padding, and Td being the bottom, these values should be negative.</li>
+</ul>
+
+
+    <div class="back">
+     <a class="rounded" href="/knowledge/ipod_modding/">〈 Back to iPod Modding</a>
+   </div>
+  </main>
+ </body>
+
+ <footer>
+  <hr>
+       <a href="https://webring.xxiivv.com/#d00k" target="_blank">
+        <img src="https://webring.xxiivv.com/icon.black.svg" alt="XXIIVV webring"/>
+      </a>
+      <a href="/index.xml" target="_blank" alt="RSS Feed">
+        <img src="/img/assets/rss.svg" alt="RSS Feed" style="width: 35px;" />
+      </a>
+   </footer>

@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/img/assets/favicon.ico">
+
+    <title>3. Overlay Images</title>
+ </head>
+  <header>
+
+      
+<div class="fullwrap">
+<nav role="Main navigation">
+<ul class="name">
+	  	<li>
+  		<a class="name" href="/">🗦Dook🗧</a>
+  	</li>
+</ul>
+  <ul role="list">
+  
+    <li>
+      <a class="" href="/gallery/">
+        Gallery
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/projects/">
+        Projects
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/knowledge/">
+        Knowledge
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/journal/">
+        Journal
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/about/">
+        About
+      </a>
+    </li>
+   
+</ul>
+</nav>
+</div>
+
+  </header>
+
+  
+ <body class="knowledge">
+   <main class="no-top">
+      <ol start="0" class="guide">
+       
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/">Rockbox Theming</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/background_switching/">1. Backdrop Switching</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/lockscreen/">2. Lockscreen</a>
+         </li>
+        
+         <li>
+          <a  class="active" href="/knowledge/ipod_modding/rockbox_theming/overlay_images/">3. Overlay Images</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/unused_functions/">4. Unused Functions</a>
+         </li>
+        
+    </ol>
+    <h1 class="title">3. Overlay Images</h1>
+     <hr>
+    <p>   Drawing overlays in Rockbox is a neat trick to mask sections of the screen to create unique interface designs. While mostly used to create rounded corners on album art, the technique can actually be applied to any part of the screen.</p>
+<h2 id="how-it-works">How it works</h2>
+<figure>
+ 	<div>
+     <img src="/img/knowledge/ipod_modding/overlay02.jpg" loading="lazy" alt="A file explorer, with 4 images for overlays">
+     <figcaption></figcaption>
+     
+ 	</div>
+ </figure>
+<hr>
+<p>  Rockbox sees a specific RGB Value as transparent (another value it sees as the foreground colour) you can read more about it in the Notes of <a href="https://www.rockbox.org/wiki/CustomWPS#Images" target="_blank" rel="noopener">this</a> section of the Wiki. By putting these into our images, they can have transparent sections. Do however make sure your images are properly formatted to avoid errors, using Gimp this means exporting your images using the 16-bits, R5 G6 B5 option.</p>
+<h2 id="interesting-applications">Interesting applications</h2>
+<figure>
+ 	<div>
+     <img src="/img/knowledge/ipod_modding/overlay01.jpg" loading="lazy" alt="The menu of an ipod, playing music by Her&#39;s">
+     <figcaption>Adwaitapod&#39;s rounded corners</figcaption>
+     <hr>
+ 	</div>
+ </figure>
+<p>In my own theme, <a href="https://d00k.net/projects/adwaitapod" target="_blank" rel="noopener">adwaitapod</a>, I used overlays ontop of the main viewport to create rounded corners. Everytime a new item is selected, the overlay refreshes which sometimes has a visible lag before it reappears, however usually this isn&rsquo;t an issue.</p>
+<p>I also used the idea to solve a problem for someone else who wanted to have a squared scrollbar, using one pixel images to mask the corners of the default scrollbar. In situations like these, make sure to use the Cyan colour so it will be drawn as the foreground colour.</p>
+<p>Lastly, lets look at some lesser-used functions in Rockbox.</p>
+
+    <div class="back">
+     
+     <a class="rounded" href="https://d00k.net/knowledge/ipod_modding/rockbox_theming/lockscreen/">〈 Back to 2. Lockscreen</a>
+
+        
+          <a class="next" href="https://d00k.net/knowledge/ipod_modding/rockbox_theming/unused_functions/">Next 〉</a>
+        
+     </div>
+  </main>
+ </body>
+ 
+ <footer>
+  <hr>
+       <a href="https://webring.xxiivv.com/#d00k" target="_blank">
+        <img src="https://webring.xxiivv.com/icon.black.svg" alt="XXIIVV webring"/>
+      </a>
+      <a href="/index.xml" target="_blank" alt="RSS Feed">
+        <img src="/img/assets/rss.svg" alt="RSS Feed" style="width: 35px;" />
+      </a>
+   </footer>

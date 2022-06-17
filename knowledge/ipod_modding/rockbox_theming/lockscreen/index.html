@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/img/assets/favicon.ico">
+
+    <title>2. Lockscreen</title>
+ </head>
+  <header>
+
+      
+<div class="fullwrap">
+<nav role="Main navigation">
+<ul class="name">
+	  	<li>
+  		<a class="name" href="/">🗦Dook🗧</a>
+  	</li>
+</ul>
+  <ul role="list">
+  
+    <li>
+      <a class="" href="/gallery/">
+        Gallery
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/projects/">
+        Projects
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/knowledge/">
+        Knowledge
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/journal/">
+        Journal
+      </a>
+    </li>
+  
+    <li>
+      <a class="" href="/about/">
+        About
+      </a>
+    </li>
+   
+</ul>
+</nav>
+</div>
+
+  </header>
+
+  
+ <body class="knowledge">
+   <main class="no-top">
+      <ol start="0" class="guide">
+       
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/">Rockbox Theming</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/background_switching/">1. Backdrop Switching</a>
+         </li>
+        
+         <li>
+          <a  class="active" href="/knowledge/ipod_modding/rockbox_theming/lockscreen/">2. Lockscreen</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/overlay_images/">3. Overlay Images</a>
+         </li>
+        
+         <li>
+          <a  href="/knowledge/ipod_modding/rockbox_theming/unused_functions/">4. Unused Functions</a>
+         </li>
+        
+    </ol>
+    <h1 class="title">2. Lockscreen</h1>
+     <hr>
+    <figure>
+ 	<div>
+     <img src="/img/knowledge/ipod_modding/testscreen.jpg" loading="lazy" alt="A lockscreen with the time, date and charge status">
+     <figcaption>The FreshOS Lockscreen by Yuuiko</figcaption>
+     <hr>
+ 	</div>
+ </figure>
+<p>  There&rsquo;s a rich history of Rockbox themes using the hold switch for additional functionality, however they followed the idea of showing extra info, or displaying album art. In comparison, Yuuiko uses the hold switch to unlock entirely unique screens in a way that enhances the capabilities of Rockbox.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>  The setup for lockscreens is surprisingly simple. It takes the same concept of background switching we&rsquo;ve seen, but combines it with the function for the hold switch, allowing us to define what should be displayed when the switch is on and off!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">FreshOS.sbs - By Yuuiko
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">%xl(E,Backdrop - LOCK.bmp,0,0)
+</span></span><span class="line"><span class="cl">%xl(P,Backdrop - HOME.bmp,0,0)
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">%?if(%cs, =, 1)&lt;%?mh&lt;%xd(E)|%xd(P)&gt;&gt; #HOME
+</span></span><span class="line"><span class="cl">%?if(%cs, =, 1)&lt;%?mh&lt;%VI(u)%Vd(q)%Vd(q)|%VI(w)%Vd(m)%Vd(q)&gt;&gt; #Home
+</span></span></code></pre></div><p> Here we can see two <strong>%?if</strong> functions that control the lockscreen, the first changes the backdrop and the second controls which viewports to show.</p>
+<h2 id="limitations">Limitations</h2>
+<p>  Sadly, these features don&rsquo;t come without some flaws. Some are easy to work around, though others require hacks that aren&rsquo;t fully tested.</p>
+<p><strong>∘ Album Art -</strong>
+ Rockbox is unable to display album art in more than one viewport. Therefore if you intend to have album art on your home screen <em>and</em> on your lockscreen, then you&rsquo;ll have to have them in the exact same spot. You can see Yuuiko&rsquo;s themes for a better example.</p>
+<p><strong>∘ Blank main viewport -</strong>
+ When returning from the lockscreen to the home menu, the main viewport (which shows the menu items) wont load. Once you scroll, it will refresh and show the items again. There&rsquo;s no workaround for this, the only thing you can do is let the user know what to do.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">FreshOS.sbs - By Yuuiko
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl">%Vl(m,0,22,320,218,-)%Vf(601D3A)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   scroll the
+</span></span><span class="line"><span class="cl">   clickwheel.
+</span></span></code></pre></div><p>  The distance here matters, as it will determine the position of the text on the screen. When you scroll, the message no longer becomes visible.</p>
+<p><strong>∘ Playing Music -</strong>
+ If your ipod changes onto the next song while on the lockscreen, the screen will bug out a little. The main viewport will draw itself over the backdrop, but under any draw elements on the screen. There have been some solutions experimented with, like drawing a viewport full of the current second functions to update the desired area every second. However these haven&rsquo;t been tested, and could possibly take a hit on battery life.</p>
+<p> Next, we&rsquo;ll be taking a look at images and how to use overlays more.</p>
+
+    <div class="back">
+     
+     <a class="rounded" href="https://d00k.net/knowledge/ipod_modding/rockbox_theming/background_switching/">〈 Back to 1. Backdrop Switching</a>
+
+        
+          <a class="next" href="https://d00k.net/knowledge/ipod_modding/rockbox_theming/overlay_images/">Next 〉</a>
+        
+     </div>
+  </main>
+ </body>
+ 
+ <footer>
+  <hr>
+       <a href="https://webring.xxiivv.com/#d00k" target="_blank">
+        <img src="https://webring.xxiivv.com/icon.black.svg" alt="XXIIVV webring"/>
+      </a>
+      <a href="/index.xml" target="_blank" alt="RSS Feed">
+        <img src="/img/assets/rss.svg" alt="RSS Feed" style="width: 35px;" />
+      </a>
+   </footer>

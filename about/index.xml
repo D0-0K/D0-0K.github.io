@@ -8,37 +8,13 @@
     <language>en-ie</language>
     <lastBuildDate>Thu, 10 Feb 2022 16:57:40 +0000</lastBuildDate><atom:link href="https://d00k.net/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Music</title>
-      <link>https://d00k.net/about/music/</link>
-      <pubDate>Tue, 08 Mar 2022 19:32:17 +0000</pubDate>
-      
-      <guid>https://d00k.net/about/music/</guid>
-      <description>Currently listening to • Various Studio Ghibli soundtracks by Joe Hisaihi.
-• Dreamgirl, for some lo fi vibes.
-• Citypop compilations from Youtube.
- Music Notes Currently, I&amp;rsquo;m beginning a journey to move away from Spotify. I&amp;rsquo;ve begun buying an album a month on Bandcamp, as well as buying CDs when I can (second hand stores are great). I&amp;rsquo;m hoping to purchase an iPod Classic for portable music, it might become a project as well to add some mods like flash storage.</description>
-    </item>
-    
-    <item>
       <title>Bookmarks</title>
       <link>https://d00k.net/about/bookmarks/</link>
       <pubDate>Tue, 08 Mar 2022 19:32:12 +0000</pubDate>
       
       <guid>https://d00k.net/about/bookmarks/</guid>
       <description>A small library of various bookmarks and websites I&amp;rsquo;ve kept over the years. Neatly sorted for ease of use!
- Webring ∙ XXIIVV Wiki.
-∙ RitualDust.
-∙ Thomasorus.
-∙ Kokorobot.
-∙ Fdisk.
- Web Magazines ∙ Low Tech Magazine.
-∙ Real Life Mag.
-∙ Compost.
-∙ the Orphenyade.
- Pools of Knowledge ∙ Practical Self Reliance.
-∙ Hundred Rabbits.
- Fun Web Stuff ∙ Marginalia Search Engine.
-∙ Kicks Condor.</description>
+Webring  ∙ XXIIVV Wiki.   ∙ RitualDust.   ∙ Thomasorus.   ∙ Kokorobot.   ∙ Fdisk.   Web Magazines  ∙ Low Tech Magazine.   ∙ Real Life Mag.   ∙ Compost.   ∙ the Orphenyade.   Pools of Knowledge  ∙ Practical Self Reliance.</description>
     </item>
     
     <item>
@@ -47,14 +23,7 @@
       <pubDate>Tue, 08 Mar 2022 19:32:01 +0000</pubDate>
       
       <guid>https://d00k.net/about/now/</guid>
-      <description>April 2022 ∙ Learning digital art using Krita.
-∙ Modifying an iPod Classic.
-∙ Working on a Minecraft Museum.
-∙ Burning loads of CDs to Digital for my music collection.
-∙ Mostly taking the month to rest and get back on my toes after a terrible health month.
-  What&amp;rsquo;s Playing? ∙ Vibing to Yot Club&amp;rsquo;s album, Bipolar.
-∙ Re-watching some Ghibli movies.
-∙ Still playing Pokemon Legends Arceus.</description>
+      <description>June 2022 ∘ Finishing up my Rockbox theme for release. ∘ Updating and upgrading the website. ∘ Writing a guide to Rockbox theming. ∘ Hoping to take some more time to read this month.  What&amp;rsquo;s Playing? ∘ Vibing to Invitation to Her&#39;s by Her&#39;s. ∘ Watching the entirety of Adventure Time. ∘ Enjoying the new Minecraft update with my friends.  ∙ now 2022</description>
     </item>
     
     <item>
@@ -64,7 +33,7 @@
       
       <guid>https://d00k.net/about/colophon/</guid>
       <description>A comprehensive dive into the design, and creation of this website
- Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
+Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
  The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it.</description>
     </item>
     
@@ -75,14 +44,7 @@
       
       <guid>https://d00k.net/about/setup/</guid>
       <description>A breakdown of the hardware and software I use for making things, or getting things done.
- Hardware    Modified Dell Keyboard    ∙ Lenovo Thinkpad E580 Laptop.
-Cpu - Intel Core I5-8250U
-Memory - 12GB
-Storage - 256GB Samsung SSD
-Display - 1920x1080 LCD
-OS - Fedora Linux
- ∙ Generic Dell Keyboard.
- A full sized, classic membrane Dell Keyboard from the early noughties.</description>
+Hardware    Keychron C1 Keyboard    ∘ Lenovo Thinkpad E580 Laptop. Cpu - Intel Core I5-8250U Memory - 12GB Storage - 256GB Samsung SSD Display - 1920x1080 LCD OS - Fedora Linux  ∘ Keychron C1 Wired Keyboard. The Keychron C1 is an 85%, Tenkeyless wired mechanical Keyboard. I bought it mostly for it&amp;rsquo;s low price, as well for it&amp;rsquo;s lack of wireless and light-up features.</description>
     </item>
     
   </channel>

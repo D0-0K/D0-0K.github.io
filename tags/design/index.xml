@@ -6,7 +6,17 @@
     <description>Recent content in design on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 08 Mar 2022 19:31:55 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 14:45:53 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>adwaitapod</title>
+      <link>https://d00k.net/projects/adwaitapod/</link>
+      <pubDate>Fri, 27 May 2022 14:45:53 +0100</pubDate>
+      
+      <guid>https://d00k.net/projects/adwaitapod/</guid>
+      <description>Adwaitapod is a modern and feature-rich theme for iPod Video models running Rockbox. The theme uses the principles of Gnome&amp;rsquo;s Adwaita design language, and aims to be a complete and pleasing experience for users.   The music player screen.   
+Features ∘ Consistent interface with rounded corners. ∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected. ∘ Radio Player skin with station icon support when using an FM Presets file.</description>
+    </item>
+    
     <item>
       <title>Colophon</title>
       <link>https://d00k.net/about/colophon/</link>
@@ -14,7 +24,7 @@
       
       <guid>https://d00k.net/about/colophon/</guid>
       <description>A comprehensive dive into the design, and creation of this website
- Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
+Background  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.
  The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it.</description>
     </item>
     
@@ -24,8 +34,8 @@
       <pubDate>Tue, 22 Feb 2022 18:17:46 +0000</pubDate>
       
       <guid>https://d00k.net/projects/virtual-gallery/</guid>
-      <description>The Virtual Gallery was born in the summer of 2020 after the cancellation of an exhibition that an art course I was attending hosted. Not wanting the work and effort of everyone I did the course with to go to waste, I set out to make a platform for them to share with their friends and family.
- The Exhibition      Work took several months to build a basic site from scratch using HTML and CSS, largely due to my inexperience however I learned a lot.</description>
+      <description>The Virtual Gallery a website was born in the summer of 2020 after the cancellation of an exhibition that an art course I was attending hosted. Not wanting the work and effort of everyone I did the course with to go to waste, I set out to make a platform for them to share with their friends and family.
+The Exhibition      Work took several months to build a basic site from scratch using HTML and CSS, largely due to my inexperience however I learned a lot.</description>
     </item>
     
     <item>
@@ -44,9 +54,8 @@
       
       <guid>https://d00k.net/projects/famicase/</guid>
       <description>The Famicase Exhibition is an annual exhibition hosted by the Super Meteor store located in Tokyo, Japan. Entry is open to anyone worldwide, and the goal is create a cover for a fictional Famicom game of your creation.
- Famicase Exhibition 2021 entry - Become       The 2021 Famicase Exhibition took place between April 29th and May 31st.
- ∙ Famicase Website
-∙ Purchase the Famicase 2021 Zine</description>
+Famicase Exhibition 2021 entry - Become       The 2021 Famicase Exhibition took place between April 29th and May 31st.
+ ∙ Famicase Website.   ∙ Purchase the Famicase 2021 Zine.</description>
     </item>
     
   </channel>

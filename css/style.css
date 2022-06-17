@@ -148,6 +148,21 @@ a.active {
   border-radius: 31px;
 }
 
+.next {
+  margin-left: 15px;
+  background-color: var(--text);
+  color:var(--background);
+  border:1px solid;
+  border-color: var(--text);
+  border-radius: 31px;
+}
+
+.next:hover {
+    background-color: var(--accent);
+  color: var(--text);
+  border-color: var(--accent);
+}
+
 @font-face {
  font-family:'LeagueSpartanVariable';
  src:url(fonts/LeagueSpartan-VF.woff2) format("woff2-variations");
@@ -241,6 +256,19 @@ ul {
   padding: 0;
   margin: 0;
 }
+.extra {
+  margin-bottom: 35px;
+}
+
+.extra li {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.chroma {
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
 
 .see-more {
    font-size:16px;
@@ -276,6 +304,13 @@ html {
   font-family: "LeagueSpartanVariable";
 }
 
+pre {
+background-color: var(--accent);
+padding: 10px;
+border-radius: 5px;
+overflow-y: hidden;
+}
+
 .box-text {
   max-width: 500px;
 }
@@ -294,6 +329,11 @@ h1 {
 
 h2 {
   font-size: 33px;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .main-box {
@@ -337,6 +377,20 @@ h2 {
   image-rendering: pixelated;
 }
 
+.contacticons {
+  float: left;
+  width: 65px;
+  width: calc(60px + 1%);
+  margin-right: calc(12px + 1%);
+}
+
+.contactlist {
+  padding-top: calc(17px + .5%);
+  padding-bottom: calc(17px + .5%);
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
 img {
   max-width: 100%;
   border-radius: 5px;
@@ -366,9 +420,14 @@ a {
   margin-top: 0;
 }
 
-p {
+article p {
   font-size: 20px;
   margin-bottom: 5px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 35px;
 }
 
 .tags {
@@ -387,7 +446,7 @@ p {
 }
 
 .back {
-  margin-top: 30px; 
+  margin-top: 60px; 
 }
 
 figure { 
@@ -404,4 +463,27 @@ h2 hr, figure hr {
   max-width: 30%;
   height: 2px;
   border-radius: 0;
+}
+
+.guide {
+  list-style: none;
+  background-color: var(--accent);
+  border-radius: 5px;
+  padding-top: 8px;
+}
+
+.guide li {
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  font-family: "CMRDD";
+  font-weight: bold;
+}
+
+ol {
+  padding-left: 8px;
+  margin-top: 0px;
+  padding-bottom: 0.1px;
+  min-width: 250px;
+  max-width: 275px;
 }

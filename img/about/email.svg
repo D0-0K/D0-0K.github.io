@@ -1,0 +1,6 @@
+<svg width="100" height="100" version="1.1" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-linecap="square">
+  <rect y="-1.8e-7" width="27" height="27" fill="#c6a5a1" stroke-width="2.8" style="paint-order:markers stroke fill"/>
+  <path transform="scale(.27)" d="m22 18c-5.5 0-10 4.5-10 10v45c0 5.5 4.5 10 10 10h55c5.5 0 10-4.5 10-10v-45c0-5.5-4.5-10-10-10h-55zm4.1 12 19 16c0.86 0.74 2.2 1.9 4.4 1.9 2.1 0 3.4-0.97 4.5-1.9l19-16c0.97 0.91 1.6 2.2 1.6 3.6v33c0 2.8-2.2 5-5 5h-40c-2.8 0-5-2.2-5-5v-33c0-1.4 0.61-2.7 1.6-3.6z" fill="#311414" stroke-width="10" style="paint-order:markers stroke fill"/>
+ </g>
+</svg>
