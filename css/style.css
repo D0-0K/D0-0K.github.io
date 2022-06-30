@@ -136,7 +136,7 @@ a:hover {
   border-radius: 31px;
 }
 
-a.active {
+.active {
   border:1px solid;
   border-color: var(--text);
   border-radius: 31px;
