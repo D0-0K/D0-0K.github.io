@@ -42,18 +42,18 @@ label {
   --slate: #212121;
   --dark-blue: #1B1626;
   /* Background Colours */
-  --mint: #95fdd6;
+  --mint: #9bf8d4;
   --cream: #EBF0E4;
   --pink: #EFC7C2;
   --grey: #555;
-  --coffee: #D6D1B1;
+  --coffee: #d7cfb2;
   --blue: #cedfd9;
   /* Secondary Colours */
   --mint-dark: #7fd7b6;
   --cream-dark: #c8ccc2;
   --pink-dark: #c6a5a1;
   --grey-light: #808080;
-  --coffee-dark: #aba78e;
+  --coffee-dark: #aba58e;
   --blue-dark: #9abdb0;
   /*Flex Positions*/
   --center: center;
