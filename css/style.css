@@ -172,8 +172,8 @@ a:hover {
 
 @font-face {
   font-family: "CMRDD";
-  src: url("fonts/cmrdd-bold-webfont.woff2") format("woff2"),
-       url("fonts/cmrdd-bold-webfont.woff") format("woff");
+  src: url("fonts/cmrdd-bold.woff2") format("woff2"),
+       url("fonts/cmrdd-bold.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
