@@ -4,7 +4,7 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 05 Jul 2022 14:57:16 EST</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jul 2022 17:50:21 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
@@ -310,6 +310,19 @@ manually. However, the label can actual be anything you want! As written &lt;a h
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?if(%cs, =, 21)&amp;lt;%xd(M)&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vi(m,0,0,1,1,-)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can read more about how it all works &lt;a href=&#34;https://www.rockbox.org/wiki/CustomWPS#Viewport_Draw_Layer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Without this, your viewports will mess up displaying white, or white backgrounds. The last &amp;ldquo;&lt;strong&gt;%V(0,0,-,-,-)&lt;/strong&gt;&amp;rdquo; isn&amp;rsquo;t always needed, however if you intended to follow the next section and build a lockscreen, then you will need it to make that work.&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>2022 07 06</title>
+        <link>https://d00k.net/about/shortjournal/2022-07-06/</link>
+        <guid>https://d00k.net/about/shortjournal/2022-07-06/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 06 Jul 2022 17:50:21 EST}</pubDate>
+        
+        <description>&lt;p&gt;I&amp;rsquo;ve gotten interested this week in propagating seeds from wildflowers in our garden. There&amp;rsquo;s a beautiful pink poppy with massive seed pods, as well as a bunch of bluebells that I&amp;rsquo;d love to spread to other places. I was considering drying and saving the seed, following &lt;a href=&#34;https://realseeds.co.uk/seedsavinginfo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; guide from realseeds, however I don&amp;rsquo;t think there&amp;rsquo;s much reason to in this situation. :3&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;I&amp;rsquo;ve gotten interested this week in propagating seeds from wildflowers in our garden. There&amp;rsquo;s a beautiful pink poppy with massive seed pods, as well as a bunch of bluebells that I&amp;rsquo;d love to spread to other places. I was considering drying and saving the seed, following &lt;a href=&#34;https://realseeds.co.uk/seedsavinginfo.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; guide from realseeds, however I don&amp;rsquo;t think there&amp;rsquo;s much reason to in this situation. :3&lt;/p&gt;
 </content:encoded>
       </item>
     
