@@ -4,7 +4,7 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 12 Jul 2022 11:32:32 EST</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jul 2022 18:01:43 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
@@ -310,6 +310,209 @@ manually. However, the label can actual be anything you want! As written &lt;a h
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?if(%cs, =, 21)&amp;lt;%xd(M)&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vi(m,0,0,1,1,-)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can read more about how it all works &lt;a href=&#34;https://www.rockbox.org/wiki/CustomWPS#Viewport_Draw_Layer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Without this, your viewports will mess up displaying white, or white backgrounds. The last &amp;ldquo;&lt;strong&gt;%V(0,0,-,-,-)&lt;/strong&gt;&amp;rdquo; isn&amp;rsquo;t always needed, however if you intended to follow the next section and build a lockscreen, then you will need it to make that work.&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>Bee Encyclopedia</title>
+        <link>https://d00k.net/knowledge/bees/</link>
+        <guid>https://d00k.net/knowledge/bees/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 27 Jul 2022 18:01:43 EST}</pubDate>
+        
+        <description>&lt;h2 id=&#34;leaf-cutter-bee&#34;&gt;Leaf Cutter Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees04.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A small, black, white and orange bee carrying a leaf into it&amp;#39;s nest in a hole&#34;&gt;
+     &lt;figcaption&gt;Megachile (Delomegachile) willughbiella&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The Leaf cutter bee is a near-threatened solitary bee species in Ireland. Identifiable by their unique characteristic of cutting and carrying leaves to use in their nests, which are usually in the ground or small cavities they find. There has only been 136 records of it since the 1800 in Ireland.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=56779&amp;amp;keyword=Bees&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/2752239&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;ashy-miner-bee&#34;&gt;Ashy Miner Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A Black and White striped bee on a dandelion&#34;&gt;
+     &lt;figcaption&gt;Andrena (Melandrena) cineraria&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  This solitary bee measures at just around 15mm in length and is one of the earliest bees in the garden each &lt;a href=&#34;http://localhost:1313/gallery/trichrome/spring/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring&lt;/a&gt;. They are relatively common, and are easily identified by two the two grey, or ashy, bands of colour on their Thorax. They nest in the ground by burrowing holes, and are quite active.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=55600&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/2747210&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;large-red-tailed-bumble-bee&#34;&gt;Large Red Tailed Bumble Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A large, Black bee sitting on a purple flower&#34;&gt;
+     &lt;figcaption&gt;Bombus (Melanobombus) lapidarius&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  One of the largest bees in Ireland, the Large Red Tailed Bumble Bee are considered a threatened species. Every year we usually have a few to spot in the garden during the summer. Easily one of the best bees to capture, as they tend to stay still for long periods of time compared to the smaller, hyper-active bumblers.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=55990&amp;amp;keyword=Bees&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/1065242&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;early-bumble-bee&#34;&gt;Early Bumble Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A large, Black bee sitting on a purple flower&#34;&gt;
+     &lt;figcaption&gt;Bombus (Melanobombus) lapidarius&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The Early Bumble Bee is named for it&amp;rsquo;s early start in the year, appearing as soon as February in some places. They are fairly common, and nest in the ground or aerial cavities like bird boxes. When in flower, the crab-apple tree is rife with these eager bees. They are identified by the two yellow rings on the body, and the orange hairs on their bottoms.
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=56009&amp;amp;keyword=Bees&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/1065201&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://pollinators.ie/record-pollinators/bees/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodivesity Data Centre&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://biodiversityireland.ie/identifying-irish-bumblebees/lesson.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Bumble Bee Identification Guide&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;h2 id=&#34;leaf-cutter-bee&#34;&gt;Leaf Cutter Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees04.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A small, black, white and orange bee carrying a leaf into it&amp;#39;s nest in a hole&#34;&gt;
+     &lt;figcaption&gt;Megachile (Delomegachile) willughbiella&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The Leaf cutter bee is a near-threatened solitary bee species in Ireland. Identifiable by their unique characteristic of cutting and carrying leaves to use in their nests, which are usually in the ground or small cavities they find. There has only been 136 records of it since the 1800 in Ireland.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=56779&amp;amp;keyword=Bees&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/2752239&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;ashy-miner-bee&#34;&gt;Ashy Miner Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A Black and White striped bee on a dandelion&#34;&gt;
+     &lt;figcaption&gt;Andrena (Melandrena) cineraria&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  This solitary bee measures at just around 15mm in length and is one of the earliest bees in the garden each &lt;a href=&#34;http://localhost:1313/gallery/trichrome/spring/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spring&lt;/a&gt;. They are relatively common, and are easily identified by two the two grey, or ashy, bands of colour on their Thorax. They nest in the ground by burrowing holes, and are quite active.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=55600&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/2747210&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;large-red-tailed-bumble-bee&#34;&gt;Large Red Tailed Bumble Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A large, Black bee sitting on a purple flower&#34;&gt;
+     &lt;figcaption&gt;Bombus (Melanobombus) lapidarius&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  One of the largest bees in Ireland, the Large Red Tailed Bumble Bee are considered a threatened species. Every year we usually have a few to spot in the garden during the summer. Easily one of the best bees to capture, as they tend to stay still for long periods of time compared to the smaller, hyper-active bumblers.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=55990&amp;amp;keyword=Bees&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/1065242&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;early-bumble-bee&#34;&gt;Early Bumble Bee&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/bees02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A large, Black bee sitting on a purple flower&#34;&gt;
+     &lt;figcaption&gt;Bombus (Melanobombus) lapidarius&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The Early Bumble Bee is named for it&amp;rsquo;s early start in the year, appearing as soon as February in some places. They are fairly common, and nest in the ground or aerial cavities like bird boxes. When in flower, the crab-apple tree is rife with these eager bees. They are identified by the two yellow rings on the body, and the orange hairs on their bottoms.
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://species.biodiversityireland.ie/profile.php?taxonId=56009&amp;amp;keyword=Bees&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodiversity Data Centre Profile&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://eol.org/pages/1065201&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ EOL Profile&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://pollinators.ie/record-pollinators/bees/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Irish Biodivesity Data Centre&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://biodiversityireland.ie/identifying-irish-bumblebees/lesson.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Bumble Bee Identification Guide&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
 </content:encoded>
       </item>
     
