@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://d00k.net/knowledge/ipod_modding/rockbox_theming/conclusion/</loc>
-    <lastmod>2022-06-15T18:52:12+01:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/knowledge/ipod_modding/rockbox_theming/unused_functions/</loc>
-    <lastmod>2022-06-15T17:45:51+01:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/knowledge/ipod_modding/rockbox_theming/overlay_images/</loc>
-    <lastmod>2022-06-03T17:37:13+01:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/knowledge/ipod_modding/rockbox_theming/lockscreen/</loc>
-    <lastmod>2022-06-03T10:30:34+01:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/knowledge/ipod_modding/rockbox_theming/background_switching/</loc>
-    <lastmod>2022-06-03T10:30:37+01:00</lastmod>
-  </url><url>
     <loc>https://d00k.net/knowledge/ipod_modding/rockbox_theming/</loc>
     <lastmod>2022-05-31T15:14:26+01:00</lastmod>
   </url><url>
@@ -60,10 +45,10 @@
     <lastmod>2022-06-16T13:00:21+01:00</lastmod>
   </url><url>
     <loc>https://d00k.net/guides/</loc>
-    <lastmod>2022-06-15T17:45:51+01:00</lastmod>
+    <lastmod>2022-06-15T18:52:12+01:00</lastmod>
   </url><url>
     <loc>https://d00k.net/guides/rockbox/</loc>
-    <lastmod>2022-06-15T17:45:51+01:00</lastmod>
+    <lastmod>2022-06-15T18:52:12+01:00</lastmod>
   </url><url>
     <loc>https://d00k.net/knowledge/ipod_modding/</loc>
     <lastmod>2022-05-31T15:29:34+01:00</lastmod>

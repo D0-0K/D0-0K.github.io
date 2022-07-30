@@ -6,7 +6,16 @@
     <description>Recent content in rockbox on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 15 Jun 2022 17:45:51 +0100</lastBuildDate><atom:link href="https://d00k.net/guides/rockbox/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jun 2022 18:52:12 +0100</lastBuildDate><atom:link href="https://d00k.net/guides/rockbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conclusion</title>
+      <link>https://d00k.net/knowledge/ipod_modding/rockbox_theming/conclusion/</link>
+      <pubDate>Wed, 15 Jun 2022 18:52:12 +0100</pubDate>
+      
+      <guid>https://d00k.net/knowledge/ipod_modding/rockbox_theming/conclusion/</guid>
+      <description>This has been a short guide of all the advanced rockbox theming things I know. Hopefully this helps people new to rockbox, and myself in the future when I return to making themes and inevitably forget everything. Thanks for reading!</description>
+    </item>
+    
     <item>
       <title>4. Unused Functions</title>
       <link>https://d00k.net/knowledge/ipod_modding/rockbox_theming/unused_functions/</link>
