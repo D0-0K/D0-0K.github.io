@@ -298,6 +298,7 @@ footer hr {
 footer div a {
   display: inline-block;
   margin-top: 5px;
+  margin-right: 0px;
 }
 
 html {
