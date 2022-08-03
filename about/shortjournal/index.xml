@@ -8,6 +8,15 @@
     <language>en-ie</language>
     <lastBuildDate>Tue, 05 Jul 2022 14:56:48 +0100</lastBuildDate><atom:link href="https://d00k.net/about/shortjournal/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2022 08 03</title>
+      <link>https://d00k.net/about/shortjournal/2022-08-03/</link>
+      <pubDate>Wed, 03 Aug 2022 13:20:53 +0100</pubDate>
+      
+      <guid>https://d00k.net/about/shortjournal/2022-08-03/</guid>
+      <description>My productivity has been hampered the past few weeks by illness, but I&amp;rsquo;ve slowly started to get back into my projects by improving my website. Shaved off a few hundred Mbs with favicon and other image optimisations, which I&amp;rsquo;m really happy with. I&amp;rsquo;ve also started to look for a new home server on Mastodon, my current server is shutting down for a 2 month rebuild and restart so I took it as a signal to finally find somewhere better.</description>
+    </item>
+    
+    <item>
       <title>2022 07 12</title>
       <link>https://d00k.net/about/shortjournal/2022-07-12/</link>
       <pubDate>Tue, 12 Jul 2022 11:32:32 +0100</pubDate>

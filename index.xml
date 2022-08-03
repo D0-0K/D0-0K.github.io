@@ -4,11 +4,24 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 02 Aug 2022 11:05:14 EST</lastBuildDate>
+    <lastBuildDate>Wed, 03 Aug 2022 13:20:53 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>2022 08 03</title>
+        <link>https://d00k.net/about/shortjournal/2022-08-03/</link>
+        <guid>https://d00k.net/about/shortjournal/2022-08-03/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 03 Aug 2022 13:20:53 EST}</pubDate>
+        
+        <description>&lt;p&gt;My productivity has been hampered the past few weeks by illness, but I&amp;rsquo;ve slowly started to get back into my projects by improving my website. Shaved off a few hundred Mbs with favicon and other image optimisations, which I&amp;rsquo;m really happy with. I&amp;rsquo;ve also started to look for a new home server on Mastodon, my current server is shutting down for a 2 month rebuild and restart so I took it as a signal to finally find somewhere better. This time I want to find a place less general, that matches my interests as well as political beliefs etc.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;My productivity has been hampered the past few weeks by illness, but I&amp;rsquo;ve slowly started to get back into my projects by improving my website. Shaved off a few hundred Mbs with favicon and other image optimisations, which I&amp;rsquo;m really happy with. I&amp;rsquo;ve also started to look for a new home server on Mastodon, my current server is shutting down for a 2 month rebuild and restart so I took it as a signal to finally find somewhere better. This time I want to find a place less general, that matches my interests as well as political beliefs etc.&lt;/p&gt;
+</content:encoded>
+      </item>
     
       <item>
         <title>Seed Harvesting</title>
