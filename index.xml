@@ -4,11 +4,128 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 03 Aug 2022 13:20:53 EST</lastBuildDate>
+    <lastBuildDate>Fri, 05 Aug 2022 16:23:11 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Rebble Weather Icons</title>
+        <link>https://d00k.net/projects/rebble_weather/</link>
+        <guid>https://d00k.net/projects/rebble_weather/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Fri, 05 Aug 2022 16:23:11 EST}</pubDate>
+        
+        <description>&lt;h2 id=&#34;the-task&#34;&gt;The task&lt;/h2&gt;
+&lt;p&gt;  The Pebble revival project, Rebble, has been branching out to make replacement apps and firmware for Pebbles to help with longevity. Part of this has included remaking icons as the original Pebble ones are not open source or legally usable. This page details the weather icons I designed for the project, and for use in my own watchfaces. They follow the same rules as the original icons, however have their own Rebble twist to them.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Many various icons for apps, weather and watch functions&#34;&gt;
+     &lt;figcaption&gt;The original Pebble icons, designed by Heydays.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;rain-snow-and-clouds&#34;&gt;Rain, Snow and Clouds&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather02.svg&#34; loading=&#34;lazy&#34; alt=&#34;Different kinds of weather icons on a purple background. Example, snow, rain etc.&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The weather icons with clouds proved challenging at times, being limited to 3 angles (flat, 1:1 and 1:2) meant the shape was very limited in terms of originality and looking good. Eventually I took a cloud icon another person called Lavender made for the project, and jazzed it up making it more fluffy and rounder overall. There were many different prototypes designed before I landed on the final shape.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;8 variations of the cloud icon&#34;&gt;
+     &lt;figcaption&gt;Prototyping the cloud shape.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;sunny-day&#34;&gt;Sunny Day&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather04.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A cartoonish sun with rays coming off it on a yellow background&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  One goal I had with the sunny day icon was to make it ashe original being more sharp in angles, using a simple octagon. The rays on the original are far nicer in my opinion, however I feel the rays on my design also fit well with the whole concept. The shape of the central ball took several prototypes trying different ideas to pick the right one. On real hardware, the ball is more square with rounded corners.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;3 circle like shapes with variations&#34;&gt;
+     &lt;figcaption&gt;The ball prototypes.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/Pebble-Icons&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Pebble Icons Git Repo&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://old.heydays.no/project/pebble/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Heydays Pebble Icons Page&lt;/a&gt;.
+	&lt;/li&gt;
+
+</description>
+        <content:encoded>&lt;h2 id=&#34;the-task&#34;&gt;The task&lt;/h2&gt;
+&lt;p&gt;  The Pebble revival project, Rebble, has been branching out to make replacement apps and firmware for Pebbles to help with longevity. Part of this has included remaking icons as the original Pebble ones are not open source or legally usable. This page details the weather icons I designed for the project, and for use in my own watchfaces. They follow the same rules as the original icons, however have their own Rebble twist to them.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Many various icons for apps, weather and watch functions&#34;&gt;
+     &lt;figcaption&gt;The original Pebble icons, designed by Heydays.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;rain-snow-and-clouds&#34;&gt;Rain, Snow and Clouds&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather02.svg&#34; loading=&#34;lazy&#34; alt=&#34;Different kinds of weather icons on a purple background. Example, snow, rain etc.&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The weather icons with clouds proved challenging at times, being limited to 3 angles (flat, 1:1 and 1:2) meant the shape was very limited in terms of originality and looking good. Eventually I took a cloud icon another person called Lavender made for the project, and jazzed it up making it more fluffy and rounder overall. There were many different prototypes designed before I landed on the final shape.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;8 variations of the cloud icon&#34;&gt;
+     &lt;figcaption&gt;Prototyping the cloud shape.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;sunny-day&#34;&gt;Sunny Day&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather04.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A cartoonish sun with rays coming off it on a yellow background&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  One goal I had with the sunny day icon was to make it ashe original being more sharp in angles, using a simple octagon. The rays on the original are far nicer in my opinion, however I feel the rays on my design also fit well with the whole concept. The shape of the central ball took several prototypes trying different ideas to pick the right one. On real hardware, the ball is more square with rounded corners.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;3 circle like shapes with variations&#34;&gt;
+     &lt;figcaption&gt;The ball prototypes.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/Pebble-Icons&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Pebble Icons Git Repo&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://old.heydays.no/project/pebble/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Heydays Pebble Icons Page&lt;/a&gt;.
+	&lt;/li&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>2022 08 03</title>
