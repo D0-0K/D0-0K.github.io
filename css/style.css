@@ -72,8 +72,6 @@ label {
   --background: var(--mint);
   --accent: var(--mint-dark);
   --flexpos: var(--center);
-  background-color: var(--background);
-  color: var(--text);
 }
 
 .gallery {
@@ -81,8 +79,6 @@ label {
   --background: var(--grey);
   --accent: var(--grey-light);
   --flexpos: var(--left);
-  background-color: var(--background);
-  color: var(--text);
 }
 
 .knowledge {
@@ -90,8 +86,6 @@ label {
   --background: var(--coffee);
   --accent: var(--coffee-dark);
   --flexpos: var(--left);
-  background-color: var(--background);
-  color: var(--text);
 }
 
 .projects {
@@ -99,22 +93,21 @@ label {
   --background: var(--blue);
   --accent: var(--blue-dark);
   --flexpos: var(--left);
-  background-color: var(--background);
-  color: var(--text);
 }
 
 .journal {
   --text: var(--grey-text);
   --background: var(--cream);
   --accent: var(--cream-dark);
-  background-color: var(--background);
-  color: var(--text);
 }
 
 .about {
   --text: var(--dark-brown);
   --background: var(--pink);
   --accent: var(--pink-dark);
+}
+
+.colours, footer a:hover {
   background-color: var(--background);
   color: var(--text);
 }
@@ -124,21 +117,10 @@ label {
   color: white;
 }
 
-footer a, footer a:hover {
-  background-color: transparent;
-  color: var(--text);
-}
-
 a:hover {
   background-color: var(--text);
   color:var(--background);
   transition: background-color .25s, color .25s;
-  border-radius: 31px;
-}
-
-.active {
-  border:1px solid;
-  border-color: var(--text);
   border-radius: 31px;
 }
 
@@ -152,13 +134,10 @@ a:hover {
   margin-left: 15px;
   background-color: var(--text);
   color:var(--background);
-  border:1px solid;
-  border-color: var(--text);
-  border-radius: 31px;
 }
 
 .next:hover {
-    background-color: var(--accent);
+  background-color: var(--accent);
   color: var(--text);
   border-color: var(--accent);
 }
@@ -183,7 +162,7 @@ a:hover {
 @font-face {
   font-family: "Barlow";
   src: url("fonts/Barlow-Black.woff2") format("woff2"),
-    url("fonts/Barlow-Black.woff") format("woff");
+       url("fonts/Barlow-Black.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -267,11 +246,11 @@ ul {
 }
 
 .see-more {
-   font-size:16px;
-   display: block;
-   margin-top: 15px;
-   width: 107px;
-   text-align: center;
+  font-size:16px;
+  display: block;
+  margin-top: 15px;
+  width: 107px;
+  text-align: center;
 }
 
 hr {
@@ -279,13 +258,13 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-radius: 2px;
-    height: 4px;
+  height: 4px;
 }
 
 
 footer {
-    padding: 30px 30px 0 30px;
-    margin: 0 0 30px 0;
+  padding: 30px 30px 0 30px;
+  margin: 0 0 30px 0;
 }
 
 footer img {
@@ -415,10 +394,6 @@ a {
   padding-right: 20px;
 }
 
-.title {
-/*  margin-bottom: -10px;*/
-}
-
 .no-top {
   margin-top: 0;
 }
@@ -434,7 +409,6 @@ p {
 }
 
 .tags {
-  display: inline-block;
   max-width: none;
   margin-left: -5px;
 }
@@ -485,7 +459,6 @@ h2 hr, figure hr {
 
 ol {
   padding-left: 8px;
-  margin-top: 0px;
   padding-bottom: 0.1px;
   min-width: 250px;
   max-width: 275px;
