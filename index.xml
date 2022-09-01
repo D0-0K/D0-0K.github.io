@@ -4,11 +4,92 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 05 Aug 2022 16:23:11 EST</lastBuildDate>
+    <lastBuildDate>Thu, 01 Sep 2022 19:19:54 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Pico-8 Games List</title>
+        <link>https://d00k.net/knowledge/pico8-games/</link>
+        <guid>https://d00k.net/knowledge/pico8-games/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Thu, 01 Sep 2022 19:19:54 EST}</pubDate>
+        
+        <description>&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/pico-8.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pico-8&lt;/a&gt; is a fantasy console for playing and making smol games. There has been a vibrant community surrounding the system for years, and some fantastic games have been produced during that time. This list is a compiled collection of my personal favourites, and games I consider to be some of the best on the system.&lt;/p&gt;
+&lt;h2 id=&#34;time-wasters&#34;&gt;Time Wasters&lt;/h2&gt;
+&lt;p&gt;These games a short and quick to play, but an absolute blast whenever you want to waste some time or just chill!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=21515#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Combo Pool&lt;/a&gt; by Nusan - I&amp;rsquo;ve sunk more hours into Combo Pool than any other Pico-8 game. Beautifully simple pool-style game that&amp;rsquo;s an absolute joy to play over and over again.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=15432#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Succer&lt;/a&gt; by Reload - An adorable little Football (soccer) game that I can never seem to get enough of. Pick a team and score some goals!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12502#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Marballs&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=34773#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Marballs 2&lt;/a&gt; by Lucatron - A fantastic Marble Madness clone with some really fun levels. The sequel builds upon the original even more, adding a lot more to the gameplay.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Tetyis&lt;/a&gt;  by Spaz48 - What would a list of games be without a tetris clone? This one is a really well polished game, with lovely visuals and effects to boot!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=2521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cyclo 8&lt;/a&gt;  by Nusan - Another fun game from Nusan. Cyclo 8 is a physics bike game, controlling the provides a great challenge and despite only having 7 levels, there&amp;rsquo;s lots of time to spent in it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=27593#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cave Runners!&lt;/a&gt;  by Spaz48 - A challenge, yet forgiving platforming game: Get to the objective as fast as you can. Best feature is no death or damage, letting you focus on having fun!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42185#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Picopolis&lt;/a&gt;  by Jeb - A Simcity demake / idle game where you build up and manage a city to make money and continue the flow.&lt;/p&gt;
+&lt;h2 id=&#34;cream-of-the-crop&#34;&gt;Cream of the Crop&lt;/h2&gt;
+&lt;p&gt;  The best of the best on the system, from ingenious card games to fantastic stories. There&amp;rsquo;s lots to be found here!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=83548#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· High Stakes&lt;/a&gt;  by Spaz48 - An incredible concept that creates brilliantly engaging gameplay. Sort of like minesweeper, flip cards while avoiding the one Vampire card that will end the round for you.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=26421#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Invader Overload&lt;/a&gt;  by MorningToast - This is hands down the best Invaders game I&amp;rsquo;ve played. Great aesthetics, powerup system and boss battles. Definitely a highlight of Pico-8&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=11722#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Celeste&lt;/a&gt;  by Noel - The poster child of the entire system, not much has to be said for Celeste. An enjoyable platformer with a great mix of challenge and fun.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42784#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dank Tombs&lt;/a&gt;  by Krajzeg - One of the most polished games made on the system. Dank Tombs is a great mix of dungeon crawling, puzzles and platforming reminiscent of the Zelda series.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12682#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dusk Child&lt;/a&gt;  by SophieHoulden - A brilliant, story-driven platformer. One of the first big games for the system. Still holds up after all that&amp;rsquo;s changed with Pico-8.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=97269#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Terra&lt;/a&gt;  by cubee - Terra is a feature rich demake of Terraria. I still can&amp;rsquo;t get over how they fit it in a Pico-8 cart. *&lt;strong&gt;Note -&lt;/strong&gt; requires mouse controls to play.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72921#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DragonDot 3&lt;/a&gt;  by NMcCoy - An Action-Adventure game which brings it&amp;rsquo;s own creative twists to the genre. This game will hook and draw you in with it&amp;rsquo;s great depth and power-up system.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=88259#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· The Lost Night&lt;/a&gt;  by arlefreak - A gorgeous RPG from the Amano games duo, Mario and Joven. You&amp;rsquo;re guaranteed to have a great time playing this gem.&lt;/p&gt;
+&lt;h2 id=&#34;arcade-games&#34;&gt;Arcade Games&lt;/h2&gt;
+&lt;p&gt;Fast paced, score based games.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=13022#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· We Missed You!&lt;/a&gt;  by Rhys - A top down, gta1 style arcade delivery game. Race across town to delivery parcels as time ticks down. Don&amp;rsquo;t forget to raise your score by hitting cars!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=19673#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Racer&lt;/a&gt;  by Spaz48 - A classic for Pico-8, an outrun style racer that provides a great challenge while looking great.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Driller&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Sewers of d&amp;rsquo;Oh!&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pullfrog&lt;/a&gt;  by arlefreak - Pullfrog&amp;rsquo;s concept is both creative and yet so simple. Tetris in a sense, yet you control the blocks thru a wonderful little frog. I love him.&lt;/p&gt;
+&lt;h2 id=&#34;pic-n-mix&#34;&gt;Pic &amp;rsquo;n Mix&lt;/h2&gt;
+&lt;p&gt;A mix of different titles that deserve a mention too!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO&lt;/a&gt;&amp;amp;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO Puzzle Pack II&lt;/a&gt;  by Mooon - Polished, level-rich Picross games to chill and relax to. Highly recommend.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=48407#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DeFacto&lt;/a&gt;  by NuSan - An automated factory game like factorio. Great time sink for anyone who enjoys the strategy of games like these.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77254#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· UFO Swamp Odyssey&lt;/a&gt;  by paranoidcactus - A short metroidvania style platformer. Search the junk yard to find a way to escape.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=64346#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· FUZ&lt;/a&gt;  by Jusiv - A tiny adventure based on FEZ. A brilliant homage, with great fun to be had.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=59509#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Hungry Harry 3D&lt;/a&gt;  by paloblancogames - A 3D platformer for Pico-8. Yes you read that right. Get to the end of each level while eating along the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=44343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Golf Sunday&lt;/a&gt;  by johanp - Tiny, chill golf game made for the LowResJam 2021.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/pico-8.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pico-8&lt;/a&gt; is a fantasy console for playing and making smol games. There has been a vibrant community surrounding the system for years, and some fantastic games have been produced during that time. This list is a compiled collection of my personal favourites, and games I consider to be some of the best on the system.&lt;/p&gt;
+&lt;h2 id=&#34;time-wasters&#34;&gt;Time Wasters&lt;/h2&gt;
+&lt;p&gt;These games a short and quick to play, but an absolute blast whenever you want to waste some time or just chill!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=21515#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Combo Pool&lt;/a&gt; by Nusan - I&amp;rsquo;ve sunk more hours into Combo Pool than any other Pico-8 game. Beautifully simple pool-style game that&amp;rsquo;s an absolute joy to play over and over again.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=15432#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Succer&lt;/a&gt; by Reload - An adorable little Football (soccer) game that I can never seem to get enough of. Pick a team and score some goals!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12502#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Marballs&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=34773#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Marballs 2&lt;/a&gt; by Lucatron - A fantastic Marble Madness clone with some really fun levels. The sequel builds upon the original even more, adding a lot more to the gameplay.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Tetyis&lt;/a&gt;  by Spaz48 - What would a list of games be without a tetris clone? This one is a really well polished game, with lovely visuals and effects to boot!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=2521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cyclo 8&lt;/a&gt;  by Nusan - Another fun game from Nusan. Cyclo 8 is a physics bike game, controlling the provides a great challenge and despite only having 7 levels, there&amp;rsquo;s lots of time to spent in it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=27593#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cave Runners!&lt;/a&gt;  by Spaz48 - A challenge, yet forgiving platforming game: Get to the objective as fast as you can. Best feature is no death or damage, letting you focus on having fun!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42185#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Picopolis&lt;/a&gt;  by Jeb - A Simcity demake / idle game where you build up and manage a city to make money and continue the flow.&lt;/p&gt;
+&lt;h2 id=&#34;cream-of-the-crop&#34;&gt;Cream of the Crop&lt;/h2&gt;
+&lt;p&gt;  The best of the best on the system, from ingenious card games to fantastic stories. There&amp;rsquo;s lots to be found here!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=83548#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· High Stakes&lt;/a&gt;  by Spaz48 - An incredible concept that creates brilliantly engaging gameplay. Sort of like minesweeper, flip cards while avoiding the one Vampire card that will end the round for you.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=26421#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Invader Overload&lt;/a&gt;  by MorningToast - This is hands down the best Invaders game I&amp;rsquo;ve played. Great aesthetics, powerup system and boss battles. Definitely a highlight of Pico-8&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=11722#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Celeste&lt;/a&gt;  by Noel - The poster child of the entire system, not much has to be said for Celeste. An enjoyable platformer with a great mix of challenge and fun.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42784#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dank Tombs&lt;/a&gt;  by Krajzeg - One of the most polished games made on the system. Dank Tombs is a great mix of dungeon crawling, puzzles and platforming reminiscent of the Zelda series.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12682#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dusk Child&lt;/a&gt;  by SophieHoulden - A brilliant, story-driven platformer. One of the first big games for the system. Still holds up after all that&amp;rsquo;s changed with Pico-8.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=97269#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Terra&lt;/a&gt;  by cubee - Terra is a feature rich demake of Terraria. I still can&amp;rsquo;t get over how they fit it in a Pico-8 cart. *&lt;strong&gt;Note -&lt;/strong&gt; requires mouse controls to play.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72921#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DragonDot 3&lt;/a&gt;  by NMcCoy - An Action-Adventure game which brings it&amp;rsquo;s own creative twists to the genre. This game will hook and draw you in with it&amp;rsquo;s great depth and power-up system.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=88259#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· The Lost Night&lt;/a&gt;  by arlefreak - A gorgeous RPG from the Amano games duo, Mario and Joven. You&amp;rsquo;re guaranteed to have a great time playing this gem.&lt;/p&gt;
+&lt;h2 id=&#34;arcade-games&#34;&gt;Arcade Games&lt;/h2&gt;
+&lt;p&gt;Fast paced, score based games.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=13022#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· We Missed You!&lt;/a&gt;  by Rhys - A top down, gta1 style arcade delivery game. Race across town to delivery parcels as time ticks down. Don&amp;rsquo;t forget to raise your score by hitting cars!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=19673#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Racer&lt;/a&gt;  by Spaz48 - A classic for Pico-8, an outrun style racer that provides a great challenge while looking great.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Driller&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Sewers of d&amp;rsquo;Oh!&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pullfrog&lt;/a&gt;  by arlefreak - Pullfrog&amp;rsquo;s concept is both creative and yet so simple. Tetris in a sense, yet you control the blocks thru a wonderful little frog. I love him.&lt;/p&gt;
+&lt;h2 id=&#34;pic-n-mix&#34;&gt;Pic &amp;rsquo;n Mix&lt;/h2&gt;
+&lt;p&gt;A mix of different titles that deserve a mention too!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO&lt;/a&gt;&amp;amp;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO Puzzle Pack II&lt;/a&gt;  by Mooon - Polished, level-rich Picross games to chill and relax to. Highly recommend.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=48407#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DeFacto&lt;/a&gt;  by NuSan - An automated factory game like factorio. Great time sink for anyone who enjoys the strategy of games like these.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77254#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· UFO Swamp Odyssey&lt;/a&gt;  by paranoidcactus - A short metroidvania style platformer. Search the junk yard to find a way to escape.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=64346#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· FUZ&lt;/a&gt;  by Jusiv - A tiny adventure based on FEZ. A brilliant homage, with great fun to be had.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=59509#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Hungry Harry 3D&lt;/a&gt;  by paloblancogames - A 3D platformer for Pico-8. Yes you read that right. Get to the end of each level while eating along the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=44343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Golf Sunday&lt;/a&gt;  by johanp - Tiny, chill golf game made for the LowResJam 2021.&lt;/p&gt;
+</content:encoded>
+      </item>
     
       <item>
         <title>Rebble Weather Icons</title>
@@ -1870,6 +1951,11 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 	&lt;li&gt;
 	   &lt;a href=&#34;https://lparchive.org/Dwarf-For&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Dwarf Fortress: The story of Boatmurdered&lt;/a&gt;.
 	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://alwaysreadthemanual.com/read/issues/3/jeremy-keith/article.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ As we may link (about Hypertext)&lt;/a&gt;.
+	&lt;/li&gt;
+
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;random-wikipedia-pages&#34;&gt;Random Wikipedia Pages&lt;/h2&gt;
@@ -2076,6 +2162,11 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 	&lt;li&gt;
 	   &lt;a href=&#34;https://lparchive.org/Dwarf-For&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Dwarf Fortress: The story of Boatmurdered&lt;/a&gt;.
 	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://alwaysreadthemanual.com/read/issues/3/jeremy-keith/article.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ As we may link (about Hypertext)&lt;/a&gt;.
+	&lt;/li&gt;
+
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;random-wikipedia-pages&#34;&gt;Random Wikipedia Pages&lt;/h2&gt;
