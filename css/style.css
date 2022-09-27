@@ -1,8 +1,3 @@
-/* Box sizing rules */
-* {
-  box-sizing: border-box;
-}
-
 body,
 h1,
 h2,
@@ -33,84 +28,57 @@ label {
     max-width: none;
 }
 
+/* Themes */
 :root {
-  /* Text Colours */
-  --dark-brown: #311414;
-  --grey-text: #3D3D3D;
-  --brown: #4e3800;
-  --white: #fff;
-  --slate: #212121;
-  --dark-blue: #1B1626;
-  /* Background Colours */
-  --mint: #9bf8d4;
-  --cream: #EBF0E4;
-  --pink: #EFC7C2;
-  --grey: #555;
-  --coffee: #d7cfb2;
-  --blue: #cedfd9;
-  /* Secondary Colours */
-  --mint-dark: #7fd7b6;
-  --cream-dark: #c8ccc2;
-  --pink-dark: #c6a5a1;
-  --grey-light: #808080;
-  --coffee-dark: #aba58e;
-  --blue-dark: #9abdb0;
-  /*Flex Positions*/
-  --center: center;
-  --left: left;
-}
-
-:root {
-  --text: var(--brown);
-  --background: var(--mint);
-  --accent: var(--mint-dark);
-  --flexpos: var(--center);
+  --text: #303030;
+  --background: #EBF0E4;
+  --accent: #c8ccc2;
+  --flexpos: left;
 }
 
 .home {
-  --text: var(--brown);
-  --background: var(--mint);
-  --accent: var(--mint-dark);
-  --flexpos: var(--center);
+  --text: #20130B;
+  --background: #ffb990;
+  --accent: #d49a78;
 }
 
 .gallery {
-  --text: var(--white);
-  --background: var(--grey);
-  --accent: var(--grey-light);
-  --flexpos: var(--left);
+  --text: #fff;
+  --background: #555;
+  --accent: #808080;
 }
 
 .knowledge {
-  --text: var(--slate);
-  --background: var(--coffee);
-  --accent: var(--coffee-dark);
-  --flexpos: var(--left);
+  --text: #212121;
+  --background: #d7cfb2;
+  --accent: #aba58e;
 }
 
 .projects {
-  --text: var(--dark-blue);
-  --background: var(--blue);
-  --accent: var(--blue-dark);
-  --flexpos: var(--left);
+  --text: #1B1626;
+  --background: #cedfd9;
+  --accent: #9abdb0;
 }
 
 .journal {
-  --text: var(--grey-text);
-  --background: var(--cream);
-  --accent: var(--cream-dark);
+  --text: #303030;
+  --background: #c8ccc2;
+  --accent: #EBF0E4;
 }
 
 .about {
-  --text: var(--dark-brown);
-  --background: var(--pink);
-  --accent: var(--pink-dark);
+  --text: #311414;
+  --background: #EFC7C2;
+  --accent: #c6a5a1;
+
 }
 
 .colours, footer a:hover {
   background-color: var(--background);
   color: var(--text);
+  background: var(--background) url(/img/assets/test.gif) repeat;
 }
+
 
 ::selection {
   background: orange;
@@ -120,26 +88,31 @@ label {
 a:hover {
   background-color: var(--text);
   color:var(--background);
-  transition: background-color .25s, color .25s;
-  border-radius: 31px;
+  transition: all .25s, color .25s;
 }
 
-.rounded {
+.round-button:hover{
+  border-color: var(--text)
+}
+
+.round-button{
   border:1px solid;
-  border-color: var(--text);
+  border-color: var(--accent);
   border-radius: 31px;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.active {
+  border-bottom:2px solid;
+  border-color: var(--accent);
 }
 
 .next {
   margin-left: 15px;
-  background-color: var(--text);
-  color:var(--background);
-}
-
-.next:hover {
+  border-right:5px solid;
+  border-color: var(--text);
   background-color: var(--accent);
-  color: var(--text);
-  border-color: var(--accent);
 }
 
 @font-face {
@@ -151,27 +124,28 @@ a:hover {
 }
 
 @font-face {
-  font-family: "CMRDD";
-  src: url("fonts/CMRDD-Bold.woff2") format("woff2"),
-       url("fonts/CMRDD-Bold.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Barlow";
   src: url("fonts/Barlow-Black.woff2") format("woff2"),
        url("fonts/Barlow-Black.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LunchType";
+  src: url("fonts/lunchtype22-latin.woff2") format("woff2"),
+       url("fonts/lunchtype22-latin.woff") format("woff");
+  font-weight: 400;
   font-display: swap;
 }
 
 body {
+  font-family: "LeagueSpartanVariable";
   text-rendering: optimizeSpeed;
   min-height: 100vh;
   line-height: 1.45;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 header {
@@ -185,16 +159,15 @@ main {
 
 a {
   color: var(--text);
-  padding: 5px 10px;
+  padding: 8px 10px 5px 10px;
   margin: -5px -10px;
   font-weight: 500;
 }
 
 .name {
-  position: relative;
-  font-family: "CMRDD";
-  font-size: 20px;
-  font-weight: 600;
+  font-family: "LunchType";
+  font-size: 24px;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -203,14 +176,8 @@ a {
   max-width: 55ch;
 }
 
-nav {
-top: 3vh;
-text-align: left;
-}
-
 nav ul {
 display: inline-block;
-max-width: none;
 }
 
 nav li {
@@ -219,10 +186,8 @@ display: inline-block;
 
 nav a {
   display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  text-decoration: none;
-  font-size: 19px;
+  margin: -5px 5px 5px -10px;
+  font-size: 21px;
   font-weight: 500;
 }
 
@@ -241,34 +206,28 @@ ul {
 }
 
 .chroma {
-  margin-bottom: 20px;
-  margin-top: -20px;
+  margin:-20px 0 20px 0;
 }
 
 .see-more {
   font-size:16px;
   display: block;
   margin-top: 15px;
-  width: 107px;
+  width: 100px;
   text-align: center;
+  padding: 8px 0 5px 0;
 }
 
 hr {
   background: var(--accent);
   margin-bottom: 20px;
   border: 0;
-  border-radius: 2px;
-  height: 4px;
+  height: 3px;
 }
 
 
 footer {
-  padding: 30px 30px 0 30px;
-  margin: 0 0 30px 0;
-}
-
-footer img {
-  width: 35px;
+  margin: 30px;
 }
 
 footer hr {
@@ -278,28 +237,14 @@ footer hr {
 
 footer div a {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-right: 0px;
-}
-
-html {
-  font-family: "LeagueSpartanVariable";
 }
 
 pre {
 background-color: var(--accent);
 padding: 10px;
-border-radius: 5px;
 overflow-y: hidden;
-}
-
-.box-text {
-  max-width: 500px;
-}
-
-.main-box h2{
-   font-size: 25px;
-   font-family: "CMRDD";
 }
 
 h1 {
@@ -320,8 +265,18 @@ h3 {
 
 .main-box {
   font-size: 20px;
-  max-width: 425px;
+  max-width: 400px;
   margin: 20px .75vw 20px .75vw;
+}
+
+.main-box ul{
+  margin-bottom: 15px;
+}
+
+.main-box hr{
+  width:80%;
+  height:2px;
+  margin-bottom:15px
 }
 
 .flex-box {
@@ -336,9 +291,6 @@ h3 {
 
 .list-box a {
   display: block;
-  padding: 10px;
-  margin: -10px;
-  border-radius: 10px;
 }
 
 .list-box p {
@@ -352,50 +304,25 @@ h3 {
 }
 
 .icon {
-  float: left;
-  width: 85px;
-  width: calc(80px + 1%);
-  margin-right: calc(11px + 1%);
-  image-rendering: pixelated;
-}
-
-.contacticons {
-  float: left;
-  width: 65px;
-  width: calc(60px + 1%);
-  margin-right: calc(12px + 1%);
+  width:320px;
+  border-radius:15px;
 }
 
 .contactlist {
-  padding-top: calc(17px + .5%);
-  padding-bottom: calc(17px + .5%);
-  margin-bottom: 8px;
+  padding-top: calc(4px + .5%);
+  padding-bottom: calc(8px + .5%);
   font-size: 20px;
 }
 
+
 img {
   max-width: 100%;
-  border-radius: 5px;
 }
 
 a {
-  cursor:pointer;
   font-weight: bold;
   text-decoration: none;
-  text-indent: 0;
-  font-family: "CMRDD";
-}
-
-.small-margin-top {
-  margin-top: calc(25px + 1.2vw)
-}
-
-.small-padding-right {
-  padding-right: 20px;
-}
-
-.no-top {
-  margin-top: 0;
+  font-family: "LunchType";
 }
 
 article p {
@@ -408,8 +335,11 @@ p {
   margin-bottom: 35px;
 }
 
+p a {
+  text-decoration: underline wavy var(--accent);
+}
+
 .tags {
-  max-width: none;
   margin-left: -5px;
 }
 
@@ -426,8 +356,13 @@ p {
   margin-top: 60px; 
 }
 
+.prev {
+  border-left: 5px solid;
+  border-color: var(--accent);
+}
+
 figure { 
-  max-width: 700px;
+  max-width: 720px;
 }
 
 figcaption {
@@ -439,13 +374,11 @@ figcaption {
 h2 hr, figure hr {
   max-width: 30%;
   height: 2px;
-  border-radius: 0;
 }
 
 .guide {
   list-style: none;
   background-color: var(--accent);
-  border-radius: 5px;
   padding-top: 8px;
 }
 
@@ -453,8 +386,7 @@ h2 hr, figure hr {
   margin-left: 10px;
   margin-top: 6px;
   margin-bottom: 14px;
-  font-family: "CMRDD";
-  font-weight: bold;
+  font-family: "LunchType";
 }
 
 ol {

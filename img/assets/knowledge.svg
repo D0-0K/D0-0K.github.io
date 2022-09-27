@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 320 125" xmlns="http://www.w3.org/2000/svg">
+ <rect x="-89.18" y="-182.6" width="169.2" height="92.07" fill="#3d3d3d" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+ <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.999">
+  <rect x="80.03" y="-182.6" width="165.6" height="92.07" fill="#c8ccc2" style="paint-order:markers fill stroke"/>
+  <rect x="245.7" y="-182.6" width="165.6" height="92.07" fill="#ebf0e4" style="paint-order:markers fill stroke"/>
+  <rect width="320" height="125" fill="#c8ccc2" style="paint-order:markers fill stroke"/>
+ </g>
+ <g stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="281.5" cy="25.98" r="11.2" fill="none" stroke="#ebf0e4" stroke-width="7" style="paint-order:markers fill stroke"/>
+  <circle cx="34.38" cy="84.51" r="25" fill="#3d3d3d" fill-rule="evenodd" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+  <rect transform="rotate(15)" x="39.72" y="8.512" width="104.1" height="68.15" rx="15" ry="15" fill="none" stroke="#ebf0e4" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+ </g>
+ <g fill="#3d3d3d" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+  <rect transform="rotate(-30)" x="53.15" y="15.73" width="30" height="90" rx="15" ry="15" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+  <rect transform="rotate(45)" x="91.02" y="-118.1" width="30" height="90" rx="15" ry="15" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+  <rect transform="rotate(-45)" x="69.1" y="91.25" width="50" height="90" rx="25" ry="25" stroke-width="2.581" style="paint-order:markers fill stroke"/>
+ </g>
+ <g fill="none">
+  <path d="m204.8 105.2c3.281 3.281 6.561 6.561 8.801 5.961 2.24-0.6007 3.441-5.081 5.682-5.681s5.521 2.68 7.761 2.079 3.441-5.081 5.682-5.681c2.241-0.6 5.521 2.68 7.761 2.079 2.24-0.6007 3.441-5.081 5.682-5.681s5.521 2.68 7.761 2.079c2.24-0.6007 3.441-5.081 5.682-5.681 2.241-0.6 5.521 2.68 7.761 2.079 2.24-0.6007 3.441-5.081 5.681-5.681 2.241-0.6 5.521 2.68 7.761 2.079s3.441-5.081 5.682-5.681c2.241-0.6 5.521 2.68 7.761 2.079s3.441-5.081 4.641-9.563" stroke="#ebf0e4" stroke-width="7"/>
+  <path d="m255.3 57.16 27.14 27.14m-24.39-54.66c1.608 9.195 0.6435 18.83-2.756 27.52-3.399 8.693-9.223 16.42-16.64 22.09-7.167 5.474-15.8 9.009-24.75 10.13" stroke="#3d3d3d" stroke-linecap="round" stroke-width="15"/>
+  <circle cx="289.9" cy="22.14" r="11.2" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" style="paint-order:markers fill stroke"/>
+ </g>
+</svg>

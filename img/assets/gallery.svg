@@ -1,0 +1,23 @@
+<svg viewBox="0 0 320 125" xmlns="http://www.w3.org/2000/svg">
+ <rect x="-89.18" y="-182.6" width="169.2" height="92.07" fill="#3d3d3d" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+ <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.999">
+  <rect x="80.03" y="-182.6" width="165.6" height="92.07" fill="#c8ccc2" style="paint-order:markers fill stroke"/>
+  <rect x="245.7" y="-182.6" width="165.6" height="92.07" fill="#ebf0e4" style="paint-order:markers fill stroke"/>
+  <rect width="320" height="125" fill="#c8ccc2" style="paint-order:markers fill stroke"/>
+ </g>
+ <rect transform="rotate(-15)" x="-20.87" y="46.29" width="245.1" height="67.1" rx="15" ry="15" fill="none" stroke="#ebf0e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" style="paint-order:markers fill stroke"/>
+ <path d="m280.2 127.2c-14.11-5.142-28.22-10.28-25.38-17.46s22.62-16.39 37.63-17.41c15.01-1.019 25.25 6.157 35.49 13.33" fill="none" stroke="#ebf0e4" stroke-width="4"/>
+ <g stroke-linecap="round" stroke-linejoin="round">
+  <rect transform="rotate(-45.86)" x="136.8" y="153.7" width="30" height="90" rx="15" ry="15" fill="#3d3d3d" fill-rule="evenodd" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+  <rect transform="rotate(44.14)" x="213.7" y="-226.8" width="30" height="90" rx="15" ry="15" fill="#3d3d3d" fill-rule="evenodd" stroke-width="1.999" style="paint-order:markers fill stroke"/>
+  <circle transform="rotate(71.5)" cx="124.2" cy="-165.1" r="24.51" fill="none" stroke="#ebf0e4" stroke-width="10" style="paint-order:markers fill stroke"/>
+  <circle transform="rotate(71.5)" cx="140.7" cy="-149.9" r="24.51" fill="none" stroke="#3d3d3d" stroke-width="15.31" style="paint-order:markers fill stroke"/>
+ </g>
+ <g fill-rule="evenodd">
+  <rect transform="rotate(-15)" x="80.49" y="40.64" width="50" height="50" rx="10" ry="10" fill="#ebf0e4" style="paint-order:markers fill stroke"/>
+  <rect transform="rotate(-15)" x="67.66" y="35.16" width="50" height="50" rx="10" ry="10" fill="#3d3d3d" style="paint-order:markers fill stroke"/>
+  <path transform="matrix(1.608 -1.134 1.134 1.608 -292 -32.68)" d="m115.7 156.5-16.86-2.513 10.61-13.34z" fill="#ebf0e4" stroke="#ebf0e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" style="paint-order:markers fill stroke"/>
+  <path transform="matrix(1.968 0 0 1.968 -167.9 -216.8)" d="m115.7 156.5-16.86-2.513 10.61-13.34z" fill="#3d3d3d" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" style="paint-order:markers fill stroke"/>
+  <rect x="16.24" y="-7.227" width="15" height="60" fill="#3d3d3d" style="paint-order:markers fill stroke"/>
+ </g>
+</svg>
