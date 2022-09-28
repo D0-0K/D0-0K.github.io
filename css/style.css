@@ -17,7 +17,7 @@ a:hover{background-color:var(--text);color:var(--background);transition:all .25s
 .round-button{border:1px solid;border-color:var(--accent);border-radius:31px;font-size:16px;margin-top:0;}
 .active{border-bottom:2px solid;border-color:var(--accent);}
 .next{margin-left:15px;border-right:5px solid;border-color:var(--text);background-color:var(--accent);}
-@font-face{font-family:'LeagueSpartanVariable';src:url(fonts/LeagueSpartan-VF.woff2)format("woff2-variations"),url(fonts/LeagueSpartan-VF.woff)format("woff-variations");font-weight:400;font-display:swap;}
+@font-face{font-family:'LeagueSpartanVariable';src:url(fonts/LeagueSpartan-VF.woff2)format("woff2-variations"),url(fonts/LeagueSpartan-VF.woff)format("woff-variations");font-weight:400 900;font-display:swap;}
 @font-face{font-family:"Barlow";src:url("fonts/Barlow-Black.woff2")format("woff2"),url("fonts/Barlow-Black.woff")format("woff");font-weight:500;font-display:swap;}
 @font-face{font-family:"LunchType";src:url("fonts/Lunchtype22.woff2")format("woff2"),url("fonts/Lunchtype22.woff")format("woff");font-weight:400;font-display:swap;}
 body{font-family:"LeagueSpartanVariable";text-rendering:optimizeSpeed;min-height:100vh;line-height:1.45;background-color:var(--background);color:var(--text);}
