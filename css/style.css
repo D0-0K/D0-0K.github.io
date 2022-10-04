@@ -10,7 +10,7 @@ html,body,div,header,nav,main,article,footer,input,svg,label{max-width:none;}
 .colours{background-color:var(--background);
 color:var(--text);
 background:var(--background)url(/img/assets/header.gif)repeat;}
-footera:hover{background-color:var(--background);color:var(--text);}
+footer a:hover{background-color:var(--background);color:var(--text);}
 ::selection{background:orange;color:white;}
 a:hover{background-color:var(--text);color:var(--background);transition:all .25s;}
 .round-button:hover{border-color:var(--text)}
