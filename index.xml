@@ -4,11 +4,188 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Thu, 01 Sep 2022 19:19:54 EST</lastBuildDate>
+    <lastBuildDate>Mon, 03 Oct 2022 18:10:59 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Modifying Fonts</title>
+        <link>https://d00k.net/knowledge/font_modifying/</link>
+        <guid>https://d00k.net/knowledge/font_modifying/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Mon, 03 Oct 2022 18:10:59 EST}</pubDate>
+        
+        <description>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/ipod_modding/fonts02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A desktop running fontforge, with a text document and a file browser open.&#34;&gt;
+     &lt;figcaption&gt;Fontforge&amp;#39;s interface&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;Being able to customise and modify fonts for specific use-cases is incredibly powerful. While tools like &lt;a href=&#34;https://www.fontsquirrel.com/tools/webfont-generator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FontSquirrel&lt;/a&gt; exist to create web-optimised fonts, doing this work manually with FontForge can give you far more control over file size and output of the font.&lt;/p&gt;
+&lt;h2 id=&#34;removing-characters&#34;&gt;Removing Characters&lt;/h2&gt;
+&lt;p&gt;A good idea to do before removing characters is to take a look at your use case and determine what&amp;rsquo;s needed and what isn&amp;rsquo;t.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ To make it easier to find all the characters, go to &lt;strong&gt;Encoding &gt; Compact (hide unused glyphs)&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;li&gt;∘ Select the characters to be removed.&lt;/li&gt;
+
+&lt;li&gt;∘ Remove them by going to &lt;strong&gt;Encoding &gt; Detach &amp; Remove Glyphs&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;adding-characters&#34;&gt;Adding Characters&lt;/h2&gt;
+&lt;p&gt;To add a character, we&amp;rsquo;ll need a donor font which includes it. For example, if you need a unicode symbol then Symbola would be the font. However keep in mind that the base font will then need to be re-encoded to accept unicode by going to &lt;strong&gt;Encoding &amp;gt; Reencode &amp;gt; Unicode, Full&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ In the donor font, remove all the characters except the ones we want to add to the base font.&lt;/li&gt;
+
+&lt;li&gt;∘ Next, save this file: &lt;strong&gt;File &gt; Save as...&lt;/strong&gt; and make sure it is a &lt;strong&gt;.sfd&lt;/strong&gt; file.&lt;/li&gt;
+
+&lt;li&gt;∘ Go to the base font, which we want to add the character(s) to.&lt;/li&gt;
+
+&lt;li&gt;∘ Import the file we just save: &lt;strong&gt;Element &gt; Merge Fonts&lt;/strong&gt;. You may be asked about kerning, this doesn&#39;t matter.&lt;/li&gt;
+
+&lt;li&gt;∘ Lastly, if we need to rescale the characters, select the imported glyphs by going to &lt;strong&gt;Edit &gt; Select &gt; Changed Glyphs&lt;/strong&gt;. Then to scale the characters, go to &lt;strong&gt;Element &gt; Transformations &gt; Transform&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;li&gt;∘ Set Origin to &lt;strong&gt; Center of Selection&lt;/strong&gt;, the second option to &lt;strong&gt; Scale Uniformly..&lt;/strong&gt; and then set the percentage. Make sure all the option boxes below are ticked.&lt;/li&gt;
+
+&lt;li&gt;∘ After adding characters, it&#39;s always a good idea to reencode to avoid any errors or issues - &lt;strong&gt;Encoding &gt; Reencode &gt; whatever options fits (dont use custom)&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/fonts_02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A window, with the transform options listed above.&#34;&gt;
+     &lt;figcaption&gt;The transform dialog.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;exporting-fonts&#34;&gt;Exporting Fonts&lt;/h2&gt;
+&lt;p&gt;When you&amp;rsquo;ve finished working on your font, you&amp;rsquo;ll need to export it to usable formats. This is achieved using the &lt;strong&gt;Generate Fonts&lt;/strong&gt; option.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ Go to &lt;strong&gt;File &gt; Generate Fonts..&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;li&gt;∘ Navigate to where you want to save the font in the filesystem.&lt;/li&gt;
+
+&lt;li&gt;∘ Select the file type to export as in the option for it, make sure your file has the correct format extension as FontForge doesn&#39;t tend to change this for you.&lt;/li&gt;
+
+&lt;li&gt;∘ Before generating, make sure to tick &lt;strong&gt;Validate Before Saving&lt;/strong&gt;. This will highlight any issues with the font, make sure to fix these before generating.&lt;/li&gt;
+
+&lt;li&gt;∘ Finally, the font can be generated.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://fontforge.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ FontForge&amp;#39;s Website&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/FontForge&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ FontForge Wikipedia&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;./music&#34;&gt;∙ Making fonts for Rockbox iPods&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/ipod_modding/fonts02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A desktop running fontforge, with a text document and a file browser open.&#34;&gt;
+     &lt;figcaption&gt;Fontforge&amp;#39;s interface&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;Being able to customise and modify fonts for specific use-cases is incredibly powerful. While tools like &lt;a href=&#34;https://www.fontsquirrel.com/tools/webfont-generator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FontSquirrel&lt;/a&gt; exist to create web-optimised fonts, doing this work manually with FontForge can give you far more control over file size and output of the font.&lt;/p&gt;
+&lt;h2 id=&#34;removing-characters&#34;&gt;Removing Characters&lt;/h2&gt;
+&lt;p&gt;A good idea to do before removing characters is to take a look at your use case and determine what&amp;rsquo;s needed and what isn&amp;rsquo;t.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ To make it easier to find all the characters, go to &lt;strong&gt;Encoding &gt; Compact (hide unused glyphs)&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;li&gt;∘ Select the characters to be removed.&lt;/li&gt;
+
+&lt;li&gt;∘ Remove them by going to &lt;strong&gt;Encoding &gt; Detach &amp; Remove Glyphs&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;adding-characters&#34;&gt;Adding Characters&lt;/h2&gt;
+&lt;p&gt;To add a character, we&amp;rsquo;ll need a donor font which includes it. For example, if you need a unicode symbol then Symbola would be the font. However keep in mind that the base font will then need to be re-encoded to accept unicode by going to &lt;strong&gt;Encoding &amp;gt; Reencode &amp;gt; Unicode, Full&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ In the donor font, remove all the characters except the ones we want to add to the base font.&lt;/li&gt;
+
+&lt;li&gt;∘ Next, save this file: &lt;strong&gt;File &gt; Save as...&lt;/strong&gt; and make sure it is a &lt;strong&gt;.sfd&lt;/strong&gt; file.&lt;/li&gt;
+
+&lt;li&gt;∘ Go to the base font, which we want to add the character(s) to.&lt;/li&gt;
+
+&lt;li&gt;∘ Import the file we just save: &lt;strong&gt;Element &gt; Merge Fonts&lt;/strong&gt;. You may be asked about kerning, this doesn&#39;t matter.&lt;/li&gt;
+
+&lt;li&gt;∘ Lastly, if we need to rescale the characters, select the imported glyphs by going to &lt;strong&gt;Edit &gt; Select &gt; Changed Glyphs&lt;/strong&gt;. Then to scale the characters, go to &lt;strong&gt;Element &gt; Transformations &gt; Transform&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;li&gt;∘ Set Origin to &lt;strong&gt; Center of Selection&lt;/strong&gt;, the second option to &lt;strong&gt; Scale Uniformly..&lt;/strong&gt; and then set the percentage. Make sure all the option boxes below are ticked.&lt;/li&gt;
+
+&lt;li&gt;∘ After adding characters, it&#39;s always a good idea to reencode to avoid any errors or issues - &lt;strong&gt;Encoding &gt; Reencode &gt; whatever options fits (dont use custom)&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/fonts_02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A window, with the transform options listed above.&#34;&gt;
+     &lt;figcaption&gt;The transform dialog.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;exporting-fonts&#34;&gt;Exporting Fonts&lt;/h2&gt;
+&lt;p&gt;When you&amp;rsquo;ve finished working on your font, you&amp;rsquo;ll need to export it to usable formats. This is achieved using the &lt;strong&gt;Generate Fonts&lt;/strong&gt; option.&lt;/p&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ Go to &lt;strong&gt;File &gt; Generate Fonts..&lt;/strong&gt;.&lt;/li&gt;
+
+&lt;li&gt;∘ Navigate to where you want to save the font in the filesystem.&lt;/li&gt;
+
+&lt;li&gt;∘ Select the file type to export as in the option for it, make sure your file has the correct format extension as FontForge doesn&#39;t tend to change this for you.&lt;/li&gt;
+
+&lt;li&gt;∘ Before generating, make sure to tick &lt;strong&gt;Validate Before Saving&lt;/strong&gt;. This will highlight any issues with the font, make sure to fix these before generating.&lt;/li&gt;
+
+&lt;li&gt;∘ Finally, the font can be generated.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://fontforge.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ FontForge&amp;#39;s Website&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/FontForge&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ FontForge Wikipedia&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;./music&#34;&gt;∙ Making fonts for Rockbox iPods&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>Pico-8 Games List</title>
@@ -20,74 +197,74 @@
         <description>&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/pico-8.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pico-8&lt;/a&gt; is a fantasy console for playing and making smol games. There has been a vibrant community surrounding the system for years, and some fantastic games have been produced during that time. This list is a compiled collection of my personal favourites, and games I consider to be some of the best on the system.&lt;/p&gt;
 &lt;h2 id=&#34;time-wasters&#34;&gt;Time Wasters&lt;/h2&gt;
 &lt;p&gt;These games a short and quick to play, but an absolute blast whenever you want to waste some time or just chill!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=21515#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Combo Pool&lt;/a&gt; by Nusan - I&amp;rsquo;ve sunk more hours into Combo Pool than any other Pico-8 game. Beautifully simple pool-style game that&amp;rsquo;s an absolute joy to play over and over again.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=15432#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Succer&lt;/a&gt; by Reload - An adorable little Football (soccer) game that I can never seem to get enough of. Pick a team and score some goals!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12502#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Marballs&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=34773#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Marballs 2&lt;/a&gt; by Lucatron - A fantastic Marble Madness clone with some really fun levels. The sequel builds upon the original even more, adding a lot more to the gameplay.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Tetyis&lt;/a&gt;  by Spaz48 - What would a list of games be without a tetris clone? This one is a really well polished game, with lovely visuals and effects to boot!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=2521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cyclo 8&lt;/a&gt;  by Nusan - Another fun game from Nusan. Cyclo 8 is a physics bike game, controlling the provides a great challenge and despite only having 7 levels, there&amp;rsquo;s lots of time to spent in it.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=27593#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cave Runners!&lt;/a&gt;  by Spaz48 - A challenge, yet forgiving platforming game: Get to the objective as fast as you can. Best feature is no death or damage, letting you focus on having fun!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42185#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Picopolis&lt;/a&gt;  by Jeb - A Simcity demake / idle game where you build up and manage a city to make money and continue the flow.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=21515#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Combo Pool&lt;/a&gt; by Nusan - I&amp;rsquo;ve sunk more hours into Combo Pool than any other Pico-8 game. Beautifully simple pool-style game that&amp;rsquo;s an absolute joy to play over and over again.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=15432#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Succer&lt;/a&gt; by Reload - An adorable little Football (soccer) game that I can never seem to get enough of. Pick a team and score some goals!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12502#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Marballs&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=34773#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Marballs 2&lt;/a&gt; by Lucatron - A fantastic Marble Madness clone with some really fun levels. The sequel builds upon the original even more, adding a lot more to the gameplay.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Tetyis&lt;/a&gt;  by Spaz48 - What would a list of games be without a tetris clone? This one is a really well polished game, with lovely visuals and effects to boot!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=2521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Cyclo 8&lt;/a&gt;  by Nusan - Another fun game from Nusan. Cyclo 8 is a physics bike game, controlling the provides a great challenge and despite only having 7 levels, there&amp;rsquo;s lots of time to spent in it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=27593#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Cave Runners!&lt;/a&gt;  by Spaz48 - A challenge, yet forgiving platforming game: Get to the objective as fast as you can. Best feature is no death or damage, letting you focus on having fun!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42185#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Picopolis&lt;/a&gt;  by Jeb - A Simcity demake / idle game where you build up and manage a city to make money and continue the flow.&lt;/p&gt;
 &lt;h2 id=&#34;cream-of-the-crop&#34;&gt;Cream of the Crop&lt;/h2&gt;
 &lt;p&gt;  The best of the best on the system, from ingenious card games to fantastic stories. There&amp;rsquo;s lots to be found here!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=83548#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· High Stakes&lt;/a&gt;  by Spaz48 - An incredible concept that creates brilliantly engaging gameplay. Sort of like minesweeper, flip cards while avoiding the one Vampire card that will end the round for you.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=26421#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Invader Overload&lt;/a&gt;  by MorningToast - This is hands down the best Invaders game I&amp;rsquo;ve played. Great aesthetics, powerup system and boss battles. Definitely a highlight of Pico-8&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=11722#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Celeste&lt;/a&gt;  by Noel - The poster child of the entire system, not much has to be said for Celeste. An enjoyable platformer with a great mix of challenge and fun.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42784#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dank Tombs&lt;/a&gt;  by Krajzeg - One of the most polished games made on the system. Dank Tombs is a great mix of dungeon crawling, puzzles and platforming reminiscent of the Zelda series.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12682#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dusk Child&lt;/a&gt;  by SophieHoulden - A brilliant, story-driven platformer. One of the first big games for the system. Still holds up after all that&amp;rsquo;s changed with Pico-8.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=97269#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Terra&lt;/a&gt;  by cubee - Terra is a feature rich demake of Terraria. I still can&amp;rsquo;t get over how they fit it in a Pico-8 cart. *&lt;strong&gt;Note -&lt;/strong&gt; requires mouse controls to play.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72921#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DragonDot 3&lt;/a&gt;  by NMcCoy - An Action-Adventure game which brings it&amp;rsquo;s own creative twists to the genre. This game will hook and draw you in with it&amp;rsquo;s great depth and power-up system.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=88259#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· The Lost Night&lt;/a&gt;  by arlefreak - A gorgeous RPG from the Amano games duo, Mario and Joven. You&amp;rsquo;re guaranteed to have a great time playing this gem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=83548#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ High Stakes&lt;/a&gt;  by Spaz48 - An incredible concept that creates brilliantly engaging gameplay. Sort of like minesweeper, flip cards while avoiding the one Vampire card that will end the round for you.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=26421#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Invader Overload&lt;/a&gt;  by MorningToast - This is hands down the best Invaders game I&amp;rsquo;ve played. Great aesthetics, powerup system and boss battles. Definitely a highlight of Pico-8&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=11722#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Celeste&lt;/a&gt;  by Noel - The poster child of the entire system, not much has to be said for Celeste. An enjoyable platformer with a great mix of challenge and fun.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42784#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Dank Tombs&lt;/a&gt;  by Krajzeg - One of the most polished games made on the system. Dank Tombs is a great mix of dungeon crawling, puzzles and platforming reminiscent of the Zelda series.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12682#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Dusk Child&lt;/a&gt;  by SophieHoulden - A brilliant, story-driven platformer. One of the first big games for the system. Still holds up after all that&amp;rsquo;s changed with Pico-8.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=97269#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Terra&lt;/a&gt;  by cubee - Terra is a feature rich demake of Terraria. I still can&amp;rsquo;t get over how they fit it in a Pico-8 cart. *&lt;strong&gt;Note -&lt;/strong&gt; requires mouse controls to play.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72921#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ DragonDot 3&lt;/a&gt;  by NMcCoy - An Action-Adventure game which brings it&amp;rsquo;s own creative twists to the genre. This game will hook and draw you in with it&amp;rsquo;s great depth and power-up system.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=88259#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ The Lost Night&lt;/a&gt;  by arlefreak - A gorgeous RPG from the Amano games duo, Mario and Joven. You&amp;rsquo;re guaranteed to have a great time playing this gem.&lt;/p&gt;
 &lt;h2 id=&#34;arcade-games&#34;&gt;Arcade Games&lt;/h2&gt;
 &lt;p&gt;Fast paced, score based games.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=13022#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· We Missed You!&lt;/a&gt;  by Rhys - A top down, gta1 style arcade delivery game. Race across town to delivery parcels as time ticks down. Don&amp;rsquo;t forget to raise your score by hitting cars!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=19673#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Racer&lt;/a&gt;  by Spaz48 - A classic for Pico-8, an outrun style racer that provides a great challenge while looking great.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Driller&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Sewers of d&amp;rsquo;Oh!&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pullfrog&lt;/a&gt;  by arlefreak - Pullfrog&amp;rsquo;s concept is both creative and yet so simple. Tetris in a sense, yet you control the blocks thru a wonderful little frog. I love him.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=13022#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ We Missed You!&lt;/a&gt;  by Rhys - A top down, gta1 style arcade delivery game. Race across town to delivery parcels as time ticks down. Don&amp;rsquo;t forget to raise your score by hitting cars!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=19673#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Pico Racer&lt;/a&gt;  by Spaz48 - A classic for Pico-8, an outrun style racer that provides a great challenge while looking great.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Pico Driller&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42655&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Sewers of d&amp;rsquo;Oh!&lt;/a&gt;  by Ultrabrite - An endless breakout clone with it&amp;rsquo;s own flair and fun to be had.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Pullfrog&lt;/a&gt;  by arlefreak - Pullfrog&amp;rsquo;s concept is both creative and yet so simple. Tetris in a sense, yet you control the blocks thru a wonderful little frog. I love him.&lt;/p&gt;
 &lt;h2 id=&#34;pic-n-mix&#34;&gt;Pic &amp;rsquo;n Mix&lt;/h2&gt;
 &lt;p&gt;A mix of different titles that deserve a mention too!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO&lt;/a&gt;&amp;amp;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO Puzzle Pack II&lt;/a&gt;  by Mooon - Polished, level-rich Picross games to chill and relax to. Highly recommend.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=48407#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DeFacto&lt;/a&gt;  by NuSan - An automated factory game like factorio. Great time sink for anyone who enjoys the strategy of games like these.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77254#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· UFO Swamp Odyssey&lt;/a&gt;  by paranoidcactus - A short metroidvania style platformer. Search the junk yard to find a way to escape.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=64346#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· FUZ&lt;/a&gt;  by Jusiv - A tiny adventure based on FEZ. A brilliant homage, with great fun to be had.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=59509#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Hungry Harry 3D&lt;/a&gt;  by paloblancogames - A 3D platformer for Pico-8. Yes you read that right. Get to the end of each level while eating along the way.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=44343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Golf Sunday&lt;/a&gt;  by johanp - Tiny, chill golf game made for the LowResJam 2021.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ NEMO&lt;/a&gt;&amp;amp;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ NEMO Puzzle Pack II&lt;/a&gt;  by Mooon - Polished, level-rich Picross games to chill and relax to. Highly recommend.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=48407#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ DeFacto&lt;/a&gt;  by NuSan - An automated factory game like factorio. Great time sink for anyone who enjoys the strategy of games like these.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77254#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ UFO Swamp Odyssey&lt;/a&gt;  by paranoidcactus - A short metroidvania style platformer. Search the junk yard to find a way to escape.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=64346#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ FUZ&lt;/a&gt;  by Jusiv - A tiny adventure based on FEZ. A brilliant homage, with great fun to be had.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=59509#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Hungry Harry 3D&lt;/a&gt;  by paloblancogames - A 3D platformer for Pico-8. Yes you read that right. Get to the end of each level while eating along the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=44343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Golf Sunday&lt;/a&gt;  by johanp - Tiny, chill golf game made for the LowResJam 2021.&lt;/p&gt;
 </description>
         <content:encoded>&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/pico-8.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pico-8&lt;/a&gt; is a fantasy console for playing and making smol games. There has been a vibrant community surrounding the system for years, and some fantastic games have been produced during that time. This list is a compiled collection of my personal favourites, and games I consider to be some of the best on the system.&lt;/p&gt;
 &lt;h2 id=&#34;time-wasters&#34;&gt;Time Wasters&lt;/h2&gt;
 &lt;p&gt;These games a short and quick to play, but an absolute blast whenever you want to waste some time or just chill!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=21515#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Combo Pool&lt;/a&gt; by Nusan - I&amp;rsquo;ve sunk more hours into Combo Pool than any other Pico-8 game. Beautifully simple pool-style game that&amp;rsquo;s an absolute joy to play over and over again.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=15432#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Succer&lt;/a&gt; by Reload - An adorable little Football (soccer) game that I can never seem to get enough of. Pick a team and score some goals!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12502#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Marballs&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=34773#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Marballs 2&lt;/a&gt; by Lucatron - A fantastic Marble Madness clone with some really fun levels. The sequel builds upon the original even more, adding a lot more to the gameplay.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Tetyis&lt;/a&gt;  by Spaz48 - What would a list of games be without a tetris clone? This one is a really well polished game, with lovely visuals and effects to boot!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=2521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cyclo 8&lt;/a&gt;  by Nusan - Another fun game from Nusan. Cyclo 8 is a physics bike game, controlling the provides a great challenge and despite only having 7 levels, there&amp;rsquo;s lots of time to spent in it.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=27593#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Cave Runners!&lt;/a&gt;  by Spaz48 - A challenge, yet forgiving platforming game: Get to the objective as fast as you can. Best feature is no death or damage, letting you focus on having fun!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42185#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Picopolis&lt;/a&gt;  by Jeb - A Simcity demake / idle game where you build up and manage a city to make money and continue the flow.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=21515#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Combo Pool&lt;/a&gt; by Nusan - I&amp;rsquo;ve sunk more hours into Combo Pool than any other Pico-8 game. Beautifully simple pool-style game that&amp;rsquo;s an absolute joy to play over and over again.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=15432#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Succer&lt;/a&gt; by Reload - An adorable little Football (soccer) game that I can never seem to get enough of. Pick a team and score some goals!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12502#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Marballs&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=34773#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; Marballs 2&lt;/a&gt; by Lucatron - A fantastic Marble Madness clone with some really fun levels. The sequel builds upon the original even more, adding a lot more to the gameplay.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Tetyis&lt;/a&gt;  by Spaz48 - What would a list of games be without a tetris clone? This one is a really well polished game, with lovely visuals and effects to boot!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=2521&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Cyclo 8&lt;/a&gt;  by Nusan - Another fun game from Nusan. Cyclo 8 is a physics bike game, controlling the provides a great challenge and despite only having 7 levels, there&amp;rsquo;s lots of time to spent in it.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=27593#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Cave Runners!&lt;/a&gt;  by Spaz48 - A challenge, yet forgiving platforming game: Get to the objective as fast as you can. Best feature is no death or damage, letting you focus on having fun!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42185#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Picopolis&lt;/a&gt;  by Jeb - A Simcity demake / idle game where you build up and manage a city to make money and continue the flow.&lt;/p&gt;
 &lt;h2 id=&#34;cream-of-the-crop&#34;&gt;Cream of the Crop&lt;/h2&gt;
 &lt;p&gt;  The best of the best on the system, from ingenious card games to fantastic stories. There&amp;rsquo;s lots to be found here!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=83548#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· High Stakes&lt;/a&gt;  by Spaz48 - An incredible concept that creates brilliantly engaging gameplay. Sort of like minesweeper, flip cards while avoiding the one Vampire card that will end the round for you.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=26421#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Invader Overload&lt;/a&gt;  by MorningToast - This is hands down the best Invaders game I&amp;rsquo;ve played. Great aesthetics, powerup system and boss battles. Definitely a highlight of Pico-8&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=11722#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Celeste&lt;/a&gt;  by Noel - The poster child of the entire system, not much has to be said for Celeste. An enjoyable platformer with a great mix of challenge and fun.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42784#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dank Tombs&lt;/a&gt;  by Krajzeg - One of the most polished games made on the system. Dank Tombs is a great mix of dungeon crawling, puzzles and platforming reminiscent of the Zelda series.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12682#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Dusk Child&lt;/a&gt;  by SophieHoulden - A brilliant, story-driven platformer. One of the first big games for the system. Still holds up after all that&amp;rsquo;s changed with Pico-8.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=97269#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Terra&lt;/a&gt;  by cubee - Terra is a feature rich demake of Terraria. I still can&amp;rsquo;t get over how they fit it in a Pico-8 cart. *&lt;strong&gt;Note -&lt;/strong&gt; requires mouse controls to play.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72921#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DragonDot 3&lt;/a&gt;  by NMcCoy - An Action-Adventure game which brings it&amp;rsquo;s own creative twists to the genre. This game will hook and draw you in with it&amp;rsquo;s great depth and power-up system.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=88259#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· The Lost Night&lt;/a&gt;  by arlefreak - A gorgeous RPG from the Amano games duo, Mario and Joven. You&amp;rsquo;re guaranteed to have a great time playing this gem.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=83548#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ High Stakes&lt;/a&gt;  by Spaz48 - An incredible concept that creates brilliantly engaging gameplay. Sort of like minesweeper, flip cards while avoiding the one Vampire card that will end the round for you.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=26421#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Invader Overload&lt;/a&gt;  by MorningToast - This is hands down the best Invaders game I&amp;rsquo;ve played. Great aesthetics, powerup system and boss battles. Definitely a highlight of Pico-8&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=11722#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Celeste&lt;/a&gt;  by Noel - The poster child of the entire system, not much has to be said for Celeste. An enjoyable platformer with a great mix of challenge and fun.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42784#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Dank Tombs&lt;/a&gt;  by Krajzeg - One of the most polished games made on the system. Dank Tombs is a great mix of dungeon crawling, puzzles and platforming reminiscent of the Zelda series.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=12682#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Dusk Child&lt;/a&gt;  by SophieHoulden - A brilliant, story-driven platformer. One of the first big games for the system. Still holds up after all that&amp;rsquo;s changed with Pico-8.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=97269#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Terra&lt;/a&gt;  by cubee - Terra is a feature rich demake of Terraria. I still can&amp;rsquo;t get over how they fit it in a Pico-8 cart. *&lt;strong&gt;Note -&lt;/strong&gt; requires mouse controls to play.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=72921#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ DragonDot 3&lt;/a&gt;  by NMcCoy - An Action-Adventure game which brings it&amp;rsquo;s own creative twists to the genre. This game will hook and draw you in with it&amp;rsquo;s great depth and power-up system.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=88259#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ The Lost Night&lt;/a&gt;  by arlefreak - A gorgeous RPG from the Amano games duo, Mario and Joven. You&amp;rsquo;re guaranteed to have a great time playing this gem.&lt;/p&gt;
 &lt;h2 id=&#34;arcade-games&#34;&gt;Arcade Games&lt;/h2&gt;
 &lt;p&gt;Fast paced, score based games.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=13022#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· We Missed You!&lt;/a&gt;  by Rhys - A top down, gta1 style arcade delivery game. Race across town to delivery parcels as time ticks down. Don&amp;rsquo;t forget to raise your score by hitting cars!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=19673#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Racer&lt;/a&gt;  by Spaz48 - A classic for Pico-8, an outrun style racer that provides a great challenge while looking great.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pico Driller&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Sewers of d&amp;rsquo;Oh!&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Pullfrog&lt;/a&gt;  by arlefreak - Pullfrog&amp;rsquo;s concept is both creative and yet so simple. Tetris in a sense, yet you control the blocks thru a wonderful little frog. I love him.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=13022#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ We Missed You!&lt;/a&gt;  by Rhys - A top down, gta1 style arcade delivery game. Race across town to delivery parcels as time ticks down. Don&amp;rsquo;t forget to raise your score by hitting cars!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=19673#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Pico Racer&lt;/a&gt;  by Spaz48 - A classic for Pico-8, an outrun style racer that provides a great challenge while looking great.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77021#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Pico Driller&lt;/a&gt;  by johanp - Demake of Mr.Driller for the gameboy. Well polished, and fast paced. An all round fun time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=42655&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Sewers of d&amp;rsquo;Oh!&lt;/a&gt;  by Ultrabrite - An endless breakout clone with it&amp;rsquo;s own flair and fun to be had.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38636&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Pullfrog&lt;/a&gt;  by arlefreak - Pullfrog&amp;rsquo;s concept is both creative and yet so simple. Tetris in a sense, yet you control the blocks thru a wonderful little frog. I love him.&lt;/p&gt;
 &lt;h2 id=&#34;pic-n-mix&#34;&gt;Pic &amp;rsquo;n Mix&lt;/h2&gt;
 &lt;p&gt;A mix of different titles that deserve a mention too!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO&lt;/a&gt;&amp;amp;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· NEMO Puzzle Pack II&lt;/a&gt;  by Mooon - Polished, level-rich Picross games to chill and relax to. Highly recommend.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=48407#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· DeFacto&lt;/a&gt;  by NuSan - An automated factory game like factorio. Great time sink for anyone who enjoys the strategy of games like these.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77254#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· UFO Swamp Odyssey&lt;/a&gt;  by paranoidcactus - A short metroidvania style platformer. Search the junk yard to find a way to escape.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=64346#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· FUZ&lt;/a&gt;  by Jusiv - A tiny adventure based on FEZ. A brilliant homage, with great fun to be had.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=59509#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Hungry Harry 3D&lt;/a&gt;  by paloblancogames - A 3D platformer for Pico-8. Yes you read that right. Get to the end of each level while eating along the way.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=44343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;· Golf Sunday&lt;/a&gt;  by johanp - Tiny, chill golf game made for the LowResJam 2021.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ NEMO&lt;/a&gt;&amp;amp;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=105731#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ NEMO Puzzle Pack II&lt;/a&gt;  by Mooon - Polished, level-rich Picross games to chill and relax to. Highly recommend.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=48407#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ DeFacto&lt;/a&gt;  by NuSan - An automated factory game like factorio. Great time sink for anyone who enjoys the strategy of games like these.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=77254#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ UFO Swamp Odyssey&lt;/a&gt;  by paranoidcactus - A short metroidvania style platformer. Search the junk yard to find a way to escape.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=64346#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ FUZ&lt;/a&gt;  by Jusiv - A tiny adventure based on FEZ. A brilliant homage, with great fun to be had.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?pid=59509#p&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Hungry Harry 3D&lt;/a&gt;  by paloblancogames - A 3D platformer for Pico-8. Yes you read that right. Get to the end of each level while eating along the way.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=44343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Golf Sunday&lt;/a&gt;  by johanp - Tiny, chill golf game made for the LowResJam 2021.&lt;/p&gt;
 </content:encoded>
       </item>
     
@@ -670,6 +847,12 @@
 &lt;li&gt;∘ &lt;strong&gt;May&lt;/strong&gt;: &amp;nbsp; Sex &amp; Food - Unknown Mortal Ochestra.&lt;/li&gt;
 
 &lt;li&gt;∘ &lt;strong&gt;June&lt;/strong&gt;: &amp;nbsp; Oncle Jazz - Men I Trust.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;July&lt;/strong&gt;: &amp;nbsp; Ice Melt - Crumb.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;August&lt;/strong&gt;: &amp;nbsp; Versions of Modern Performance - Horsegirl.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;September&lt;/strong&gt;: &amp;nbsp; Black Focus - Yussef Kamaal.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -691,6 +874,12 @@
 &lt;li&gt;∘ &lt;strong&gt;May&lt;/strong&gt;: &amp;nbsp; Sex &amp; Food - Unknown Mortal Ochestra.&lt;/li&gt;
 
 &lt;li&gt;∘ &lt;strong&gt;June&lt;/strong&gt;: &amp;nbsp; Oncle Jazz - Men I Trust.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;July&lt;/strong&gt;: &amp;nbsp; Ice Melt - Crumb.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;August&lt;/strong&gt;: &amp;nbsp; Versions of Modern Performance - Horsegirl.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;September&lt;/strong&gt;: &amp;nbsp; Black Focus - Yussef Kamaal.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>
@@ -1279,7 +1468,7 @@
         
         <description>&lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/icons/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
      &lt;figcaption&gt;&lt;/figcaption&gt;
      
  	&lt;/div&gt;
@@ -1311,19 +1500,19 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.thevillage.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Cloughjordan Ecovillage&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.thevillage.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Cloughjordan Ecovillage&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.youtube.com/c/REDGardens/videos&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Resident Bruce Darrel&amp;#39;s youtube channel on farming&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.youtube.com/c/REDGardens/videos&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Resident Bruce Darrel&amp;#39;s youtube channel on farming&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;http://wecreate.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The local Fablab&lt;/a&gt;.
+	   &lt;a href=&#34;http://wecreate.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The local Fablab&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecovillage&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Ecovillage Wikipedia page&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecovillage&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Ecovillage Wikipedia page&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1352,7 +1541,7 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 </description>
         <content:encoded>&lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/icons/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
      &lt;figcaption&gt;&lt;/figcaption&gt;
      
  	&lt;/div&gt;
@@ -1384,19 +1573,19 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.thevillage.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Cloughjordan Ecovillage&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.thevillage.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Cloughjordan Ecovillage&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.youtube.com/c/REDGardens/videos&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Resident Bruce Darrel&amp;#39;s youtube channel on farming&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.youtube.com/c/REDGardens/videos&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Resident Bruce Darrel&amp;#39;s youtube channel on farming&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;http://wecreate.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The local Fablab&lt;/a&gt;.
+	   &lt;a href=&#34;http://wecreate.ie/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The local Fablab&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecovillage&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Ecovillage Wikipedia page&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ecovillage&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Ecovillage Wikipedia page&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1812,28 +2001,29 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
         <pubDate>Tue, 08 Mar 2022 19:32:12 EST}</pubDate>
         
         <description>&lt;p&gt;  A small library of various bookmarks and websites I&amp;rsquo;ve kept over the years. Neatly sorted for ease of use!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; May 2022&lt;/p&gt;
 &lt;h2 id=&#34;webring&#34;&gt;Webring&lt;/h2&gt;
 
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://wiki.xxiivv.com/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ XXIIVV Wiki&lt;/a&gt;.
+	   &lt;a href=&#34;https://wiki.xxiivv.com/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ XXIIVV Wiki&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ RitualDust&lt;/a&gt;.
+	   &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ RitualDust&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://thomasorus.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Thomasorus&lt;/a&gt;.
+	   &lt;a href=&#34;https://thomasorus.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Thomasorus&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://kokorobot.ca/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kokorobot&lt;/a&gt;.
+	   &lt;a href=&#34;https://kokorobot.ca/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kokorobot&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://fdisk.space/#&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Fdisk&lt;/a&gt;.
+	   &lt;a href=&#34;https://fdisk.space/#&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Fdisk&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1842,19 +2032,19 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://solar.lowtechmagazine.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Low Tech Magazine&lt;/a&gt;.
+	   &lt;a href=&#34;https://solar.lowtechmagazine.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Low Tech Magazine&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://reallifemag.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Real Life Mag&lt;/a&gt;.
+	   &lt;a href=&#34;https://reallifemag.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Real Life Mag&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://two.compost.digital/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Compost&lt;/a&gt;.
+	   &lt;a href=&#34;https://two.compost.digital/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Compost&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.orphenyade.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ the Orphenyade&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.orphenyade.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ the Orphenyade&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1863,15 +2053,15 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://practicalselfreliance.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Practical Self Reliance&lt;/a&gt;.
+	   &lt;a href=&#34;https://practicalselfreliance.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Practical Self Reliance&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://100r.co/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Hundred Rabbits&lt;/a&gt;.
+	   &lt;a href=&#34;https://100r.co/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Hundred Rabbits&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://moddingfridays.bleu255.com/Main_Page&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Modding Fridays&lt;/a&gt;.
+	   &lt;a href=&#34;https://moddingfridays.bleu255.com/Main_Page&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Modding Fridays&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1880,23 +2070,23 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://search.marginalia.nu/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Marginalia Search Engine&lt;/a&gt;.
+	   &lt;a href=&#34;https://search.marginalia.nu/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Marginalia Search Engine&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.kickscondor.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kicks Condor&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.kickscondor.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kicks Condor&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://status.cafe/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Status Cafe&lt;/a&gt;.
+	   &lt;a href=&#34;https://status.cafe/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Status Cafe&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://portal.mozz.us/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Mozz&amp;#39;s Gemini Portal&lt;/a&gt;.
+	   &lt;a href=&#34;https://portal.mozz.us/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Mozz&amp;#39;s Gemini Portal&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;http://www.wattxtrawatt.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ WattExtraWatt&lt;/a&gt;.
+	   &lt;a href=&#34;http://www.wattxtrawatt.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ WattExtraWatt&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1905,27 +2095,27 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.theleagueofmoveabletype.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ League of Moveable Type Fonts&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.theleagueofmoveabletype.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ League of Moveable Type Fonts&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://publicdomainreview.org/collection/unkindo-kimono-designs&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Collection of Kimono Pattern Designs&lt;/a&gt;.
+	   &lt;a href=&#34;https://publicdomainreview.org/collection/unkindo-kimono-designs&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Collection of Kimono Pattern Designs&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://fontsinuse.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Fonts in Use&lt;/a&gt;.
+	   &lt;a href=&#34;https://fontsinuse.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Fonts in Use&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://cari.institute/aesthetics&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Aesthetics Reference Wiki&lt;/a&gt;.
+	   &lt;a href=&#34;https://cari.institute/aesthetics&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Aesthetics Reference Wiki&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://usemodify.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Use&amp;amp;Modify&lt;/a&gt;.
+	   &lt;a href=&#34;https://usemodify.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Use&amp;amp;Modify&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://unilist.raphaelbastide.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Unilist&lt;/a&gt;.
+	   &lt;a href=&#34;https://unilist.raphaelbastide.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Unilist&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1934,31 +2124,31 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.freethegameboy.info/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The Battery-less Gameboy&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.freethegameboy.info/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The Battery-less Gameboy&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://fontsinuse.com/uses/28760/neon-genesis-evangelion&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The Fonts of Neon Genesis Evangelion&lt;/a&gt;.
+	   &lt;a href=&#34;https://fontsinuse.com/uses/28760/neon-genesis-evangelion&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The Fonts of Neon Genesis Evangelion&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://buymusic.club/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Buy Music Club&lt;/a&gt;.
+	   &lt;a href=&#34;https://buymusic.club/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Buy Music Club&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://onezero.medium.com/the-tamagotchi-hacking-communitys-quest-to-cheat-death-dc3e7ee27a0f&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Article on Tamagotchi hacking&lt;/a&gt;.
+	   &lt;a href=&#34;https://onezero.medium.com/the-tamagotchi-hacking-communitys-quest-to-cheat-death-dc3e7ee27a0f&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Article on Tamagotchi hacking&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://animationobsessive.substack.com/p/our-treat-to-you?s=r&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Cartoon Modern Animation Artbook&lt;/a&gt;.
+	   &lt;a href=&#34;https://animationobsessive.substack.com/p/our-treat-to-you?s=r&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Cartoon Modern Animation Artbook&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The Playdate console&lt;/a&gt;.
+	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The Playdate console&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://consolevariations.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Console Variation Wiki&lt;/a&gt;.
+	   &lt;a href=&#34;https://consolevariations.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Console Variation Wiki&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1967,19 +2157,19 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.theguardian.com/artanddesign/gallery/2021/dec/22/swiss-wanderer-soul-of-japan-werner-bischof&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Swiss Photographer who captured 1950s Japan&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.theguardian.com/artanddesign/gallery/2021/dec/22/swiss-wanderer-soul-of-japan-werner-bischof&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Swiss Photographer who captured 1950s Japan&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.ibiblio.org/harris/500milemail.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The case of the 500-mile email&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.ibiblio.org/harris/500milemail.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The case of the 500-mile email&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://lparchive.org/Dwarf-For&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Dwarf Fortress: The story of Boatmurdered&lt;/a&gt;.
+	   &lt;a href=&#34;https://lparchive.org/Dwarf-For&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Dwarf Fortress: The story of Boatmurdered&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://alwaysreadthemanual.com/read/issues/3/jeremy-keith/article.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ As we may link (about Hypertext)&lt;/a&gt;.
+	   &lt;a href=&#34;https://alwaysreadthemanual.com/read/issues/3/jeremy-keith/article.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ As we may link (about Hypertext)&lt;/a&gt;.
 	&lt;/li&gt;
 
 &lt;/ul&gt;
@@ -1989,62 +2179,63 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Beekeeping_in_Ireland&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Beekeeping in Ireland&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Beekeeping_in_Ireland&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Beekeeping in Ireland&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ishmael_%28Quinn_novel%29&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Ishmael&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ishmael_%28Quinn_novel%29&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Ishmael&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Brewster%27s_Millions&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Brewster&amp;#39;s Millions&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Brewster%27s_Millions&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Brewster&amp;#39;s Millions&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Societal_collapse&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Societal Collapse&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Societal_collapse&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Societal Collapse&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Solarpunk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Roadside Picnic&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Solarpunk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Roadside Picnic&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Solarpunk&lt;/a&gt;.
+	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Solarpunk&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Aksum&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kingdom of Aksum&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Aksum&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kingdom of Aksum&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Kush&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kingdom of Kush&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Kush&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kingdom of Kush&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         <content:encoded>&lt;p&gt;  A small library of various bookmarks and websites I&amp;rsquo;ve kept over the years. Neatly sorted for ease of use!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Last Updated:&lt;/strong&gt; May 2022&lt;/p&gt;
 &lt;h2 id=&#34;webring&#34;&gt;Webring&lt;/h2&gt;
 
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://wiki.xxiivv.com/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ XXIIVV Wiki&lt;/a&gt;.
+	   &lt;a href=&#34;https://wiki.xxiivv.com/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ XXIIVV Wiki&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ RitualDust&lt;/a&gt;.
+	   &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ RitualDust&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://thomasorus.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Thomasorus&lt;/a&gt;.
+	   &lt;a href=&#34;https://thomasorus.com&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Thomasorus&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://kokorobot.ca/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kokorobot&lt;/a&gt;.
+	   &lt;a href=&#34;https://kokorobot.ca/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kokorobot&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://fdisk.space/#&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Fdisk&lt;/a&gt;.
+	   &lt;a href=&#34;https://fdisk.space/#&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Fdisk&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2053,19 +2244,19 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://solar.lowtechmagazine.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Low Tech Magazine&lt;/a&gt;.
+	   &lt;a href=&#34;https://solar.lowtechmagazine.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Low Tech Magazine&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://reallifemag.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Real Life Mag&lt;/a&gt;.
+	   &lt;a href=&#34;https://reallifemag.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Real Life Mag&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://two.compost.digital/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Compost&lt;/a&gt;.
+	   &lt;a href=&#34;https://two.compost.digital/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Compost&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.orphenyade.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ the Orphenyade&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.orphenyade.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ the Orphenyade&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2074,15 +2265,15 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://practicalselfreliance.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Practical Self Reliance&lt;/a&gt;.
+	   &lt;a href=&#34;https://practicalselfreliance.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Practical Self Reliance&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://100r.co/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Hundred Rabbits&lt;/a&gt;.
+	   &lt;a href=&#34;https://100r.co/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Hundred Rabbits&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://moddingfridays.bleu255.com/Main_Page&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Modding Fridays&lt;/a&gt;.
+	   &lt;a href=&#34;https://moddingfridays.bleu255.com/Main_Page&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Modding Fridays&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2091,23 +2282,23 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://search.marginalia.nu/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Marginalia Search Engine&lt;/a&gt;.
+	   &lt;a href=&#34;https://search.marginalia.nu/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Marginalia Search Engine&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.kickscondor.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kicks Condor&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.kickscondor.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kicks Condor&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://status.cafe/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Status Cafe&lt;/a&gt;.
+	   &lt;a href=&#34;https://status.cafe/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Status Cafe&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://portal.mozz.us/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Mozz&amp;#39;s Gemini Portal&lt;/a&gt;.
+	   &lt;a href=&#34;https://portal.mozz.us/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Mozz&amp;#39;s Gemini Portal&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;http://www.wattxtrawatt.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ WattExtraWatt&lt;/a&gt;.
+	   &lt;a href=&#34;http://www.wattxtrawatt.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ WattExtraWatt&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2116,27 +2307,27 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.theleagueofmoveabletype.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ League of Moveable Type Fonts&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.theleagueofmoveabletype.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ League of Moveable Type Fonts&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://publicdomainreview.org/collection/unkindo-kimono-designs&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Collection of Kimono Pattern Designs&lt;/a&gt;.
+	   &lt;a href=&#34;https://publicdomainreview.org/collection/unkindo-kimono-designs&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Collection of Kimono Pattern Designs&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://fontsinuse.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Fonts in Use&lt;/a&gt;.
+	   &lt;a href=&#34;https://fontsinuse.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Fonts in Use&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://cari.institute/aesthetics&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Aesthetics Reference Wiki&lt;/a&gt;.
+	   &lt;a href=&#34;https://cari.institute/aesthetics&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Aesthetics Reference Wiki&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://usemodify.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Use&amp;amp;Modify&lt;/a&gt;.
+	   &lt;a href=&#34;https://usemodify.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Use&amp;amp;Modify&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://unilist.raphaelbastide.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Unilist&lt;/a&gt;.
+	   &lt;a href=&#34;https://unilist.raphaelbastide.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Unilist&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2145,31 +2336,31 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.freethegameboy.info/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The Battery-less Gameboy&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.freethegameboy.info/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The Battery-less Gameboy&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://fontsinuse.com/uses/28760/neon-genesis-evangelion&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The Fonts of Neon Genesis Evangelion&lt;/a&gt;.
+	   &lt;a href=&#34;https://fontsinuse.com/uses/28760/neon-genesis-evangelion&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The Fonts of Neon Genesis Evangelion&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://buymusic.club/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Buy Music Club&lt;/a&gt;.
+	   &lt;a href=&#34;https://buymusic.club/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Buy Music Club&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://onezero.medium.com/the-tamagotchi-hacking-communitys-quest-to-cheat-death-dc3e7ee27a0f&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Article on Tamagotchi hacking&lt;/a&gt;.
+	   &lt;a href=&#34;https://onezero.medium.com/the-tamagotchi-hacking-communitys-quest-to-cheat-death-dc3e7ee27a0f&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Article on Tamagotchi hacking&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://animationobsessive.substack.com/p/our-treat-to-you?s=r&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Cartoon Modern Animation Artbook&lt;/a&gt;.
+	   &lt;a href=&#34;https://animationobsessive.substack.com/p/our-treat-to-you?s=r&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Cartoon Modern Animation Artbook&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The Playdate console&lt;/a&gt;.
+	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The Playdate console&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://consolevariations.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Console Variation Wiki&lt;/a&gt;.
+	   &lt;a href=&#34;https://consolevariations.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Console Variation Wiki&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2178,19 +2369,19 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.theguardian.com/artanddesign/gallery/2021/dec/22/swiss-wanderer-soul-of-japan-werner-bischof&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Swiss Photographer who captured 1950s Japan&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.theguardian.com/artanddesign/gallery/2021/dec/22/swiss-wanderer-soul-of-japan-werner-bischof&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Swiss Photographer who captured 1950s Japan&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.ibiblio.org/harris/500milemail.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ The case of the 500-mile email&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.ibiblio.org/harris/500milemail.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ The case of the 500-mile email&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://lparchive.org/Dwarf-For&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Dwarf Fortress: The story of Boatmurdered&lt;/a&gt;.
+	   &lt;a href=&#34;https://lparchive.org/Dwarf-For&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Dwarf Fortress: The story of Boatmurdered&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://alwaysreadthemanual.com/read/issues/3/jeremy-keith/article.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ As we may link (about Hypertext)&lt;/a&gt;.
+	   &lt;a href=&#34;https://alwaysreadthemanual.com/read/issues/3/jeremy-keith/article.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ As we may link (about Hypertext)&lt;/a&gt;.
 	&lt;/li&gt;
 
 &lt;/ul&gt;
@@ -2200,35 +2391,35 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Beekeeping_in_Ireland&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Beekeeping in Ireland&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Beekeeping_in_Ireland&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Beekeeping in Ireland&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ishmael_%28Quinn_novel%29&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Ishmael&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Ishmael_%28Quinn_novel%29&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Ishmael&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Brewster%27s_Millions&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Brewster&amp;#39;s Millions&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Brewster%27s_Millions&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Brewster&amp;#39;s Millions&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Societal_collapse&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Societal Collapse&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Societal_collapse&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Societal Collapse&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Solarpunk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Roadside Picnic&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Solarpunk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Roadside Picnic&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Solarpunk&lt;/a&gt;.
+	   &lt;a href=&#34;https://play.date/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Solarpunk&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Aksum&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kingdom of Aksum&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Aksum&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kingdom of Aksum&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Kush&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Kingdom of Kush&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Kingdom_of_Kush&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Kingdom of Kush&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2242,31 +2433,73 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
         <dc:creator>Dook</dc:creator>
         <pubDate>Tue, 08 Mar 2022 19:31:55 EST}</pubDate>
         
-        <description>&lt;p&gt;  A comprehensive dive into the design, and creation of this website&lt;/p&gt;
-&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-&lt;p&gt;  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.&lt;/p&gt;
-&lt;p&gt;  The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it. This current version has been built from scratch, using Hugo as a method of generating files offline to upload to github.&lt;/p&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;  Lizbeth Poirier&amp;rsquo;s beautiful site &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ritual Dust&lt;/a&gt; was a big inspiration and help when designing the site, Lizbeth has an incredibly helpful collection of resources that I learned a lot from including Fonts, Html and Css. Thomasorus&amp;rsquo; &lt;a href=&#34;https://thomasorus.com/html-tips.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Html Tips&lt;/a&gt; guide is a must read if your building your own site with minimal knowledge. Without it, I wouldn&amp;rsquo;t have used Flexboxes or known how to properly organise my code.&lt;/p&gt;
+        <description>&lt;p&gt;  A comprehensive dive into the design, creation and philosophy of this site.&lt;/p&gt;
 &lt;h2 id=&#34;site-philosophy&#34;&gt;Site Philosophy&lt;/h2&gt;
-&lt;p&gt;  This site was made with two things in mind: Fun and Accessibility. Each section has it&amp;rsquo;s own, vibrant theme using &lt;a href=&#34;https://thomasorus.com/home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thomasorus&amp;rsquo;&lt;/a&gt; beautiful css theming solution. The code was also designed with simplicity in mind, there is no javascript used and every element is completely adaptive without the use of media queries. Lastly, all images are completely optimized for fast page loading, thanks to &lt;a href=&#34;https://kokorobot.ca/site/notes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rekka Bellum&amp;rsquo;s&lt;/a&gt; easy to follow &lt;a href=&#34;https://kokorobot.ca/site/leanimages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt;! Most pages have 1080p images, but on the large gallery ones, images are reduced to 720p to help with bandwidth.&lt;/p&gt;
-&lt;h2 id=&#34;fonts&#34;&gt;Fonts&lt;/h2&gt;
-&lt;p&gt;  This site uses 3 different fonts. &lt;a href=&#34;https://gitlab.com/swrs/cmrdd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMRDD Bold&lt;/a&gt; is used for links/clickable content. &lt;a href=&#34;https://github.com/jpt/barlow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Barlow Black&lt;/a&gt; is used for all Headers. Finally, &lt;a href=&#34;https://www.theleagueofmoveabletype.com/league-spartan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;League Spartan&lt;/a&gt; is used for the text on the site. Each font is both free and open source, their licenses allowing for web use and modification. &lt;a href=&#34;https://www.fontsquirrel.com/tools/webfont-generator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Font Squirrel&amp;rsquo;s&lt;/a&gt; Webfont generator was extremely useful in preparing the fonts for the website.&lt;/p&gt;
-&lt;h2 id=&#34;future-additions&#34;&gt;Future Additions&lt;/h2&gt;
-&lt;p&gt;  While building the site, decisions were made to make the site more accessible via older browser (using Netsurf as a testing point). However, the theming system doesn&amp;rsquo;t work and there are some other tweaks I&amp;rsquo;d like to make to perfect it. On top of that, the accessibility of my website isn&amp;rsquo;t as good as it could be. Currently all images are captioned and correct etiquette was followed for page layouts, but I&amp;rsquo;d like to give people options to turn off custom theming and fonts. This however would likely involve adding javascript which I&amp;rsquo;m slightly reluctant on doing. But we&amp;rsquo;ll see.&lt;/p&gt;
+&lt;p&gt;  This site exists to scratch an itch I&amp;rsquo;ve long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and interesting, so I made a website.&lt;/p&gt;
+&lt;p&gt;  The design of this site was made with one goal in mind: create vibrant a site that looks good and is fun to use, with the smallest file size possible. This meant several things, for one, no javascript but also no media queries to change the layout. Fonts are used, but are extremely slimmed down to reduce filesize. Combined with optimising images, it means even the largest page on the site is under 800kb and the smallest is just 45kb.&lt;/p&gt;
+&lt;h2 id=&#34;design-language&#34;&gt;Design Language&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/about/fonts.svg&#34; loading=&#34;lazy&#34; alt=&#34;3 words, corresponding to their font names: Barlow, League Spartan and Lunchtype22&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The site has a simple, consistent design language to make discerning the content of pages easy. Page headers use the &lt;a href=&#34;https://github.com/jpt/barlow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Barlow&lt;/a&gt; fontface with a weight of 500. Text and paragraphs are in &lt;a href=&#34;https://github.com/theleagueof/league-spartan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;League Spartan Variable&lt;/a&gt; and all links use the &lt;a href=&#34;https://usemodify.com/fonts/lunchtype/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lunchtype22&lt;/a&gt; fontface.&lt;/p&gt;
+&lt;p&gt;  Links have a set of rules to follow depending on where it is, and what it links to. Inline links look like &lt;a href=&#34;&#34;&gt;this&lt;/a&gt;, having an underline for visibility. Links in lists have one of two operator prefixes to display if a link is external or internal. &amp;ldquo;•&amp;rdquo; operators mean the link connects to somewhere within the site, while &amp;ldquo;⬩&amp;rdquo; means the links is an external url and will open in a new tab. &amp;ldquo;⬝&amp;rdquo; is designated for gemini content and should open in your designated browser.&lt;/p&gt;
+&lt;h2 id=&#34;inspirations-and-mentions&#34;&gt;Inspirations and Mentions&lt;/h2&gt;
+&lt;p&gt;  Lizbeth Poirier&amp;rsquo;s beautiful site &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ritual Dust&lt;/a&gt; was a big inspiration and help when designing the site, Lizbeth has an incredibly helpful collection of resources that I learned a lot from including Fonts, Html and Css. Thomasorus&amp;rsquo; &lt;a href=&#34;https://thomasorus.com/html-tips.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Html Tips&lt;/a&gt; guide is a great read if you are building your own site with minimal knowledge. Lastly, I used &lt;a href=&#34;https://kokorobot.ca/site/notes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rekka Bellum&amp;rsquo;s&lt;/a&gt; great imagemagick &lt;a href=&#34;https://kokorobot.ca/site/leanimages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt; to create a script for optimising my images and reducing their file sizes.&lt;/p&gt;
+
+
+&lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;./now/&#34;&gt;∙ Now - This month&amp;#39;s plans&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;./shortjournal/&#34;&gt;∙ Short Journal - What I&amp;#39;m up to&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;./colophon&#34;&gt;∙ Colophon - Site Design info&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
-        <content:encoded>&lt;p&gt;  A comprehensive dive into the design, and creation of this website&lt;/p&gt;
-&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-&lt;p&gt;  This site was made to scratch an itch I long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and exciting so I made a website.&lt;/p&gt;
-&lt;p&gt;  The first version of the site was made by modifying what I felt was a suitable theme, however I soon became aware of my lack of knowledge in web design and development, scrapping the site soon after I finished it. This current version has been built from scratch, using Hugo as a method of generating files offline to upload to github.&lt;/p&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;  Lizbeth Poirier&amp;rsquo;s beautiful site &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ritual Dust&lt;/a&gt; was a big inspiration and help when designing the site, Lizbeth has an incredibly helpful collection of resources that I learned a lot from including Fonts, Html and Css. Thomasorus&amp;rsquo; &lt;a href=&#34;https://thomasorus.com/html-tips.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Html Tips&lt;/a&gt; guide is a must read if your building your own site with minimal knowledge. Without it, I wouldn&amp;rsquo;t have used Flexboxes or known how to properly organise my code.&lt;/p&gt;
+        <content:encoded>&lt;p&gt;  A comprehensive dive into the design, creation and philosophy of this site.&lt;/p&gt;
 &lt;h2 id=&#34;site-philosophy&#34;&gt;Site Philosophy&lt;/h2&gt;
-&lt;p&gt;  This site was made with two things in mind: Fun and Accessibility. Each section has it&amp;rsquo;s own, vibrant theme using &lt;a href=&#34;https://thomasorus.com/home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thomasorus&amp;rsquo;&lt;/a&gt; beautiful css theming solution. The code was also designed with simplicity in mind, there is no javascript used and every element is completely adaptive without the use of media queries. Lastly, all images are completely optimized for fast page loading, thanks to &lt;a href=&#34;https://kokorobot.ca/site/notes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rekka Bellum&amp;rsquo;s&lt;/a&gt; easy to follow &lt;a href=&#34;https://kokorobot.ca/site/leanimages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt;! Most pages have 1080p images, but on the large gallery ones, images are reduced to 720p to help with bandwidth.&lt;/p&gt;
-&lt;h2 id=&#34;fonts&#34;&gt;Fonts&lt;/h2&gt;
-&lt;p&gt;  This site uses 3 different fonts. &lt;a href=&#34;https://gitlab.com/swrs/cmrdd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMRDD Bold&lt;/a&gt; is used for links/clickable content. &lt;a href=&#34;https://github.com/jpt/barlow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Barlow Black&lt;/a&gt; is used for all Headers. Finally, &lt;a href=&#34;https://www.theleagueofmoveabletype.com/league-spartan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;League Spartan&lt;/a&gt; is used for the text on the site. Each font is both free and open source, their licenses allowing for web use and modification. &lt;a href=&#34;https://www.fontsquirrel.com/tools/webfont-generator&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Font Squirrel&amp;rsquo;s&lt;/a&gt; Webfont generator was extremely useful in preparing the fonts for the website.&lt;/p&gt;
-&lt;h2 id=&#34;future-additions&#34;&gt;Future Additions&lt;/h2&gt;
-&lt;p&gt;  While building the site, decisions were made to make the site more accessible via older browser (using Netsurf as a testing point). However, the theming system doesn&amp;rsquo;t work and there are some other tweaks I&amp;rsquo;d like to make to perfect it. On top of that, the accessibility of my website isn&amp;rsquo;t as good as it could be. Currently all images are captioned and correct etiquette was followed for page layouts, but I&amp;rsquo;d like to give people options to turn off custom theming and fonts. This however would likely involve adding javascript which I&amp;rsquo;m slightly reluctant on doing. But we&amp;rsquo;ll see.&lt;/p&gt;
+&lt;p&gt;  This site exists to scratch an itch I&amp;rsquo;ve long had. Sharing stuff on social media has never been my mojo, I&amp;rsquo;ll often post my photography, however I yearned for something more expansive and interesting, so I made a website.&lt;/p&gt;
+&lt;p&gt;  The design of this site was made with one goal in mind: create vibrant a site that looks good and is fun to use, with the smallest file size possible. This meant several things, for one, no javascript but also no media queries to change the layout. Fonts are used, but are extremely slimmed down to reduce filesize. Combined with optimising images, it means even the largest page on the site is under 800kb and the smallest is just 45kb.&lt;/p&gt;
+&lt;h2 id=&#34;design-language&#34;&gt;Design Language&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/about/fonts.svg&#34; loading=&#34;lazy&#34; alt=&#34;3 words, corresponding to their font names: Barlow, League Spartan and Lunchtype22&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  The site has a simple, consistent design language to make discerning the content of pages easy. Page headers use the &lt;a href=&#34;https://github.com/jpt/barlow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Barlow&lt;/a&gt; fontface with a weight of 500. Text and paragraphs are in &lt;a href=&#34;https://github.com/theleagueof/league-spartan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;League Spartan Variable&lt;/a&gt; and all links use the &lt;a href=&#34;https://usemodify.com/fonts/lunchtype/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lunchtype22&lt;/a&gt; fontface.&lt;/p&gt;
+&lt;p&gt;  Links have a set of rules to follow depending on where it is, and what it links to. Inline links look like &lt;a href=&#34;&#34;&gt;this&lt;/a&gt;, having an underline for visibility. Links in lists have one of two operator prefixes to display if a link is external or internal. &amp;ldquo;•&amp;rdquo; operators mean the link connects to somewhere within the site, while &amp;ldquo;⬩&amp;rdquo; means the links is an external url and will open in a new tab. &amp;ldquo;⬝&amp;rdquo; is designated for gemini content and should open in your designated browser.&lt;/p&gt;
+&lt;h2 id=&#34;inspirations-and-mentions&#34;&gt;Inspirations and Mentions&lt;/h2&gt;
+&lt;p&gt;  Lizbeth Poirier&amp;rsquo;s beautiful site &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ritual Dust&lt;/a&gt; was a big inspiration and help when designing the site, Lizbeth has an incredibly helpful collection of resources that I learned a lot from including Fonts, Html and Css. Thomasorus&amp;rsquo; &lt;a href=&#34;https://thomasorus.com/html-tips.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Html Tips&lt;/a&gt; guide is a great read if you are building your own site with minimal knowledge. Lastly, I used &lt;a href=&#34;https://kokorobot.ca/site/notes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rekka Bellum&amp;rsquo;s&lt;/a&gt; great imagemagick &lt;a href=&#34;https://kokorobot.ca/site/leanimages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt; to create a script for optimising my images and reducing their file sizes.&lt;/p&gt;
+
+
+&lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;./now/&#34;&gt;∙ Now - This month&amp;#39;s plans&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;./shortjournal/&#34;&gt;∙ Short Journal - What I&amp;#39;m up to&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;./colophon&#34;&gt;∙ Colophon - Site Design info&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
 </content:encoded>
       </item>
     
@@ -2298,11 +2531,11 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38920&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Play Streetwalker&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38920&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Play Streetwalker&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/cposts/yu/yuwekogiwu-0.p8.png&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Download the cart&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/cposts/yu/yuwekogiwu-0.p8.png&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Download the cart&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2328,11 +2561,11 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38920&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Play Streetwalker&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=38920&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Play Streetwalker&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/cposts/yu/yuwekogiwu-0.p8.png&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Download the cart&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/cposts/yu/yuwekogiwu-0.p8.png&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Download the cart&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2411,19 +2644,19 @@ There are many different kinds of Origami other than traditional folding includi
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.happyfolding.com/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Happy Folding diagram archive&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.happyfolding.com/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Happy Folding diagram archive&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;http://oriart.ru/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Russian Origami portal&lt;/a&gt;.
+	   &lt;a href=&#34;http://oriart.ru/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Russian Origami portal&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://langorigami.com/artworks/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Robert J. Lang&amp;#39;s Portfolio&lt;/a&gt;.
+	   &lt;a href=&#34;https://langorigami.com/artworks/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Robert J. Lang&amp;#39;s Portfolio&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://kusudama.me/origami&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Ekatrerina Lukasheva&amp;#39;s Portfolio&lt;/a&gt;.
+	   &lt;a href=&#34;https://kusudama.me/origami&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Ekatrerina Lukasheva&amp;#39;s Portfolio&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2436,7 +2669,7 @@ There are many different kinds of Origami other than traditional folding includi
      
  	&lt;/div&gt;
  &lt;/figure&gt;
-&lt;p&gt;∙ Origami Bracelets   (&lt;a href=&#34;https://increations.blogspot.com/2008/09/origami-bracelet.html?m=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inna Creates&amp;rsquo; Design&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;∙ Origami Bracelets (&lt;a href=&#34;https://increations.blogspot.com/2008/09/origami-bracelet.html?m=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inna Creates&amp;rsquo; Design&lt;/a&gt;)&lt;/p&gt;
 &lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/knowledge/origami_3.jpg&#34; loading=&#34;lazy&#34; alt=&#34;An Origami kusudama ball&#34;&gt;
@@ -2474,19 +2707,19 @@ There are many different kinds of Origami other than traditional folding includi
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.happyfolding.com/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Happy Folding diagram archive&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.happyfolding.com/diagrams&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Happy Folding diagram archive&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;http://oriart.ru/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Russian Origami portal&lt;/a&gt;.
+	   &lt;a href=&#34;http://oriart.ru/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Russian Origami portal&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://langorigami.com/artworks/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Robert J. Lang&amp;#39;s Portfolio&lt;/a&gt;.
+	   &lt;a href=&#34;https://langorigami.com/artworks/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Robert J. Lang&amp;#39;s Portfolio&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://kusudama.me/origami&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Ekatrerina Lukasheva&amp;#39;s Portfolio&lt;/a&gt;.
+	   &lt;a href=&#34;https://kusudama.me/origami&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Ekatrerina Lukasheva&amp;#39;s Portfolio&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2499,7 +2732,7 @@ There are many different kinds of Origami other than traditional folding includi
      
  	&lt;/div&gt;
  &lt;/figure&gt;
-&lt;p&gt;∙ Origami Bracelets   (&lt;a href=&#34;https://increations.blogspot.com/2008/09/origami-bracelet.html?m=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inna Creates&amp;rsquo; Design&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;∙ Origami Bracelets (&lt;a href=&#34;https://increations.blogspot.com/2008/09/origami-bracelet.html?m=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inna Creates&amp;rsquo; Design&lt;/a&gt;)&lt;/p&gt;
 &lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/knowledge/origami_3.jpg&#34; loading=&#34;lazy&#34; alt=&#34;An Origami kusudama ball&#34;&gt;
@@ -2604,11 +2837,11 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=28691&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Play Tiny Cookie Clicker&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=28691&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Play Tiny Cookie Clicker&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=34967&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Play Z demo&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=34967&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Play Z demo&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2644,11 +2877,11 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=28691&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Play Tiny Cookie Clicker&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=28691&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Play Tiny Cookie Clicker&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=34967&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Play Z demo&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.lexaloffle.com/bbs/?tid=34967&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Play Z demo&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2677,11 +2910,11 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://famicase.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Famicase Website&lt;/a&gt;.
+	   &lt;a href=&#34;https://famicase.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Famicase Website&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://super-meteor.com/?pid=159388800&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Purchase the Famicase 2021 Zine&lt;/a&gt;.
+	   &lt;a href=&#34;https://super-meteor.com/?pid=159388800&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Purchase the Famicase 2021 Zine&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2701,11 +2934,11 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;https://famicase.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Famicase Website&lt;/a&gt;.
+	   &lt;a href=&#34;https://famicase.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Famicase Website&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://super-meteor.com/?pid=159388800&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Purchase the Famicase 2021 Zine&lt;/a&gt;.
+	   &lt;a href=&#34;https://super-meteor.com/?pid=159388800&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Purchase the Famicase 2021 Zine&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2950,15 +3183,15 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;http://earthsci.org/expeditions/fossil_shapes/fossil_shapes.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Earth Science Australia identification guide&lt;/a&gt;.
+	   &lt;a href=&#34;http://earthsci.org/expeditions/fossil_shapes/fossil_shapes.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Earth Science Australia identification guide&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.fossils.ie/p/locations.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Examples of Fossils in Ireland&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.fossils.ie/p/locations.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Examples of Fossils in Ireland&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Rugosa&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Wikipedia: Rugosa, a common coral fossil type&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Rugosa&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Wikipedia: Rugosa, a common coral fossil type&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2978,15 +3211,15 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;http://earthsci.org/expeditions/fossil_shapes/fossil_shapes.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Earth Science Australia identification guide&lt;/a&gt;.
+	   &lt;a href=&#34;http://earthsci.org/expeditions/fossil_shapes/fossil_shapes.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Earth Science Australia identification guide&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://www.fossils.ie/p/locations.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Examples of Fossils in Ireland&lt;/a&gt;.
+	   &lt;a href=&#34;https://www.fossils.ie/p/locations.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Examples of Fossils in Ireland&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Rugosa&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;∙ Wikipedia: Rugosa, a common coral fossil type&lt;/a&gt;.
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/Rugosa&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Wikipedia: Rugosa, a common coral fossil type&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -3031,19 +3264,19 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;h2 id=&#34;favourite-things&#34;&gt;Favourite things&lt;/h2&gt;
 &lt;h3 id=&#34;music&#34;&gt;Music&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://mkgee.bandcamp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Mk.gee&lt;/a&gt; - Most listened artist of the year for me, fantastic producer though his bandcamp is missing his latest album sadly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mkgee.bandcamp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Mk.gee&lt;/a&gt; - Most listened artist of the year for me, fantastic producer though his bandcamp is missing his latest album sadly.&lt;/p&gt;
 &lt;h3 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://fallofcivilizationspodcast.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Fall of Civilisations podcast&lt;/a&gt; - Fantastically engaging podcast that paints the fall of many civilisations in a concise, historical narrative.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://podcast.panic.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Panic Podcast&lt;/a&gt; - A podcast about the portland software company, Panic. Incredibly fun and enjoyable listen!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://fallofcivilizationspodcast.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Fall of Civilisations podcast&lt;/a&gt; - Fantastically engaging podcast that paints the fall of many civilisations in a concise, historical narrative.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://podcast.panic.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Panic Podcast&lt;/a&gt; - A podcast about the portland software company, Panic. Incredibly fun and enjoyable listen!&lt;/p&gt;
 &lt;h3 id=&#34;websites&#34;&gt;Websites&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://100r.co/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Hundred Rabbits&lt;/a&gt; - A site covering Rek and Devine&amp;rsquo;s artist collective. I&amp;rsquo;ve spent so many hours reading on this site, with so many adventures, knowledge and projects to read about, it really is a treasure trove.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Ritual dust&lt;/a&gt; - the personal site of Lizbeth Poirier, there&amp;rsquo;s a wide range of content to be found on it. From beautiful art, to recipes and the fabulously depthful folklore section that is an absolute joy to read, especially with the site&amp;rsquo;s fantastic design.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://100r.co/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Hundred Rabbits&lt;/a&gt; - A site covering Rek and Devine&amp;rsquo;s artist collective. I&amp;rsquo;ve spent so many hours reading on this site, with so many adventures, knowledge and projects to read about, it really is a treasure trove.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Ritual dust&lt;/a&gt; - the personal site of Lizbeth Poirier, there&amp;rsquo;s a wide range of content to be found on it. From beautiful art, to recipes and the fabulously depthful folklore section that is an absolute joy to read, especially with the site&amp;rsquo;s fantastic design.&lt;/p&gt;
 &lt;h3 id=&#34;youtube&#34;&gt;Youtube&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/DisruptReality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Disrupt&lt;/a&gt; - Disrupt&amp;rsquo;s tv-imitation aids greatly to it&amp;rsquo;s flowing narrative and visual style. The stories they cover are fascinating, and the videos themselves are incredibly well produced like nothing else I&amp;rsquo;ve seen on the platform.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/NotJustBikes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Not Just Bikes&lt;/a&gt; - this channel has fast become a favourite on Hacker News, where I first came across it. The highly informative videos make you rethink the old, pedestrian-unfriendly infrastructure so many countries continue to use.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/DisruptReality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Disrupt&lt;/a&gt; - Disrupt&amp;rsquo;s tv-imitation aids greatly to it&amp;rsquo;s flowing narrative and visual style. The stories they cover are fascinating, and the videos themselves are incredibly well produced like nothing else I&amp;rsquo;ve seen on the platform.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/NotJustBikes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Not Just Bikes&lt;/a&gt; - this channel has fast become a favourite on Hacker News, where I first came across it. The highly informative videos make you rethink the old, pedestrian-unfriendly infrastructure so many countries continue to use.&lt;/p&gt;
 &lt;h3 id=&#34;manga&#34;&gt;Manga&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Yokohama_Kaidashi_Kik%C5%8D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Yokohama Kaidashi Kikō&lt;/a&gt; - A peaceful, warm manga set in a world where humanity is in decline. An unforgettable read.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Lore_Olympus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Lore Olympus&lt;/a&gt; - There&amp;rsquo;s not much not to love about Lore Olympus. It&amp;rsquo;s style is vivid and easy to read, and it&amp;rsquo;s story engaging, really making you look forward for the next chapter.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Yokohama_Kaidashi_Kik%C5%8D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Yokohama Kaidashi Kikō&lt;/a&gt; - A peaceful, warm manga set in a world where humanity is in decline. An unforgettable read.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Lore_Olympus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Lore Olympus&lt;/a&gt; - There&amp;rsquo;s not much not to love about Lore Olympus. It&amp;rsquo;s style is vivid and easy to read, and it&amp;rsquo;s story engaging, really making you look forward for the next chapter.&lt;/p&gt;
 &lt;h2 id=&#34;going-forward&#34;&gt;Going Forward&lt;/h2&gt;
 &lt;p&gt;The goal for 2022 is to get my health back into shape and sharpen my mind. I&amp;rsquo;d like to focus my time learning to properly program in a way that will actually be useful to me. The first project of the new year will likely be a rebuilding of this site, I&amp;rsquo;m unhappy hosting the site on github pages, not mention the code being an absolute mess. But I&amp;rsquo;ve got a clear vision of what I want to do this time, which makes it a lot easier to plan for. After that I plan to dabble in some C for the Pebble and make some watchfaces for a challenge.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
@@ -3080,19 +3313,19 @@ There are many different kinds of Origami other than traditional folding includi
 
 &lt;h2 id=&#34;favourite-things&#34;&gt;Favourite things&lt;/h2&gt;
 &lt;h3 id=&#34;music&#34;&gt;Music&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://mkgee.bandcamp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Mk.gee&lt;/a&gt; - Most listened artist of the year for me, fantastic producer though his bandcamp is missing his latest album sadly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mkgee.bandcamp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Mk.gee&lt;/a&gt; - Most listened artist of the year for me, fantastic producer though his bandcamp is missing his latest album sadly.&lt;/p&gt;
 &lt;h3 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://fallofcivilizationspodcast.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Fall of Civilisations podcast&lt;/a&gt; - Fantastically engaging podcast that paints the fall of many civilisations in a concise, historical narrative.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://podcast.panic.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Panic Podcast&lt;/a&gt; - A podcast about the portland software company, Panic. Incredibly fun and enjoyable listen!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://fallofcivilizationspodcast.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Fall of Civilisations podcast&lt;/a&gt; - Fantastically engaging podcast that paints the fall of many civilisations in a concise, historical narrative.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://podcast.panic.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Panic Podcast&lt;/a&gt; - A podcast about the portland software company, Panic. Incredibly fun and enjoyable listen!&lt;/p&gt;
 &lt;h3 id=&#34;websites&#34;&gt;Websites&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://100r.co/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Hundred Rabbits&lt;/a&gt; - A site covering Rek and Devine&amp;rsquo;s artist collective. I&amp;rsquo;ve spent so many hours reading on this site, with so many adventures, knowledge and projects to read about, it really is a treasure trove.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Ritual dust&lt;/a&gt; - the personal site of Lizbeth Poirier, there&amp;rsquo;s a wide range of content to be found on it. From beautiful art, to recipes and the fabulously depthful folklore section that is an absolute joy to read, especially with the site&amp;rsquo;s fantastic design.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://100r.co/site/home.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Hundred Rabbits&lt;/a&gt; - A site covering Rek and Devine&amp;rsquo;s artist collective. I&amp;rsquo;ve spent so many hours reading on this site, with so many adventures, knowledge and projects to read about, it really is a treasure trove.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Ritual dust&lt;/a&gt; - the personal site of Lizbeth Poirier, there&amp;rsquo;s a wide range of content to be found on it. From beautiful art, to recipes and the fabulously depthful folklore section that is an absolute joy to read, especially with the site&amp;rsquo;s fantastic design.&lt;/p&gt;
 &lt;h3 id=&#34;youtube&#34;&gt;Youtube&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/DisruptReality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Disrupt&lt;/a&gt; - Disrupt&amp;rsquo;s tv-imitation aids greatly to it&amp;rsquo;s flowing narrative and visual style. The stories they cover are fascinating, and the videos themselves are incredibly well produced like nothing else I&amp;rsquo;ve seen on the platform.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/NotJustBikes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Not Just Bikes&lt;/a&gt; - this channel has fast become a favourite on Hacker News, where I first came across it. The highly informative videos make you rethink the old, pedestrian-unfriendly infrastructure so many countries continue to use.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/DisruptReality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Disrupt&lt;/a&gt; - Disrupt&amp;rsquo;s tv-imitation aids greatly to it&amp;rsquo;s flowing narrative and visual style. The stories they cover are fascinating, and the videos themselves are incredibly well produced like nothing else I&amp;rsquo;ve seen on the platform.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/c/NotJustBikes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Not Just Bikes&lt;/a&gt; - this channel has fast become a favourite on Hacker News, where I first came across it. The highly informative videos make you rethink the old, pedestrian-unfriendly infrastructure so many countries continue to use.&lt;/p&gt;
 &lt;h3 id=&#34;manga&#34;&gt;Manga&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Yokohama_Kaidashi_Kik%C5%8D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Yokohama Kaidashi Kikō&lt;/a&gt; - A peaceful, warm manga set in a world where humanity is in decline. An unforgettable read.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Lore_Olympus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;∙ Lore Olympus&lt;/a&gt; - There&amp;rsquo;s not much not to love about Lore Olympus. It&amp;rsquo;s style is vivid and easy to read, and it&amp;rsquo;s story engaging, really making you look forward for the next chapter.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Yokohama_Kaidashi_Kik%C5%8D&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Yokohama Kaidashi Kikō&lt;/a&gt; - A peaceful, warm manga set in a world where humanity is in decline. An unforgettable read.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Lore_Olympus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Lore Olympus&lt;/a&gt; - There&amp;rsquo;s not much not to love about Lore Olympus. It&amp;rsquo;s style is vivid and easy to read, and it&amp;rsquo;s story engaging, really making you look forward for the next chapter.&lt;/p&gt;
 &lt;h2 id=&#34;going-forward&#34;&gt;Going Forward&lt;/h2&gt;
 &lt;p&gt;The goal for 2022 is to get my health back into shape and sharpen my mind. I&amp;rsquo;d like to focus my time learning to properly program in a way that will actually be useful to me. The first project of the new year will likely be a rebuilding of this site, I&amp;rsquo;m unhappy hosting the site on github pages, not mention the code being an absolute mess. But I&amp;rsquo;ve got a clear vision of what I want to do this time, which makes it a lot easier to plan for. After that I plan to dabble in some C for the Pebble and make some watchfaces for a challenge.&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
