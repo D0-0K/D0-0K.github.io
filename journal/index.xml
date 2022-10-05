@@ -6,7 +6,16 @@
     <description>Recent content in Journal on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 18 Feb 2022 10:52:41 +0000</lastBuildDate><atom:link href="https://d00k.net/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 15:50:41 +0100</lastBuildDate><atom:link href="https://d00k.net/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Extreme Web Optimizations, without Compromising Style</title>
+      <link>https://d00k.net/journal/web-optimisations/</link>
+      <pubDate>Wed, 05 Oct 2022 15:50:41 +0100</pubDate>
+      
+      <guid>https://d00k.net/journal/web-optimisations/</guid>
+      <description>Over the past 10 months, I&amp;rsquo;ve worked on and off tweaking my site to get it closer to how I want it to look and perform. The main goal was simple: make a site that looks good, and loads fast. A quick solution would&amp;rsquo;ve been to keep the css to a minimum, use browser defaults for fonts etc. However that would&amp;rsquo;ve made my vision of a styled site difficult if not impossible.</description>
+    </item>
+    
     <item>
       <title>Year Review 2021</title>
       <link>https://d00k.net/journal/year-review-2021/</link>
