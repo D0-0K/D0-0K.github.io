@@ -43,7 +43,10 @@ pre{background-color:var(--accent);padding:10px;overflow-y:hidden;}
 h1{font-size:3.3em;font-size:calc(2.3em + 2vw);font-family:Barlow;font-weight:500;line-height:1.1em;max-width:1000px;}
 h2{font-size:33px;}
 h3{margin-bottom:5px;font-size:20px;}
-.main-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
+.home-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
+.home-box ul{margin-bottom:15px;}
+.home-box hr{width:90%;height:2px;margin-bottom:15px}
+.main-box{font-size:20px;max-width:400px;margin:20px .75vw}
 .main-box ul{margin-bottom:15px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
