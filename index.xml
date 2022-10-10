@@ -4,11 +4,26 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Sat, 08 Oct 2022 17:23:50 EST</lastBuildDate>
+    <lastBuildDate>Sun, 09 Oct 2022 13:27:32 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>2022 10 9</title>
+        <link>https://d00k.net/about/shortjournal/2022-10-9/</link>
+        <guid>https://d00k.net/about/shortjournal/2022-10-9/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sun, 09 Oct 2022 13:27:32 EST}</pubDate>
+        
+        <description>&lt;p&gt;  It&amp;rsquo;s a crazy couple of months for me, but I finally found some time to tend to the website. First thing I did was get to finalising it&amp;rsquo;s design, the way it had been before was overly garish and pretty difficult to look at on some pages, the new style is far better in this regard. I also took the time to go absolutely overboard on optimising every possible thing I could, making each pretty tiny for what it is, I made a writeup on everything I did &lt;a href=&#34;https://d00k.net/journal/web-optimisations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;  I also managed to find a new home on mastodon during this time at Lurk! It&amp;rsquo;s a great community. A few new projects have been started as well; an accessible version of my ipod them after some user feedback, as well as a book for other people looking into making their own themes. Currently everything I&amp;rsquo;m doing is building up for my portfolio to switch colleges with next year, so I&amp;rsquo;m gonna be busy for the the next few months!&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;  It&amp;rsquo;s a crazy couple of months for me, but I finally found some time to tend to the website. First thing I did was get to finalising it&amp;rsquo;s design, the way it had been before was overly garish and pretty difficult to look at on some pages, the new style is far better in this regard. I also took the time to go absolutely overboard on optimising every possible thing I could, making each pretty tiny for what it is, I made a writeup on everything I did &lt;a href=&#34;https://d00k.net/journal/web-optimisations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;  I also managed to find a new home on mastodon during this time at Lurk! It&amp;rsquo;s a great community. A few new projects have been started as well; an accessible version of my ipod them after some user feedback, as well as a book for other people looking into making their own themes. Currently everything I&amp;rsquo;m doing is building up for my portfolio to switch colleges with next year, so I&amp;rsquo;m gonna be busy for the the next few months!&lt;/p&gt;
+</content:encoded>
+      </item>
     
       <item>
         <title>Vivid Flowers</title>
@@ -608,7 +623,7 @@
         <pubDate>Fri, 05 Aug 2022 16:23:11 EST}</pubDate>
         
         <description>&lt;h2 id=&#34;the-task&#34;&gt;The task&lt;/h2&gt;
-&lt;p&gt;  The Pebble revival project, Rebble, has been branching out to make replacement apps and firmware for Pebbles to help with longevity. Part of this has included remaking icons as the original Pebble ones are not open source or legally usable. This page details the weather icons I designed for the project, and for use in my own watchfaces. They follow the same rules as the original icons, however have their own Rebble twist to them.&lt;/p&gt;
+&lt;p&gt;  Inspired by the Pebble revival project, Rebble and their unique aesthetic inspired by the original series of icons developed by Heydays design for pebble, I set out to make my own weather icons to use in projects on the watches in the future. While I took inspiration to make them familiar to users, I also sought to give them their own flair and personality.&lt;/p&gt;
 &lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Many various icons for apps, weather and watch functions&#34;&gt;
@@ -662,7 +677,7 @@
 
 </description>
         <content:encoded>&lt;h2 id=&#34;the-task&#34;&gt;The task&lt;/h2&gt;
-&lt;p&gt;  The Pebble revival project, Rebble, has been branching out to make replacement apps and firmware for Pebbles to help with longevity. Part of this has included remaking icons as the original Pebble ones are not open source or legally usable. This page details the weather icons I designed for the project, and for use in my own watchfaces. They follow the same rules as the original icons, however have their own Rebble twist to them.&lt;/p&gt;
+&lt;p&gt;  Inspired by the Pebble revival project, Rebble and their unique aesthetic inspired by the original series of icons developed by Heydays design for pebble, I set out to make my own weather icons to use in projects on the watches in the future. While I took inspiration to make them familiar to users, I also sought to give them their own flair and personality.&lt;/p&gt;
 &lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/projects/rebbleweather01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Many various icons for apps, weather and watch functions&#34;&gt;
@@ -1185,6 +1200,8 @@
 &lt;li&gt;∘ &lt;strong&gt;August&lt;/strong&gt;: &amp;nbsp; Versions of Modern Performance - Horsegirl.&lt;/li&gt;
 
 &lt;li&gt;∘ &lt;strong&gt;September&lt;/strong&gt;: &amp;nbsp; Black Focus - Yussef Kamaal.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; Heart Under - Just Mustard.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -1212,6 +1229,8 @@
 &lt;li&gt;∘ &lt;strong&gt;August&lt;/strong&gt;: &amp;nbsp; Versions of Modern Performance - Horsegirl.&lt;/li&gt;
 
 &lt;li&gt;∘ &lt;strong&gt;September&lt;/strong&gt;: &amp;nbsp; Black Focus - Yussef Kamaal.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; Heart Under - Just Mustard.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>
@@ -1444,6 +1463,21 @@
 &lt;li&gt;∘ Found a new home on Mastodon at Lurk!&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;september&#34;&gt;September&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Learning C with &#34;Learning C for Pebble&#34;.&lt;/li&gt;
+
+&lt;li&gt;∘ Started and finished a complete redesign of the website to it&#39;s final form.&lt;/li&gt;
+
+&lt;li&gt;∘ Still working on an accessible version of my iPod theme for people with vision difficulties.&lt;/li&gt;
+
+&lt;li&gt;∘ Began writing a technical book for writing rockbox themes for ipods.&lt;/li&gt;
+
+&lt;li&gt;∘ Starting taking some photos again.&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <content:encoded>&lt;h2 id=&#34;march&#34;&gt;March&lt;/h2&gt;
 
@@ -1520,6 +1554,21 @@
 &lt;li&gt;∘ Expanding the site a little more.&lt;/li&gt;
 
 &lt;li&gt;∘ Found a new home on Mastodon at Lurk!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;september&#34;&gt;September&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Learning C with &#34;Learning C for Pebble&#34;.&lt;/li&gt;
+
+&lt;li&gt;∘ Started and finished a complete redesign of the website to it&#39;s final form.&lt;/li&gt;
+
+&lt;li&gt;∘ Still working on an accessible version of my iPod theme for people with vision difficulties.&lt;/li&gt;
+
+&lt;li&gt;∘ Began writing a technical book for writing rockbox themes for ipods.&lt;/li&gt;
+
+&lt;li&gt;∘ Starting taking some photos again.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>
@@ -2702,7 +2751,7 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
  	&lt;/div&gt;
  &lt;/figure&gt;
 &lt;p&gt;  The site has a simple, consistent design language to make discerning the content of pages easy. Page headers use the &lt;a href=&#34;https://github.com/jpt/barlow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Barlow&lt;/a&gt; fontface with a weight of 500. Text and paragraphs are in &lt;a href=&#34;https://github.com/theleagueof/league-spartan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;League Spartan Variable&lt;/a&gt; and all links use the &lt;a href=&#34;https://usemodify.com/fonts/lunchtype/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lunchtype22&lt;/a&gt; fontface.&lt;/p&gt;
-&lt;p&gt;  Links have a set of rules to follow depending on where it is, and what it links to. Inline links look like &lt;a href=&#34;&#34;&gt;this&lt;/a&gt;, having an underline for visibility. Links in lists have one of two operator prefixes to display if a link is external or internal. &amp;ldquo;•&amp;rdquo; operators mean the link connects to somewhere within the site, while &amp;ldquo;🞙&amp;rdquo; means the links is an external url and will open in a new tab. &amp;ldquo;￭&amp;rdquo; is designated for gemini content and should open in your browser of choice.&lt;/p&gt;
+&lt;p&gt;  Links have a set of rules to follow depending on where it is, and what it links to. Inline links look like &lt;a href=&#34;&#34;&gt;this&lt;/a&gt;, having an underline for visibility. Links in lists have one of two operator prefixes to display if a link is external or internal. &amp;ldquo;•&amp;rdquo; operators mean the link connects to somewhere within the site, while &amp;ldquo;⬩&amp;rdquo; means the links is an external url and will open in a new tab. &amp;ldquo;▪&amp;rdquo; is designated for gemini content and should open in your browser of choice.&lt;/p&gt;
 &lt;h2 id=&#34;inspirations-and-mentions&#34;&gt;Inspirations and Mentions&lt;/h2&gt;
 &lt;p&gt;  Lizbeth Poirier&amp;rsquo;s beautiful site &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ritual Dust&lt;/a&gt; was a big inspiration and help when designing the site, Lizbeth has an incredibly helpful collection of resources that I learned a lot from including Fonts, Html and Css. Thomasorus&amp;rsquo; &lt;a href=&#34;https://thomasorus.com/html-tips.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Html Tips&lt;/a&gt; guide is a great read if you are building your own site with minimal knowledge. Lastly, I used &lt;a href=&#34;https://kokorobot.ca/site/notes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rekka Bellum&amp;rsquo;s&lt;/a&gt; great imagemagick &lt;a href=&#34;https://kokorobot.ca/site/leanimages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt; to create a script for optimising my images and reducing their file sizes.&lt;/p&gt;
 
@@ -2710,15 +2759,11 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 &lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;./now/&#34;&gt;∙ Now - This month&amp;#39;s plans&lt;/a&gt;.
+	   &lt;a href=&#34;https://d00k.net/journal/web-optimisations&#34;&gt;∙ Journal post on optimisations employed in the site&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;./shortjournal/&#34;&gt;∙ Short Journal - What I&amp;#39;m up to&lt;/a&gt;.
-	&lt;/li&gt;
-
-	&lt;li&gt;
-	   &lt;a href=&#34;./colophon&#34;&gt;∙ Colophon - Site Design info&lt;/a&gt;.
+	   &lt;a href=&#34;https://thomasorus.com/web-development.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Thomasorus&amp;#39; Web Dev Guides&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2736,7 +2781,7 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
  	&lt;/div&gt;
  &lt;/figure&gt;
 &lt;p&gt;  The site has a simple, consistent design language to make discerning the content of pages easy. Page headers use the &lt;a href=&#34;https://github.com/jpt/barlow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Barlow&lt;/a&gt; fontface with a weight of 500. Text and paragraphs are in &lt;a href=&#34;https://github.com/theleagueof/league-spartan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;League Spartan Variable&lt;/a&gt; and all links use the &lt;a href=&#34;https://usemodify.com/fonts/lunchtype/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lunchtype22&lt;/a&gt; fontface.&lt;/p&gt;
-&lt;p&gt;  Links have a set of rules to follow depending on where it is, and what it links to. Inline links look like &lt;a href=&#34;&#34;&gt;this&lt;/a&gt;, having an underline for visibility. Links in lists have one of two operator prefixes to display if a link is external or internal. &amp;ldquo;•&amp;rdquo; operators mean the link connects to somewhere within the site, while &amp;ldquo;🞙&amp;rdquo; means the links is an external url and will open in a new tab. &amp;ldquo;￭&amp;rdquo; is designated for gemini content and should open in your browser of choice.&lt;/p&gt;
+&lt;p&gt;  Links have a set of rules to follow depending on where it is, and what it links to. Inline links look like &lt;a href=&#34;&#34;&gt;this&lt;/a&gt;, having an underline for visibility. Links in lists have one of two operator prefixes to display if a link is external or internal. &amp;ldquo;•&amp;rdquo; operators mean the link connects to somewhere within the site, while &amp;ldquo;⬩&amp;rdquo; means the links is an external url and will open in a new tab. &amp;ldquo;▪&amp;rdquo; is designated for gemini content and should open in your browser of choice.&lt;/p&gt;
 &lt;h2 id=&#34;inspirations-and-mentions&#34;&gt;Inspirations and Mentions&lt;/h2&gt;
 &lt;p&gt;  Lizbeth Poirier&amp;rsquo;s beautiful site &lt;a href=&#34;https://ritualdust.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ritual Dust&lt;/a&gt; was a big inspiration and help when designing the site, Lizbeth has an incredibly helpful collection of resources that I learned a lot from including Fonts, Html and Css. Thomasorus&amp;rsquo; &lt;a href=&#34;https://thomasorus.com/html-tips.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Html Tips&lt;/a&gt; guide is a great read if you are building your own site with minimal knowledge. Lastly, I used &lt;a href=&#34;https://kokorobot.ca/site/notes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rekka Bellum&amp;rsquo;s&lt;/a&gt; great imagemagick &lt;a href=&#34;https://kokorobot.ca/site/leanimages.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;guide&lt;/a&gt; to create a script for optimising my images and reducing their file sizes.&lt;/p&gt;
 
@@ -2744,15 +2789,11 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 &lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
 &lt;ul class=&#34;extra&#34;&gt;
 	&lt;li&gt;
-	   &lt;a href=&#34;./now/&#34;&gt;∙ Now - This month&amp;#39;s plans&lt;/a&gt;.
+	   &lt;a href=&#34;https://d00k.net/journal/web-optimisations&#34;&gt;∙ Journal post on optimisations employed in the site&lt;/a&gt;.
 	&lt;/li&gt;
 
 	&lt;li&gt;
-	   &lt;a href=&#34;./shortjournal/&#34;&gt;∙ Short Journal - What I&amp;#39;m up to&lt;/a&gt;.
-	&lt;/li&gt;
-
-	&lt;li&gt;
-	   &lt;a href=&#34;./colophon&#34;&gt;∙ Colophon - Site Design info&lt;/a&gt;.
+	   &lt;a href=&#34;https://thomasorus.com/web-development.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Thomasorus&amp;#39; Web Dev Guides&lt;/a&gt;.
 	&lt;/li&gt;
 &lt;/ul&gt;
 
