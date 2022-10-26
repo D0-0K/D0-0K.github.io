@@ -4,11 +4,105 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Sun, 09 Oct 2022 13:27:32 EST</lastBuildDate>
+    <lastBuildDate>Wed, 26 Oct 2022 19:16:06 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Manga</title>
+        <link>https://d00k.net/about/manga/</link>
+        <guid>https://d00k.net/about/manga/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 26 Oct 2022 19:16:06 EST}</pubDate>
+        
+        <description>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/about/index.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A grey and creamy white keyboard&#34;&gt;
+     &lt;figcaption&gt;Blue Period - Yamaguchi Tsubasa&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;how-good-an-art-is-isnt-determined-by-techniques-art-is-a-language-without-words&#34;&gt;&amp;ldquo;How good an art is; isn’t determined by techniques. Art is a language without words.&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;under construction&lt;/p&gt;
+&lt;p&gt;:3)&lt;/p&gt;
+</description>
+        <content:encoded>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/about/index.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A grey and creamy white keyboard&#34;&gt;
+     &lt;figcaption&gt;Blue Period - Yamaguchi Tsubasa&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;how-good-an-art-is-isnt-determined-by-techniques-art-is-a-language-without-words&#34;&gt;&amp;ldquo;How good an art is; isn’t determined by techniques. Art is a language without words.&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;under construction&lt;/p&gt;
+&lt;p&gt;:3)&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>Time Twist Pop</title>
+        <link>https://d00k.net/projects/timetwistpop/</link>
+        <guid>https://d00k.net/projects/timetwistpop/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 26 Oct 2022 18:31:27 EST}</pubDate>
+        
+        <description>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Two round watches, with a simple two hand watchface decorated with a ridged backdrop&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 9 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.&lt;/p&gt;
+&lt;p&gt;  An ongoing project, Time Twist Pop is my first foray into working with C. Being a difficult language, especially for beginners, I intend to take my time to get it just right. Once released, I&amp;rsquo;ll update this page with links and more.&lt;/p&gt;
+&lt;h2 id=&#34;the-themes&#34;&gt;The Themes&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;The 9 themes each have their own feel and identity. Silver Shadow, Slate Shadow, Purple Punch, Garden Green, Mint Twist, Strawberry Twist, Rose Quartz, Dragon Blue and Sailor Blue. The themes consist of four colours, two for the hands and two for the backgrounds. Background colours are dithered to create the illusion of a perfect blend, creating the watchface&amp;rsquo;s unique identity.&lt;/p&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+</description>
+        <content:encoded>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Two round watches, with a simple two hand watchface decorated with a ridged backdrop&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 9 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.&lt;/p&gt;
+&lt;p&gt;  An ongoing project, Time Twist Pop is my first foray into working with C. Being a difficult language, especially for beginners, I intend to take my time to get it just right. Once released, I&amp;rsquo;ll update this page with links and more.&lt;/p&gt;
+&lt;h2 id=&#34;the-themes&#34;&gt;The Themes&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;The 9 themes each have their own feel and identity. Silver Shadow, Slate Shadow, Purple Punch, Garden Green, Mint Twist, Strawberry Twist, Rose Quartz, Dragon Blue and Sailor Blue. The themes consist of four colours, two for the hands and two for the backgrounds. Background colours are dithered to create the illusion of a perfect blend, creating the watchface&amp;rsquo;s unique identity.&lt;/p&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+</content:encoded>
+      </item>
     
       <item>
         <title>2022 10 9</title>
@@ -1478,6 +1572,19 @@
 &lt;li&gt;∘ Starting taking some photos again.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;october-2022&#34;&gt;October 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Reading a lot of Manga.&lt;/li&gt;
+
+&lt;li&gt;∘ Still working on an accessible version of my iPod theme for people with vision difficulties.&lt;/li&gt;
+
+&lt;li&gt;∘ Continue writing my technical book for ipod theming.&lt;/li&gt;
+
+&lt;li&gt;∘ Organised all my files.&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <content:encoded>&lt;h2 id=&#34;march&#34;&gt;March&lt;/h2&gt;
 
@@ -1569,6 +1676,19 @@
 &lt;li&gt;∘ Began writing a technical book for writing rockbox themes for ipods.&lt;/li&gt;
 
 &lt;li&gt;∘ Starting taking some photos again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;october-2022&#34;&gt;October 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Reading a lot of Manga.&lt;/li&gt;
+
+&lt;li&gt;∘ Still working on an accessible version of my iPod theme for people with vision difficulties.&lt;/li&gt;
+
+&lt;li&gt;∘ Continue writing my technical book for ipod theming.&lt;/li&gt;
+
+&lt;li&gt;∘ Organised all my files.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>

@@ -6,7 +6,17 @@
     <description>Recent content in pebble on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 05 Aug 2022 16:23:11 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/pebble/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Oct 2022 18:31:27 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/pebble/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time Twist Pop</title>
+      <link>https://d00k.net/projects/timetwistpop/</link>
+      <pubDate>Wed, 26 Oct 2022 18:31:27 +0100</pubDate>
+      
+      <guid>https://d00k.net/projects/timetwistpop/</guid>
+      <description>Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 9 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.
+ An ongoing project, Time Twist Pop is my first foray into working with C. Being a difficult language, especially for beginners, I intend to take my time to get it just right.</description>
+    </item>
+    
     <item>
       <title>Rebble Weather Icons</title>
       <link>https://d00k.net/projects/rebble_weather/</link>
