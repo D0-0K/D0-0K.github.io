@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manga on D00k</title>
+    <link>https://d00k.net/about/manga/</link>
+    <description>Recent content in Manga on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Mon, 31 Oct 2022 16:42:27 +0000</lastBuildDate><atom:link href="https://d00k.net/about/manga/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Previously Read Manga</title>
+      <link>https://d00k.net/about/manga/read/</link>
+      <pubDate>Mon, 31 Oct 2022 17:08:50 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/manga/read/</guid>
+      <description>Yokohama Kaidashi Kikou - Ashinano Hitoshi      A collection of lists, recording manga I&amp;rsquo;ve read since 2016. Not entirely complete since I&amp;rsquo;ve forgotten or lost some.
+2021 ∘ Horimiya. ∘ Inuyasha. ∘ Shingeki no Kyojin. ∘ Tokyo Revengers. ∘ Enen no Shouboutai. ∘ Toilet Bound Hanako-kun. ∘ Dandadan. ∘ Berserk. ∘ Jujutsu Kaisen. ∘ Dr.Stone.  Previous Years ∘ Jojo: Jojolion. ∘ Jojo: Steel Ball Run.</description>
+    </item>
+    
+    <item>
+      <title>Favourites</title>
+      <link>https://d00k.net/about/manga/favourites/</link>
+      <pubDate>Mon, 31 Oct 2022 16:40:24 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/manga/favourites/</guid>
+      <description>Kimi wa Hougako Insomnia - Makoto Ojiro     A review list, in no particular order, of some of my favourite manga series and recommended reads.
+Horimiya  I reread this almost every year when I can, it&amp;rsquo;s become something of a comfort read for me, and for good reason! Horimiya&amp;rsquo;s romance, slice-of-life is both refreshing and entertaining, with strong characters to carry the series. It slows down a lot as it goes on, but plays well in it&amp;rsquo;s favour.</description>
+    </item>
+    
+  </channel>
+</rss>
