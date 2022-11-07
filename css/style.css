@@ -60,7 +60,7 @@ img{max-width:100%;}
 a{font-weight:bold;text-decoration:none;font-family:"LunchType";}
 article p{font-size:20px;margin-bottom:5px;}
 p{font-size:20px;margin-bottom:35px;}
-p a{text-decoration:underline wavy var(--accent);}
+p a, .link{text-decoration:underline wavy var(--accent);}
 .tags{margin-left:-5px;}
 .tags li{display:inline-block;}
 .tags a {display:inline-block;margin:5px;}
