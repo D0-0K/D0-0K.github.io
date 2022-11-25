@@ -4,11 +4,306 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Mon, 31 Oct 2022 17:08:50 EST</lastBuildDate>
+    <lastBuildDate>Fri, 25 Nov 2022 20:05:31 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>2022 11 25</title>
+        <link>https://d00k.net/about/shortjournal/2022-11-25/</link>
+        <guid>https://d00k.net/about/shortjournal/2022-11-25/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Fri, 25 Nov 2022 20:05:31 EST}</pubDate>
+        
+        <description>&lt;p&gt;  What a wild month! I started the month updating a finishing off my &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt; theme for rockbox. I also spent the past 3 weeks learning to program in C, building up to the Rebble Hackathon last weekend where I put together my watchface design, &lt;a href=&#34;https://d00k.net/projects/pebble/timetwistpop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Time Twist Pop&lt;/a&gt; and released it! It was incredibly frustrating at times, since I really have very little experience programming. However, by the end of the weekend I was getting into the zone and pumping out some really good stuff and was having a blast! Really looking forward to making more with C in the future!&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;  What a wild month! I started the month updating a finishing off my &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt; theme for rockbox. I also spent the past 3 weeks learning to program in C, building up to the Rebble Hackathon last weekend where I put together my watchface design, &lt;a href=&#34;https://d00k.net/projects/pebble/timetwistpop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Time Twist Pop&lt;/a&gt; and released it! It was incredibly frustrating at times, since I really have very little experience programming. However, by the end of the weekend I was getting into the zone and pumping out some really good stuff and was having a blast! Really looking forward to making more with C in the future!&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>Time Twist Pop</title>
+        <link>https://d00k.net/projects/pebble/timetwistpop/</link>
+        <guid>https://d00k.net/projects/pebble/timetwistpop/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Fri, 25 Nov 2022 18:31:27 EST}</pubDate>
+        
+        <description>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Two round watches, with a simple two hand watchface decorated with a ridged backdrop&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 24 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.&lt;/p&gt;
+&lt;p&gt;  Made during the &lt;a href=&#34;https://rebble.io/hackathon-001/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rebble Hackathon #001&lt;/a&gt;, Time Twist Pop is my first foray into programming, completed within 48 hours.&lt;/p&gt;
+&lt;h2 id=&#34;the-themes&#34;&gt;The Themes&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every pride theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;The 24 themes each have their own feel and identity. Silver Shadow, Slate Shadow, Rose Quartz, Sailor Blue, Mint Twist, Strawberry Twist, Citrus Twist, Dragon Blue, Sorcerer Red and Purple Punch are the first series. There is also a second series of 14 Pride Flags. Background colours are dithered to create the illusion of a perfect blend, creating the watchface&amp;rsquo;s unique identity.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Stylish Theming options.&lt;/li&gt;
+
+&lt;li&gt;∘ Toggle-able Date Display.&lt;/li&gt;
+
+&lt;li&gt;∘ Vibrate on Bluetooth disconnect.&lt;/li&gt;
+
+&lt;li&gt;∘ Single pulse or double pulse options.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://apps.rebble.io/en_US/application/637a8d0cfdf3e30009f63964?section=watchfaces&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rebble Store page&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/time-twist-pop&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod Dark download&lt;/a&gt;.
+	&lt;/li&gt;
+
+</description>
+        <content:encoded>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Two round watches, with a simple two hand watchface decorated with a ridged backdrop&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 24 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.&lt;/p&gt;
+&lt;p&gt;  Made during the &lt;a href=&#34;https://rebble.io/hackathon-001/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rebble Hackathon #001&lt;/a&gt;, Time Twist Pop is my first foray into programming, completed within 48 hours.&lt;/p&gt;
+&lt;h2 id=&#34;the-themes&#34;&gt;The Themes&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every pride theme option, with their colour and name&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;The 24 themes each have their own feel and identity. Silver Shadow, Slate Shadow, Rose Quartz, Sailor Blue, Mint Twist, Strawberry Twist, Citrus Twist, Dragon Blue, Sorcerer Red and Purple Punch are the first series. There is also a second series of 14 Pride Flags. Background colours are dithered to create the illusion of a perfect blend, creating the watchface&amp;rsquo;s unique identity.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Stylish Theming options.&lt;/li&gt;
+
+&lt;li&gt;∘ Toggle-able Date Display.&lt;/li&gt;
+
+&lt;li&gt;∘ Vibrate on Bluetooth disconnect.&lt;/li&gt;
+
+&lt;li&gt;∘ Single pulse or double pulse options.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://apps.rebble.io/en_US/application/637a8d0cfdf3e30009f63964?section=watchfaces&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rebble Store page&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/time-twist-pop&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod Dark download&lt;/a&gt;.
+	&lt;/li&gt;
+
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>adwaitapod</title>
+        <link>https://d00k.net/projects/adwaitapod/</link>
+        <guid>https://d00k.net/projects/adwaitapod/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Thu, 24 Nov 2022 14:45:53 EST}</pubDate>
+        
+        <description>&lt;p&gt; Adwaitapod is a modern and feature-rich theme for Rockbox. The theme uses the principles of Gnome&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Adwaita_%28design_language%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adwaita&lt;/a&gt; design language, and aims to be a complete and pleasing experience for users.The theme currently supports the iPod classic 5th, 6th and 7th gen.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod.gif&#34; loading=&#34;lazy&#34; alt=&#34;A gif showing the various screens of adwaitapod&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Consistent interface with rounded corners.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.&lt;/li&gt;
+
+&lt;li&gt;∘ Radio Player skin with station icon support when using an FM Presets file.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Recording screen with extra indicators for file format and frequency selected.&lt;/li&gt;
+
+&lt;li&gt;∘ Miniplayer that appears on the main screen as well as the quick screen.&lt;/li&gt;
+
+&lt;li&gt;∘ Lossless format file indicator for the Player screen.&lt;/li&gt;
+
+&lt;li&gt;∘ Separate &#34;Dark mode&#34; theme available too.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+
+
+&lt;p style=&#34;margin-bottom:5px;&#34;&gt;&amp;nbsp;Extras available via the Github Repo include:&lt;/p&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Fonts with CJK support, including full theme downloads including them.&lt;/li&gt;
+
+&lt;li&gt;∘ Larger Fonts for better visibility.&lt;/li&gt;
+
+&lt;li&gt;∘ Releases with settings for smooth scrolling text (can&#39;t be uploaded to Rockbox).&lt;/li&gt;
+
+&lt;li&gt;∘ Copies of the theme&#39;s code with labelling.&lt;/li&gt;
+
+&lt;li&gt;∘ Inkscape SVG files of every individual screen in the theme.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v2.0/adwaitapod_v2.0.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod download&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v2.0/adwaitapod_dark_v2.0.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod Dark download&lt;/a&gt;.
+	&lt;/li&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3275&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3274&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Dark Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/comparison.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A picture with every important screen in adwaitapod&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;credit&#34;&gt;Credit&lt;/h2&gt;
+&lt;p&gt; Credit to the &lt;a href=&#34;http://www.gnome.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GNOME Project&lt;/a&gt; for the adwaita icons used in this theme, as well to the authors of the &lt;a href=&#34;https://cantarell.gnome.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cantarell Typeface&lt;/a&gt; Font.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt; Adwaitapod is a modern and feature-rich theme for Rockbox. The theme uses the principles of Gnome&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Adwaita_%28design_language%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adwaita&lt;/a&gt; design language, and aims to be a complete and pleasing experience for users.The theme currently supports the iPod classic 5th, 6th and 7th gen.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod.gif&#34; loading=&#34;lazy&#34; alt=&#34;A gif showing the various screens of adwaitapod&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Consistent interface with rounded corners.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.&lt;/li&gt;
+
+&lt;li&gt;∘ Radio Player skin with station icon support when using an FM Presets file.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Recording screen with extra indicators for file format and frequency selected.&lt;/li&gt;
+
+&lt;li&gt;∘ Miniplayer that appears on the main screen as well as the quick screen.&lt;/li&gt;
+
+&lt;li&gt;∘ Lossless format file indicator for the Player screen.&lt;/li&gt;
+
+&lt;li&gt;∘ Separate &#34;Dark mode&#34; theme available too.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+
+
+&lt;p style=&#34;margin-bottom:5px;&#34;&gt;&amp;nbsp;Extras available via the Github Repo include:&lt;/p&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Fonts with CJK support, including full theme downloads including them.&lt;/li&gt;
+
+&lt;li&gt;∘ Larger Fonts for better visibility.&lt;/li&gt;
+
+&lt;li&gt;∘ Releases with settings for smooth scrolling text (can&#39;t be uploaded to Rockbox).&lt;/li&gt;
+
+&lt;li&gt;∘ Copies of the theme&#39;s code with labelling.&lt;/li&gt;
+
+&lt;li&gt;∘ Inkscape SVG files of every individual screen in the theme.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v2.0/adwaitapod_v2.0.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod download&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v2.0/adwaitapod_dark_v2.0.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod Dark download&lt;/a&gt;.
+	&lt;/li&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3275&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3274&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Dark Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/comparison.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A picture with every important screen in adwaitapod&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;credit&#34;&gt;Credit&lt;/h2&gt;
+&lt;p&gt; Credit to the &lt;a href=&#34;http://www.gnome.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GNOME Project&lt;/a&gt; for the adwaita icons used in this theme, as well to the authors of the &lt;a href=&#34;https://cantarell.gnome.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cantarell Typeface&lt;/a&gt; Font.&lt;/p&gt;
+</content:encoded>
+      </item>
     
       <item>
         <title>Previously Read Manga</title>
@@ -243,69 +538,6 @@
 &lt;p&gt;  With such a perfect mix of gorgeous art and intriguing story, Kusuriya no Hitorigoto draws you in right from the beginning and never lets go. The main cast are fun and entertaining to follow, and the plot never dissapoints.&lt;/p&gt;
 &lt;h3 id=&#34;beck&#34;&gt;Beck&lt;/h3&gt;
 &lt;p&gt;  On the surface, Beck is manga about the world of music, however once you get into it you discover a nuanced tale about the ups and downs, good and bad of the music industry. Harold Sakuishi shows a fantastic understanding about what makes a captivating music legend, and crafts his own with Beck. Easily a classic in every sense.&lt;/p&gt;
-</content:encoded>
-      </item>
-    
-      <item>
-        <title>Time Twist Pop</title>
-        <link>https://d00k.net/projects/pebble/timetwistpop/</link>
-        <guid>https://d00k.net/projects/pebble/timetwistpop/</guid>
-        <dc:creator>Dook</dc:creator>
-        <pubDate>Wed, 26 Oct 2022 18:31:27 EST}</pubDate>
-        
-        <description>&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Two round watches, with a simple two hand watchface decorated with a ridged backdrop&#34;&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;p&gt;  Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 24 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.&lt;/p&gt;
-&lt;p&gt;  Made during the &lt;a href=&#34;https://rebble.io/hackathon-001/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rebble Hackathon #001&lt;/a&gt;, Time Twist Pop is my first foray into programming, completed within 48 hours.&lt;/p&gt;
-&lt;h2 id=&#34;the-themes&#34;&gt;The Themes&lt;/h2&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;p&gt;The 24 themes each have their own feel and identity. Silver Shadow, Slate Shadow, Rose Quartz, Sailor Blue, Mint Twist, Strawberry Twist, Stone Twist, Dragon Blue, Sorcerer Red and Purple Punch are the first series. There is also a second series of 14 Pride Flags. Background colours are dithered to create the illusion of a perfect blend, creating the watchface&amp;rsquo;s unique identity.&lt;/p&gt;
-&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     
- 	&lt;/div&gt;
- &lt;/figure&gt;
-</description>
-        <content:encoded>&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Two round watches, with a simple two hand watchface decorated with a ridged backdrop&#34;&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;p&gt;  Time Twist Pop is an simple, vibrant watchface design that aims to inject fun and colour into your day. With 24 different themes to choose from, you can easily switch up the look of the watchface to suit how you&amp;rsquo;re feeling.&lt;/p&gt;
-&lt;p&gt;  Made during the &lt;a href=&#34;https://rebble.io/hackathon-001/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rebble Hackathon #001&lt;/a&gt;, Time Twist Pop is my first foray into programming, completed within 48 hours.&lt;/p&gt;
-&lt;h2 id=&#34;the-themes&#34;&gt;The Themes&lt;/h2&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop03.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;p&gt;The 24 themes each have their own feel and identity. Silver Shadow, Slate Shadow, Rose Quartz, Sailor Blue, Mint Twist, Strawberry Twist, Stone Twist, Dragon Blue, Sorcerer Red and Purple Punch are the first series. There is also a second series of 14 Pride Flags. Background colours are dithered to create the illusion of a perfect blend, creating the watchface&amp;rsquo;s unique identity.&lt;/p&gt;
-&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/timetwistpop01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A poster of every theme option, with their colour and name&#34;&gt;
-     &lt;figcaption&gt;&lt;/figcaption&gt;
-     
- 	&lt;/div&gt;
- &lt;/figure&gt;
 </content:encoded>
       </item>
     
@@ -916,8 +1148,8 @@
     
       <item>
         <title>Rebble Weather Icons</title>
-        <link>https://d00k.net/projects/rebble_weather/</link>
-        <guid>https://d00k.net/projects/rebble_weather/</guid>
+        <link>https://d00k.net/projects/pebble/rebble_weather/</link>
+        <guid>https://d00k.net/projects/pebble/rebble_weather/</guid>
         <dc:creator>Dook</dc:creator>
         <pubDate>Fri, 05 Aug 2022 16:23:11 EST}</pubDate>
         
@@ -1900,217 +2132,6 @@
 &lt;li&gt;∘ Organised all my files.&lt;/li&gt;
 &lt;/ul&gt;
 
-</content:encoded>
-      </item>
-    
-      <item>
-        <title>adwaitapod</title>
-        <link>https://d00k.net/projects/adwaitapod/</link>
-        <guid>https://d00k.net/projects/adwaitapod/</guid>
-        <dc:creator>Dook</dc:creator>
-        <pubDate>Fri, 27 May 2022 14:45:53 EST}</pubDate>
-        
-        <description>&lt;p&gt; Adwaitapod is a modern and feature-rich theme for iPod Video models running Rockbox. The theme uses the principles of Gnome&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Adwaita_%28design_language%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adwaita&lt;/a&gt; design language, and aims to be a complete and pleasing experience for users.
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;a music player screen playing TV Girl&#34;&gt;
-     &lt;figcaption&gt;The music player screen.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-
-&lt;ul class=&#34;extra&#34;&gt;
-&lt;li&gt;∘ Consistent interface with rounded corners.&lt;/li&gt;
-
-&lt;li&gt;∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.&lt;/li&gt;
-
-&lt;li&gt;∘ Radio Player skin with station icon support when using an FM Presets file.&lt;/li&gt;
-
-&lt;li&gt;∘ Custom Recording screen with extra indicators for file format and frequency selected.&lt;/li&gt;
-
-&lt;li&gt;∘ Miniplayer that appears on the main screen as well as the quick screen.&lt;/li&gt;
-
-&lt;li&gt;∘ Lossless format file indicator for the Player screen.&lt;/li&gt;
-
-&lt;li&gt;∘ Separate &#34;Dark mode&#34; theme available too.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
-
-
-&lt;p style=&#34;margin-bottom:5px;&#34;&gt;&amp;nbsp;Extras available via the Github Repo include:&lt;/p&gt;
-&lt;ul class=&#34;extra&#34;&gt;
-&lt;li&gt;∘ Fonts with CJK support, including full theme downloads including them.&lt;/li&gt;
-
-&lt;li&gt;∘ Releases with settings for smooth scrolling text (can&#39;t be uploaded to Rockbox).&lt;/li&gt;
-
-&lt;li&gt;∘ Copies of the theme&#39;s code with labelling.&lt;/li&gt;
-
-&lt;li&gt;∘ Inkscape SVG files of every individual screen in the theme.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
-
-
-&lt;ul class=&#34;extra&#34;&gt;
-	&lt;li&gt;
-	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v.1/adwaitapod.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod download&lt;/a&gt;.
-	&lt;/li&gt;
-
-	&lt;li&gt;
-	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v.1/adwaitapod_dark.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod Dark download&lt;/a&gt;.
-	&lt;/li&gt;
-
-&lt;hr&gt;
-
-
-	&lt;li&gt;
-	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
-	&lt;/li&gt;
-	&lt;li&gt;
-	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3275&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
-	&lt;/li&gt;
-	&lt;li&gt;
-	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3274&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Dark Theme page&lt;/a&gt;.
-	&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
-&lt;p&gt; All images are an SVG recreation of how the theme looks. For screenshots of the theme running on hardware, see the Rockbox Themes page.&lt;/p&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;The main menu, with a mini-player playing Her&amp;#39;s&#34;&gt;
-     &lt;figcaption&gt;Main screen with the Miniplayer.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod06.jpg&#34; loading=&#34;lazy&#34; alt=&#34;The lockscreen, playing music by Kojaque&#34;&gt;
-     &lt;figcaption&gt;The Lockscreen.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod04.jpg&#34; loading=&#34;lazy&#34; alt=&#34;The FM Radio screen, playing Today FM&#34;&gt;
-     &lt;figcaption&gt;The FM Radio Player.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Recording screen, showing the file format, frequency and time elapsed&#34;&gt;
-     &lt;figcaption&gt;The Custom Recording screen.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;h2 id=&#34;credit&#34;&gt;Credit&lt;/h2&gt;
-&lt;p&gt; Credit to the &lt;a href=&#34;http://www.gnome.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GNOME Project&lt;/a&gt; for the adwaita icons used in this theme, as well to the authors of the &lt;a href=&#34;https://cantarell.gnome.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cantarell Typeface&lt;/a&gt; Font.&lt;/p&gt;
-</description>
-        <content:encoded>&lt;p&gt; Adwaitapod is a modern and feature-rich theme for iPod Video models running Rockbox. The theme uses the principles of Gnome&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Adwaita_%28design_language%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adwaita&lt;/a&gt; design language, and aims to be a complete and pleasing experience for users.
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;a music player screen playing TV Girl&#34;&gt;
-     &lt;figcaption&gt;The music player screen.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-
-
-&lt;ul class=&#34;extra&#34;&gt;
-&lt;li&gt;∘ Consistent interface with rounded corners.&lt;/li&gt;
-
-&lt;li&gt;∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.&lt;/li&gt;
-
-&lt;li&gt;∘ Radio Player skin with station icon support when using an FM Presets file.&lt;/li&gt;
-
-&lt;li&gt;∘ Custom Recording screen with extra indicators for file format and frequency selected.&lt;/li&gt;
-
-&lt;li&gt;∘ Miniplayer that appears on the main screen as well as the quick screen.&lt;/li&gt;
-
-&lt;li&gt;∘ Lossless format file indicator for the Player screen.&lt;/li&gt;
-
-&lt;li&gt;∘ Separate &#34;Dark mode&#34; theme available too.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
-
-
-&lt;p style=&#34;margin-bottom:5px;&#34;&gt;&amp;nbsp;Extras available via the Github Repo include:&lt;/p&gt;
-&lt;ul class=&#34;extra&#34;&gt;
-&lt;li&gt;∘ Fonts with CJK support, including full theme downloads including them.&lt;/li&gt;
-
-&lt;li&gt;∘ Releases with settings for smooth scrolling text (can&#39;t be uploaded to Rockbox).&lt;/li&gt;
-
-&lt;li&gt;∘ Copies of the theme&#39;s code with labelling.&lt;/li&gt;
-
-&lt;li&gt;∘ Inkscape SVG files of every individual screen in the theme.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;
-
-
-&lt;ul class=&#34;extra&#34;&gt;
-	&lt;li&gt;
-	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v.1/adwaitapod.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod download&lt;/a&gt;.
-	&lt;/li&gt;
-
-	&lt;li&gt;
-	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod/releases/download/v.1/adwaitapod_dark.zip&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Adwaitapod Dark download&lt;/a&gt;.
-	&lt;/li&gt;
-
-&lt;hr&gt;
-
-
-	&lt;li&gt;
-	   &lt;a href=&#34;https://github.com/D0-0K/adwaitapod&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
-	&lt;/li&gt;
-	&lt;li&gt;
-	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3275&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
-	&lt;/li&gt;
-	&lt;li&gt;
-	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3274&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Dark Theme page&lt;/a&gt;.
-	&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;gallery&#34;&gt;Gallery&lt;/h2&gt;
-&lt;p&gt; All images are an SVG recreation of how the theme looks. For screenshots of the theme running on hardware, see the Rockbox Themes page.&lt;/p&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;The main menu, with a mini-player playing Her&amp;#39;s&#34;&gt;
-     &lt;figcaption&gt;Main screen with the Miniplayer.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod06.jpg&#34; loading=&#34;lazy&#34; alt=&#34;The lockscreen, playing music by Kojaque&#34;&gt;
-     &lt;figcaption&gt;The Lockscreen.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod04.jpg&#34; loading=&#34;lazy&#34; alt=&#34;The FM Radio screen, playing Today FM&#34;&gt;
-     &lt;figcaption&gt;The FM Radio Player.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;figure&gt;
- 	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/projects/adwaitapod05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Recording screen, showing the file format, frequency and time elapsed&#34;&gt;
-     &lt;figcaption&gt;The Custom Recording screen.&lt;/figcaption&gt;
-     &lt;hr&gt;
- 	&lt;/div&gt;
- &lt;/figure&gt;
-&lt;h2 id=&#34;credit&#34;&gt;Credit&lt;/h2&gt;
-&lt;p&gt; Credit to the &lt;a href=&#34;http://www.gnome.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GNOME Project&lt;/a&gt; for the adwaita icons used in this theme, as well to the authors of the &lt;a href=&#34;https://cantarell.gnome.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cantarell Typeface&lt;/a&gt; Font.&lt;/p&gt;
 </content:encoded>
       </item>
     

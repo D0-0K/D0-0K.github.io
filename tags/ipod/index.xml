@@ -6,7 +6,7 @@
     <description>Recent content in ipod on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 31 May 2022 15:14:26 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/ipod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Nov 2022 14:45:53 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/ipod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rockbox Theming</title>
       <link>https://d00k.net/knowledge/ipod_modding/rockbox_theming/</link>
@@ -19,11 +19,11 @@
     <item>
       <title>adwaitapod</title>
       <link>https://d00k.net/projects/adwaitapod/</link>
-      <pubDate>Fri, 27 May 2022 14:45:53 +0100</pubDate>
+      <pubDate>Thu, 24 Nov 2022 14:45:53 +0100</pubDate>
       
       <guid>https://d00k.net/projects/adwaitapod/</guid>
-      <description>Adwaitapod is a modern and feature-rich theme for iPod Video models running Rockbox. The theme uses the principles of Gnome&amp;rsquo;s Adwaita design language, and aims to be a complete and pleasing experience for users.   The music player screen.   
-Features ∘ Consistent interface with rounded corners. ∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected. ∘ Radio Player skin with station icon support when using an FM Presets file.</description>
+      <description>Adwaitapod is a modern and feature-rich theme for Rockbox. The theme uses the principles of Gnome&amp;rsquo;s Adwaita design language, and aims to be a complete and pleasing experience for users.The theme currently supports the iPod classic 5th, 6th and 7th gen.
+     Features ∘ Consistent interface with rounded corners. ∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.</description>
     </item>
     
   </channel>
