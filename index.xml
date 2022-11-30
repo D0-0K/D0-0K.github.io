@@ -4,11 +4,90 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 25 Nov 2022 20:05:31 EST</lastBuildDate>
+    <lastBuildDate>Wed, 30 Nov 2022 17:10:26 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Leaving Spotify for Freer Pastures</title>
+        <link>https://d00k.net/journal/leaving-spotify/</link>
+        <guid>https://d00k.net/journal/leaving-spotify/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 30 Nov 2022 17:10:26 EST}</pubDate>
+        
+        <description>&lt;p&gt;  Over the past year, I&amp;rsquo;ve slowly worked on moving my listening activities away from Spotify and towards a setup where I have much more control over how I listen. As people will be checking out their Spotify Unwrapped, I thought it&amp;rsquo;d be a great time to talk about my thoughts on the platform and why I&amp;rsquo;m moving away from it.&lt;/p&gt;
+&lt;h2 id=&#34;why-leave&#34;&gt;Why leave?&lt;/h2&gt;
+&lt;p&gt;  Don&amp;rsquo;t get me wrong, Spotify is pretty great. Being able to listen to just about whatever I want, whenever I want and in decent quality is a great privilege. In recent years, there&amp;rsquo;s been less and less songs that aren&amp;rsquo;t available on the platform. And at face value, the price you pay is certainly worth the massive library of music available at your fingers. I quite frankly &lt;em&gt;wouldn&amp;rsquo;t&lt;/em&gt; have a music taste if it wasn&amp;rsquo;t for Spotify, being able to listen to recommended playlists and such have introduced me to artists and bands that I never would&amp;rsquo;ve come across without it. However as time moves on, the way I listen to music has changed considerably to something that is less compatible with Spotify&amp;rsquo;s formula.&lt;/p&gt;
+&lt;p&gt;  Generally, Spotify&amp;rsquo;s main focuses are user playlists and recommendations. You make a playlist, you listen to it, Spotify plays you some recommended songs which you add to your playlist, eventually moving onto another playlist and the cycle repeats. If you don&amp;rsquo;t pay for premium this is even worse, in playlists it&amp;rsquo;ll just throw songs in and you have no control. This persists even for playlists you didn&amp;rsquo;t make. For most people, this is probably fine, I imagine the majority of people using Spotify aren&amp;rsquo;t diehard music-heads, but simply those looking for a bit of control over the background noise in their lives. But for me, this makes dropped to the free-tier of Spotify an impossibility.&lt;/p&gt;
+&lt;p&gt;  To top it all off, as I mentioned, the way I listen to music has changed in recent years. I find I greatly prefer albums over everything else. The cohesive linearity of a good album is a much better experience than a jumbled mess of songs that happen to give me dopamine at a specific time. And this singular preference feels in juxtaposition to Spotify&amp;rsquo;s focus on playlists and recommendations. Just recently, Adele had to convince them to change the play button in albums from shuffling, since the button was clearly built around playlists. At the same time, Spotify still has not added lossless audio to the platform. They&amp;rsquo;re the last major music streaming platform to not have it, and while rumours have bounced around for years about it&amp;rsquo;s impending arrival, there&amp;rsquo;s still no sign of it to come. As a music streaming platform, it clearly is targetted towards more casual listeners (of both music and podcasts) and simply isn&amp;rsquo;t as suited to me anymore.&lt;/p&gt;
+&lt;h2 id=&#34;where-to&#34;&gt;Where to?&lt;/h2&gt;
+&lt;p&gt;  I think a lot of people would probably look at my distaste of Spotify and recommend another, more suitable, streaming platform like Apple music or Pandora. However, I thought to truly have control over how I listen, I should start buying and collecting my music. I already spend a set amount of money each year on a Spotify Premium subscription, but I realised with the same amount I could buy an album every month and actually own it.&lt;/p&gt;
+&lt;p&gt;  This lead to me starting my &lt;a href=&#34;https://d00k.net/about/music/bandcamp_buyin_22/&#34;&gt;bandcamp buyin&amp;rsquo;&lt;/a&gt; page, every month buying an album from Bandcamp with a few rules. The main rule is I wouldn&amp;rsquo;t more than one album from an artist in a year, I also made sure to buy during a Bandcamp Friday if there was one on. At the end of the year, I plan to write a short review on each of them. I bought a few CDs as well whenever I spotted good sales or older music for cheap in charity shops. Overall, I went from owning just a couple of CDs, to have around 20 albums in both digital and physical formats. I couldn&amp;rsquo;t be happier, and surprisingly Bandcamp has also introduced me to a lot of music I hadn&amp;rsquo;t ever found on Spotify. Some of these, like &lt;a href=&#34;https://thebandtoledo.bandcamp.com/music&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOLEDO&lt;/a&gt; have quickly become favourites of mine! I think this really shows that Bandcamp can be enjoyable and fresh for those that like finding new music.&lt;/p&gt;
+&lt;h2 id=&#34;how-it-has-changed-how-i-listen&#34;&gt;How it has changed how I listen&lt;/h2&gt;
+&lt;p&gt;  At first, I didn&amp;rsquo;t expect it to change too much, I&amp;rsquo;ve still kept my Spotify subscription for this year, and put in around 30,000 minutes of listening on the platform. But as my collection grew, I found myself listening more and more offline with my music. This has been especially useful during times without power throughout the year, we had about 7 or 8 maintenance days this year and I was able to keep my 4 year old Lenovo going for around 6 hours of work using Cmus for music. I tried several graphical music players, but the simplicity of Cmus really beats the rest for me.&lt;/p&gt;
+&lt;p&gt;  One other big change was purchasing an iPod classic 5th gen in April. Having portable music on a separate device is really appealing to me, simply for giving my smartphone one less job. But having a build in DAC, as well as great support for modding and customising, was a top selling point. I&amp;rsquo;ve since loaded it up with &lt;a href=&#34;https://www.rockbox.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rockbox&lt;/a&gt;, mostly so I can use custom themes and Flac formats. Not being too pleased with most of the themes available, I set out to make my own inspired by the Gnome desktop&amp;rsquo;s adwaitapod design language. The end result, &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt; is jam packed with features, and gives me everything I could want from a music player UI. I also have a bunch of physical mods ready to add to it soon, like flash storage, a larger battery as well as a Taptic engine from an iPhone to replace the click speaker.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/ipod01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A white ipod classic, running rockbox. Playing music.&#34;&gt;
+     &lt;figcaption&gt;iPod running Rockbox and adwaitapod&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
+&lt;p&gt;  Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
+
+
+&lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/about/music/bandcamp_buyin_22/&#34;&gt;∙ Bandcamp Buyin&amp;#39;&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34;&gt;∙ adwaitapod iPod Theme&lt;/a&gt;.
+	&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;p&gt;  Over the past year, I&amp;rsquo;ve slowly worked on moving my listening activities away from Spotify and towards a setup where I have much more control over how I listen. As people will be checking out their Spotify Unwrapped, I thought it&amp;rsquo;d be a great time to talk about my thoughts on the platform and why I&amp;rsquo;m moving away from it.&lt;/p&gt;
+&lt;h2 id=&#34;why-leave&#34;&gt;Why leave?&lt;/h2&gt;
+&lt;p&gt;  Don&amp;rsquo;t get me wrong, Spotify is pretty great. Being able to listen to just about whatever I want, whenever I want and in decent quality is a great privilege. In recent years, there&amp;rsquo;s been less and less songs that aren&amp;rsquo;t available on the platform. And at face value, the price you pay is certainly worth the massive library of music available at your fingers. I quite frankly &lt;em&gt;wouldn&amp;rsquo;t&lt;/em&gt; have a music taste if it wasn&amp;rsquo;t for Spotify, being able to listen to recommended playlists and such have introduced me to artists and bands that I never would&amp;rsquo;ve come across without it. However as time moves on, the way I listen to music has changed considerably to something that is less compatible with Spotify&amp;rsquo;s formula.&lt;/p&gt;
+&lt;p&gt;  Generally, Spotify&amp;rsquo;s main focuses are user playlists and recommendations. You make a playlist, you listen to it, Spotify plays you some recommended songs which you add to your playlist, eventually moving onto another playlist and the cycle repeats. If you don&amp;rsquo;t pay for premium this is even worse, in playlists it&amp;rsquo;ll just throw songs in and you have no control. This persists even for playlists you didn&amp;rsquo;t make. For most people, this is probably fine, I imagine the majority of people using Spotify aren&amp;rsquo;t diehard music-heads, but simply those looking for a bit of control over the background noise in their lives. But for me, this makes dropped to the free-tier of Spotify an impossibility.&lt;/p&gt;
+&lt;p&gt;  To top it all off, as I mentioned, the way I listen to music has changed in recent years. I find I greatly prefer albums over everything else. The cohesive linearity of a good album is a much better experience than a jumbled mess of songs that happen to give me dopamine at a specific time. And this singular preference feels in juxtaposition to Spotify&amp;rsquo;s focus on playlists and recommendations. Just recently, Adele had to convince them to change the play button in albums from shuffling, since the button was clearly built around playlists. At the same time, Spotify still has not added lossless audio to the platform. They&amp;rsquo;re the last major music streaming platform to not have it, and while rumours have bounced around for years about it&amp;rsquo;s impending arrival, there&amp;rsquo;s still no sign of it to come. As a music streaming platform, it clearly is targetted towards more casual listeners (of both music and podcasts) and simply isn&amp;rsquo;t as suited to me anymore.&lt;/p&gt;
+&lt;h2 id=&#34;where-to&#34;&gt;Where to?&lt;/h2&gt;
+&lt;p&gt;  I think a lot of people would probably look at my distaste of Spotify and recommend another, more suitable, streaming platform like Apple music or Pandora. However, I thought to truly have control over how I listen, I should start buying and collecting my music. I already spend a set amount of money each year on a Spotify Premium subscription, but I realised with the same amount I could buy an album every month and actually own it.&lt;/p&gt;
+&lt;p&gt;  This lead to me starting my &lt;a href=&#34;https://d00k.net/about/music/bandcamp_buyin_22/&#34;&gt;bandcamp buyin&amp;rsquo;&lt;/a&gt; page, every month buying an album from Bandcamp with a few rules. The main rule is I wouldn&amp;rsquo;t more than one album from an artist in a year, I also made sure to buy during a Bandcamp Friday if there was one on. At the end of the year, I plan to write a short review on each of them. I bought a few CDs as well whenever I spotted good sales or older music for cheap in charity shops. Overall, I went from owning just a couple of CDs, to have around 20 albums in both digital and physical formats. I couldn&amp;rsquo;t be happier, and surprisingly Bandcamp has also introduced me to a lot of music I hadn&amp;rsquo;t ever found on Spotify. Some of these, like &lt;a href=&#34;https://thebandtoledo.bandcamp.com/music&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOLEDO&lt;/a&gt; have quickly become favourites of mine! I think this really shows that Bandcamp can be enjoyable and fresh for those that like finding new music.&lt;/p&gt;
+&lt;h2 id=&#34;how-it-has-changed-how-i-listen&#34;&gt;How it has changed how I listen&lt;/h2&gt;
+&lt;p&gt;  At first, I didn&amp;rsquo;t expect it to change too much, I&amp;rsquo;ve still kept my Spotify subscription for this year, and put in around 30,000 minutes of listening on the platform. But as my collection grew, I found myself listening more and more offline with my music. This has been especially useful during times without power throughout the year, we had about 7 or 8 maintenance days this year and I was able to keep my 4 year old Lenovo going for around 6 hours of work using Cmus for music. I tried several graphical music players, but the simplicity of Cmus really beats the rest for me.&lt;/p&gt;
+&lt;p&gt;  One other big change was purchasing an iPod classic 5th gen in April. Having portable music on a separate device is really appealing to me, simply for giving my smartphone one less job. But having a build in DAC, as well as great support for modding and customising, was a top selling point. I&amp;rsquo;ve since loaded it up with &lt;a href=&#34;https://www.rockbox.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rockbox&lt;/a&gt;, mostly so I can use custom themes and Flac formats. Not being too pleased with most of the themes available, I set out to make my own inspired by the Gnome desktop&amp;rsquo;s adwaitapod design language. The end result, &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt; is jam packed with features, and gives me everything I could want from a music player UI. I also have a bunch of physical mods ready to add to it soon, like flash storage, a larger battery as well as a Taptic engine from an iPhone to replace the click speaker.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/ipod01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A white ipod classic, running rockbox. Playing music.&#34;&gt;
+     &lt;figcaption&gt;iPod running Rockbox and adwaitapod&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;
+&lt;p&gt;  Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
+
+
+&lt;h2 id=&#34;further-reading&#34; style=&#34;margin-top:35px;&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/about/music/bandcamp_buyin_22/&#34;&gt;∙ Bandcamp Buyin&amp;#39;&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34;&gt;∙ adwaitapod iPod Theme&lt;/a&gt;.
+	&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>2022 11 25</title>
@@ -315,7 +394,7 @@
         <description>&lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/about/manga03.jpg&#34; loading=&#34;lazy&#34; alt=&#34; A woman dives into a blue sea.&#34;&gt;
-     &lt;figcaption&gt;Yokohama Kaidashi Kikou -  Ashinano Hitoshi &lt;/figcaption&gt;
+     &lt;figcaption&gt;Slow Motion wo Mou Ichido -  Rie Kano &lt;/figcaption&gt;
      &lt;hr&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
@@ -399,7 +478,7 @@
         <content:encoded>&lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/about/manga03.jpg&#34; loading=&#34;lazy&#34; alt=&#34; A woman dives into a blue sea.&#34;&gt;
-     &lt;figcaption&gt;Yokohama Kaidashi Kikou -  Ashinano Hitoshi &lt;/figcaption&gt;
+     &lt;figcaption&gt;Slow Motion wo Mou Ichido -  Rie Kano &lt;/figcaption&gt;
      &lt;hr&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
@@ -1734,7 +1813,7 @@
 
 &lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; Heart Under - Just Mustard.&lt;/li&gt;
 
-&lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; When the Lights go - Totally Enormous Extinct Dinosaurs.&lt;/li&gt;
+&lt;li&gt;∘ &lt;strong&gt;November&lt;/strong&gt;: &amp;nbsp; When the Lights go - Totally Enormous Extinct Dinosaurs.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -1765,7 +1844,7 @@
 
 &lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; Heart Under - Just Mustard.&lt;/li&gt;
 
-&lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; When the Lights go - Totally Enormous Extinct Dinosaurs.&lt;/li&gt;
+&lt;li&gt;∘ &lt;strong&gt;November&lt;/strong&gt;: &amp;nbsp; When the Lights go - Totally Enormous Extinct Dinosaurs.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>
