@@ -4,11 +4,275 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 30 Nov 2022 17:10:26 EST</lastBuildDate>
+    <lastBuildDate>Sat, 31 Dec 2022 19:25:18 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Year Review 2022</title>
+        <link>https://d00k.net/journal/year-review-2022/</link>
+        <guid>https://d00k.net/journal/year-review-2022/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sat, 31 Dec 2022 19:25:18 EST}</pubDate>
+        
+        <description>&lt;p&gt;  This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;
+&lt;p&gt;  Overall I had a lot of time this year, much more than even in 2021, but I feel I really put as much of it as I could to use and created some great things.&lt;/p&gt;
+&lt;h2 id=&#34;hardware&#34;&gt;Hardware&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Sold my Motorola and got a Pixel 3a so I could use LineageOS.&lt;/li&gt;
+&lt;li&gt;∘ Bought a Kobo Libra 2 ereader.&lt;/li&gt;
+&lt;li&gt;∘ Got an old iPod Classic Gen 5.&lt;/li&gt;
+&lt;li&gt;∘ Bought a cheap Pebble Time Steel which has become my daily driver watch.&lt;/li&gt;
+&lt;li&gt;∘ Got a Mechanical Keyboard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;software&#34;&gt;Software&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Switched to LineageOS on my phone.&lt;/li&gt;
+&lt;li&gt;∘ Started using Cmus in the terminal for my offline music.&lt;/li&gt;
+&lt;li&gt;∘ Learned how to use SSH and SFTP.&lt;/li&gt;
+&lt;li&gt;∘ Sorta learned how to use IRC.&lt;/li&gt;
+&lt;li&gt;∘ Installed KOReader on my Kobo.&lt;/li&gt;
+&lt;li&gt;∘ Learned how to make Bash Scripts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;online&#34;&gt;Online&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;∘ Switched Mastodon Instance&lt;/strong&gt; - Moved over to post.lurk.org in August this year, and I’m so glad I did. I had been on a very beginner instance previously, and quite frankly it was nowhere near as fun as lurk is to me now. It took a few months to really feel settled in, but I’m very happy with how everything is going.- Website - Aside from just remaking it, I started to use my website a heck of a lot more, and it really helped drive me forward in my goals this year as well motivating me to create more. I wrote a couple of blog posts and shared one on HN which got some nice discussion about the pros and cons of music streaming platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;∘ De-Platforming&lt;/strong&gt; - I also moved away from using some platforms this year, for example reddit and snapchat which I only used to keep track of news or in snapchat&amp;rsquo;s case people I didn’t really know anymore. I also sorted my instagram to be exclusively people I’m friends with or wish to keep in contact with. Discord has also become much the same, only using it every so often to chat with friends.&lt;/p&gt;
+&lt;h2 id=&#34;favourite-things&#34;&gt;Favourite Things&lt;/h2&gt;
+&lt;p&gt;  In terms of content this year I had a rather large shift compared to last year. I didn’t engage too much in surfing websites, or at least as much as I had in previous years. On the other hand, my music listening felt far more focused and I’ve managed to detail some of my top albums I listened to this year. I also read an absolutely ginormous amount of manga, on top of the monthly and weekly serials I read, I managed to finish 55 different Manga. I got into some series I had always wanted to read but could never find the time, and I really experienced some brilliant stories (as well as some bad ones) through it.&lt;/p&gt;
+&lt;h3 id=&#34;music&#34;&gt;Music&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;∘ Favourite Artist - Snail Mail&lt;/strong&gt; - Hoo boy. I’ve been a fan of Lindsey Jordan’s music for a good few years now, her ability to write a great single is incredibly, but this year I found myself listening to her album’s Lush and Valentine a LOT. Valentine deserves serious praise for both Lindsey’s singing and songwriting skills, the album opens on a powerful note and finishes on with an emotional serenade, the songs inbetween creating a seamless transitions between both tones. There was a point this year that I played Valentine at least once a day! Absolutely cannot wait for her to go on tour again and see Snail Mail play live.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;∘ Favourite Album - How It Ends by TOLEDO&lt;/strong&gt; - Released at the end of September, TOLEDO’s first album How It Ends takes a departure from their previous EPs and single’s tones. The biographical nature of this album takes a hold from the start, Soda Can creating an incredibly visual and narrative experience that continues throughout the
+rest of the 40 minute album. It has a very unique feeling to it all, one that I find a little hard to describe, but I think it can be best described as a very personal album, for both Dan and Jordan, their history and relationship that blends extremely well with their existing sound.&lt;/p&gt;
+&lt;h3 id=&#34;manga&#34;&gt;Manga&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;∘ Top Manga - Nausicaä of the Valley of the Wind&lt;/strong&gt; - I slept on this for far, far too long. For the longest time I thought the manga was nothing more than a predecessor to film. Had I known my timelines, I’d have know that the manga continued for over a decade after the film’s release. This is reflected in the manga’s story, the contents of the film are an abstraction of various plot points that occur in the manga’s first book. The remaining four books craft a tale that is quite frankly unmatched in manga. It develops both Nausicaa and the world to a point far beyond the scope of the film, and builds an exceptional hero out of her. I rarely say this, but it is truly a must read. This manga is so good it took one of my favourite ghibli movies and made it even better. 10/10&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;∘ Top Serial - Blue Period&lt;/strong&gt; - Once again Blue Period had an exceptional year of chapters. Finishing off the second year arc, Yamaguchi Tsubasa produced some excellent progression of both the story as well as characters. Almost every chapter this year had me feeling that it was ten times better than the last one, which is an impressive feat to still be pulling off this far into it’s serial. We see Yatora progress a lot as character as well, and it’s honestly quite incredible how close to reality Blue Period’s depiction of college is. College isn’t a common setting in manga, however this manga’s dedication to using it as the story’s driving force is commendable as well. Worth keeping an eye on next year for sure.&lt;/p&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;  I spent a lot of time this year on things I didn’t expect to work on, but they were definitely time well spent on. My pursuit of a better UX on my iPod drove me down a rabbit hole of theming and customising iPods, which has since branched out into a lot of different projects taking up my time. Most of these projects however have proved quite useful for my college entry portfolio.&lt;/p&gt;
+&lt;h3 id=&#34;-website-optimisations&#34;&gt;∘ Website Optimisations&lt;/h3&gt;
+&lt;p&gt;  My main goal when rebuilding my website from scratch this year was to make a website that had great design, but was also fast. This led to what I can only describe as an obsession with compression and filesize savings. I went as far as manually editing my font files to remove unneeded glyphs and even removing all spaces in my CSS file. But it was well worth it, the homepage now comes in at just under 48kb! I wrote up a blog post detailing all the techniques I learned which you can find here.&lt;/p&gt;
+&lt;h3 id=&#34;-ipod-projects&#34;&gt;∘ iPod Projects&lt;/h3&gt;
+&lt;p&gt;  I got into iPods early in the year as part of my move towards owning my music collection. However the UX in both the stock OS and RockboxOS felt clunky and quite hard to read at times, and none of the existing themes met my standards so I set out to make my own theme adwaitapod. Unfortunately the Rockbox theming language is pretty user unfriendly especially to beginners, and with only basic documentation to go on it took months to just get familiar with how things worked. This led me to start writing a book for new users to learn how to make a theme from scratch with no prior knowledge, in doing so I also decided to start making syntax-highlighting for the language from scratch. I hope to finish this project early next year.&lt;/p&gt;
+&lt;h3 id=&#34;-pebble-watchface&#34;&gt;∘ Pebble Watchface&lt;/h3&gt;
+&lt;p&gt;  I’ve wanted to make a watchface for the pebble for a while, however my programming knowledge has been non-existent. I spent a few months trying to read up on programming in C, but when I heard about the rebble hackathon I knew I had to make something for it. In the space of two weeks in November, I learned how to make a watchface from scratch in C and during the two days of the hackathon produced my first watchface: Time Twist Pop! I’m very proud of it, and have been wearing it everyday since. There’s still some stuff to finish off with the project next year, but that’ll come soon.&lt;/p&gt;
+&lt;h2 id=&#34;the-goal-for-2023&#34;&gt;The Goal for 2023&lt;/h2&gt;
+&lt;p&gt;  Once again, I&amp;rsquo;m keeping my goals for the coming year pretty open-ended. I plan to keep up &lt;a href=&#34;https://d00k.net/about/music/bandcamp_buyin_22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bandcamp buying&lt;/a&gt; this year, as well producing some more pebble watchfaces during hackathons. I have some projects from 2022 that need finishing, as well as preparing a portfolio to college but once I finish all that it&amp;rsquo;ll be onto new things. My main goal for 2023 is art, I intend to go back to the basics and relearn everything with my sights set on getting comfortable drawing as well creating a style for myself that I enjoy. I have no clue how this will go, as my health will really put the brakes on this if I can&amp;rsquo;t draw, but nonetheless I&amp;rsquo;m excited. I also hope to do some stuff with self hosting and hosting my own gemini server soon! So keep an eye out here!&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;  This post has really gone on long enough, to wrap up: it&amp;rsquo;s been a year with plenty of highs and lows but I feel incredibly accomplished and proud of how I spent the year. Here&amp;rsquo;s to another year, see you soon!&lt;/p&gt;
+&lt;p&gt;-Dook.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;  This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;
+&lt;p&gt;  Overall I had a lot of time this year, much more than even in 2021, but I feel I really put as much of it as I could to use and created some great things.&lt;/p&gt;
+&lt;h2 id=&#34;hardware&#34;&gt;Hardware&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Sold my Motorola and got a Pixel 3a so I could use LineageOS.&lt;/li&gt;
+&lt;li&gt;∘ Bought a Kobo Libra 2 ereader.&lt;/li&gt;
+&lt;li&gt;∘ Got an old iPod Classic Gen 5.&lt;/li&gt;
+&lt;li&gt;∘ Bought a cheap Pebble Time Steel which has become my daily driver watch.&lt;/li&gt;
+&lt;li&gt;∘ Got a Mechanical Keyboard.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;software&#34;&gt;Software&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Switched to LineageOS on my phone.&lt;/li&gt;
+&lt;li&gt;∘ Started using Cmus in the terminal for my offline music.&lt;/li&gt;
+&lt;li&gt;∘ Learned how to use SSH and SFTP.&lt;/li&gt;
+&lt;li&gt;∘ Sorta learned how to use IRC.&lt;/li&gt;
+&lt;li&gt;∘ Installed KOReader on my Kobo.&lt;/li&gt;
+&lt;li&gt;∘ Learned how to make Bash Scripts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;online&#34;&gt;Online&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;∘ Switched Mastodon Instance&lt;/strong&gt; - Moved over to post.lurk.org in August this year, and I’m so glad I did. I had been on a very beginner instance previously, and quite frankly it was nowhere near as fun as lurk is to me now. It took a few months to really feel settled in, but I’m very happy with how everything is going.- Website - Aside from just remaking it, I started to use my website a heck of a lot more, and it really helped drive me forward in my goals this year as well motivating me to create more. I wrote a couple of blog posts and shared one on HN which got some nice discussion about the pros and cons of music streaming platforms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;∘ De-Platforming&lt;/strong&gt; - I also moved away from using some platforms this year, for example reddit and snapchat which I only used to keep track of news or in snapchat&amp;rsquo;s case people I didn’t really know anymore. I also sorted my instagram to be exclusively people I’m friends with or wish to keep in contact with. Discord has also become much the same, only using it every so often to chat with friends.&lt;/p&gt;
+&lt;h2 id=&#34;favourite-things&#34;&gt;Favourite Things&lt;/h2&gt;
+&lt;p&gt;  In terms of content this year I had a rather large shift compared to last year. I didn’t engage too much in surfing websites, or at least as much as I had in previous years. On the other hand, my music listening felt far more focused and I’ve managed to detail some of my top albums I listened to this year. I also read an absolutely ginormous amount of manga, on top of the monthly and weekly serials I read, I managed to finish 55 different Manga. I got into some series I had always wanted to read but could never find the time, and I really experienced some brilliant stories (as well as some bad ones) through it.&lt;/p&gt;
+&lt;h3 id=&#34;music&#34;&gt;Music&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;∘ Favourite Artist - Snail Mail&lt;/strong&gt; - Hoo boy. I’ve been a fan of Lindsey Jordan’s music for a good few years now, her ability to write a great single is incredibly, but this year I found myself listening to her album’s Lush and Valentine a LOT. Valentine deserves serious praise for both Lindsey’s singing and songwriting skills, the album opens on a powerful note and finishes on with an emotional serenade, the songs inbetween creating a seamless transitions between both tones. There was a point this year that I played Valentine at least once a day! Absolutely cannot wait for her to go on tour again and see Snail Mail play live.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;∘ Favourite Album - How It Ends by TOLEDO&lt;/strong&gt; - Released at the end of September, TOLEDO’s first album How It Ends takes a departure from their previous EPs and single’s tones. The biographical nature of this album takes a hold from the start, Soda Can creating an incredibly visual and narrative experience that continues throughout the
+rest of the 40 minute album. It has a very unique feeling to it all, one that I find a little hard to describe, but I think it can be best described as a very personal album, for both Dan and Jordan, their history and relationship that blends extremely well with their existing sound.&lt;/p&gt;
+&lt;h3 id=&#34;manga&#34;&gt;Manga&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;∘ Top Manga - Nausicaä of the Valley of the Wind&lt;/strong&gt; - I slept on this for far, far too long. For the longest time I thought the manga was nothing more than a predecessor to film. Had I known my timelines, I’d have know that the manga continued for over a decade after the film’s release. This is reflected in the manga’s story, the contents of the film are an abstraction of various plot points that occur in the manga’s first book. The remaining four books craft a tale that is quite frankly unmatched in manga. It develops both Nausicaa and the world to a point far beyond the scope of the film, and builds an exceptional hero out of her. I rarely say this, but it is truly a must read. This manga is so good it took one of my favourite ghibli movies and made it even better. 10/10&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;∘ Top Serial - Blue Period&lt;/strong&gt; - Once again Blue Period had an exceptional year of chapters. Finishing off the second year arc, Yamaguchi Tsubasa produced some excellent progression of both the story as well as characters. Almost every chapter this year had me feeling that it was ten times better than the last one, which is an impressive feat to still be pulling off this far into it’s serial. We see Yatora progress a lot as character as well, and it’s honestly quite incredible how close to reality Blue Period’s depiction of college is. College isn’t a common setting in manga, however this manga’s dedication to using it as the story’s driving force is commendable as well. Worth keeping an eye on next year for sure.&lt;/p&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;p&gt;  I spent a lot of time this year on things I didn’t expect to work on, but they were definitely time well spent on. My pursuit of a better UX on my iPod drove me down a rabbit hole of theming and customising iPods, which has since branched out into a lot of different projects taking up my time. Most of these projects however have proved quite useful for my college entry portfolio.&lt;/p&gt;
+&lt;h3 id=&#34;-website-optimisations&#34;&gt;∘ Website Optimisations&lt;/h3&gt;
+&lt;p&gt;  My main goal when rebuilding my website from scratch this year was to make a website that had great design, but was also fast. This led to what I can only describe as an obsession with compression and filesize savings. I went as far as manually editing my font files to remove unneeded glyphs and even removing all spaces in my CSS file. But it was well worth it, the homepage now comes in at just under 48kb! I wrote up a blog post detailing all the techniques I learned which you can find here.&lt;/p&gt;
+&lt;h3 id=&#34;-ipod-projects&#34;&gt;∘ iPod Projects&lt;/h3&gt;
+&lt;p&gt;  I got into iPods early in the year as part of my move towards owning my music collection. However the UX in both the stock OS and RockboxOS felt clunky and quite hard to read at times, and none of the existing themes met my standards so I set out to make my own theme adwaitapod. Unfortunately the Rockbox theming language is pretty user unfriendly especially to beginners, and with only basic documentation to go on it took months to just get familiar with how things worked. This led me to start writing a book for new users to learn how to make a theme from scratch with no prior knowledge, in doing so I also decided to start making syntax-highlighting for the language from scratch. I hope to finish this project early next year.&lt;/p&gt;
+&lt;h3 id=&#34;-pebble-watchface&#34;&gt;∘ Pebble Watchface&lt;/h3&gt;
+&lt;p&gt;  I’ve wanted to make a watchface for the pebble for a while, however my programming knowledge has been non-existent. I spent a few months trying to read up on programming in C, but when I heard about the rebble hackathon I knew I had to make something for it. In the space of two weeks in November, I learned how to make a watchface from scratch in C and during the two days of the hackathon produced my first watchface: Time Twist Pop! I’m very proud of it, and have been wearing it everyday since. There’s still some stuff to finish off with the project next year, but that’ll come soon.&lt;/p&gt;
+&lt;h2 id=&#34;the-goal-for-2023&#34;&gt;The Goal for 2023&lt;/h2&gt;
+&lt;p&gt;  Once again, I&amp;rsquo;m keeping my goals for the coming year pretty open-ended. I plan to keep up &lt;a href=&#34;https://d00k.net/about/music/bandcamp_buyin_22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bandcamp buying&lt;/a&gt; this year, as well producing some more pebble watchfaces during hackathons. I have some projects from 2022 that need finishing, as well as preparing a portfolio to college but once I finish all that it&amp;rsquo;ll be onto new things. My main goal for 2023 is art, I intend to go back to the basics and relearn everything with my sights set on getting comfortable drawing as well creating a style for myself that I enjoy. I have no clue how this will go, as my health will really put the brakes on this if I can&amp;rsquo;t draw, but nonetheless I&amp;rsquo;m excited. I also hope to do some stuff with self hosting and hosting my own gemini server soon! So keep an eye out here!&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;  This post has really gone on long enough, to wrap up: it&amp;rsquo;s been a year with plenty of highs and lows but I feel incredibly accomplished and proud of how I spent the year. Here&amp;rsquo;s to another year, see you soon!&lt;/p&gt;
+&lt;p&gt;-Dook.&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>Manga read in 2022</title>
+        <link>https://d00k.net/about/manga/2022/</link>
+        <guid>https://d00k.net/about/manga/2022/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sat, 31 Dec 2022 19:15:39 EST}</pubDate>
+        
+        <description>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/about/manga04.jpg&#34; loading=&#34;lazy&#34; alt=&#34; A woman dives into a blue sea.&#34;&gt;
+     &lt;figcaption&gt;Kaoru Hana wa Rin to Saku -  Mikami Saka &lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  I read a massive amount of manga in 2022, 55 different manga in total. With a wide range of genres, there&amp;rsquo;s a bit of everything in here. Over time I plan to update this page with some more about my favourite manga out of this list.&lt;/p&gt;
+&lt;h2 id=&#34;read-list-2022&#34;&gt;Read List 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ Kimetsu no Yaiba.&lt;/li&gt;
+&lt;li&gt;∘ Kimi wa Hougako Insomnia.&lt;/li&gt;
+&lt;li&gt;∘ Yokohama Kaidashi Kikou.&lt;/li&gt;
+&lt;li&gt;∘ Blue Period.&lt;/li&gt;
+&lt;li&gt;∘ Witch Hat Atelier.&lt;/li&gt;
+&lt;li&gt;∘ Kusuriya no Hitorigoto.&lt;/li&gt;
+&lt;li&gt;∘ Totsukuni no Shoujo.&lt;/li&gt;
+&lt;li&gt;∘ Chainsaw Man.&lt;/li&gt;
+&lt;li&gt;∘ Astra Lost in Space.&lt;/li&gt;
+&lt;li&gt;∘ Sket Dance.&lt;/li&gt;
+&lt;li&gt;∘ Hunter x Hunter.&lt;/li&gt;
+&lt;li&gt;∘ Sailor Moon.&lt;/li&gt;
+&lt;li&gt;∘ Nausicaä of the Valley of the Wind.&lt;/li&gt;
+&lt;li&gt;∘ Spy x Family.&lt;/li&gt;
+&lt;li&gt;∘ Yu Yu Hakusho.&lt;/li&gt;
+&lt;li&gt;∘ World Trigger.&lt;/li&gt;
+&lt;li&gt;∘ Ranma½.&lt;/li&gt;
+&lt;li&gt;∘ Fujiyama san wa Shishunki.&lt;/li&gt;
+&lt;li&gt;∘ Tsubasa to Hotaru.&lt;/li&gt;
+&lt;li&gt;∘ My Dear Detective.&lt;/li&gt;
+&lt;li&gt;∘ Our Precious Conversations.&lt;/li&gt;
+&lt;li&gt;∘ My Little Monster.&lt;/li&gt;
+&lt;li&gt;∘ Wash me, Hug me.&lt;/li&gt;
+&lt;li&gt;∘ Your Lie in April.&lt;/li&gt;
+&lt;li&gt;∘ Skip and Loafer.&lt;/li&gt;
+&lt;li&gt;∘ Shimanami Tasogare.&lt;/li&gt;
+&lt;li&gt;∘ I want to eat your pancreas.&lt;/li&gt;
+&lt;li&gt;∘ Beck.&lt;/li&gt;
+&lt;li&gt;∘ Kimi ni Todoke.&lt;/li&gt;
+&lt;li&gt;∘ Ao Haru Ride.&lt;/li&gt;
+&lt;li&gt;∘ A Sign of Affection.&lt;/li&gt;
+&lt;li&gt;∘ Bloom into you.&lt;/li&gt;
+&lt;li&gt;∘ Bakuman.&lt;/li&gt;
+&lt;li&gt;∘ Usotoki Rhetoric.&lt;/li&gt;
+&lt;li&gt;∘ Kaoru Hana wa Rin to Saku.&lt;/li&gt;
+&lt;li&gt;∘ Sato-kun ga shinde kara.&lt;/li&gt;
+&lt;li&gt;∘ The World of Machida-kun.&lt;/li&gt;
+&lt;li&gt;∘ Fire Punch.&lt;/li&gt;
+&lt;li&gt;∘ Yamada to Kase-san..&lt;/li&gt;
+&lt;li&gt;∘ Tomo-chan wa Onna no ko!.&lt;/li&gt;
+&lt;li&gt;∘ Akagami no Shirayuki-Hime.&lt;/li&gt;
+&lt;li&gt;∘ A Condition called Love.&lt;/li&gt;
+&lt;li&gt;∘ Shinrei Tantei Yakumo.&lt;/li&gt;
+&lt;li&gt;∘ Slow Motion wo Mou Ichido.&lt;/li&gt;
+&lt;li&gt;∘ Memories of Emanon.&lt;/li&gt;
+&lt;li&gt;∘ Kuroiwa Medaka ni Watashi no Kawaii ga Tsuujinai.&lt;/li&gt;
+&lt;li&gt;∘ Kokou no Hito.&lt;/li&gt;
+&lt;li&gt;∘ Uruwashi no Yoi no Tsuki.&lt;/li&gt;
+&lt;li&gt;∘ Yamaguchi-kun wa Warukunai.&lt;/li&gt;
+&lt;li&gt;∘ Kaichou wa Maid-sama!&lt;/li&gt;
+&lt;li&gt;∘ Otoyomegatari.&lt;/li&gt;
+&lt;li&gt;∘ Shikimori&#39;s not just a cutie.&lt;/li&gt;
+&lt;li&gt;∘ Hokuo Kizoku to Moukinzuma no Yukiguni Karigurashi.&lt;/li&gt;
+&lt;li&gt;∘ A Silent Voice.&lt;/li&gt;
+&lt;li&gt;∘ Forget me not.&lt;/li&gt;
+&lt;li&gt;∘ Slam Dunk.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/about/manga04.jpg&#34; loading=&#34;lazy&#34; alt=&#34; A woman dives into a blue sea.&#34;&gt;
+     &lt;figcaption&gt;Kaoru Hana wa Rin to Saku -  Mikami Saka &lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  I read a massive amount of manga in 2022, 55 different manga in total. With a wide range of genres, there&amp;rsquo;s a bit of everything in here. Over time I plan to update this page with some more about my favourite manga out of this list.&lt;/p&gt;
+&lt;h2 id=&#34;read-list-2022&#34;&gt;Read List 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+
+&lt;li&gt;∘ Kimetsu no Yaiba.&lt;/li&gt;
+&lt;li&gt;∘ Kimi wa Hougako Insomnia.&lt;/li&gt;
+&lt;li&gt;∘ Yokohama Kaidashi Kikou.&lt;/li&gt;
+&lt;li&gt;∘ Blue Period.&lt;/li&gt;
+&lt;li&gt;∘ Witch Hat Atelier.&lt;/li&gt;
+&lt;li&gt;∘ Kusuriya no Hitorigoto.&lt;/li&gt;
+&lt;li&gt;∘ Totsukuni no Shoujo.&lt;/li&gt;
+&lt;li&gt;∘ Chainsaw Man.&lt;/li&gt;
+&lt;li&gt;∘ Astra Lost in Space.&lt;/li&gt;
+&lt;li&gt;∘ Sket Dance.&lt;/li&gt;
+&lt;li&gt;∘ Hunter x Hunter.&lt;/li&gt;
+&lt;li&gt;∘ Sailor Moon.&lt;/li&gt;
+&lt;li&gt;∘ Nausicaä of the Valley of the Wind.&lt;/li&gt;
+&lt;li&gt;∘ Spy x Family.&lt;/li&gt;
+&lt;li&gt;∘ Yu Yu Hakusho.&lt;/li&gt;
+&lt;li&gt;∘ World Trigger.&lt;/li&gt;
+&lt;li&gt;∘ Ranma½.&lt;/li&gt;
+&lt;li&gt;∘ Fujiyama san wa Shishunki.&lt;/li&gt;
+&lt;li&gt;∘ Tsubasa to Hotaru.&lt;/li&gt;
+&lt;li&gt;∘ My Dear Detective.&lt;/li&gt;
+&lt;li&gt;∘ Our Precious Conversations.&lt;/li&gt;
+&lt;li&gt;∘ My Little Monster.&lt;/li&gt;
+&lt;li&gt;∘ Wash me, Hug me.&lt;/li&gt;
+&lt;li&gt;∘ Your Lie in April.&lt;/li&gt;
+&lt;li&gt;∘ Skip and Loafer.&lt;/li&gt;
+&lt;li&gt;∘ Shimanami Tasogare.&lt;/li&gt;
+&lt;li&gt;∘ I want to eat your pancreas.&lt;/li&gt;
+&lt;li&gt;∘ Beck.&lt;/li&gt;
+&lt;li&gt;∘ Kimi ni Todoke.&lt;/li&gt;
+&lt;li&gt;∘ Ao Haru Ride.&lt;/li&gt;
+&lt;li&gt;∘ A Sign of Affection.&lt;/li&gt;
+&lt;li&gt;∘ Bloom into you.&lt;/li&gt;
+&lt;li&gt;∘ Bakuman.&lt;/li&gt;
+&lt;li&gt;∘ Usotoki Rhetoric.&lt;/li&gt;
+&lt;li&gt;∘ Kaoru Hana wa Rin to Saku.&lt;/li&gt;
+&lt;li&gt;∘ Sato-kun ga shinde kara.&lt;/li&gt;
+&lt;li&gt;∘ The World of Machida-kun.&lt;/li&gt;
+&lt;li&gt;∘ Fire Punch.&lt;/li&gt;
+&lt;li&gt;∘ Yamada to Kase-san..&lt;/li&gt;
+&lt;li&gt;∘ Tomo-chan wa Onna no ko!.&lt;/li&gt;
+&lt;li&gt;∘ Akagami no Shirayuki-Hime.&lt;/li&gt;
+&lt;li&gt;∘ A Condition called Love.&lt;/li&gt;
+&lt;li&gt;∘ Shinrei Tantei Yakumo.&lt;/li&gt;
+&lt;li&gt;∘ Slow Motion wo Mou Ichido.&lt;/li&gt;
+&lt;li&gt;∘ Memories of Emanon.&lt;/li&gt;
+&lt;li&gt;∘ Kuroiwa Medaka ni Watashi no Kawaii ga Tsuujinai.&lt;/li&gt;
+&lt;li&gt;∘ Kokou no Hito.&lt;/li&gt;
+&lt;li&gt;∘ Uruwashi no Yoi no Tsuki.&lt;/li&gt;
+&lt;li&gt;∘ Yamaguchi-kun wa Warukunai.&lt;/li&gt;
+&lt;li&gt;∘ Kaichou wa Maid-sama!&lt;/li&gt;
+&lt;li&gt;∘ Otoyomegatari.&lt;/li&gt;
+&lt;li&gt;∘ Shikimori&#39;s not just a cutie.&lt;/li&gt;
+&lt;li&gt;∘ Hokuo Kizoku to Moukinzuma no Yukiguni Karigurashi.&lt;/li&gt;
+&lt;li&gt;∘ A Silent Voice.&lt;/li&gt;
+&lt;li&gt;∘ Forget me not.&lt;/li&gt;
+&lt;li&gt;∘ Slam Dunk.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>Leaving Spotify for Freer Pastures</title>
@@ -1814,6 +2078,8 @@
 &lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; Heart Under - Just Mustard.&lt;/li&gt;
 
 &lt;li&gt;∘ &lt;strong&gt;November&lt;/strong&gt;: &amp;nbsp; When the Lights go - Totally Enormous Extinct Dinosaurs.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;December&lt;/strong&gt;: &amp;nbsp; Jen - Plums.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
@@ -1845,6 +2111,8 @@
 &lt;li&gt;∘ &lt;strong&gt;October&lt;/strong&gt;: &amp;nbsp; Heart Under - Just Mustard.&lt;/li&gt;
 
 &lt;li&gt;∘ &lt;strong&gt;November&lt;/strong&gt;: &amp;nbsp; When the Lights go - Totally Enormous Extinct Dinosaurs.&lt;/li&gt;
+
+&lt;li&gt;∘ &lt;strong&gt;December&lt;/strong&gt;: &amp;nbsp; Jen - Plums.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>
@@ -2105,6 +2373,34 @@
 &lt;li&gt;∘ Organised all my files.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;november-2022&#34;&gt;November 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Made the &lt;a class=&#34;link&#34; href=&#34;https://d00k.net/projects/timetwistpop&#34;&gt;Time Twist Pop&lt;/a&gt; watchface for the Rebble Hackathon.&lt;/li&gt;
+
+&lt;li&gt;∘ Updated &lt;a class=&#34;link&#34; href=&#34;https://d00k.net/projects/adwaitapod&#34;&gt;adwaitapod&lt;/a&gt; to version 2.0.&lt;/li&gt;
+
+&lt;li&gt;∘ Continued working on my rockbox theming technical book.&lt;/li&gt;
+
+&lt;li&gt;∘ Repaired a broken Pebble watch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;december-2022&#34;&gt;December 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Made a stand for my Monitor.&lt;/li&gt;
+
+&lt;li&gt;∘ Worked on my rockbox theming book.&lt;/li&gt;
+
+&lt;li&gt;∘ Started putting together syntax highlighting for rockbox languages.&lt;/li&gt;
+
+&lt;li&gt;∘ Learned how to communicate and navigate a VPS and set up a server firewall.&lt;/li&gt;
+
+&lt;li&gt;∘ Started working on a new, customisable iPod theme.&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <content:encoded>&lt;h2 id=&#34;march&#34;&gt;March&lt;/h2&gt;
 
@@ -2209,6 +2505,34 @@
 &lt;li&gt;∘ Continue writing my technical book for ipod theming.&lt;/li&gt;
 
 &lt;li&gt;∘ Organised all my files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;november-2022&#34;&gt;November 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Made the &lt;a class=&#34;link&#34; href=&#34;https://d00k.net/projects/timetwistpop&#34;&gt;Time Twist Pop&lt;/a&gt; watchface for the Rebble Hackathon.&lt;/li&gt;
+
+&lt;li&gt;∘ Updated &lt;a class=&#34;link&#34; href=&#34;https://d00k.net/projects/adwaitapod&#34;&gt;adwaitapod&lt;/a&gt; to version 2.0.&lt;/li&gt;
+
+&lt;li&gt;∘ Continued working on my rockbox theming technical book.&lt;/li&gt;
+
+&lt;li&gt;∘ Repaired a broken Pebble watch.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;december-2022&#34;&gt;December 2022&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Made a stand for my Monitor.&lt;/li&gt;
+
+&lt;li&gt;∘ Worked on my rockbox theming book.&lt;/li&gt;
+
+&lt;li&gt;∘ Started putting together syntax highlighting for rockbox languages.&lt;/li&gt;
+
+&lt;li&gt;∘ Learned how to communicate and navigate a VPS and set up a server firewall.&lt;/li&gt;
+
+&lt;li&gt;∘ Started working on a new, customisable iPod theme.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content:encoded>

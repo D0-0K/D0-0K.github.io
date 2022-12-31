@@ -6,7 +6,16 @@
     <description>Recent content in Journal on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 30 Nov 2022 17:10:26 +0000</lastBuildDate><atom:link href="https://d00k.net/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Dec 2022 19:25:18 +0000</lastBuildDate><atom:link href="https://d00k.net/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Year Review 2022</title>
+      <link>https://d00k.net/journal/year-review-2022/</link>
+      <pubDate>Sat, 31 Dec 2022 19:25:18 +0000</pubDate>
+      
+      <guid>https://d00k.net/journal/year-review-2022/</guid>
+      <description>This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it.</description>
+    </item>
+    
     <item>
       <title>Leaving Spotify for Freer Pastures</title>
       <link>https://d00k.net/journal/leaving-spotify/</link>
