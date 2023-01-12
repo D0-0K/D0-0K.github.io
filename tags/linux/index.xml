@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on D00k</title>
+    <link>https://d00k.net/tags/linux/</link>
+    <description>Recent content in linux on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Sat, 07 Jan 2023 22:20:57 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ImageMagick</title>
+      <link>https://d00k.net/knowledge/linux/imagemagick/</link>
+      <pubDate>Sat, 07 Jan 2023 22:20:57 +0000</pubDate>
+      
+      <guid>https://d00k.net/knowledge/linux/imagemagick/</guid>
+      <description>The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&amp;rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.
+Mogrify vs Convert  Most of what we&amp;rsquo;ll be looking at will be using the Mogrify command, however there are other ImageMagick commands, the most relevant to use here being the Convert command.</description>
+    </item>
+    
+  </channel>
+</rss>

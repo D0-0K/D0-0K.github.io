@@ -1,0 +1,195 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D00k &nbsp;• &nbsp;  ImageMagick </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+    <link rel="me" href="https://post.lurk.org/@dook">
+    <meta property="og:image" content="/img/knowledge/linux/imagemagick3.svg" />
+    <meta property="og:description" 
+  content="Explaining Commands and various tricks for the image editing tool." />
+ </head>
+
+  
+ <body>
+  <header class="knowledge colours">
+    
+<div>
+<nav>
+<ul class="name">
+	  	<li>
+  		<a class="name" href="/">🗦Dook🗧</a>
+  	</li>
+</ul>
+  <ul role="list">
+  
+   
+    <li>
+      <a class="" href="/gallery/">
+        Gallery
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="" href="/projects/">
+        Projects
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="active" href="/knowledge/">
+        Knowledge
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="" href="/journal/">
+        Journal
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="" href="/about/">
+        About
+      </a>
+    </li>
+   
+</ul>
+</nav> 
+</div>
+
+  </header>
+   <main>
+    <h1>ImageMagick</h1>
+          
+        <ul class="tags">
+          
+          <li><a class="round-button" href="/tags/linux/">linux</a></li>
+          
+          <li><a class="round-button" href="/tags/images/">images</a></li>
+          
+        </ul>
+      
+     <hr>
+    <p>  The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.</p>
+<h3 id="mogrify-vs-convert">Mogrify vs Convert</h3>
+<p>  Most of what we&rsquo;ll be looking at will be using the <strong>Mogrify</strong> command, however there are other ImageMagick commands, the most relevant to use here being the <strong>Convert</strong> command. For the most part, both commands do the same things however the way they do them differs. <strong>Mogrify</strong> is pretty general and (most times) overwrites the targetted files, <strong>Convert</strong> on the other hand creates a separate file which it outputs to. With <strong>Convert</strong> we also have finer control over the output, allowing us to rename files.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify [options] input.filetype
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">convert input.filetype [options] output.filetype
+</span></span></code></pre></div>
+
+<ul class="extra">
+	<li>
+	   <a href="https://imagemagick.org/script/mogrify.php" target="_blank" rel="noreferrer">⬩ Mogrify option list</a>.
+	</li>
+	<li>
+	   <a href="https://imagemagick.org/script/convert.php" target="_blank" rel="noreferrer">⬩ Convert option list</a>.
+	</li>
+</ul>
+
+<h3 id="converting-file-formats">Converting File Formats</h3>
+<p>  Probably the best ImageMagick command, there&rsquo;s been times where I&rsquo;ve had some weird image formats that apps don&rsquo;t even want to touch and a quick reformat in the command line fixes it all.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> mogrify -format [to] *.[from]
+</span></span><span class="line"><span class="cl">or
+</span></span><span class="line"><span class="cl"> convert *.[from] output.[to]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Example:
+</span></span><span class="line"><span class="cl"> mogrify -format png imagename.webp
+</span></span><span class="line"><span class="cl">or
+</span></span><span class="line"><span class="cl"> convert imagename.webp imagename.png
+</span></span></code></pre></div><h3 id="renaming-images-on-output">Renaming images on output</h3>
+<p>  As mentioned earlier, <strong>Convert</strong> allows us to rename the outputs of commands. We can pair this up with escapes to add things like numbers or various kinds of of data to the output filename. I&rsquo;ve only needed to number outputs so far, but you can add a wide range of metadata which you can find more about <a href="https://imagemagick.org/script/escape.php" target="_blank" rel="noopener">here</a>.</p>
+<h4 id="-output-with-a-sequence-of-numbers">∘ Output with a sequence of numbers:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">convert *.png filename%d.jpg
+</span></span></code></pre></div><h4 id="-the-same-but-with-3-digit-numbers">∘ The same but with 3 digit numbers:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">convert *.png filename%03d.jpg
+</span></span></code></pre></div><h3 id="cropping-images">Cropping Images</h3>
+<p>  The <strong>-crop</strong> option works by defining the bounds of the what we want to crop to, followed by the offset from the original image so for example if we wanted to crop 50px off each side of 1080x720px image the command would look like the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -crop 980x620+50+50 input.jpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">option parameters: widthxheight+x_offset+y_offset
+</span></span></code></pre></div><h3 id="resizing-images">Resizing Images</h3>
+<p>  There are several different ways to resize images with ImageMagick. We can resize ignoring aspect ratios, resize respecting aspect ratios and also scale an image which produces a sharp output (great for pixel art!). In reality, the dimensions can be used anyway. Putting x720 into resize or scale will respect an image&rsquo;s ratio, and percentages can be used in either three.</p>
+<h4 id="-resize">∘ Resize:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -resize 1080x720 input.jpg
+</span></span></code></pre></div><h4 id="-resize-in-respect-of-image-ratio">∘ Resize in respect of image ratio:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> mogrify -geometry x720 input.jpg
+</span></span><span class="line"><span class="cl">or
+</span></span><span class="line"><span class="cl"> mogrify -geometry 1080x input.jpg
+</span></span></code></pre></div><h4 id="-scale">∘ Scale:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -scale 200% input.jpg
+</span></span></code></pre></div><figure>
+ 	<div>
+     <img src="/img/knowledge/linux/imagemagick01.jpg" loading="lazy" alt="2 images of bees combined horizontally">
+     <figcaption>∘ Resize vs Scale</figcaption>
+     <hr>
+ 	</div>
+ </figure>
+<h3 id="stripping-images">Stripping Images</h3>
+<p>  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -strip input.jpg
+</span></span></code></pre></div><h3 id="combining-images">Combining Images</h3>
+<figure>
+ 	<div>
+     <img src="/img/knowledge/linux/imagemagick02.jpg" loading="lazy" alt="2 images of bees combined horizontally">
+     <figcaption></figcaption>
+     
+ 	</div>
+ </figure>
+<p>  This is a pretty handy command I just found that lets you combine images side by side! Wether they combine vertically or horizontally depends on the prefix the command, <strong>+</strong> for horizontal and <strong>-</strong> for vertical. This command even lets you use images with different file formats to each other!</p>
+<h4 id="-horizontal-combination">∘ Horizontal Combination:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> convert +append first.jpg second.jpg output.jpg
+</span></span></code></pre></div><h4 id="-vertical-combination">∘ Vertical Combination:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> convert -append first.png second.jpg output.jpg
+</span></span></code></pre></div><h2 id="links-used">Links used</h2>
+
+
+<ul class="extra">
+	<li>
+	   <a href="https://kokorobot.ca/site/image_optimization.html" target="_blank" rel="noreferrer">⬩ Rekka Bellum&#39;s Image Optimisation Guide</a>.
+	</li>
+
+	<li>
+	   <a href="http://www.aptivate.org/webguidelines/Images.html" target="_blank" rel="noreferrer">⬩ Web Design Guidelines for lean images</a>.
+	</li>
+
+	<li>
+	   <a href="https://imagemagick.org/" target="_blank" rel="noreferrer">⬩ Imagemagick</a>.
+	</li>
+</ul>
+
+
+    <div class="back">
+     <a class="prev" href="/knowledge/linux/">〈 Back to Linux Wiki</a>
+   </div>
+  </main>
+ </body>
+
+ <footer>
+  <hr>
+       <a href="https://webring.xxiivv.com/#d00k" target="_blank" alt="webring">
+        <svg fill="var(--text)" stroke="var(--text)" stroke-linecap="square" stroke-width="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 -15 300 300" height="40" width="40">
+                            &gt;
+                            <path d="M201.962 210a60 60 0 10-103.924-60l-50 86.603" fill="var(--background)" stroke="var(--text)"></path>
+                            <path d="M98.038 210a60 60 0 10103.924-60l-50-86.603" fill="var(--background)" stroke="var(--text)"></path>
+                            <path d="M150 120a60 60 0 100 120h100" fill="var(--background)" stroke="var(--text)"></path>
+                            &lt; <circle xmlns="http://www.w3.org/2000/svg" fill="var(--background)" r="60" stroke="var(--text)" cx="150" cy="180" stroke-width="28"></circle>
+                        </svg>
+      </a>
+      <a href="/index.xml" target="_blank" alt="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" height="34" width="34" stroke-width="10" stroke="var(--text)" fill="var(--text)"><path d="M30,45 A15,15 0 0,1 15,30 A15,15 0 0,1 30,15 A150,150 0 0,1 180,165 A15,15 0 0,1 165,180 A15,15 0 0,1 150,165 A120,120 0 0,0 30,45 M30,105 A15,15 0 0,1 15,90 A15,15 0 0,1 30,75 A90,90 0 0,1 120,165 A15,15 0 0,1 105,180 A15,15 0 0,1 90,165 A60,60 0 0,0 30,105 M30,135 A30,30 0 0,1 60,165 A30,15 0 0,1 30,180 A15,15 0 0,1 15,165 A15,30 0 0,1 30,135 "></path></svg>
+      </a>
+      <a href="https://github.com/D0-0K" target="_blank" alt="github">
+        <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" height="34" width="34"><path style="fill: var(--text);" d="M63.994.152C28.66.152 0 28.806 0 64.158c0 28.272 18.336 52.26 43.768 60.726 3.2.586 4.37-1.392 4.37-3.084 0-1.52-.06-5.544-.092-10.888-17.8 3.87-21.56-8.576-21.56-8.576-2.906-7.394-7.102-9.364-7.102-9.364-5.812-3.972.44-3.888.44-3.888 6.424.452 9.8 6.592 9.8 6.592 5.712 9.784 14.984 6.96 18.63 5.32.58-4.14 2.234-6.96 4.06-8.56-14.21-1.612-29.15-7.104-29.15-31.63 0-6.984 2.494-12.7 6.588-17.172-.66-1.62-2.856-8.12.628-16.932 0 0 5.374-1.72 17.6 6.56 5.104-1.42 10.58-2.128 16.02-2.152 5.44.024 10.914.734 16.024 2.154 12.22-8.28 17.58-6.56 17.58-6.56 3.496 8.81 1.3 15.316.64 16.936 4.104 4.476 6.58 10.19 6.58 17.174 0 24.586-14.966 30-29.22 31.58 2.296 1.98 4.34 5.88 4.34 11.854 0 8.556-.076 15.46-.076 17.56 0 1.706 1.154 3.7 4.4 3.074C109.68 116.396 128 92.42 128 64.156 128 28.808 99.344.152 63.994.152z"/></svg>
+      </a>   
+      <div style="float:right;">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+      </div> 
+   </footer>

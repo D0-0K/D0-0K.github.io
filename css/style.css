@@ -32,17 +32,18 @@ nav a{display:inline-block;margin:-5px 5px 5px -10px;font-size:21px;font-weight:
 ul{list-style:none;padding:0;margin:0;}
 .extra{margin-bottom:35px;}
 .extra li{font-size:20px;margin-bottom:5px;}
-.chroma{margin:-20px 0 20px 0;}
+.chroma{margin:-20px 0 20px 0;font-size:13px;}
 .see-more {font-size:16px;display:block;
 margin-top:15px;width:100px;text-align:center;padding:8px 0 5px 0;}
 hr{background:var(--accent);margin:5px 0 20px 0;border:0;height:3px;}
 footer{margin:30px;}
 footer hr{max-width:100%;height:1px;}
 footer div a{display:inline-block;margin-top:3px;margin-right:0px;}
-pre{background-color:var(--accent);padding:10px;overflow-y:hidden;}
+pre{background-color:var(--text);color:var(--background);padding:12px;overflow-y:hidden;}
 h1{font-size:3.3em;font-size:calc(2.3em + 2vw);font-family:Barlow;font-weight:500;line-height:1.1em;max-width:1000px;}
 h2{font-size:33px;}
-h3{margin-bottom:5px;font-size:20px;}
+h3{margin-bottom:5px;font-size:26px;}
+h4{margin-bottom:20px;font-size:20px;}
 .home-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
 .home-box ul{margin-bottom:15px;}
 .home-box hr{width:90%;height:2px;margin-bottom:15px}
@@ -67,7 +68,7 @@ p a, .link{text-decoration:underline wavy var(--accent);}
 .back{margin-top:60px;}
 .prev{border-left:5px solid;border-color:var(--accent);}
 figure{max-width:720px;}
-figcaption{color:var(--accent);font-weight:700;font-size:18px;}
+figcaption{color:var(--text);font-weight:700;font-size:18px;}
 h2 hr,figure hr{max-width:30%;height:2px;}
 .guide{list-style:none;background-color:var(--accent);padding-top:8px;}
 .guide li{margin-left:10px;margin-top:6px;margin-bottom:14px;font-family:"LunchType";}

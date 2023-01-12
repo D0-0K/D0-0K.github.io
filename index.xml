@@ -4,11 +4,198 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Sat, 31 Dec 2022 19:25:18 EST</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jan 2023 22:20:57 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>ImageMagick</title>
+        <link>https://d00k.net/knowledge/linux/imagemagick/</link>
+        <guid>https://d00k.net/knowledge/linux/imagemagick/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sat, 07 Jan 2023 22:20:57 EST}</pubDate>
+        
+        <description>&lt;p&gt;  The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&amp;rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.&lt;/p&gt;
+&lt;h3 id=&#34;mogrify-vs-convert&#34;&gt;Mogrify vs Convert&lt;/h3&gt;
+&lt;p&gt;  Most of what we&amp;rsquo;ll be looking at will be using the &lt;strong&gt;Mogrify&lt;/strong&gt; command, however there are other ImageMagick commands, the most relevant to use here being the &lt;strong&gt;Convert&lt;/strong&gt; command. For the most part, both commands do the same things however the way they do them differs. &lt;strong&gt;Mogrify&lt;/strong&gt; is pretty general and (most times) overwrites the targetted files, &lt;strong&gt;Convert&lt;/strong&gt; on the other hand creates a separate file which it outputs to. With &lt;strong&gt;Convert&lt;/strong&gt; we also have finer control over the output, allowing us to rename files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify [options] input.filetype
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert input.filetype [options] output.filetype
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://imagemagick.org/script/mogrify.php&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Mogrify option list&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://imagemagick.org/script/convert.php&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Convert option list&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;converting-file-formats&#34;&gt;Converting File Formats&lt;/h3&gt;
+&lt;p&gt;  Probably the best ImageMagick command, there&amp;rsquo;s been times where I&amp;rsquo;ve had some weird image formats that apps don&amp;rsquo;t even want to touch and a quick reformat in the command line fixes it all.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -format [to] *.[from]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert *.[from] output.[to]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Example:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -format png imagename.webp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert imagename.webp imagename.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;renaming-images-on-output&#34;&gt;Renaming images on output&lt;/h3&gt;
+&lt;p&gt;  As mentioned earlier, &lt;strong&gt;Convert&lt;/strong&gt; allows us to rename the outputs of commands. We can pair this up with escapes to add things like numbers or various kinds of of data to the output filename. I&amp;rsquo;ve only needed to number outputs so far, but you can add a wide range of metadata which you can find more about &lt;a href=&#34;https://imagemagick.org/script/escape.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;-output-with-a-sequence-of-numbers&#34;&gt;∘ Output with a sequence of numbers:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert *.png filename%d.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-the-same-but-with-3-digit-numbers&#34;&gt;∘ The same but with 3 digit numbers:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert *.png filename%03d.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;cropping-images&#34;&gt;Cropping Images&lt;/h3&gt;
+&lt;p&gt;  The &lt;strong&gt;-crop&lt;/strong&gt; option works by defining the bounds of the what we want to crop to, followed by the offset from the original image so for example if we wanted to crop 50px off each side of 1080x720px image the command would look like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -crop 980x620+50+50 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;option parameters: widthxheight+x_offset+y_offset
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;resizing-images&#34;&gt;Resizing Images&lt;/h3&gt;
+&lt;p&gt;  There are several different ways to resize images with ImageMagick. We can resize ignoring aspect ratios, resize respecting aspect ratios and also scale an image which produces a sharp output (great for pixel art!). In reality, the dimensions can be used anyway. Putting x720 into resize or scale will respect an image&amp;rsquo;s ratio, and percentages can be used in either three.&lt;/p&gt;
+&lt;h4 id=&#34;-resize&#34;&gt;∘ Resize:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -resize 1080x720 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-resize-in-respect-of-image-ratio&#34;&gt;∘ Resize in respect of image ratio:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -geometry x720 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -geometry 1080x input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-scale&#34;&gt;∘ Scale:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -scale 200% input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/linux/imagemagick01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;2 images of bees combined horizontally&#34;&gt;
+     &lt;figcaption&gt;∘ Resize vs Scale&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h3 id=&#34;stripping-images&#34;&gt;Stripping Images&lt;/h3&gt;
+&lt;p&gt;  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&amp;rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -strip input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;combining-images&#34;&gt;Combining Images&lt;/h3&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/linux/imagemagick02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;2 images of bees combined horizontally&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  This is a pretty handy command I just found that lets you combine images side by side! Wether they combine vertically or horizontally depends on the prefix the command, &lt;strong&gt;+&lt;/strong&gt; for horizontal and &lt;strong&gt;-&lt;/strong&gt; for vertical. This command even lets you use images with different file formats to each other!&lt;/p&gt;
+&lt;h4 id=&#34;-horizontal-combination&#34;&gt;∘ Horizontal Combination:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert +append first.jpg second.jpg output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-vertical-combination&#34;&gt;∘ Vertical Combination:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert -append first.png second.jpg output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;links-used&#34;&gt;Links used&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://kokorobot.ca/site/image_optimization.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rekka Bellum&amp;#39;s Image Optimisation Guide&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;http://www.aptivate.org/webguidelines/Images.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Web Design Guidelines for lean images&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://imagemagick.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Imagemagick&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;p&gt;  The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&amp;rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.&lt;/p&gt;
+&lt;h3 id=&#34;mogrify-vs-convert&#34;&gt;Mogrify vs Convert&lt;/h3&gt;
+&lt;p&gt;  Most of what we&amp;rsquo;ll be looking at will be using the &lt;strong&gt;Mogrify&lt;/strong&gt; command, however there are other ImageMagick commands, the most relevant to use here being the &lt;strong&gt;Convert&lt;/strong&gt; command. For the most part, both commands do the same things however the way they do them differs. &lt;strong&gt;Mogrify&lt;/strong&gt; is pretty general and (most times) overwrites the targetted files, &lt;strong&gt;Convert&lt;/strong&gt; on the other hand creates a separate file which it outputs to. With &lt;strong&gt;Convert&lt;/strong&gt; we also have finer control over the output, allowing us to rename files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify [options] input.filetype
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert input.filetype [options] output.filetype
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://imagemagick.org/script/mogrify.php&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Mogrify option list&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://imagemagick.org/script/convert.php&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Convert option list&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;converting-file-formats&#34;&gt;Converting File Formats&lt;/h3&gt;
+&lt;p&gt;  Probably the best ImageMagick command, there&amp;rsquo;s been times where I&amp;rsquo;ve had some weird image formats that apps don&amp;rsquo;t even want to touch and a quick reformat in the command line fixes it all.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -format [to] *.[from]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert *.[from] output.[to]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Example:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -format png imagename.webp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert imagename.webp imagename.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;renaming-images-on-output&#34;&gt;Renaming images on output&lt;/h3&gt;
+&lt;p&gt;  As mentioned earlier, &lt;strong&gt;Convert&lt;/strong&gt; allows us to rename the outputs of commands. We can pair this up with escapes to add things like numbers or various kinds of of data to the output filename. I&amp;rsquo;ve only needed to number outputs so far, but you can add a wide range of metadata which you can find more about &lt;a href=&#34;https://imagemagick.org/script/escape.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;-output-with-a-sequence-of-numbers&#34;&gt;∘ Output with a sequence of numbers:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert *.png filename%d.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-the-same-but-with-3-digit-numbers&#34;&gt;∘ The same but with 3 digit numbers:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;convert *.png filename%03d.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;cropping-images&#34;&gt;Cropping Images&lt;/h3&gt;
+&lt;p&gt;  The &lt;strong&gt;-crop&lt;/strong&gt; option works by defining the bounds of the what we want to crop to, followed by the offset from the original image so for example if we wanted to crop 50px off each side of 1080x720px image the command would look like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -crop 980x620+50+50 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;option parameters: widthxheight+x_offset+y_offset
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;resizing-images&#34;&gt;Resizing Images&lt;/h3&gt;
+&lt;p&gt;  There are several different ways to resize images with ImageMagick. We can resize ignoring aspect ratios, resize respecting aspect ratios and also scale an image which produces a sharp output (great for pixel art!). In reality, the dimensions can be used anyway. Putting x720 into resize or scale will respect an image&amp;rsquo;s ratio, and percentages can be used in either three.&lt;/p&gt;
+&lt;h4 id=&#34;-resize&#34;&gt;∘ Resize:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -resize 1080x720 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-resize-in-respect-of-image-ratio&#34;&gt;∘ Resize in respect of image ratio:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -geometry x720 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; mogrify -geometry 1080x input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-scale&#34;&gt;∘ Scale:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -scale 200% input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/linux/imagemagick01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;2 images of bees combined horizontally&#34;&gt;
+     &lt;figcaption&gt;∘ Resize vs Scale&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h3 id=&#34;stripping-images&#34;&gt;Stripping Images&lt;/h3&gt;
+&lt;p&gt;  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&amp;rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -strip input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;combining-images&#34;&gt;Combining Images&lt;/h3&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/linux/imagemagick02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;2 images of bees combined horizontally&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;  This is a pretty handy command I just found that lets you combine images side by side! Wether they combine vertically or horizontally depends on the prefix the command, &lt;strong&gt;+&lt;/strong&gt; for horizontal and &lt;strong&gt;-&lt;/strong&gt; for vertical. This command even lets you use images with different file formats to each other!&lt;/p&gt;
+&lt;h4 id=&#34;-horizontal-combination&#34;&gt;∘ Horizontal Combination:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert +append first.jpg second.jpg output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-vertical-combination&#34;&gt;∘ Vertical Combination:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert -append first.png second.jpg output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;links-used&#34;&gt;Links used&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://kokorobot.ca/site/image_optimization.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rekka Bellum&amp;#39;s Image Optimisation Guide&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;http://www.aptivate.org/webguidelines/Images.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Web Design Guidelines for lean images&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://imagemagick.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Imagemagick&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>Year Review 2022</title>

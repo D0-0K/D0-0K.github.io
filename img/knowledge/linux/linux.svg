@@ -1,0 +1,13 @@
+<svg version="1.1" viewBox="0 0 112 75" xmlns="http://www.w3.org/2000/svg">
+ <rect width="112" height="75" fill="#c8ccc2" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+ <g transform="translate(1.664 .229)">
+  <rect transform="matrix(.9664 -.2572 0 1 0 0)" x="35.26" y="33.22" width="53.88" height="42.75" rx="10" ry="10" fill="#ebf0e4" fill-rule="evenodd" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="9.155" style="paint-order:normal"/>
+  <g fill="#303030">
+   <path d="m65.06 36.33c-0.81 2.026-2.3 3.143-3.8 3.463-1.5 0.3724-3-0.06115-3.7-1.365-0.19-0.3469-0.66-0.3855-1.1-0.07242-0.4 0.3018-0.57 0.8194-0.38 1.206 0.97 1.829 3 2.461 5.1 1.874 2.1-0.5232 4.3-2.202 5.3-4.882 0.18-0.4503 0.039-0.9309-0.39-0.991-0.11-0.02124-0.67-0.02266-1.1 0.6976z"/>
+   <path d="m71.76 32.36c-1.2 0.3355-2.1 1.537-2.1 2.687s0.95 1.834 2.1 1.513c1.15-0.3216 2.1-1.537 2.1-2.687s-0.95-1.834-2.1-1.513z"/>
+   <path d="m50.76 38.23c-1.2 0.3355-2.1 1.537-2.1 2.687s0.95 1.834 2.1 1.513c1.2-0.3355 2.1-1.537 2.1-2.687s-0.95-1.834-2.1-1.513z"/>
+  </g>
+  <path d="m35.1 65.21-10.54-6.294c-3.238-2.283-4.038-5.197-3.953-8.042v-18.53c0-8.49 4.797-18.94 15.44-21.8l21.29-5.706c7.098-1.902 13.1-1.303 16.65 0.7464l10.65 6.147" fill="none" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+ </g>
+ <path d="m51.35 73.69 31.94-8.559-14.2-8.196-31.94 8.559 14.2 8.196" fill="none" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+</svg>
