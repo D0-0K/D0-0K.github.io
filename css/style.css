@@ -1,6 +1,6 @@
 body,h1,h2,h3,h4,h5,h6,hr,p,figure,blockquote,dl,dd{margin:0;}
 html,body,div,header,nav,main,article,footer,input,svg,label{max-width:none;}
-:root{--text:#303030;--background:#EBF0E4;--accent:#c8ccc2;--flexpos:left;}
+:root{--text:#303030;--background:#F0F0E4;--accent:#c8ccc2;--flexpos:left;}
 .home{--text:#20130B;--background:#ffb990;--accent:#d49a78;}
 .gallery{--text:#1C241C;--background:#a3d79e;--accent:#89b585;}
 .knowledge{--text:#212121;--background:#d7cfb2;--accent:#aba58e;}

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programming on D00k</title>
-    <link>https://d00k.net/tags/programming/</link>
-    <description>Recent content in programming on D00k</description>
+    <title>Games and Gamejam Projects on D00k</title>
+    <link>https://d00k.net/projects/games/</link>
+    <description>Recent content in Games and Gamejam Projects on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 23 Feb 2022 18:17:07 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jan 2023 22:08:08 +0000</lastBuildDate><atom:link href="https://d00k.net/projects/games/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streetwalker</title>
       <link>https://d00k.net/projects/games/streetwalker/</link>
