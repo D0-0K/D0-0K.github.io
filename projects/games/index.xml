@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Games and Gamejam Projects on D00k</title>
+    <title>Games Projects on D00k</title>
     <link>https://d00k.net/projects/games/</link>
-    <description>Recent content in Games and Gamejam Projects on D00k</description>
+    <description>Recent content in Games Projects on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
     <lastBuildDate>Fri, 13 Jan 2023 22:08:08 +0000</lastBuildDate><atom:link href="https://d00k.net/projects/games/index.xml" rel="self" type="application/rss+xml" />

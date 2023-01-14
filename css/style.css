@@ -47,12 +47,13 @@ h4{margin-bottom:20px;font-size:20px;}
 .home-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
 .home-box ul{margin-bottom:15px;}
 .home-box hr{width:90%;height:2px;margin-bottom:15px}
-.main-box{font-size:20px;max-width:400px;margin:20px .75vw}
+.main-box{font-size:20px;max-width:382px;margin:20px 1vw}
 .main-box ul{margin-bottom:15px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
 .columns-2{columns:425px 2;}
-.list-box a{display:block;}
+.list-box img{max-width:400px;width:400px;margin-left:-10px;margin-top:-8px;}
+.list-box a{display:block;border:1px solid;border-bottom:3px solid;border-color:var(--accent);}
 .list-box p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
 .list-box{display:inline-block;}
 .icon{width:320px;border-radius:15px;}
@@ -62,7 +63,7 @@ a{font-weight:bold;text-decoration:none;font-family:"LunchType";}
 article p{font-size:20px;margin-bottom:5px;}
 p{font-size:20px;margin-bottom:35px;}
 p a, .link{text-decoration:underline wavy var(--accent);}
-.tags{margin-left:-5px;}
+.tags{margin:2px 0 0 -5px;}
 .tags li{display:inline-block;}
 .tags a {display:inline-block;margin:5px;}
 .back{margin-top:60px;}
@@ -75,5 +76,5 @@ h2 hr,figure hr{max-width:30%;height:2px;}
 ol{padding-left:8px;padding-bottom:0.1px;
 min-width:250px;max-width:275px;}
 .journalbox{display:inline-block;max-width:500px;}
-.journalbox a{display:block;font-size:24px;margin:0 -10px;}
+.journalbox a{display:block;font-size:24px;margin:6px -10px;border:1px solid;border-bottom:3px solid;border-color:var(--accent);}
 .journalbox p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
