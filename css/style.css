@@ -52,7 +52,7 @@ h4{margin-bottom:20px;font-size:20px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
 .columns-2{columns:425px 2;}
-.list-box img{max-width:400px;width:400px;margin-left:-10px;margin-top:-8px;}
+.list-box img{max-width:400px;width:107%;margin:-8px 0 0 -10px;}
 .list-box a{display:block;border:1px solid;border-bottom:3px solid;border-color:var(--accent);}
 .list-box p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
 .list-box{display:inline-block;}
