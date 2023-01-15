@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>filesystem on D00k</title>
+    <link>https://d00k.net/tags/filesystem/</link>
+    <description>Recent content in filesystem on D00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Sun, 15 Jan 2023 18:48:52 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/filesystem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SFTP &amp; SSH</title>
+      <link>https://d00k.net/knowledge/linux/sftp/</link>
+      <pubDate>Sun, 15 Jan 2023 18:48:52 +0000</pubDate>
+      
+      <guid>https://d00k.net/knowledge/linux/sftp/</guid>
+      <description>SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.
+SSH  SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP.</description>
+    </item>
+    
+  </channel>
+</rss>

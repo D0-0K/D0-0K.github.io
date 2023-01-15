@@ -4,11 +4,82 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 13 Jan 2023 22:08:17 EST</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jan 2023 18:48:52 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>SFTP &amp; SSH</title>
+        <link>https://d00k.net/knowledge/linux/sftp/</link>
+        <guid>https://d00k.net/knowledge/linux/sftp/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sun, 15 Jan 2023 18:48:52 EST}</pubDate>
+        
+        <description>&lt;p&gt;  SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.&lt;/p&gt;
+&lt;h2 id=&#34;ssh&#34;&gt;SSH&lt;/h2&gt;
+&lt;p&gt;  SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP. It needs to be set up and configured on both ends, however it&amp;rsquo;s not too difficult a process. The best guide I&amp;rsquo;ve found is homebrewserver.club&amp;rsquo;s &lt;a href=&#34;https://homebrewserver.club/demystifying-ssh.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demystifying SSH&lt;/a&gt; tutorial. Following it with zero experience, I was able to get SSH set up with no issues fairly quickly and highly recommend it if you&amp;rsquo;re also a beginner wanting to get into SSH.&lt;/p&gt;
+&lt;h2 id=&#34;using-sftp&#34;&gt;Using SFTP&lt;/h2&gt;
+&lt;p&gt;  Connecting with SFTP to a system is identical to SSH, using the address or set server name alongside the command. Another similarity is stopping the connection, &lt;strong&gt;Ctrl + D&lt;/strong&gt; doing so on Linux.&lt;/p&gt;
+&lt;h4 id=&#34;-connecting&#34;&gt;∘ Connecting&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp servername
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;executing-commands&#34;&gt;Executing Commands&lt;/h3&gt;
+&lt;p&gt;  As you&amp;rsquo;re essentially controlling two terminals with one command line, a trick is needed to tell SFTP which end we want to execute a command at. This is done by putting a lowercase &lt;strong&gt;L&lt;/strong&gt; before our command to denote local execution, so for expample &lt;strong&gt;cd&lt;/strong&gt; would become &lt;strong&gt;lcd&lt;/strong&gt; when we want to go somewhere in the filesystem in the device were using SFTP on.&lt;/p&gt;
+&lt;h4 id=&#34;-using-a-command-on-the-connected-end&#34;&gt;∘ Using a command on the connected end.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; command
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-using-a-command-on-the-local-end&#34;&gt;∘ Using a command on the local end.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; lcommand
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;transferring-files&#34;&gt;Transferring Files&lt;/h3&gt;
+&lt;p&gt;  We can send files both ways across the connection. There are specific commands used for sending files to and from the connected system.&lt;/p&gt;
+&lt;h4 id=&#34;-putting-files-on-the-connected-system&#34;&gt;∘ Putting Files on the connected system.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; put location/filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-getting-files-from-the-connected-system&#34;&gt;∘ Getting Files from the connected system.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; get location/filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+&lt;p&gt;  ∘ To transfer a whole directory of files, the &lt;strong&gt;-r&lt;/strong&gt; flag can be used.&lt;/p&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://homebrewserver.club/category/fundamentals.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ HomeBrewServer.club&amp;#39;s fundamentals guides&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;p&gt;  SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.&lt;/p&gt;
+&lt;h2 id=&#34;ssh&#34;&gt;SSH&lt;/h2&gt;
+&lt;p&gt;  SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP. It needs to be set up and configured on both ends, however it&amp;rsquo;s not too difficult a process. The best guide I&amp;rsquo;ve found is homebrewserver.club&amp;rsquo;s &lt;a href=&#34;https://homebrewserver.club/demystifying-ssh.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demystifying SSH&lt;/a&gt; tutorial. Following it with zero experience, I was able to get SSH set up with no issues fairly quickly and highly recommend it if you&amp;rsquo;re also a beginner wanting to get into SSH.&lt;/p&gt;
+&lt;h2 id=&#34;using-sftp&#34;&gt;Using SFTP&lt;/h2&gt;
+&lt;p&gt;  Connecting with SFTP to a system is identical to SSH, using the address or set server name alongside the command. Another similarity is stopping the connection, &lt;strong&gt;Ctrl + D&lt;/strong&gt; doing so on Linux.&lt;/p&gt;
+&lt;h4 id=&#34;-connecting&#34;&gt;∘ Connecting&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp servername
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;executing-commands&#34;&gt;Executing Commands&lt;/h3&gt;
+&lt;p&gt;  As you&amp;rsquo;re essentially controlling two terminals with one command line, a trick is needed to tell SFTP which end we want to execute a command at. This is done by putting a lowercase &lt;strong&gt;L&lt;/strong&gt; before our command to denote local execution, so for expample &lt;strong&gt;cd&lt;/strong&gt; would become &lt;strong&gt;lcd&lt;/strong&gt; when we want to go somewhere in the filesystem in the device were using SFTP on.&lt;/p&gt;
+&lt;h4 id=&#34;-using-a-command-on-the-connected-end&#34;&gt;∘ Using a command on the connected end.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; command
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-using-a-command-on-the-local-end&#34;&gt;∘ Using a command on the local end.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; lcommand
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;transferring-files&#34;&gt;Transferring Files&lt;/h3&gt;
+&lt;p&gt;  We can send files both ways across the connection. There are specific commands used for sending files to and from the connected system.&lt;/p&gt;
+&lt;h4 id=&#34;-putting-files-on-the-connected-system&#34;&gt;∘ Putting Files on the connected system.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; put location/filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-getting-files-from-the-connected-system&#34;&gt;∘ Getting Files from the connected system.&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sftp&amp;gt; get location/filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+&lt;p&gt;  ∘ To transfer a whole directory of files, the &lt;strong&gt;-r&lt;/strong&gt; flag can be used.&lt;/p&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://homebrewserver.club/category/fundamentals.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ HomeBrewServer.club&amp;#39;s fundamentals guides&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>ImageMagick</title>
@@ -2789,7 +2860,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
         
         <description>&lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/icons/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
      &lt;figcaption&gt;&lt;/figcaption&gt;
      
  	&lt;/div&gt;
@@ -2862,7 +2933,7 @@ a large &lt;a href=&#34;https://cloughjordancommunityfarm.ie/&#34; target=&#34;_
 </description>
         <content:encoded>&lt;figure&gt;
  	&lt;div&gt;
-     &lt;img src=&#34;https://d00k.net/img/knowledge/icons/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
+     &lt;img src=&#34;https://d00k.net/img/knowledge/ecovillage05.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Cloughjordan Ecovillage sign&#34;&gt;
      &lt;figcaption&gt;&lt;/figcaption&gt;
      
  	&lt;/div&gt;
