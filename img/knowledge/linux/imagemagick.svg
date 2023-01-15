@@ -1,12 +1,12 @@
 <svg version="1.1" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
- <rect x="9.54e-7" width="120" height="80" fill="#c8ccc2" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.07"/>
+ <rect width="120" height="80" fill="#ccccc2"/>
  <g transform="translate(1.19 1.81)" fill="#303030">
   <path d="m41.1 46.1c-0.81 2.03-2.3 3.14-3.8 3.46-1.5 0.372-3-0.0611-3.7-1.37-0.19-0.347-0.66-0.385-1.1-0.0724-0.4 0.302-0.57 0.819-0.38 1.21 0.97 1.83 3 2.46 5.1 1.87 2.1-0.523 4.3-2.2 5.3-4.88 0.18-0.45 0.039-0.931-0.39-0.991-0.11-0.0212-0.67-0.0227-1.1 0.698z"/>
   <path d="m47.8 42.1c-1.2 0.336-2.1 1.54-2.1 2.69s0.95 1.83 2.1 1.51 2.1-1.54 2.1-2.69-0.95-1.83-2.1-1.51z"/>
   <path d="m26.8 48c-1.2 0.336-2.1 1.54-2.1 2.69s0.95 1.83 2.1 1.51c1.2-0.336 2.1-1.54 2.1-2.69s-0.95-1.83-2.1-1.51z"/>
  </g>
- <ellipse cx="33.2" cy="47.1" rx="22.3" ry="22.3" fill="none" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.36"/>
- <path d="m15.5 35 11-27 17.9 23c-8.24 7.75-20.1 8.34-28.9 4.01z" fill="#c8ccc2" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.87"/>
+ <ellipse cx="33.2" cy="47.1" rx="22.3" ry="22.3" fill="none" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+ <path d="m15.5 35 11-27 17.9 23c-8.24 7.75-20.1 8.34-28.9 4.01z" fill="#c8ccc2" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
  <g fill="#303030">
   <g fill-rule="evenodd" stroke="#303030" stroke-linecap="round" stroke-linejoin="round">
    <path transform="matrix(.471 0 0 .471 8.28 21.7)" d="m57.4 21.4-2.36-2.74-3.6 0.39 1.88-3.09-1.48-3.3 3.52 0.83 2.68-2.43 0.298 3.6 3.14 1.8-3.34 1.4z" stroke-width="2.12"/>
@@ -26,7 +26,7 @@
  </g>
  <g transform="translate(-4.94 4.63)" fill="none" stroke-linecap="square" stroke-width="4">
   <path d="m58.1 67.2 14.4-14.4" stroke="#303030"/>
-  <path d="m73.5 51.8 1.96-1.96" stroke="#ebf0e4"/>
+  <path d="m73.5 51.8 1.96-1.96" stroke="#f0f0e4"/>
  </g>
  <g fill="none" stroke="#303030" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
   <path d="m77.5 29.9-5.64-9.76"/>

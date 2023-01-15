@@ -1,18 +1,18 @@
 <svg viewBox="0 0 320 125" xmlns="http://www.w3.org/2000/svg">
- <rect width="320" height="125" fill="#c8ccc2"/>
- <path d="m56.93 101.1c3.544 1.987 7.087 3.974 10.9 1.526 3.817-2.448 7.908-9.33 13.5-10.78 5.589-1.454 12.68 2.519 18.26 1.065 5.589-1.455 9.68-8.336 15.27-9.79 5.589-1.454 12.68 2.519 18.26 1.065 5.589-1.455 9.68-8.336 15.27-9.79 5.589-1.454 12.68 2.519 18.26 1.065 5.589-1.455 9.68-8.336 13.53-10.77 3.85-2.429 7.459-0.406 11.07 1.617" fill="none" stroke="#ebf0e4" stroke-linecap="round" stroke-width="7"/>
-  <rect transform="rotate(45)" x="64" y="14" width="28" height="80" rx="14" ry="14" fill="#ebf0e4"/>
-  <rect transform="rotate(-30)" x="-19" y="12" width="30" height="80" rx="15" ry="15" fill="#3d3d3d" stroke="#3d3d3d" stroke-linecap="round" stroke-width="7"/>
-  <rect transform="rotate(-30)" x="-8" y="-2" width="5" height="80" rx="2.5" ry="2.5" stroke="#ebf0e4" stroke-linecap="round" stroke-width="7"/>
+ <rect width="320" height="125" fill="#ccccc2"/>
+ <path d="m56.93 101.1c3.544 1.987 7.087 3.974 10.9 1.526 3.817-2.448 7.908-9.33 13.5-10.78 5.589-1.454 12.68 2.519 18.26 1.065 5.589-1.455 9.68-8.336 15.27-9.79 5.589-1.454 12.68 2.519 18.26 1.065 5.589-1.455 9.68-8.336 15.27-9.79 5.589-1.454 12.68 2.519 18.26 1.065 5.589-1.455 9.68-8.336 13.53-10.77 3.85-2.429 7.459-0.406 11.07 1.617" fill="none" stroke="#f0f0e4" stroke-linecap="round" stroke-width="7"/>
+  <rect transform="rotate(45)" x="64" y="14" width="28" height="80" rx="14" ry="14" fill="#f0f0e4"/>
+  <rect transform="rotate(-30)" x="-19" y="12" width="30" height="80" rx="15" ry="15" fill="#303030" stroke="#303030" stroke-linecap="round" stroke-width="7"/>
+  <rect transform="rotate(-30)" x="-8" y="-2" width="5" height="80" rx="2.5" ry="2.5" stroke="#f0f0e4" stroke-linecap="round" stroke-width="7"/>
  <g fill="none">
-  <circle cx="108" cy="42" r="15" stroke="#ebf0e4" stroke-width="10"/>
-  <circle cx="89" cy="35" r="21" stroke="#3d3d3d" stroke-width="12"/>
-   <rect transform="rotate(25)" x="153" y="-60.42" width="76" height="50" rx="10" ry="10" stroke="#ebf0e4" stroke-width="2"/>
-   <rect transform="rotate(19)" x="172" y="-21" width="50" height="50" rx="10" ry="10" stroke="#3d3d3d" stroke-dasharray="6, 6" stroke-width="3"/>
+  <circle cx="108" cy="42" r="15" stroke="#f0f0e4" stroke-width="10"/>
+  <circle cx="89" cy="35" r="21" stroke="#303030" stroke-width="12"/>
+   <rect transform="rotate(25)" x="153" y="-60" width="76" height="50" rx="10" ry="10" stroke="#f0f0e4" stroke-width="2"/>
+   <rect transform="rotate(19)" x="172" y="-21" width="50" height="50" rx="10" ry="10" stroke="#303030" stroke-dasharray="6, 6" stroke-width="3"/>
  </g>
- <g fill="none" stroke="#ebf0e4" stroke-width="12" stroke-linecap="round">
+ <g fill="none" stroke="#f0f0e4" stroke-width="12" stroke-linecap="round">
  <path d="m267.5 17.52c15.21 6.583 27.03 20.53 31.02 36.62 4.019 16.18 0.0221 34.16-10.48 47.11"/>
  <path d="m298.5 54.14c-5.113 5.833-12.05 10.04-19.58 11.89-7.534 1.844-15.63 1.313-22.86-1.499-3.282-1.277-6.386-3.012-9.193-5.139"/>
 </g>
- <rect x="225" y="90" width="95" height="20" fill="#3d3d3d"/>
+ <rect x="225" y="90" width="95" height="20" fill="#303030"/>
 </svg>

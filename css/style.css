@@ -1,6 +1,6 @@
 body,h1,h2,h3,h4,h5,h6,hr,p,figure,blockquote,dl,dd{margin:0;}
 html,body,div,header,nav,main,article,footer,input,svg,label{max-width:none;}
-:root{--text:#303030;--background:#F0F0E4;--accent:#c8ccc2;--flexpos:left;}
+:root{--text:#303030;--background:#F0F0E4;--accent:#ccccc2;--flexpos:left;}
 .home{--text:#20130B;--background:#ffb990;--accent:#d49a78;}
 .gallery{--text:#1C241C;--background:#a3d79e;--accent:#89b585;}
 .knowledge{--text:#212121;--background:#d7cfb2;--accent:#aba58e;}
@@ -38,7 +38,7 @@ margin-top:15px;width:100px;text-align:center;padding:8px 0 5px 0;}
 hr{background:var(--accent);margin:5px 0 20px 0;border:0;height:3px;}
 footer{margin:30px;}
 footer hr{max-width:100%;height:1px;}
-footer div a{display:inline-block;margin-top:3px;margin-right:0px;}
+footer div a{display:inline-block;margin-top:3px;margin-right:0;}
 pre{background-color:var(--text);color:var(--background);padding:12px;overflow-y:hidden;}
 h1{font-size:3.3em;font-size:calc(2.3em + 2vw);font-family:Barlow;font-weight:500;line-height:1.1em;max-width:1000px;}
 h2{font-size:33px;}
@@ -52,9 +52,10 @@ h4{margin-bottom:20px;font-size:20px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
 .columns-2{columns:425px 2;}
-.list-box img{max-width:400px;width:107%;margin:-8px 0 0 -10px;}
-.list-box a{display:block;border:1px solid;border-bottom:3px solid;border-color:var(--accent);}
+.list-box img{max-width:400px;width:100%;}
+.list-box a{display:block;border:1px solid;border-bottom:3px solid;border-color:var(--accent);padding:0;}
 .list-box p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
+.list-box div{margin:0 10px 15px 10px;}
 .list-box{display:inline-block;}
 .icon{width:320px;border-radius:15px;}
 .contactlist{padding-top:calc(4px + .5%);padding-bottom:calc(8px + .5%);font-size:20px;}
