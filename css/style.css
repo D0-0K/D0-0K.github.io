@@ -51,7 +51,7 @@ h4{margin-bottom:20px;font-size:20px;}
 .main-box ul{margin-bottom:15px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
-.columns-2{columns:425px 2;}
+.columns-2{columns:425px 2;max-width:866px;}
 .list-box img{max-width:400px;width:100%;}
 .list-box a{display:block;border:1px solid;border-bottom:3px solid;border-color:var(--accent);padding:0;}
 .list-box p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
