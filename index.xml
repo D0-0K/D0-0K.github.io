@@ -143,10 +143,7 @@
      &lt;hr&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
-&lt;h3 id=&#34;stripping-images&#34;&gt;Stripping Images&lt;/h3&gt;
-&lt;p&gt;  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&amp;rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -strip input.jpg
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;combining-images&#34;&gt;Combining Images&lt;/h3&gt;
+&lt;h3 id=&#34;combining-images&#34;&gt;Combining Images&lt;/h3&gt;
 &lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/knowledge/linux/imagemagick02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;2 images of bees combined horizontally&#34;&gt;
@@ -159,6 +156,24 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert +append first.jpg second.jpg output.jpg
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-vertical-combination&#34;&gt;∘ Vertical Combination:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert -append first.png second.jpg output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;optimising-images&#34;&gt;Optimising Images&lt;/h2&gt;
+&lt;p&gt;  I find ImageMagick most useful when compressing and optimising images for uses online. The following tips will help you lower the file size of images as well as decreasing the burden it takes for them to be loaded, especially by older computers.&lt;/p&gt;
+&lt;h3 id=&#34;stripping-images&#34;&gt;Stripping Images&lt;/h3&gt;
+&lt;p&gt;  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&amp;rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -strip input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;quality&#34;&gt;Quality&lt;/h3&gt;
+&lt;p&gt;  Quality determines the level of compression, and hence quality of the output, applied to your images. It is measured in percent, 100 being best quality and 0 being best file size. I typically keep mine at 80, but most seem to use 85%.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -quality 85 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;sampling-factor&#34;&gt;Sampling Factor&lt;/h3&gt;
+&lt;p&gt;  Sampling Factor refers to the format of &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Chroma_subsampling#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chroma Subsampling&lt;/a&gt; used by Imagemagick. I use 4:2:0, as recommended by Rekka in their guide, but with testing I found 4:1:1 resulted in a larger file size confirming 4:2:0 to be better.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -sampling-factor 4:2:0 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;my-complete-script&#34;&gt;My Complete Script&lt;/h3&gt;
+&lt;p&gt;  Below is my personal script for the website. I reduce the images to the size displayed on my site, 720px wide, to reduce file size the most. I also use the &lt;strong&gt;-interlace&lt;/strong&gt; option, which doesn&amp;rsquo;t affect filesize but can how lower power devices with loading images.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -format jpg \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -scale 720x \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -sampling-factor 4:2:0 \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -strip -quality 80 \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -interlace line input.jpg
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;links-used&#34;&gt;Links used&lt;/h2&gt;
 
 
@@ -232,10 +247,7 @@
      &lt;hr&gt;
  	&lt;/div&gt;
  &lt;/figure&gt;
-&lt;h3 id=&#34;stripping-images&#34;&gt;Stripping Images&lt;/h3&gt;
-&lt;p&gt;  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&amp;rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -strip input.jpg
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;combining-images&#34;&gt;Combining Images&lt;/h3&gt;
+&lt;h3 id=&#34;combining-images&#34;&gt;Combining Images&lt;/h3&gt;
 &lt;figure&gt;
  	&lt;div&gt;
      &lt;img src=&#34;https://d00k.net/img/knowledge/linux/imagemagick02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;2 images of bees combined horizontally&#34;&gt;
@@ -248,6 +260,24 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert +append first.jpg second.jpg output.jpg
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-vertical-combination&#34;&gt;∘ Vertical Combination:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; convert -append first.png second.jpg output.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;optimising-images&#34;&gt;Optimising Images&lt;/h2&gt;
+&lt;p&gt;  I find ImageMagick most useful when compressing and optimising images for uses online. The following tips will help you lower the file size of images as well as decreasing the burden it takes for them to be loaded, especially by older computers.&lt;/p&gt;
+&lt;h3 id=&#34;stripping-images&#34;&gt;Stripping Images&lt;/h3&gt;
+&lt;p&gt;  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&amp;rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -strip input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;quality&#34;&gt;Quality&lt;/h3&gt;
+&lt;p&gt;  Quality determines the level of compression, and hence quality of the output, applied to your images. It is measured in percent, 100 being best quality and 0 being best file size. I typically keep mine at 80, but most seem to use 85%.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -quality 85 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;sampling-factor&#34;&gt;Sampling Factor&lt;/h3&gt;
+&lt;p&gt;  Sampling Factor refers to the format of &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Chroma_subsampling#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chroma Subsampling&lt;/a&gt; used by Imagemagick. I use 4:2:0, as recommended by Rekka in their guide, but with testing I found 4:1:1 resulted in a larger file size confirming 4:2:0 to be better.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -sampling-factor 4:2:0 input.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;my-complete-script&#34;&gt;My Complete Script&lt;/h3&gt;
+&lt;p&gt;  Below is my personal script for the website. I reduce the images to the size displayed on my site, 720px wide, to reduce file size the most. I also use the &lt;strong&gt;-interlace&lt;/strong&gt; option, which doesn&amp;rsquo;t affect filesize but can how lower power devices with loading images.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mogrify -format jpg \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -scale 720x \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -sampling-factor 4:2:0 \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -strip -quality 80 \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        -interlace line input.jpg
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;links-used&#34;&gt;Links used&lt;/h2&gt;
 
 
