@@ -4,11 +4,132 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Sun, 15 Jan 2023 18:48:52 EST</lastBuildDate>
+    <lastBuildDate>Wed, 18 Jan 2023 21:18:39 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>PDF Utilities</title>
+        <link>https://d00k.net/knowledge/linux/pdf/</link>
+        <guid>https://d00k.net/knowledge/linux/pdf/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 18 Jan 2023 21:18:39 EST}</pubDate>
+        
+        <description>&lt;p&gt;  There&amp;rsquo;s been plenty of times I&amp;rsquo;ve had to work on PDFs, be it taking out certain pages to sign and adding them back, or even creating PDFs from scratch with images. Common advice would direct you to websites online with loads of different tools for this, but privacy concerns combined with having to wait for uploads and so on make them pretty inconvenient. I&amp;rsquo;ve found a couple of command line tools which make working with PDFs almost painless.&lt;/p&gt;
+&lt;h2 id=&#34;img2pdf&#34;&gt;Img2pdf&lt;/h2&gt;
+&lt;p&gt;  Ever needed to combine a bunch of images into a PDF? There are different ways of doing this. For example &lt;a href=&#34;../imagemagick&#34;&gt;ImageMagick&lt;/a&gt; can convert images into PDFs, however it&amp;rsquo;s lossy process and images will come out blurry. For a lossless conversion, I found &lt;a href=&#34;https://github.com/myollie/img2pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Img2pdf&lt;/a&gt;. It produces crisp images with a simple to use command, while also having a lot of flexibility. I recommend checking out it&amp;rsquo;s &lt;strong&gt;-h&lt;/strong&gt; output, it goes into an incredible amount of detail about what you can do.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; img2pdf img1.png img2.jpg -o output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or..
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; img2pdf *.png -o output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pdf-toolkit&#34;&gt;PDF Toolkit&lt;/h2&gt;
+&lt;p&gt;  PDF Toolkit, or PDFTK, is a brilliant command suite of tools for working with PDFs in the terminal. I&amp;rsquo;ve used this for many things, even adding index metadata to a PDF that didn&amp;rsquo;t have any. There&amp;rsquo;s also much more features like rotating pages, password protecting files and so on that I haven&amp;rsquo;t gotten around to trying yet. I&amp;rsquo;ll like to an article below that covers all that.&lt;/p&gt;
+&lt;h4 id=&#34;-removing-pages&#34;&gt;∘ Removing Pages&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; pdftk input.pdf cat [pages-to-keep] output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;∘ Example, remove page 2 and 6:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; pdftk input.pdf cat 1 3-5 7-end output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-combining-pdfs&#34;&gt;∘ Combining PDFs&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input1.pdf input2.pdf output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-separate-pdf&#34;&gt;∘ Separate PDF&lt;/h4&gt;
+&lt;p&gt;This splits up an inputted PDF into individual PDF files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input.pdf burst
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pulling-metdata&#34;&gt;Pulling Metdata&lt;/h3&gt;
+&lt;p&gt;  Updating metadata with pdftk requires firstly extracting the information from our chosen PDF. Then we add or remove what we want before combining the file with our PDF.&lt;/p&gt;
+&lt;h4 id=&#34;-data-dump&#34;&gt;∘ Data Dump&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input.pdf \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;data_dump \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;output metadata.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;adding-bookmarks&#34;&gt;Adding Bookmarks&lt;/h3&gt;
+&lt;p&gt;  Adding bookmarks to our metadata file follows a simple pattern. A single bookmark starts with the &lt;strong&gt;BookmarkBegin&lt;/strong&gt; marker, and then we add &lt;strong&gt;BookmarkTitle&lt;/strong&gt; which is the text displayed in the index and to the user. &lt;strong&gt;BookmarkLevel&lt;/strong&gt; determines if the bookmark is a parent or child. Lastly &lt;strong&gt;BookmarkPageNumber&lt;/strong&gt; is the page the bookmark links to. Here&amp;rsquo;s an example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkBegin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkTitle: Chapter One
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkLevel: 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkPageNumber: 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkBegin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkTitle: First Point
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkLevel: 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkPageNumber: 4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;updating-metadata&#34;&gt;Updating Metadata&lt;/h3&gt;
+&lt;p&gt;  Once we&amp;rsquo;re done, we can update the original PDF and add the metadata file we just added our bookmarks to.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input.pdf \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;update_info metadata.txt \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://www.tomshardware.com/how-to/manipulate-pdf-files-with-pdftk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ PDFTK Guide on tom&amp;#39;s hardware&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/PDFtk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ PDFTK Wikipedia Page&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/myollie/img2pdf&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Img2Pdf Github&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <content:encoded>&lt;p&gt;  There&amp;rsquo;s been plenty of times I&amp;rsquo;ve had to work on PDFs, be it taking out certain pages to sign and adding them back, or even creating PDFs from scratch with images. Common advice would direct you to websites online with loads of different tools for this, but privacy concerns combined with having to wait for uploads and so on make them pretty inconvenient. I&amp;rsquo;ve found a couple of command line tools which make working with PDFs almost painless.&lt;/p&gt;
+&lt;h2 id=&#34;img2pdf&#34;&gt;Img2pdf&lt;/h2&gt;
+&lt;p&gt;  Ever needed to combine a bunch of images into a PDF? There are different ways of doing this. For example &lt;a href=&#34;../imagemagick&#34;&gt;ImageMagick&lt;/a&gt; can convert images into PDFs, however it&amp;rsquo;s lossy process and images will come out blurry. For a lossless conversion, I found &lt;a href=&#34;https://github.com/myollie/img2pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Img2pdf&lt;/a&gt;. It produces crisp images with a simple to use command, while also having a lot of flexibility. I recommend checking out it&amp;rsquo;s &lt;strong&gt;-h&lt;/strong&gt; output, it goes into an incredible amount of detail about what you can do.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; img2pdf img1.png img2.jpg -o output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;or..
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; img2pdf *.png -o output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pdf-toolkit&#34;&gt;PDF Toolkit&lt;/h2&gt;
+&lt;p&gt;  PDF Toolkit, or PDFTK, is a brilliant command suite of tools for working with PDFs in the terminal. I&amp;rsquo;ve used this for many things, even adding index metadata to a PDF that didn&amp;rsquo;t have any. There&amp;rsquo;s also much more features like rotating pages, password protecting files and so on that I haven&amp;rsquo;t gotten around to trying yet. I&amp;rsquo;ll like to an article below that covers all that.&lt;/p&gt;
+&lt;h4 id=&#34;-removing-pages&#34;&gt;∘ Removing Pages&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; pdftk input.pdf cat [pages-to-keep] output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;∘ Example, remove page 2 and 6:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; pdftk input.pdf cat 1 3-5 7-end output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-combining-pdfs&#34;&gt;∘ Combining PDFs&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input1.pdf input2.pdf output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;-separate-pdf&#34;&gt;∘ Separate PDF&lt;/h4&gt;
+&lt;p&gt;This splits up an inputted PDF into individual PDF files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input.pdf burst
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pulling-metdata&#34;&gt;Pulling Metdata&lt;/h3&gt;
+&lt;p&gt;  Updating metadata with pdftk requires firstly extracting the information from our chosen PDF. Then we add or remove what we want before combining the file with our PDF.&lt;/p&gt;
+&lt;h4 id=&#34;-data-dump&#34;&gt;∘ Data Dump&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input.pdf \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;data_dump \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;output metadata.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;adding-bookmarks&#34;&gt;Adding Bookmarks&lt;/h3&gt;
+&lt;p&gt;  Adding bookmarks to our metadata file follows a simple pattern. A single bookmark starts with the &lt;strong&gt;BookmarkBegin&lt;/strong&gt; marker, and then we add &lt;strong&gt;BookmarkTitle&lt;/strong&gt; which is the text displayed in the index and to the user. &lt;strong&gt;BookmarkLevel&lt;/strong&gt; determines if the bookmark is a parent or child. Lastly &lt;strong&gt;BookmarkPageNumber&lt;/strong&gt; is the page the bookmark links to. Here&amp;rsquo;s an example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkBegin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkTitle: Chapter One
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkLevel: 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkPageNumber: 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkBegin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkTitle: First Point
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkLevel: 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BookmarkPageNumber: 4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;updating-metadata&#34;&gt;Updating Metadata&lt;/h3&gt;
+&lt;p&gt;  Once we&amp;rsquo;re done, we can update the original PDF and add the metadata file we just added our bookmarks to.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Plain&#34; data-lang=&#34;Plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pdftk input.pdf \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;update_info metadata.txt \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;output output.pdf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://www.tomshardware.com/how-to/manipulate-pdf-files-with-pdftk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ PDFTK Guide on tom&amp;#39;s hardware&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://en.wikipedia.org/wiki/PDFtk&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ PDFTK Wikipedia Page&lt;/a&gt;.
+	&lt;/li&gt;
+
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/myollie/img2pdf&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Img2Pdf Github&lt;/a&gt;.
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+</content:encoded>
+      </item>
     
       <item>
         <title>SFTP &amp; SSH</title>

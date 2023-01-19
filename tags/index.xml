@@ -6,22 +6,31 @@
     <description>Recent content in Tags on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Sun, 15 Jan 2023 18:48:52 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Jan 2023 21:18:39 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://d00k.net/tags/linux/</link>
+      <pubDate>Wed, 18 Jan 2023 21:18:39 +0000</pubDate>
+      
+      <guid>https://d00k.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pdf</title>
+      <link>https://d00k.net/tags/pdf/</link>
+      <pubDate>Wed, 18 Jan 2023 21:18:39 +0000</pubDate>
+      
+      <guid>https://d00k.net/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>filesystem</title>
       <link>https://d00k.net/tags/filesystem/</link>
       <pubDate>Sun, 15 Jan 2023 18:48:52 +0000</pubDate>
       
       <guid>https://d00k.net/tags/filesystem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://d00k.net/tags/linux/</link>
-      <pubDate>Sun, 15 Jan 2023 18:48:52 +0000</pubDate>
-      
-      <guid>https://d00k.net/tags/linux/</guid>
       <description></description>
     </item>
     
