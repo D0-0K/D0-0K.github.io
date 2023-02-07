@@ -19,12 +19,12 @@ a:hover{background-color:var(--text);color:var(--background);transition:all .25s
 .next{margin-left:15px;border-right:5px solid;border-color:var(--text);background-color:var(--accent);}
 @font-face{font-family:'LeagueSpartanVariable';src:url(fonts/LeagueSpartan-VF.woff2)format("woff2-variations"),url(fonts/LeagueSpartan-VF.woff)format("woff-variations");font-weight:400 900;font-display:swap;}
 @font-face{font-family:"Barlow";src:url("fonts/Barlow-Black.woff2")format("woff2"),url("fonts/Barlow-Black.woff")format("woff");font-weight:500;font-display:swap;}
- /*@font-face{font-family:"LunchType";src:url("fonts/Lunchtype22.woff2")format("woff2"),url("fonts/Lunchtype22.woff")format("woff");font-weight:400;font-display:swap;} */
-body{font-family:"LeagueSpartanVariable";text-rendering:optimizeSpeed;min-height:100vh;line-height:1.45;background-color:var(--background);color:var(--text);}
+@font-face{font-family:"Symbols";src:url("fonts/Backup_Symbols.woff2")format("woff2");font-display:swap;}
+body{font-family:LeagueSpartanVariable, Symbols;text-rendering:optimizeSpeed;min-height:100vh;line-height:1.45;background-color:var(--background);color:var(--text);}
 header{padding:4vw;}
 main{margin:45px;margin:calc(17px + 1.2%);}
 a{color:var(--text);padding:8px 10px 5px 10px;margin:-5px -10px;font-weight:450;font-size:21px;text-decoration:none;}
-.name{font-size:26px;font-weight:500;text-align:left;}
+.name{font-family:LeagueSpartanVariable, Symbols;font-size:26px;font-weight:500;text-align:left;}
 *{max-width:55ch;}
 nav ul{display:inline-block;}
 nav li{display:inline-block;}
@@ -70,7 +70,7 @@ figure{max-width:720px;}
 figcaption{color:var(--text);font-weight:700;font-size:18px;}
 h2 hr,figure hr{max-width:30%;height:2px;}
 .guide{list-style:none;background-color:var(--accent);padding-top:8px;}
-.guide li{margin-left:10px;margin-top:6px;margin-bottom:14px;font-family:"LunchType";}
+.guide li{margin-left:10px;margin-top:6px;margin-bottom:14px;}
 ol{padding-left:8px;padding-bottom:0.1px;
 min-width:250px;max-width:275px;}
 .journalbox{display:inline-block;max-width:500px;}
