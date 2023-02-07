@@ -14,31 +14,29 @@ footer a:hover{background-color:var(--background);color:var(--text);}
 ::selection{background:orange;color:white;}
 a:hover{background-color:var(--text);color:var(--background);transition:all .25s;text-decoration-color:var(--background);}
 .round-button:hover{border-color:var(--text)}
-.round-button{border:1px solid;border-color:var(--accent);border-radius:31px;font-size:16px;margin-top:0;}
+.round-button{border:1px solid;border-color:var(--accent);border-radius:31px;font-size:18px;margin-top:0;}
 .active{border-bottom:2px solid;border-color:var(--accent);}
 .next{margin-left:15px;border-right:5px solid;border-color:var(--text);background-color:var(--accent);}
 @font-face{font-family:'LeagueSpartanVariable';src:url(fonts/LeagueSpartan-VF.woff2)format("woff2-variations"),url(fonts/LeagueSpartan-VF.woff)format("woff-variations");font-weight:400 900;font-display:swap;}
 @font-face{font-family:"Barlow";src:url("fonts/Barlow-Black.woff2")format("woff2"),url("fonts/Barlow-Black.woff")format("woff");font-weight:500;font-display:swap;}
-@font-face{font-family:"LunchType";src:url("fonts/Lunchtype22.woff2")format("woff2"),url("fonts/Lunchtype22.woff")format("woff");font-weight:400;font-display:swap;}
+ /*@font-face{font-family:"LunchType";src:url("fonts/Lunchtype22.woff2")format("woff2"),url("fonts/Lunchtype22.woff")format("woff");font-weight:400;font-display:swap;} */
 body{font-family:"LeagueSpartanVariable";text-rendering:optimizeSpeed;min-height:100vh;line-height:1.45;background-color:var(--background);color:var(--text);}
 header{padding:4vw;}
 main{margin:45px;margin:calc(17px + 1.2%);}
-a{color:var(--text);padding:8px 10px 5px 10px;margin:-5px -10px;font-weight:500;}
-.name{font-family:"LunchType";font-size:24px;font-weight:bold;text-align:left;}
+a{color:var(--text);padding:8px 10px 5px 10px;margin:-5px -10px;font-weight:450;font-size:21px;text-decoration:none;}
+.name{font-size:26px;font-weight:500;text-align:left;}
 *{max-width:55ch;}
 nav ul{display:inline-block;}
 nav li{display:inline-block;}
-nav a{display:inline-block;margin:-5px 5px 5px -10px;font-size:21px;font-weight:500;}
+nav a{display:inline-block;margin:-5px 5px 5px -10px;font-size:23px;font-weight:200;}
 ul{list-style:none;padding:0;margin:0;}
 .extra{margin-bottom:35px;}
 .extra li{font-size:20px;margin-bottom:5px;}
 .chroma{margin:-20px 0 20px 0;font-size:13px;}
-.see-more {font-size:16px;display:block;
-margin-top:15px;width:100px;text-align:center;padding:8px 0 5px 0;}
 hr{background:var(--accent);margin:5px 0 20px 0;border:0;height:3px;}
 footer{margin:30px;}
 footer hr{max-width:100%;height:1px;}
-footer div a{display:inline-block;margin-top:3px;margin-right:0;}
+footer div a{display:inline-block;margin-top:3px;margin-right:0;font-size:17px;font-weight:500;}
 pre{background-color:var(--text);color:var(--background);padding:12px;overflow-y:hidden;}
 h1{font-size:3.3em;font-size:calc(2.3em + 2vw);font-family:Barlow;font-weight:500;line-height:1.1em;max-width:1000px;}
 h2{font-size:33px;}
@@ -47,7 +45,7 @@ h4{margin-bottom:20px;font-size:20px;}
 .home-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
 .home-box ul{margin-bottom:15px;}
 .home-box hr{width:90%;height:2px;margin-bottom:15px}
-.main-box{font-size:20px;max-width:382px;margin:20px 1vw}
+.main-box{max-width:382px;margin:20px 1vw}
 .main-box ul{margin-bottom:15px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
@@ -60,15 +58,14 @@ h4{margin-bottom:20px;font-size:20px;}
 .icon{width:320px;border-radius:15px;}
 .contactlist{padding-top:calc(4px + .5%);padding-bottom:calc(8px + .5%);font-size:20px;}
 img{max-width:100%;}
-a{font-weight:bold;text-decoration:none;font-family:"LunchType";}
 article p{font-size:20px;margin-bottom:5px;}
 p{font-size:20px;margin-bottom:35px;}
-p a, .link{text-decoration:underline 2px var(--text);padding:4px;margin:-5px;}
+p a, .link{text-decoration:underline 2px var(--text);padding:4px;margin:-5px;font-size:20px;}
 .tags{margin:2px 0 0 -5px;}
 .tags li{display:inline-block;}
 .tags a {display:inline-block;margin:5px;}
 .back{margin-top:60px;}
-.prev{border-left:5px solid;border-color:var(--accent);}
+.prev{font-size:17px;border-left:5px solid;border-color:var(--accent);}
 figure{max-width:720px;}
 figcaption{color:var(--text);font-weight:700;font-size:18px;}
 h2 hr,figure hr{max-width:30%;height:2px;}
