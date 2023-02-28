@@ -8,12 +8,22 @@
     <language>en-ie</language>
     <lastBuildDate>Tue, 08 Mar 2022 19:32:01 +0000</lastBuildDate><atom:link href="https://d00k.net/about/now/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Projects</title>
+      <link>https://d00k.net/about/now/projects/</link>
+      <pubDate>Sun, 19 Feb 2023 16:10:47 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/now/projects/</guid>
+      <description>Because I keep forgetting what projects I planned/want to do, I&amp;rsquo;ve made this page to put them all in and pick up when I have time.
+Already Started Projects ∘ Rockbox Theming Book.  Projects I&amp;rsquo;d like to do ∘ Custom Static Site Generator in Python. ∘ Learn UXNTal and writing something in it. ∘ Make an Origami Zine. ∘ Design and 3D Print a replacement insert for my iPod dock.</description>
+    </item>
+    
+    <item>
       <title>2023</title>
       <link>https://d00k.net/about/now/2023/</link>
       <pubDate>Tue, 31 Jan 2023 19:42:01 +0000</pubDate>
       
       <guid>https://d00k.net/about/now/2023/</guid>
-      <description>January ∘ Completing and submitting my college entry portfolio. ∘ Made some updates to the site style and layout. ∘ Started a Linux Wiki for my command line cheatsheets. ∘ Started attempting to make Ascii art Origami Diagrams.  </description>
+      <description>January ∘ Completing and submitting my college entry portfolio. ∘ Made some updates to the site style and layout. ∘ Started a Linux Wiki for my command line cheatsheets. ∘ Started attempting to make Ascii art Origami Diagrams.  February ∘ Working on my new iPod theme, Themify. ∘ Writing the second draft of my Rockbox Theming Book. ∘ Learning Python and GTK, making a Dice Rolling app.  </description>
     </item>
     
     <item>

@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Tue, 05 Jul 2022 14:56:48 +0100</lastBuildDate><atom:link href="https://d00k.net/about/shortjournal/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023 02 28</title>
+      <link>https://d00k.net/about/shortjournal/2023-02-28/</link>
+      <pubDate>Tue, 28 Feb 2023 19:13:59 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/shortjournal/2023-02-28/</guid>
+      <description>Spent the first week of this month completing my portfolio for college entry, but in-between made some big improvements to the site. I simplified the inline links style to be far more visible than they were before, which also led to my stand-alone font for links becoming unnecessary. Getting rid of it has made my home page even smaller now, to just over 30kb.
+After that, I began to work on a new iPod theme called Themify.</description>
+    </item>
+    
+    <item>
       <title>2023 01 31</title>
       <link>https://d00k.net/about/shortjournal/2023-01-31/</link>
       <pubDate>Tue, 31 Jan 2023 19:47:12 +0000</pubDate>

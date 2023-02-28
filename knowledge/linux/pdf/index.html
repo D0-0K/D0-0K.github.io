@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D00k &nbsp;• &nbsp;  PDF Utilities </title>
+    <title>D00k &nbsp;•  PDF Utilities </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
     <link rel="me" href="https://post.lurk.org/@dook">
@@ -77,14 +77,14 @@
         </ul>
       
      <hr>
-    <p>  There&rsquo;s been plenty of times I&rsquo;ve had to work on PDFs, be it taking out certain pages to sign and adding them back, or even creating PDFs from scratch with images. Common advice would direct you to websites online with loads of different tools for this, but privacy concerns combined with having to wait for uploads and so on make them pretty inconvenient. I&rsquo;ve found a couple of command line tools which make working with PDFs almost painless.</p>
+    <p>There&rsquo;s been plenty of times I&rsquo;ve had to work on PDFs, be it taking out certain pages to sign and adding them back, or even creating PDFs from scratch with images. Common advice would direct you to websites online with loads of different tools for this, but privacy concerns combined with having to wait for uploads and so on make them pretty inconvenient. I&rsquo;ve found a couple of command line tools which make working with PDFs almost painless.</p>
 <h2 id="img2pdf">Img2pdf</h2>
-<p>  Ever needed to combine a bunch of images into a PDF? There are different ways of doing this. For example <a href="../imagemagick">ImageMagick</a> can convert images into PDFs, however it&rsquo;s lossy process and images will come out blurry. For a lossless conversion, I found <a href="https://github.com/myollie/img2pdf" target="_blank" rel="noopener">Img2pdf</a>. It produces crisp images with a simple to use command, while also having a lot of flexibility. I recommend checking out it&rsquo;s <strong>-h</strong> output, it goes into an incredible amount of detail about what you can do.</p>
+<p>Ever needed to combine a bunch of images into a PDF? There are different ways of doing this. For example <a href="../imagemagick">ImageMagick</a> can convert images into PDFs, however it&rsquo;s lossy process and images will come out blurry. For a lossless conversion, I found <a href="https://github.com/myollie/img2pdf" target="_blank" rel="noopener">Img2pdf</a>. It produces crisp images with a simple to use command, while also having a lot of flexibility. I recommend checking out it&rsquo;s <strong>-h</strong> output, it goes into an incredible amount of detail about what you can do.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> img2pdf img1.png img2.jpg -o output.pdf
 </span></span><span class="line"><span class="cl">or..
 </span></span><span class="line"><span class="cl"> img2pdf *.png -o output.pdf
 </span></span></code></pre></div><h2 id="pdf-toolkit">PDF Toolkit</h2>
-<p>  PDF Toolkit, or PDFTK, is a brilliant command suite of tools for working with PDFs in the terminal. I&rsquo;ve used this for many things, even adding index metadata to a PDF that didn&rsquo;t have any. There&rsquo;s also much more features like rotating pages, password protecting files and so on that I haven&rsquo;t gotten around to trying yet. I&rsquo;ll like to an article below that covers all that.</p>
+<p>PDF Toolkit, or PDFTK, is a brilliant command suite of tools for working with PDFs in the terminal. I&rsquo;ve used this for many things, even adding index metadata to a PDF that didn&rsquo;t have any. There&rsquo;s also much more features like rotating pages, password protecting files and so on that I haven&rsquo;t gotten around to trying yet. I&rsquo;ll like to an article below that covers all that.</p>
 <h4 id="-removing-pages">∘ Removing Pages</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> pdftk input.pdf cat [pages-to-keep] output output.pdf
 </span></span><span class="line"><span class="cl">∘ Example, remove page 2 and 6:
@@ -95,13 +95,13 @@
 <p>This splits up an inputted PDF into individual PDF files.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">pdftk input.pdf burst
 </span></span></code></pre></div><h3 id="pulling-metdata">Pulling Metdata</h3>
-<p>  Updating metadata with pdftk requires firstly extracting the information from our chosen PDF. Then we add or remove what we want before combining the file with our PDF.</p>
+<p>Updating metadata with pdftk requires firstly extracting the information from our chosen PDF. Then we add or remove what we want before combining the file with our PDF.</p>
 <h4 id="-data-dump">∘ Data Dump</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">pdftk input.pdf \
 </span></span><span class="line"><span class="cl">data_dump \
 </span></span><span class="line"><span class="cl">output metadata.txt
 </span></span></code></pre></div><h3 id="adding-bookmarks">Adding Bookmarks</h3>
-<p>  Adding bookmarks to our metadata file follows a simple pattern. A single bookmark starts with the <strong>BookmarkBegin</strong> marker, and then we add <strong>BookmarkTitle</strong> which is the text displayed in the index and to the user. <strong>BookmarkLevel</strong> determines if the bookmark is a parent or child. Lastly <strong>BookmarkPageNumber</strong> is the page the bookmark links to. Here&rsquo;s an example:</p>
+<p>Adding bookmarks to our metadata file follows a simple pattern. A single bookmark starts with the <strong>BookmarkBegin</strong> marker, and then we add <strong>BookmarkTitle</strong> which is the text displayed in the index and to the user. <strong>BookmarkLevel</strong> determines if the bookmark is a parent or child. Lastly <strong>BookmarkPageNumber</strong> is the page the bookmark links to. Here&rsquo;s an example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">BookmarkBegin
 </span></span><span class="line"><span class="cl">BookmarkTitle: Chapter One
 </span></span><span class="line"><span class="cl">BookmarkLevel: 1
@@ -111,7 +111,7 @@
 </span></span><span class="line"><span class="cl">BookmarkLevel: 2
 </span></span><span class="line"><span class="cl">BookmarkPageNumber: 4
 </span></span></code></pre></div><h3 id="updating-metadata">Updating Metadata</h3>
-<p>  Once we&rsquo;re done, we can update the original PDF and add the metadata file we just added our bookmarks to.</p>
+<p>Once we&rsquo;re done, we can update the original PDF and add the metadata file we just added our bookmarks to.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">pdftk input.pdf \
 </span></span><span class="line"><span class="cl">update_info metadata.txt \
 </span></span><span class="line"><span class="cl">output output.pdf

@@ -14,7 +14,7 @@
       
       <guid>https://d00k.net/knowledge/linux/sftp/</guid>
       <description>SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.
-SSH  SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP.</description>
+SSH SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP.</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D00k &nbsp;• &nbsp;  2. Lockscreen </title>
+    <title>D00k &nbsp;•  2. Lockscreen </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
     <link rel="me" href="https://post.lurk.org/@dook">
@@ -103,9 +103,9 @@
      <hr>
  	</div>
  </figure>
-<p>  There&rsquo;s a rich history of Rockbox themes using the hold switch for additional functionality, however they followed the idea of showing extra info, or displaying album art. In comparison, Yuuiko uses the hold switch to unlock entirely unique screens in a way that enhances the capabilities of Rockbox.</p>
+<p>There&rsquo;s a rich history of Rockbox themes using the hold switch for additional functionality, however they followed the idea of showing extra info, or displaying album art. In comparison, Yuuiko uses the hold switch to unlock entirely unique screens in a way that enhances the capabilities of Rockbox.</p>
 <h2 id="how-it-works">How it works</h2>
-<p>  The setup for lockscreens is surprisingly simple. It takes the same concept of background switching we&rsquo;ve seen, but combines it with the function for the hold switch, allowing us to define what should be displayed when the switch is on and off!</p>
+<p>The setup for lockscreens is surprisingly simple. It takes the same concept of background switching we&rsquo;ve seen, but combines it with the function for the hold switch, allowing us to define what should be displayed when the switch is on and off!</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">FreshOS.sbs - By Yuuiko
 </span></span><span class="line"><span class="cl">#
 </span></span><span class="line"><span class="cl">%xl(E,Backdrop - LOCK.bmp,0,0)
@@ -115,7 +115,7 @@
 </span></span><span class="line"><span class="cl">%?if(%cs, =, 1)&lt;%?mh&lt;%VI(u)%Vd(q)%Vd(q)|%VI(w)%Vd(m)%Vd(q)&gt;&gt; #Home
 </span></span></code></pre></div><p> Here we can see two <strong>%?if</strong> functions that control the lockscreen, the first changes the backdrop and the second controls which viewports to show.</p>
 <h2 id="limitations">Limitations</h2>
-<p>  Sadly, these features don&rsquo;t come without some flaws. Some are easy to work around, though others require hacks that aren&rsquo;t fully tested.</p>
+<p>Sadly, these features don&rsquo;t come without some flaws. Some are easy to work around, though others require hacks that aren&rsquo;t fully tested.</p>
 <p><strong>∘ Album Art -</strong>
  Rockbox is unable to display album art in more than one viewport. Therefore if you intend to have album art on your home screen <em>and</em> on your lockscreen, then you&rsquo;ll have to have them in the exact same spot. You can see Yuuiko&rsquo;s themes for a better example.</p>
 <p><strong>∘ Blank main viewport -</strong>
@@ -128,7 +128,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">   scroll the
 </span></span><span class="line"><span class="cl">   clickwheel.
-</span></span></code></pre></div><p>  The distance here matters, as it will determine the position of the text on the screen. When you scroll, the message no longer becomes visible.</p>
+</span></span></code></pre></div><p>The distance here matters, as it will determine the position of the text on the screen. When you scroll, the message no longer becomes visible.</p>
 <p><strong>∘ Playing Music -</strong>
  If your ipod changes onto the next song while on the lockscreen, the screen will bug out a little. The main viewport will draw itself over the backdrop, but under any draw elements on the screen. There have been some solutions experimented with, like drawing a viewport full of the current second functions to update the desired area every second. However these haven&rsquo;t been tested, and could possibly take a hit on battery life.</p>
 <p> Next, we&rsquo;ll be taking a look at images and how to use overlays more.</p>

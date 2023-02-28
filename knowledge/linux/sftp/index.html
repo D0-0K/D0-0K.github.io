@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D00k &nbsp;• &nbsp;  SFTP &amp; SSH </title>
+    <title>D00k &nbsp;•  SFTP &amp; SSH </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
     <link rel="me" href="https://post.lurk.org/@dook">
@@ -77,27 +77,27 @@
         </ul>
       
      <hr>
-    <p>  SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.</p>
+    <p>SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.</p>
 <h2 id="ssh">SSH</h2>
-<p>  SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP. It needs to be set up and configured on both ends, however it&rsquo;s not too difficult a process. The best guide I&rsquo;ve found is homebrewserver.club&rsquo;s <a href="https://homebrewserver.club/demystifying-ssh.html" target="_blank" rel="noopener">Demystifying SSH</a> tutorial. Following it with zero experience, I was able to get SSH set up with no issues fairly quickly and highly recommend it if you&rsquo;re also a beginner wanting to get into SSH.</p>
+<p>SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP. It needs to be set up and configured on both ends, however it&rsquo;s not too difficult a process. The best guide I&rsquo;ve found is homebrewserver.club&rsquo;s <a href="https://homebrewserver.club/demystifying-ssh.html" target="_blank" rel="noopener">Demystifying SSH</a> tutorial. Following it with zero experience, I was able to get SSH set up with no issues fairly quickly and highly recommend it if you&rsquo;re also a beginner wanting to get into SSH.</p>
 <h2 id="using-sftp">Using SFTP</h2>
-<p>  Connecting with SFTP to a system is identical to SSH, using the address or set server name alongside the command. Another similarity is stopping the connection, <strong>Ctrl + D</strong> doing so on Linux.</p>
+<p>Connecting with SFTP to a system is identical to SSH, using the address or set server name alongside the command. Another similarity is stopping the connection, <strong>Ctrl + D</strong> doing so on Linux.</p>
 <h4 id="-connecting">∘ Connecting</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">sftp servername
 </span></span></code></pre></div><h3 id="executing-commands">Executing Commands</h3>
-<p>  As you&rsquo;re essentially controlling two terminals with one command line, a trick is needed to tell SFTP which end we want to execute a command at. This is done by putting a lowercase <strong>L</strong> before our command to denote local execution, so for expample <strong>cd</strong> would become <strong>lcd</strong> when we want to go somewhere in the filesystem in the device were using SFTP on.</p>
+<p>As you&rsquo;re essentially controlling two terminals with one command line, a trick is needed to tell SFTP which end we want to execute a command at. This is done by putting a lowercase <strong>L</strong> before our command to denote local execution, so for expample <strong>cd</strong> would become <strong>lcd</strong> when we want to go somewhere in the filesystem in the device were using SFTP on.</p>
 <h4 id="-using-a-command-on-the-connected-end">∘ Using a command on the connected end.</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">sftp&gt; command
 </span></span></code></pre></div><h4 id="-using-a-command-on-the-local-end">∘ Using a command on the local end.</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">sftp&gt; lcommand
 </span></span></code></pre></div><h3 id="transferring-files">Transferring Files</h3>
-<p>  We can send files both ways across the connection. There are specific commands used for sending files to and from the connected system.</p>
+<p>We can send files both ways across the connection. There are specific commands used for sending files to and from the connected system.</p>
 <h4 id="-putting-files-on-the-connected-system">∘ Putting Files on the connected system.</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">sftp&gt; put location/filename
 </span></span></code></pre></div><h4 id="-getting-files-from-the-connected-system">∘ Getting Files from the connected system.</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">sftp&gt; get location/filename
 </span></span></code></pre></div><h2 id="extras">Extras</h2>
-<p>  ∘ To transfer a whole directory of files, the <strong>-r</strong> flag can be used.</p>
+<p>∘ To transfer a whole directory of files, the <strong>-r</strong> flag can be used.</p>
 <h2 id="links">Links</h2>
 
 

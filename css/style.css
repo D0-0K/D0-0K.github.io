@@ -42,6 +42,7 @@ h3{margin-bottom:5px;font-size:26px;}
 h4{margin-bottom:20px;font-size:20px;}
 .home-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
 .home-box ul{margin-bottom:15px;}
+.home-box p{text-indent:0;}
 .home-box hr{width:90%;height:2px;margin-bottom:15px}
 .main-box{max-width:382px;margin:20px 1vw}
 .main-box ul{margin-bottom:15px;}
@@ -50,14 +51,14 @@ h4{margin-bottom:20px;font-size:20px;}
 .columns-2{columns:425px 2;max-width:866px;}
 .list-box img{max-width:400px;width:100%;}
 .list-box a{display:block;border:1px solid;border-bottom:3px solid;border-color:var(--accent);padding:0;}
-.list-box p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
+.list-box p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;text-indent:0;}
 .list-box div{margin:0 10px 15px 10px;}
 .list-box{display:inline-block;}
 .icon{width:320px;border-radius:15px;}
 .contactlist{padding-top:calc(4px + .5%);padding-bottom:calc(8px + .5%);font-size:20px;}
 img{max-width:100%;}
 article p{font-size:20px;margin-bottom:5px;}
-p{font-size:20px;margin-bottom:35px;}
+p{font-size:20px;margin-bottom:35px;text-indent:.5em;}
 p a, .link{text-decoration:underline 2px var(--text);padding:4px;margin:-5px;font-size:20px;}
 .tags{margin:2px 0 0 -5px;}
 .tags li{display:inline-block;}
@@ -73,4 +74,4 @@ ol{padding-left:8px;padding-bottom:0.1px;
 min-width:250px;max-width:275px;}
 .journalbox{display:inline-block;max-width:500px;}
 .journalbox a{display:block;font-size:24px;margin:6px -10px;border:1px solid;border-bottom:3px solid;border-color:var(--accent);}
-.journalbox p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;}
+.journalbox p{font-family: LeagueSpartanVariable;font-size: 20px;font-weight: 400;text-indent:0;}

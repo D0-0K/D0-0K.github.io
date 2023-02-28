@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D00k &nbsp;• &nbsp;  1. Backdrop Switching </title>
+    <title>D00k &nbsp;•  1. Backdrop Switching </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
     <link rel="me" href="https://post.lurk.org/@dook">
@@ -96,7 +96,7 @@
     </ol>
     <h1>1. Backdrop Switching</h1>
      <hr>
-    <p>  When it comes to making more advanced themes, switching backdrops is the door to most things. At it&rsquo;s core, it essentially involves using Rockbox&rsquo;s &ldquo;current screen&rdquo; tag to decide which backdrop gets displayed on which screen. Here&rsquo;s a list of all the available screens and their corresponding numbers:</p>
+    <p>When it comes to making more advanced themes, switching backdrops is the door to most things. At it&rsquo;s core, it essentially involves using Rockbox&rsquo;s &ldquo;current screen&rdquo; tag to decide which backdrop gets displayed on which screen. Here&rsquo;s a list of all the available screens and their corresponding numbers:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">No.| Screen
 </span></span><span class="line"><span class="cl">1 - Main Menu
 </span></span><span class="line"><span class="cl">2 - WPS (Music screen)
@@ -127,7 +127,7 @@
 </span></span><span class="line"><span class="cl">2| %?if(%cs, !=, 21)&lt;%?if(%cs, !=, 10)&lt;&lt;%V(True)|%V(False)&gt;&gt;&gt;
 </span></span></code></pre></div><p>The &ldquo;<strong>%?if()</strong>&rdquo; function at the start polls the &ldquo;<strong>%cs</strong>&rdquo; function to see if it is (or in no.2, isn&rsquo;t) equal to 21, and different functions can be triggered depending on whether the answer is true or false. The second function uses the &ldquo;not equal to&rdquo; or &ldquo;!=&rdquo; operator, to determine if something should be displayed when a screen <em>isn&rsquo;t</em> the 21st or 10th screen (this can be stacked.)</p>
 <h2 id="making-it-all-work">Making it all work</h2>
-<p>  When it comes to putting everything together, the key is to get the right setup. While there is something similar in <a href="https://themes.rockbox.org/index.php?themeid=3131&amp;target=ipodvideo" target="_blank" rel="noopener">FreshOS</a> by Yuuiko, I&rsquo;ve had much more success with a method best seen in <a href="https://davidbarkan.com/" target="_blank" rel="noopener">David Barkan&rsquo;s</a> theme <a href="https://themes.rockbox.org/index.php?themeid=3191&amp;target=ipodvideo" target="_blank" rel="noopener">AMusicPod</a>. Which looks like the following:</p>
+<p>When it comes to putting everything together, the key is to get the right setup. While there is something similar in <a href="https://themes.rockbox.org/index.php?themeid=3131&amp;target=ipodvideo" target="_blank" rel="noopener">FreshOS</a> by Yuuiko, I&rsquo;ve had much more success with a method best seen in <a href="https://davidbarkan.com/" target="_blank" rel="noopener">David Barkan&rsquo;s</a> theme <a href="https://themes.rockbox.org/index.php?themeid=3191&amp;target=ipodvideo" target="_blank" rel="noopener">AMusicPod</a>. Which looks like the following:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">#Load Background
 </span></span><span class="line"><span class="cl">%V(0,0,-,-,-)%VB
 </span></span><span class="line"><span class="cl">%x(Da,backdrop home_g.bmp,0,0)

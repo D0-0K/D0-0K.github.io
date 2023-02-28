@@ -14,7 +14,7 @@
       
       <guid>https://d00k.net/knowledge/linux/imagemagick/</guid>
       <description>The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&amp;rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.
-Mogrify vs Convert  Most of what we&amp;rsquo;ll be looking at will be using the Mogrify command, however there are other ImageMagick commands, the most relevant to use here being the Convert command.</description>
+Mogrify vs Convert Most of what we&amp;rsquo;ll be looking at will be using the Mogrify command, however there are other ImageMagick commands, the most relevant to use here being the Convert command.</description>
     </item>
     
   </channel>

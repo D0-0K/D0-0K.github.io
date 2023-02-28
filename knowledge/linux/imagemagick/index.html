@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D00k &nbsp;• &nbsp;  ImageMagick </title>
+    <title>D00k &nbsp;•  ImageMagick </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
     <link rel="me" href="https://post.lurk.org/@dook">
@@ -77,9 +77,9 @@
         </ul>
       
      <hr>
-    <p>  The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.</p>
+    <p>The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.</p>
 <h3 id="mogrify-vs-convert">Mogrify vs Convert</h3>
-<p>  Most of what we&rsquo;ll be looking at will be using the <strong>Mogrify</strong> command, however there are other ImageMagick commands, the most relevant to use here being the <strong>Convert</strong> command. For the most part, both commands do the same things however the way they do them differs. <strong>Mogrify</strong> is pretty general and (most times) overwrites the targetted files, <strong>Convert</strong> on the other hand creates a separate file which it outputs to. With <strong>Convert</strong> we also have finer control over the output, allowing us to rename files.</p>
+<p>Most of what we&rsquo;ll be looking at will be using the <strong>Mogrify</strong> command, however there are other ImageMagick commands, the most relevant to use here being the <strong>Convert</strong> command. For the most part, both commands do the same things however the way they do them differs. <strong>Mogrify</strong> is pretty general and (most times) overwrites the targetted files, <strong>Convert</strong> on the other hand creates a separate file which it outputs to. With <strong>Convert</strong> we also have finer control over the output, allowing us to rename files.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify [options] input.filetype
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">convert input.filetype [options] output.filetype
@@ -95,7 +95,7 @@
 </ul>
 
 <h3 id="converting-file-formats">Converting File Formats</h3>
-<p>  Probably the best ImageMagick command, there&rsquo;s been times where I&rsquo;ve had some weird image formats that apps don&rsquo;t even want to touch and a quick reformat in the command line fixes it all.</p>
+<p>Probably the best ImageMagick command, there&rsquo;s been times where I&rsquo;ve had some weird image formats that apps don&rsquo;t even want to touch and a quick reformat in the command line fixes it all.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> mogrify -format [to] *.[from]
 </span></span><span class="line"><span class="cl">or
 </span></span><span class="line"><span class="cl"> convert *.[from] output.[to]
@@ -105,18 +105,18 @@
 </span></span><span class="line"><span class="cl">or
 </span></span><span class="line"><span class="cl"> convert imagename.webp imagename.png
 </span></span></code></pre></div><h3 id="renaming-images-on-output">Renaming images on output</h3>
-<p>  As mentioned earlier, <strong>Convert</strong> allows us to rename the outputs of commands. We can pair this up with escapes to add things like numbers or various kinds of of data to the output filename. I&rsquo;ve only needed to number outputs so far, but you can add a wide range of metadata which you can find more about <a href="https://imagemagick.org/script/escape.php" target="_blank" rel="noopener">here</a>.</p>
+<p>As mentioned earlier, <strong>Convert</strong> allows us to rename the outputs of commands. We can pair this up with escapes to add things like numbers or various kinds of of data to the output filename. I&rsquo;ve only needed to number outputs so far, but you can add a wide range of metadata which you can find more about <a href="https://imagemagick.org/script/escape.php" target="_blank" rel="noopener">here</a>.</p>
 <h4 id="-output-with-a-sequence-of-numbers">∘ Output with a sequence of numbers:</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">convert *.png filename%d.jpg
 </span></span></code></pre></div><h4 id="-the-same-but-with-3-digit-numbers">∘ The same but with 3 digit numbers:</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">convert *.png filename%03d.jpg
 </span></span></code></pre></div><h3 id="cropping-images">Cropping Images</h3>
-<p>  The <strong>-crop</strong> option works by defining the bounds of the what we want to crop to, followed by the offset from the original image so for example if we wanted to crop 50px off each side of 1080x720px image the command would look like the following:</p>
+<p>The <strong>-crop</strong> option works by defining the bounds of the what we want to crop to, followed by the offset from the original image so for example if we wanted to crop 50px off each side of 1080x720px image the command would look like the following:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -crop 980x620+50+50 input.jpg
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">option parameters: widthxheight+x_offset+y_offset
 </span></span></code></pre></div><h3 id="resizing-images">Resizing Images</h3>
-<p>  There are several different ways to resize images with ImageMagick. We can resize ignoring aspect ratios, resize respecting aspect ratios and also scale an image which produces a sharp output (great for pixel art!). In reality, the dimensions can be used anyway. Putting x720 into resize or scale will respect an image&rsquo;s ratio, and percentages can be used in either three.</p>
+<p>There are several different ways to resize images with ImageMagick. We can resize ignoring aspect ratios, resize respecting aspect ratios and also scale an image which produces a sharp output (great for pixel art!). In reality, the dimensions can be used anyway. Putting x720 into resize or scale will respect an image&rsquo;s ratio, and percentages can be used in either three.</p>
 <h4 id="-resize">∘ Resize:</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -resize 1080x720 input.jpg
 </span></span></code></pre></div><h4 id="-resize-in-respect-of-image-ratio">∘ Resize in respect of image ratio:</h4>
@@ -140,24 +140,24 @@
      
  	</div>
  </figure>
-<p>  This is a pretty handy command I just found that lets you combine images side by side! Wether they combine vertically or horizontally depends on the prefix the command, <strong>+</strong> for horizontal and <strong>-</strong> for vertical. This command even lets you use images with different file formats to each other!</p>
+<p>This is a pretty handy command I just found that lets you combine images side by side! Wether they combine vertically or horizontally depends on the prefix the command, <strong>+</strong> for horizontal and <strong>-</strong> for vertical. This command even lets you use images with different file formats to each other!</p>
 <h4 id="-horizontal-combination">∘ Horizontal Combination:</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> convert +append first.jpg second.jpg output.jpg
 </span></span></code></pre></div><h4 id="-vertical-combination">∘ Vertical Combination:</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl"> convert -append first.png second.jpg output.jpg
 </span></span></code></pre></div><h2 id="optimising-images">Optimising Images</h2>
-<p>  I find ImageMagick most useful when compressing and optimising images for uses online. The following tips will help you lower the file size of images as well as decreasing the burden it takes for them to be loaded, especially by older computers.</p>
+<p>I find ImageMagick most useful when compressing and optimising images for uses online. The following tips will help you lower the file size of images as well as decreasing the burden it takes for them to be loaded, especially by older computers.</p>
 <h3 id="stripping-images">Stripping Images</h3>
-<p>  Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.</p>
+<p>Stripping images is the process of removing metadata from images to save filesize. The likes of EXIF data isn&rsquo;t necessary on the web, so stripping is recommended to reduce file size for use on the web.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -strip input.jpg
 </span></span></code></pre></div><h3 id="quality">Quality</h3>
-<p>  Quality determines the level of compression, and hence quality of the output, applied to your images. It is measured in percent, 100 being best quality and 0 being best file size. I typically keep mine at 80, but most seem to use 85%.</p>
+<p>Quality determines the level of compression, and hence quality of the output, applied to your images. It is measured in percent, 100 being best quality and 0 being best file size. I typically keep mine at 80, but most seem to use 85%.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -quality 85 input.jpg
 </span></span></code></pre></div><h3 id="sampling-factor">Sampling Factor</h3>
-<p>  Sampling Factor refers to the format of <a href="https://en.m.wikipedia.org/wiki/Chroma_subsampling#" target="_blank" rel="noopener">Chroma Subsampling</a> used by Imagemagick. I use 4:2:0, as recommended by Rekka in their guide, but with testing I found 4:1:1 resulted in a larger file size confirming 4:2:0 to be better.</p>
+<p>Sampling Factor refers to the format of <a href="https://en.m.wikipedia.org/wiki/Chroma_subsampling#" target="_blank" rel="noopener">Chroma Subsampling</a> used by Imagemagick. I use 4:2:0, as recommended by Rekka in their guide, but with testing I found 4:1:1 resulted in a larger file size confirming 4:2:0 to be better.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -sampling-factor 4:2:0 input.jpg
 </span></span></code></pre></div><h3 id="my-complete-script">My Complete Script</h3>
-<p>  Below is my personal script for the website. I reduce the images to the size displayed on my site, 720px wide, to reduce file size the most. I also use the <strong>-interlace</strong> option, which doesn&rsquo;t affect filesize but can how lower power devices with loading images.</p>
+<p>Below is my personal script for the website. I reduce the images to the size displayed on my site, 720px wide, to reduce file size the most. I also use the <strong>-interlace</strong> option, which doesn&rsquo;t affect filesize but can how lower power devices with loading images.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Plain" data-lang="Plain"><span class="line"><span class="cl">mogrify -format jpg \
 </span></span><span class="line"><span class="cl">        -scale 720x \
 </span></span><span class="line"><span class="cl">        -sampling-factor 4:2:0 \
