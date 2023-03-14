@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Fri, 13 Jan 2023 22:08:17 +0000</lastBuildDate><atom:link href="https://d00k.net/projects/ipod/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Themify</title>
+      <link>https://d00k.net/projects/ipod/themify/</link>
+      <pubDate>Tue, 14 Mar 2023 15:11:48 +0000</pubDate>
+      
+      <guid>https://d00k.net/projects/ipod/themify/</guid>
+      <description>Themify is an advanced, user-customisable theme for Rockbox. Every on-screen element can be customised using Rockbox&amp;rsquo;s built in background and foreground colour settings. The theme features many adaptive elements, giving you a modern Rockbox experience like no other. This theme currently supports iPod Classic 5th, 6th and 7th generations.
+  The various screens of Themify    Features ∘ Fully colour-customisable user interface. Background and Foreground colours can be set in the theme settings of Rockbox.</description>
+    </item>
+    
+    <item>
       <title>adwaitapod</title>
       <link>https://d00k.net/projects/ipod/adwaitapod/</link>
       <pubDate>Thu, 24 Nov 2022 14:45:53 +0100</pubDate>

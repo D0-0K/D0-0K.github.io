@@ -6,7 +6,26 @@
     <description>Recent content in design on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 25 Nov 2022 18:31:27 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 15:12:17 +0000</lastBuildDate><atom:link href="https://d00k.net/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inside Themify</title>
+      <link>https://d00k.net/journal/inside_themify/</link>
+      <pubDate>Tue, 14 Mar 2023 15:12:17 +0000</pubDate>
+      
+      <guid>https://d00k.net/journal/inside_themify/</guid>
+      <description>After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.</description>
+    </item>
+    
+    <item>
+      <title>Themify</title>
+      <link>https://d00k.net/projects/ipod/themify/</link>
+      <pubDate>Tue, 14 Mar 2023 15:11:48 +0000</pubDate>
+      
+      <guid>https://d00k.net/projects/ipod/themify/</guid>
+      <description>Themify is an advanced, user-customisable theme for Rockbox. Every on-screen element can be customised using Rockbox&amp;rsquo;s built in background and foreground colour settings. The theme features many adaptive elements, giving you a modern Rockbox experience like no other. This theme currently supports iPod Classic 5th, 6th and 7th generations.
+  The various screens of Themify    Features ∘ Fully colour-customisable user interface. Background and Foreground colours can be set in the theme settings of Rockbox.</description>
+    </item>
+    
     <item>
       <title>Time Twist Pop</title>
       <link>https://d00k.net/projects/pebble/timetwistpop/</link>

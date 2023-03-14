@@ -4,11 +4,321 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 28 Feb 2023 19:13:59 EST</lastBuildDate>
+    <lastBuildDate>Tue, 14 Mar 2023 15:12:17 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>Inside Themify</title>
+        <link>https://d00k.net/journal/inside_themify/</link>
+        <guid>https://d00k.net/journal/inside_themify/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Tue, 14 Mar 2023 15:12:17 EST}</pubDate>
+        
+        <description>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/themify_03.png&#34; loading=&#34;lazy&#34; alt=&#34;Themify Wallpaper poster&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.&lt;/p&gt;
+&lt;h2 id=&#34;ui-re-colouring&#34;&gt;UI Re-colouring&lt;/h2&gt;
+&lt;p&gt;Of course, the main feature of Themify is the ability to completely colour-customise the interface to your taste. This is done by taking full advantage of Rockbox&amp;rsquo;s built in colour settings. Many theme tags support using these user-set default colours, and there&amp;rsquo;s even ways to make bitmap images be drawn with these too. The goal of Themify was to take these to the extreme&lt;/p&gt;
+&lt;h3 id=&#34;transparency&#34;&gt;Transparency&lt;/h3&gt;
+&lt;p&gt;One feature of Rockbox theming that has fascinated me for a while is transparent bitmaps. With regular bitmaps, a form of transparent masking is supported (and used fairly often), however Rockbox also supports &lt;em&gt;true&lt;/em&gt; transparent bitmaps. I could only find a handful of themes that used this feature in albeit tiny amounts, it&amp;rsquo;s quite costly in terms of resources, but I felt that the iPod could handle it in larger scales. For Themify, transparent elements provide a vital accent colour for the interface. And thanks to some changes to background drawing, I was able to use it in plenty of places.&lt;/p&gt;
+&lt;h3 id=&#34;the-backgrounds&#34;&gt;The Backgrounds&lt;/h3&gt;
+&lt;p&gt;In recent years, background image switching has become a core part of modern themes. This utilises a layer drawn in the background, where logic is used to display different images per screen. This works great, however even with the best compression you can achieve, each image will come in at around 80Kbs. While this isn&amp;rsquo;t much, over 5 or 6 images it can begin to threaten the file size of your theme over Rockbox&amp;rsquo;s theme site&amp;rsquo;s limits. Instead of taking the standard approach, I decided to try drawing the background elements using theme tags. This involved drawing rectangles in many places and using images to make up for rounded parts, accents and so on. This saved an incredible amount of space and let me use transparent bitmaps far more frivolously.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/themify_01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A comparison of the player and it&amp;#39;s backdrop drawing&#34;&gt;
+     &lt;figcaption&gt;The player screen&amp;#39;s background drawing visualised.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h3 id=&#34;1-bit-bitmaps&#34;&gt;1-bit Bitmaps&lt;/h3&gt;
+&lt;p&gt;One massive space savings was made with icons and other re-coloured UI images. Converting them to 1-bit Bitmaps gave the same result as regular bitmaps, but at a fraction of the size and effort to load. Without this one decision, I don&amp;rsquo;t think Themify would have performed as well as it did.&lt;/p&gt;
+&lt;h2 id=&#34;adaptive-ui&#34;&gt;Adaptive UI&lt;/h2&gt;
+&lt;p&gt;To keep a clean, consistent UI, I aimed to create various dynamic features that would give users the information they need when it&amp;rsquo;s needed, and hide it when not. The main place you can see this is with my icon bar for lossless audio, shuffle and repeat indicators. This uses a rather large amount of basic logic to decide what positions icons should be drawn in and when, and the result is well integrated into theme. I think you&amp;rsquo;d hardly notice what it&amp;rsquo;s doing unless you knew.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#An example of the logic for one icon positions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%ps, =, 1),%if(%mm, =, 1),%or(%if(%fc, !=, 4),%if(%fc, !=, 5),%if(%fc, !=, 7),%if(%fc, !=, 11),%if(%fc, !=, 13)))&amp;lt;%xd(statusextra,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%ps, !=, 1),%if(%mm, &amp;gt;, 1),%or(%if(%fc, !=, 4),%if(%fc, !=, 5),%if(%fc, !=, 7),%if(%fc, !=, 11),%if(%fc, !=, 13)))&amp;lt;%xd(statusextra,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%ps, !=, 1),%if(%mm, =, 1),%or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13)))&amp;lt;%xd(statusextra,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I also added automatic line splitting to the song title text and playlist position indicator. The song title is a bit imperfect, I detect the length of the title, and if it fits the necessary parameters then it will be displayed in two lines. I intended for this feature to be smarter, splitting the text in a way that respected words and didnt chop them up, however Rockbox theme files are unable to detect space characters, stopping this feature in it&amp;rsquo;s tracks.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/themify_02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Examples of adaptive elements in the ui&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;the-lockscreen&#34;&gt;The Lockscreen&lt;/h2&gt;
+&lt;p&gt;Easily my favourite feature, Themify&amp;rsquo;s lockscreen is my most impressive yet. Using a full screen transparent bitmap for the background, it looks stunning. I also added the largest analog clock attempted in Rockbox to date. Using the newer image loading logic, I was able to keep at least the hour hand&amp;rsquo;s code small. I had to compromise with the minute hands since they couldn&amp;rsquo;t be 1-bit bitmaps, and to have 60 individual hands produced a massive file size. I kept the logic as small as I could however, so the result isn&amp;rsquo;t actually half bad, especially compared to other attempts at this feature.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#--- Lockscreen Clock ---#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,15,40,160,160,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%xd(HourHands,%cl)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,89,40,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 0),%if(%cM, &amp;lt;, 5))&amp;lt;%xd(MinuteHands,1)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 5),%if(%cM, &amp;lt;, 10))&amp;lt;%xd(MinuteHands,2)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 10),%if(%cM, &amp;lt;, 15))&amp;lt;%xd(MinuteHands,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 15),%if(%cM, &amp;lt;, 20))&amp;lt;%xd(MinuteHands,4)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,89,114,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 20),%if(%cM, &amp;lt;, 25))&amp;lt;%xd(MinuteHands,5)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 25),%if(%cM, &amp;lt;, 30))&amp;lt;%xd(MinuteHands,6)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 30),%if(%cM, &amp;lt;, 35))&amp;lt;%xd(MinuteHands,1)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,52,104,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 35),%if(%cM, &amp;lt;, 40))&amp;lt;%xd(MinuteHands,2)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,25,77,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 40),%if(%cM, &amp;lt;, 45))&amp;lt;%xd(MinuteHands,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,15,40,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 45),%if(%cM, &amp;lt;, 50))&amp;lt;%xd(MinuteHands,4)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,25,77,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 50),%if(%cM, &amp;lt;, 55))&amp;lt;%xd(MinuteHands,5)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,52,50,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 55),%if(%cM, &amp;lt;, 60))&amp;lt;%xd(MinuteHands,6)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/journal/inside_themify&#34;&gt;∙ Themify Web Page&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/themify&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+
+</description>
+        <content:encoded>&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/themify_03.png&#34; loading=&#34;lazy&#34; alt=&#34;Themify Wallpaper poster&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;p&gt;After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.&lt;/p&gt;
+&lt;h2 id=&#34;ui-re-colouring&#34;&gt;UI Re-colouring&lt;/h2&gt;
+&lt;p&gt;Of course, the main feature of Themify is the ability to completely colour-customise the interface to your taste. This is done by taking full advantage of Rockbox&amp;rsquo;s built in colour settings. Many theme tags support using these user-set default colours, and there&amp;rsquo;s even ways to make bitmap images be drawn with these too. The goal of Themify was to take these to the extreme&lt;/p&gt;
+&lt;h3 id=&#34;transparency&#34;&gt;Transparency&lt;/h3&gt;
+&lt;p&gt;One feature of Rockbox theming that has fascinated me for a while is transparent bitmaps. With regular bitmaps, a form of transparent masking is supported (and used fairly often), however Rockbox also supports &lt;em&gt;true&lt;/em&gt; transparent bitmaps. I could only find a handful of themes that used this feature in albeit tiny amounts, it&amp;rsquo;s quite costly in terms of resources, but I felt that the iPod could handle it in larger scales. For Themify, transparent elements provide a vital accent colour for the interface. And thanks to some changes to background drawing, I was able to use it in plenty of places.&lt;/p&gt;
+&lt;h3 id=&#34;the-backgrounds&#34;&gt;The Backgrounds&lt;/h3&gt;
+&lt;p&gt;In recent years, background image switching has become a core part of modern themes. This utilises a layer drawn in the background, where logic is used to display different images per screen. This works great, however even with the best compression you can achieve, each image will come in at around 80Kbs. While this isn&amp;rsquo;t much, over 5 or 6 images it can begin to threaten the file size of your theme over Rockbox&amp;rsquo;s theme site&amp;rsquo;s limits. Instead of taking the standard approach, I decided to try drawing the background elements using theme tags. This involved drawing rectangles in many places and using images to make up for rounded parts, accents and so on. This saved an incredible amount of space and let me use transparent bitmaps far more frivolously.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/themify_01.jpg&#34; loading=&#34;lazy&#34; alt=&#34;A comparison of the player and it&amp;#39;s backdrop drawing&#34;&gt;
+     &lt;figcaption&gt;The player screen&amp;#39;s background drawing visualised.&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h3 id=&#34;1-bit-bitmaps&#34;&gt;1-bit Bitmaps&lt;/h3&gt;
+&lt;p&gt;One massive space savings was made with icons and other re-coloured UI images. Converting them to 1-bit Bitmaps gave the same result as regular bitmaps, but at a fraction of the size and effort to load. Without this one decision, I don&amp;rsquo;t think Themify would have performed as well as it did.&lt;/p&gt;
+&lt;h2 id=&#34;adaptive-ui&#34;&gt;Adaptive UI&lt;/h2&gt;
+&lt;p&gt;To keep a clean, consistent UI, I aimed to create various dynamic features that would give users the information they need when it&amp;rsquo;s needed, and hide it when not. The main place you can see this is with my icon bar for lossless audio, shuffle and repeat indicators. This uses a rather large amount of basic logic to decide what positions icons should be drawn in and when, and the result is well integrated into theme. I think you&amp;rsquo;d hardly notice what it&amp;rsquo;s doing unless you knew.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#An example of the logic for one icon positions
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%ps, =, 1),%if(%mm, =, 1),%or(%if(%fc, !=, 4),%if(%fc, !=, 5),%if(%fc, !=, 7),%if(%fc, !=, 11),%if(%fc, !=, 13)))&amp;lt;%xd(statusextra,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%ps, !=, 1),%if(%mm, &amp;gt;, 1),%or(%if(%fc, !=, 4),%if(%fc, !=, 5),%if(%fc, !=, 7),%if(%fc, !=, 11),%if(%fc, !=, 13)))&amp;lt;%xd(statusextra,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%ps, !=, 1),%if(%mm, =, 1),%or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13)))&amp;lt;%xd(statusextra,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I also added automatic line splitting to the song title text and playlist position indicator. The song title is a bit imperfect, I detect the length of the title, and if it fits the necessary parameters then it will be displayed in two lines. I intended for this feature to be smarter, splitting the text in a way that respected words and didnt chop them up, however Rockbox theme files are unable to detect space characters, stopping this feature in it&amp;rsquo;s tracks.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/journal/themify_02.jpg&#34; loading=&#34;lazy&#34; alt=&#34;Examples of adaptive elements in the ui&#34;&gt;
+     &lt;figcaption&gt;&lt;/figcaption&gt;
+     
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;the-lockscreen&#34;&gt;The Lockscreen&lt;/h2&gt;
+&lt;p&gt;Easily my favourite feature, Themify&amp;rsquo;s lockscreen is my most impressive yet. Using a full screen transparent bitmap for the background, it looks stunning. I also added the largest analog clock attempted in Rockbox to date. Using the newer image loading logic, I was able to keep at least the hour hand&amp;rsquo;s code small. I had to compromise with the minute hands since they couldn&amp;rsquo;t be 1-bit bitmaps, and to have 60 individual hands produced a massive file size. I kept the logic as small as I could however, so the result isn&amp;rsquo;t actually half bad, especially compared to other attempts at this feature.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-plain&#34; data-lang=&#34;plain&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#--- Lockscreen Clock ---#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,15,40,160,160,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%xd(HourHands,%cl)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,89,40,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 0),%if(%cM, &amp;lt;, 5))&amp;lt;%xd(MinuteHands,1)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 5),%if(%cM, &amp;lt;, 10))&amp;lt;%xd(MinuteHands,2)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 10),%if(%cM, &amp;lt;, 15))&amp;lt;%xd(MinuteHands,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 15),%if(%cM, &amp;lt;, 20))&amp;lt;%xd(MinuteHands,4)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,89,114,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 20),%if(%cM, &amp;lt;, 25))&amp;lt;%xd(MinuteHands,5)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 25),%if(%cM, &amp;lt;, 30))&amp;lt;%xd(MinuteHands,6)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 30),%if(%cM, &amp;lt;, 35))&amp;lt;%xd(MinuteHands,1)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,52,104,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 35),%if(%cM, &amp;lt;, 40))&amp;lt;%xd(MinuteHands,2)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,25,77,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 40),%if(%cM, &amp;lt;, 45))&amp;lt;%xd(MinuteHands,3)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,15,40,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 45),%if(%cM, &amp;lt;, 50))&amp;lt;%xd(MinuteHands,4)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,25,77,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 50),%if(%cM, &amp;lt;, 55))&amp;lt;%xd(MinuteHands,5)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%Vl(Lockscreen,52,50,86,86,-)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;%?and(%if(%cM, &amp;gt;=, 55),%if(%cM, &amp;lt;, 60))&amp;lt;%xd(MinuteHands,6)&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/journal/inside_themify&#34;&gt;∙ Themify Web Page&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/themify&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>Themify</title>
+        <link>https://d00k.net/projects/ipod/themify/</link>
+        <guid>https://d00k.net/projects/ipod/themify/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Tue, 14 Mar 2023 15:11:48 EST}</pubDate>
+        
+        <description>&lt;p&gt;Themify is an advanced, user-customisable theme for Rockbox. Every on-screen element can be customised using Rockbox&amp;rsquo;s built in background and foreground colour settings. The theme features many adaptive elements, giving you a modern Rockbox experience like no other. This theme currently supports iPod Classic 5th, 6th and 7th generations.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/themify.gif&#34; loading=&#34;lazy&#34; alt=&#34;A gif showing the various screens of adwaitapod&#34;&gt;
+     &lt;figcaption&gt;The various screens of Themify&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Fully colour-customisable user interface. Background and Foreground colours can be set in the theme settings of Rockbox.&lt;/li&gt;
+
+&lt;li&gt;∘ Adaptive UI elements for player status icons to keep the interface clean and minimal.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Lockscreen when the hold switch is on in the home screen. Lockscreen features a large analog clock and album art.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Recording screen with extra indicators for file format and frequency selected.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Quickscreen, with detailed battery status as well as sliders for brightness and volume.&lt;/li&gt;
+
+&lt;li&gt;∘ Lossless format file indicators.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+
+
+&lt;p style=&#34;margin-bottom:5px;&#34;&gt;&amp;nbsp;Extras available via the Github Repo include:&lt;/p&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Font pack with CJK support.&lt;/li&gt;
+
+&lt;li&gt;∘ Larger Fonts for better visibility.&lt;/li&gt;
+
+&lt;li&gt;∘ Releases with settings for smooth scrolling text (can&#39;t be uploaded to Rockbox).&lt;/li&gt;
+
+&lt;li&gt;∘ A pack of extra wallpapers can be purchased at the bottom of the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/themify_02.png&#34; loading=&#34;lazy&#34; alt=&#34;A gif showing the various screens of adwaitapod&#34;&gt;
+     &lt;figcaption&gt;Extra Wallpapers&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/themify&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/journal/inside_themify&#34;&gt;∙ Blog Post looking at Themify&amp;#39;s code&lt;/a&gt;.
+	&lt;/li&gt;
+
+
+
+
+&lt;iframe src=&#34;https://itch.io/embed/1968733?linkback=true&#34; width=&#34;552&#34; height=&#34;167&#34; frameborder=&#34;0&#34;&gt;&lt;a href=&#34;https://d00k.itch.io/themifywallpaperpack&#34;&gt;Themify - Wallpaper Pack by Dook&lt;/a&gt;&lt;/iframe&gt;
+
+
+</description>
+        <content:encoded>&lt;p&gt;Themify is an advanced, user-customisable theme for Rockbox. Every on-screen element can be customised using Rockbox&amp;rsquo;s built in background and foreground colour settings. The theme features many adaptive elements, giving you a modern Rockbox experience like no other. This theme currently supports iPod Classic 5th, 6th and 7th generations.&lt;/p&gt;
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/themify.gif&#34; loading=&#34;lazy&#34; alt=&#34;A gif showing the various screens of adwaitapod&#34;&gt;
+     &lt;figcaption&gt;The various screens of Themify&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Fully colour-customisable user interface. Background and Foreground colours can be set in the theme settings of Rockbox.&lt;/li&gt;
+
+&lt;li&gt;∘ Adaptive UI elements for player status icons to keep the interface clean and minimal.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Lockscreen when the hold switch is on in the home screen. Lockscreen features a large analog clock and album art.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Recording screen with extra indicators for file format and frequency selected.&lt;/li&gt;
+
+&lt;li&gt;∘ Custom Quickscreen, with detailed battery status as well as sliders for brightness and volume.&lt;/li&gt;
+
+&lt;li&gt;∘ Lossless format file indicators.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+
+
+&lt;p style=&#34;margin-bottom:5px;&#34;&gt;&amp;nbsp;Extras available via the Github Repo include:&lt;/p&gt;
+&lt;ul class=&#34;extra&#34;&gt;
+&lt;li&gt;∘ Font pack with CJK support.&lt;/li&gt;
+
+&lt;li&gt;∘ Larger Fonts for better visibility.&lt;/li&gt;
+
+&lt;li&gt;∘ Releases with settings for smooth scrolling text (can&#39;t be uploaded to Rockbox).&lt;/li&gt;
+
+&lt;li&gt;∘ A pack of extra wallpapers can be purchased at the bottom of the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+ 	&lt;div&gt;
+     &lt;img src=&#34;https://d00k.net/img/projects/themify_02.png&#34; loading=&#34;lazy&#34; alt=&#34;A gif showing the various screens of adwaitapod&#34;&gt;
+     &lt;figcaption&gt;Extra Wallpapers&lt;/figcaption&gt;
+     &lt;hr&gt;
+ 	&lt;/div&gt;
+ &lt;/figure&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+
+&lt;ul class=&#34;extra&#34;&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://github.com/D0-0K/themify&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Github Repository&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;⬩ Rockbox Theme page&lt;/a&gt;.
+	&lt;/li&gt;
+	&lt;li&gt;
+	   &lt;a href=&#34;https://d00k.net/journal/inside_themify&#34;&gt;∙ Blog Post looking at Themify&amp;#39;s code&lt;/a&gt;.
+	&lt;/li&gt;
+
+
+
+
+&lt;iframe src=&#34;https://itch.io/embed/1968733?linkback=true&#34; width=&#34;552&#34; height=&#34;167&#34; frameborder=&#34;0&#34;&gt;&lt;a href=&#34;https://d00k.itch.io/themifywallpaperpack&#34;&gt;Themify - Wallpaper Pack by Dook&lt;/a&gt;&lt;/iframe&gt;
+
+
+</content:encoded>
+      </item>
     
       <item>
         <title>2023 02 28</title>
