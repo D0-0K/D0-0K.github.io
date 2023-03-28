@@ -6,9 +6,18 @@
     <description>Recent content in Journal on D00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 14 Mar 2023 15:12:17 +0000</lastBuildDate><atom:link href="https://d00k.net/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 19:14:28 +0100</lastBuildDate><atom:link href="https://d00k.net/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Inside Themify</title>
+      <title>Celebrating a Year of d00k.net</title>
+      <link>https://d00k.net/journal/one-year-of-dook-net/</link>
+      <pubDate>Tue, 28 Mar 2023 19:14:28 +0100</pubDate>
+      
+      <guid>https://d00k.net/journal/one-year-of-dook-net/</guid>
+      <description>This time a year ago, d00k.net opened for the first time. The dates are a bit fuzzy, the domain was purchased in early March around my birthday, but I consider the site&amp;rsquo;s first real day to be when it was added to the XXIVV Webring on March 22nd. Dates aside, in just this one year the site has changed a lot. I tended to work on it sporadically, for reasons I&amp;rsquo;ll get to later, and it&amp;rsquo;s visual language, style and purpose has grown and changed as well over the past 12 months.</description>
+    </item>
+    
+    <item>
+      <title>A Look Inside Themify</title>
       <link>https://d00k.net/journal/inside_themify/</link>
       <pubDate>Tue, 14 Mar 2023 15:12:17 +0000</pubDate>
       

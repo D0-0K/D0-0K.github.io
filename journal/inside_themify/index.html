@@ -3,13 +3,13 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D00k &nbsp;•  Inside Themify </title>
+    <title>D00k &nbsp;•  A Look Inside Themify </title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
     <link rel="me" href="https://post.lurk.org/@dook">
     <meta property="og:image" content="/img/journal/themify_03.png" />
     <meta property="og:description" 
-  content="A technical write-up on the creation of my Themify Rockbox theme." />
+  content="A technical dive into the workings of my customisable iPod theme Themify." />
  </head>
 
  
@@ -66,7 +66,7 @@
 
   </header>
    <main>
-    <h1 class="title">Inside Themify</h1>
+    <h1 class="title">A Look Inside Themify</h1>
           
         <ul class="tags">
           
@@ -127,19 +127,9 @@
 </span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 15),%if(%cM, &lt;, 20))&lt;%xd(MinuteHands,4)&gt;
 </span></span><span class="line"><span class="cl">%Vl(Lockscreen,89,114,86,86,-)
 </span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 20),%if(%cM, &lt;, 25))&lt;%xd(MinuteHands,5)&gt;
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 25),%if(%cM, &lt;, 30))&lt;%xd(MinuteHands,6)&gt;
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 30),%if(%cM, &lt;, 35))&lt;%xd(MinuteHands,1)&gt;
-</span></span><span class="line"><span class="cl">%Vl(Lockscreen,52,104,86,86,-)
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 35),%if(%cM, &lt;, 40))&lt;%xd(MinuteHands,2)&gt;
-</span></span><span class="line"><span class="cl">%Vl(Lockscreen,25,77,86,86,-)
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 40),%if(%cM, &lt;, 45))&lt;%xd(MinuteHands,3)&gt;
-</span></span><span class="line"><span class="cl">%Vl(Lockscreen,15,40,86,86,-)
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 45),%if(%cM, &lt;, 50))&lt;%xd(MinuteHands,4)&gt;
-</span></span><span class="line"><span class="cl">%Vl(Lockscreen,25,77,86,86,-)
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 50),%if(%cM, &lt;, 55))&lt;%xd(MinuteHands,5)&gt;
-</span></span><span class="line"><span class="cl">%Vl(Lockscreen,52,50,86,86,-)
-</span></span><span class="line"><span class="cl">%?and(%if(%cM, &gt;=, 55),%if(%cM, &lt;, 60))&lt;%xd(MinuteHands,6)&gt;
-</span></span></code></pre></div><h2 id="final-thoughts">Final Thoughts</h2>
+</span></span><span class="line"><span class="cl">#... and so on 
+</span></span></code></pre></div><p>This implementation also features a fix for an issue that has long plagued Lockscreen designs. When the song switches to the next, if a Lockscreen is open, it will refresh the menu the Lockscreen is drawn over. This creates a glitchy mess, and stops this feature from being any more than a neat tech demo. However, I finally fixed this (literally just before I launched the theme) by drawing a viewport over the main menu whenever a song changes, effectively refreshing the Lockscreen effect.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>Overall, I&rsquo;m quite happy and proud of this theme&rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the <a href="https://github.com/D0-0K/themify/discussions" target="_blank" rel="noopener">github discussions</a>!</p>
 <h2 id="links">Links</h2>
 

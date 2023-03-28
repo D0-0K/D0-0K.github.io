@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D00k &nbsp;•  Celebrating a Year of d00k.net </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+    <link rel="me" href="https://post.lurk.org/@dook">
+    <meta property="og:image" content="" />
+    <meta property="og:description" 
+  content="After a year of D00k.net, I take a look back at how the site has changed, and what&#39;s to come." />
+ </head>
+
+ 
+ <body>
+  <header class="journal colours">
+    
+<div>
+<nav>
+<ul class="name">
+	  	<li>
+  		<a class="name" href="/">🗦Dook🗧</a>
+  	</li>
+</ul>
+  <ul role="list">
+  
+   
+    <li>
+      <a class="" href="/gallery/">
+        Gallery
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="" href="/projects/">
+        Projects
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="" href="/knowledge/">
+        Knowledge
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="active" href="/journal/">
+        Journal
+      </a>
+    </li>
+  
+   
+    <li>
+      <a class="" href="/about/">
+        About
+      </a>
+    </li>
+   
+</ul>
+</nav> 
+</div>
+
+  </header>
+   <main>
+    <h1 class="title">Celebrating a Year of d00k.net</h1>
+          
+        <ul class="tags">
+          
+          <li><a class="round-button" href="/tags/colophon/">colophon</a></li>
+          
+          <li><a class="round-button" href="/tags/web/">web</a></li>
+          
+        </ul>
+      
+     <hr>
+    <p>This time a year ago, d00k.net opened for the first time. The dates are a bit fuzzy, the domain was purchased in early March around my birthday, but I consider the site&rsquo;s first real day to be when it was added to the <a href="https://webring.xxiivv.com/#d00k" target="_blank" rel="noopener">XXIVV Webring</a> on March 22nd. Dates aside, in just this one year the site has changed a lot. I tended to work on it sporadically, for reasons I&rsquo;ll get to later, and it&rsquo;s visual language, style and purpose has grown and changed as well over the past 12 months. I want to take this post to look over some of these changes, as well as take a look at where I want the site to go over the next year.</p>
+<h2 id="purpose">Purpose</h2>
+<p>I started d00k.net mostly just out of a desire to have a website. I&rsquo;d spent the last year surfing the web more, and webrings like the XXIIVV webring dragged me in easily. The idea of a personal wiki or site really shouldn&rsquo;t have been <em>that</em> radical for me, but I&rsquo;ve really only started using the internet properly in the past maybe 5 or 6 years? These sites made me realise how a website could help me, to motivate me to create and share work but also to help me get better idea of who I was and how everything I do and love links back to me. It sounds a bit strange trying to describe, but I know the results have shown for themselves that this really worked.</p>
+<p>Going forward, I can see it&rsquo;s purpose changing to being more outward. I make a lot of guides, or well get rather annoyed when I don&rsquo;t and forget how to do or use something. I&rsquo;d love to put a lot more of these guides together both for myself and others, overall just fleshing out the Knowledge wiki to be properly useful.</p>
+<h2 id="design">Design</h2>
+<p>Being a designer, my instant goal was of course to make a website that looked good. But having been introduced to concepts like <a href="https://limited.systems/articles/frugal-computing/" target="_blank" rel="noopener">frugal computing</a> and the smol web, I had a greater inspiration to build a website that both looked good and ran as small as I could possibly make it. But we&rsquo;ll get into that specific rabbit hole in a bit.</p>
+<p>The first iteration of my own d00k.net was admittedly a design failure. I had been struggling with grasping Hugo, and used Lizbeth Poirer&rsquo;s <a href="https://ritualdust.com/" target="_blank" rel="noopener">ritualdust.com</a> as a references to work from. Through her site I was brought to <a href="https://thomasorus.com/home.html" target="_blank" rel="noopener">thomasorus.com</a> whose notes on web development, and the site itself, were incredibly helpful. I was really inspired by the theming both sites did, and attempted something similar. The end result was.. definitely something. At the time I thought it was cool, but I honestly have no clue how I put up with it for so long. It had to change.</p>
+<p>The redesign, which you&rsquo;re looking at now (hopefully), didn&rsquo;t start from scratch as much as it took the old design and made it actually palatable. Specifically, I took the colour scheme from the most usable section, the journal, and made it the site-wide theme. To make each section it&rsquo;s own however, I made the header bar theme-able and made a new range of colours for it. I was inspired by a technique I found on <a href="https://hecanjog.com/index.html" target="_blank" rel="noopener">He Can Jog&rsquo;s site</a> of tiny gifs as a sort of repeating texture for backgrounds which really took the new design to the next level.</p>
+<p>I also began to create a unique visual language for thumbnails on the site, almost entirely by accident. So when redesigning the entire style, I thought I&rsquo;d lean in on this a lot more, which is how the frontpage came to look like it has. I&rsquo;m immensely proud of these, even if they are rather small, it&rsquo;s something I&rsquo;d love to replicate more throughout the site in the future.</p>
+<h2 id="making-the-site-small">Making the site small</h2>
+<p>Like a lot of people with websites, whenever I did any work with the site I tried to improve the size or efficiency of assets and the like. From the start, I followed Rekka Bellum&rsquo;s <a href="https://kokorobot.ca/site/image_optimization.html" target="_blank" rel="noopener">guide for image optimisation</a>, eventually tweaking it for example to output images in 720px wide. If I stopped there, it probably would&rsquo;ve been fine. My site doesn&rsquo;t run any javascript, it isn&rsquo;t some electron nightmare hog etc. But if there&rsquo;s room for save even a kilobyte, I&rsquo;ll take it.</p>
+<p>Some changes were small, like streamlining my css and compressing the file, but some were a lot bigger and some were just downright ridiculous of me. Once I began using SVGs a lot more, I tried reducing their size by hand, and while this worked pretty well, I eventually started using <a href="https://github.com/sonnyp/OhMySVG" target="_blank" rel="noopener">Oh My SVG</a> which is absolute magic and beats me everytime at downsizing SVGs. The real insanity came with fonts.</p>
+<p>At the start, the site used 3 fonts (text, headers and links). I eventually changed my main font to League Spartan Variable, keeping Barlow as the header font and CMRDD as the link font. Each was equally as large, but instead of using something like fontsquirrel to reduce their character set, I decided to subset them myself.. manually. I had gotten a bit too comfortable at this point with Fontforge, and thought why not? And don&rsquo;t get me wrong, it paid off, the site font files are absurdly small now, but I don&rsquo;t know if it&rsquo;s totally worth it. One thing I did manage to do was edit and successfully output a variable font from Fontforge, which apparently shouldn&rsquo;t be possible? I haven&rsquo;t been able to repeat it again which has been frustrating. I&rsquo;ve gotten around this by creating a fallback font which just the icons I want to add to the site (like my logo&rsquo;s🗦 &amp; 🗧) Since the redesign, I&rsquo;ve also removed the 3rd font for links, deciding to style them instead.</p>
+<p>Currently my main page sits at around 30kb, I think originally it could&rsquo;ve been something like 140 or 170kb. My main goal has been to keep under a mb for any page, and so far this has been successful. The largest page is one of my photography galleries, around 800kb. Maybe hasn&rsquo;t been the greatest use of my time, but seeing the total page size gives me a huge grin every time I see it.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>My own static site generator. Hugo was alright to start with, I don&rsquo;t wanna say it&rsquo;s been bad but it hasn&rsquo;t been great either. I had to hack together my own shortcodes for images, and I use rawhtml inputs every time I want to add a list of links to a page. Sometimes hugo makes illogical decisions generating pages, that I just cannot wrap my head around, and I&rsquo;d much rather have an SSG that I can more properly control the output of. I&rsquo;ve decided at least to use python, whether it&rsquo;s a home-made job or an existing solution I&rsquo;m not sure of yet. I do know when I get to it, I plan to do another wash over of the CSS. I threw my styling for bodies of text together mostly on instinct, and it could do with some proper logic and decisions behind it. I also want to add time into the site, since I don&rsquo;t even track the date right now, but I want to do something cool and unique here.</p>
+<p>Maybe next year I&rsquo;ll have made enough changes to warrant another anniversary post, but I hope not! For everyone who has checked out my site, found it useful, or even just liked it, thank you! I hope for other people who may be considering making a site that d00k.net can inspire you just like other sites inspired me. Thanks for reading, and see you soon.</p>
+<p>Dook.</p>
+
+    <div class="back">
+     <a class="prev" href="/journal">〈 Back to Journal</a>
+   </div>
+  </main>
+ </body>
+
+ <footer>
+  <hr>
+       <a href="https://webring.xxiivv.com/#d00k" target="_blank" alt="webring">
+        <svg fill="var(--text)" stroke="var(--text)" stroke-linecap="square" stroke-width="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 -15 300 300" height="40" width="40">
+                            &gt;
+                            <path d="M201.962 210a60 60 0 10-103.924-60l-50 86.603" fill="var(--background)" stroke="var(--text)"></path>
+                            <path d="M98.038 210a60 60 0 10103.924-60l-50-86.603" fill="var(--background)" stroke="var(--text)"></path>
+                            <path d="M150 120a60 60 0 100 120h100" fill="var(--background)" stroke="var(--text)"></path>
+                            &lt; <circle xmlns="http://www.w3.org/2000/svg" fill="var(--background)" r="60" stroke="var(--text)" cx="150" cy="180" stroke-width="28"></circle>
+                        </svg>
+      </a>
+      <a href="/index.xml" target="_blank" alt="RSS Feed">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" height="34" width="34" stroke-width="10" stroke="var(--text)" fill="var(--text)"><path d="M30,45 A15,15 0 0,1 15,30 A15,15 0 0,1 30,15 A150,150 0 0,1 180,165 A15,15 0 0,1 165,180 A15,15 0 0,1 150,165 A120,120 0 0,0 30,45 M30,105 A15,15 0 0,1 15,90 A15,15 0 0,1 30,75 A90,90 0 0,1 120,165 A15,15 0 0,1 105,180 A15,15 0 0,1 90,165 A60,60 0 0,0 30,105 M30,135 A30,30 0 0,1 60,165 A30,15 0 0,1 30,180 A15,15 0 0,1 15,165 A15,30 0 0,1 30,135 "></path></svg>
+      </a>
+      <a href="https://github.com/D0-0K" target="_blank" alt="github">
+        <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" height="34" width="34"><path style="fill: var(--text);" d="M63.994.152C28.66.152 0 28.806 0 64.158c0 28.272 18.336 52.26 43.768 60.726 3.2.586 4.37-1.392 4.37-3.084 0-1.52-.06-5.544-.092-10.888-17.8 3.87-21.56-8.576-21.56-8.576-2.906-7.394-7.102-9.364-7.102-9.364-5.812-3.972.44-3.888.44-3.888 6.424.452 9.8 6.592 9.8 6.592 5.712 9.784 14.984 6.96 18.63 5.32.58-4.14 2.234-6.96 4.06-8.56-14.21-1.612-29.15-7.104-29.15-31.63 0-6.984 2.494-12.7 6.588-17.172-.66-1.62-2.856-8.12.628-16.932 0 0 5.374-1.72 17.6 6.56 5.104-1.42 10.58-2.128 16.02-2.152 5.44.024 10.914.734 16.024 2.154 12.22-8.28 17.58-6.56 17.58-6.56 3.496 8.81 1.3 15.316.64 16.936 4.104 4.476 6.58 10.19 6.58 17.174 0 24.586-14.966 30-29.22 31.58 2.296 1.98 4.34 5.88 4.34 11.854 0 8.556-.076 15.46-.076 17.56 0 1.706 1.154 3.7 4.4 3.074C109.68 116.396 128 92.42 128 64.156 128 28.808 99.344.152 63.994.152z"/></svg>
+      </a>   
+      <div style="float:right;">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+      </div> 
+   </footer>
