@@ -1,9 +1,9 @@
 body,h1,h2,h3,h4,h5,h6,hr,p,figure,blockquote,dl,dd{margin:0;}
 html,body,div,header,nav,main,article,footer,input,svg,label{max-width:none;}
-:root{--text:#303030;--background:#F0F0E4;--accent:#ccccc2;--flexpos:left;}
+:root{--text:#292929;--background:#f0f0e7;--accent:#ccccc2;--flexpos:left;}
 .home{--background:#ffb990;--accent:#d49a78;}
 .gallery{--background:#a3d79e;--accent:#89b585;}
-.knowledge{--background:#d7cfb2;--accent:#aba58e;}
+.knowledge{--background:#d9d4b8;--accent:#aca994;}
 .projects{--background:#cedfd9;--accent:#9abdb0;}
 .journal{--background:#c8ccc2;--accent:#EBF0E4;}
 .about{--background:#EFC7C2;--accent:#c6a5a1;}
@@ -26,7 +26,7 @@ a{color:var(--text);padding:8px 10px 5px 10px;margin:-5px -10px;font-weight:450;
 *{max-width:55ch;}
 nav ul{display:inline-block;}
 nav li{display:inline-block;}
-nav a{display:inline-block;margin:-5px 5px 5px -10px;font-size:23px;font-weight:200;}
+nav a{display:inline-block;margin:-5px 5px 5px -10px;font-size:23px;font-weight:200;color:#222;}
 ul{list-style:none;padding:0;margin:0;}
 .extra{margin-bottom:35px;}
 .extra li{font-size:20px;margin-bottom:5px;}
