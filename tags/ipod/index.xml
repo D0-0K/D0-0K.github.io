@@ -32,7 +32,7 @@
       
       <guid>https://d00k.net/projects/ipod/themify/</guid>
       <description>Themify is an advanced, user-customisable theme for Rockbox. Every on-screen element can be customised using Rockbox&amp;rsquo;s built in background and foreground colour settings. The theme features many adaptive elements, giving you a modern Rockbox experience like no other. This theme currently supports iPod Classic 5th, 6th and 7th generations.
-  The various screens of Themify    Features ∘ Fully colour-customisable user interface. Background and Foreground colours can be set in the theme settings of Rockbox.</description>
+The various screens of Themify Features ∘ Fully colour-customisable user interface. Background and Foreground colours can be set in the theme settings of Rockbox.</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@ Why leave? Don&amp;rsquo;t get me wrong, Spotify is pretty great. Being able to 
       
       <guid>https://d00k.net/projects/ipod/adwaitapod/</guid>
       <description>Adwaitapod is a modern and feature-rich theme for Rockbox. The theme uses the principles of Gnome&amp;rsquo;s Adwaita design language, and aims to be a complete and pleasing experience for users.The theme currently supports the iPod classic 5th, 6th and 7th gen.
-     Features ∘ Consistent interface with rounded corners. ∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected.</description>
+Features ∘ Consistent interface with rounded corners. ∘ Custom Lockscreen when the Hold switch is on in the main menu, or when USB is connected. ∘ Radio Player skin with station icon support when using an FM Presets file.</description>
     </item>
     
   </channel>

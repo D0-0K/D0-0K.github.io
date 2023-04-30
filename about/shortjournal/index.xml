@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Tue, 05 Jul 2022 14:56:48 +0100</lastBuildDate><atom:link href="https://d00k.net/about/shortjournal/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>April Update</title>
+      <link>https://d00k.net/about/shortjournal/2023-04-30/</link>
+      <pubDate>Sun, 30 Apr 2023 15:11:13 +0100</pubDate>
+      
+      <guid>https://d00k.net/about/shortjournal/2023-04-30/</guid>
+      <description>What a fast month! It&amp;rsquo;s hard to believe it&amp;rsquo;s already the end of April. I haven&amp;rsquo;t been working on too many projects this month, but the ones I have been working on were pretty important.
+The biggest project this month has been the next update to my iPod UI project: adwaitapod. This has been a major undertaking, rewriting the entire thing from scratch. But it&amp;rsquo;s been worthwhile. The massive gains made with compression, efficiency and so on have made enough room to add a wide range of new features and still come in smaller than the last version of adwaitapod.</description>
+    </item>
+    
+    <item>
       <title>March Update</title>
       <link>https://d00k.net/about/shortjournal/2023-03-31/</link>
       <pubDate>Fri, 31 Mar 2023 19:15:47 +0100</pubDate>

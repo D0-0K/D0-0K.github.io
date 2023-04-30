@@ -22,7 +22,7 @@
       <pubDate>Thu, 16 Jun 2022 13:00:21 +0100</pubDate>
       
       <guid>https://d00k.net/knowledge/ipod_modding/font_combining/</guid>
-      <description>Fontforge&amp;#39;s interface    This is a method of combining two different .ttf fonts into one. Useful for making CJK supported fonts for Rockbox, or adding glyphs into a font for web purposes etc. Fontforge is the main application used, however if you intend to make fonts for Rockbox, you&amp;rsquo;ll need convttf from their dev tools. This guide focuses on combining CJK fonts with non-CJK fonts.
+      <description>Fontforge&amp;#39;s interface This is a method of combining two different .ttf fonts into one. Useful for making CJK supported fonts for Rockbox, or adding glyphs into a font for web purposes etc. Fontforge is the main application used, however if you intend to make fonts for Rockbox, you&amp;rsquo;ll need convttf from their dev tools. This guide focuses on combining CJK fonts with non-CJK fonts.
 Preparing the Secondary Font ∘ Download language specific .</description>
     </item>
     
