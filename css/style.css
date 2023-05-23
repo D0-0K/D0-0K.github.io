@@ -30,14 +30,14 @@ nav a{display:inline-block;margin:-5px 5px 5px -10px;font-size:23px;font-weight:
 ul{list-style:none;padding:0;margin:0;}
 .extra{margin-bottom:35px;}
 .extra li{font-size:20px;margin-bottom:5px;}
-.chroma{margin:-20px 0 20px 0;font-size:13px;}
+.chroma{margin-bottom:20px;font-size:13px;max-width:75ch;}
 hr{background:var(--accent);margin:5px 0 20px 0;border:0;height:3px;}
 footer{margin:30px;}
 footer hr{max-width:100%;height:1px;}
 footer div a{display:inline-block;margin-top:3px;margin-right:0;font-size:17px;font-weight:500;}
 pre{background-color:var(--text);color:var(--background);padding:12px;overflow-y:hidden;}
 h1{font-size:3.3em;font-size:calc(2.3em + 2vw);font-family:Barlow;font-weight:500;line-height:1.1em;max-width:1000px;}
-h2{font-size:33px;}
+h2{font-size:33px;margin-top:32px;}
 h3{margin-bottom:5px;font-size:26px;}
 h4{margin-bottom:20px;font-size:20px;}
 .home-box{font-size:20px;max-width:320px;margin:20px 5vw 20px .75vw;}
@@ -47,6 +47,7 @@ h4{margin-bottom:20px;font-size:20px;}
 .main-box{max-width:382px;margin:20px 1vw}
 .main-box ul{margin-bottom:15px;}
 .main-box hr{width:80%;height:2px;margin-bottom:15px}
+.flex-box h2 {margin:0px;}
 .flex-box{display:flex;flex-flow: row wrap;justify-content:var(--flexpos);}
 .columns-2{columns:425px 2;max-width:866px;}
 .list-box img{max-width:400px;width:100%;}
@@ -58,7 +59,7 @@ h4{margin-bottom:20px;font-size:20px;}
 .contactlist{padding-top:calc(4px + .5%);padding-bottom:calc(8px + .5%);font-size:20px;}
 img{max-width:100%;}
 article p{font-size:20px;margin-bottom:5px;}
-p{font-size:20px;margin-bottom:35px;text-indent:.5em;}
+p{font-size:20px;margin-bottom:14px;text-indent:.5em;}
 p a, .link{text-decoration:underline 2px var(--text);padding:4px;margin:-5px;font-size:20px;}
 .tags{margin:2px 0 0 -5px;}
 .tags li{display:inline-block;}

@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Tue, 31 May 2022 15:29:34 +0100</lastBuildDate><atom:link href="https://d00k.net/knowledge/ipod_modding/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Rockbox Image Optimisation</title>
+      <link>https://d00k.net/knowledge/ipod_modding/rockbox_image_optimisation/</link>
+      <pubDate>Mon, 22 May 2023 17:20:17 +0100</pubDate>
+      
+      <guid>https://d00k.net/knowledge/ipod_modding/rockbox_image_optimisation/</guid>
+      <description>When producing Rockbox themes with large feature-sets, images can quickly become a bottleneck both in terms of filesize as well as graphical quality. There are many ways to address these issues, however in this guide I will cover the best practices I have discovered and incorporated into my toolbox.
+The Bitmap image format Rockbox&amp;rsquo;s primary image format is the Bitmap. Versions 3 and 4 of the bitmap spec are recognised, while any lower specs are not.</description>
+    </item>
+    
+    <item>
       <title>Font Combining</title>
       <link>https://d00k.net/knowledge/ipod_modding/font_combining/</link>
       <pubDate>Thu, 16 Jun 2022 13:00:21 +0100</pubDate>
