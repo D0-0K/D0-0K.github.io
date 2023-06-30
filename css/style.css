@@ -7,7 +7,7 @@ html,body,div,header,nav,main,article,footer,input,svg,label{max-width:none;}
 .projects{--background:#cedfd9;--accent:#9abdb0;}
 .journal{--background:#c8ccc2;--accent:#EBF0E4;}
 .about{--background:#EFC7C2;--accent:#c6a5a1;}
-.colours{background:var(--background)url(/img/assets/header.gif)repeat;}
+.colours{background:var(--background)url(/img/assets/header.svg)repeat;}
 footer a:hover{background-color:transparent;color:var(--text);}
 ::selection{background:orange;color:black;}
 a:hover{background-color:var(--text);color:var(--background);transition:all .25s;text-decoration-color:var(--background);}
