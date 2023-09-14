@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 720 385.7" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:4px;}.cls-3{fill:none;stroke-width:3px;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:4px;}.cls-3,.cls-4{fill:none;}.cls-3{stroke-width:3px;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-3{stroke-width:3px;}.cls-3,.cls-4{fill:none;}.cls-4{stroke-width:2px;}</style>
+  <style>.cls-1,.cls-3{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linejoin:round;stroke-width:4px;}.cls-2{stroke-linecap:square;}.cls-3{fill:none;stroke-linecap:round;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:3px;}.cls-3{fill:none;stroke-width:2px;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-3{fill:none;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:4px;}.cls-3{fill:none;stroke-width:3px;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:3px;}.cls-3{fill:none;stroke-width:2px;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:3px;}.cls-3{fill:none;stroke-width:2px;}</style>
+  <style>.cls-1,.cls-2{fill:#fff;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:3px;}.cls-3{fill:none;stroke-width:2px;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2,.cls-4{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:3px;}.cls-3{fill:none;}.cls-3,.cls-4{stroke-width:2px;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+  <style>.cls-1,.cls-2,.cls-3{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke:#000;stroke-linecap:round;stroke-linejoin:round;}.cls-2,.cls-4{stroke-width:2px;}.cls-3{stroke-width:3px;}.cls-4{fill:none;}</style>
+ </defs>
+ <style type="text/css">.st0{fill:#020202;}
+	.st1{fill:none;stroke:#B5B5B5;stroke-miterlimit:10;}</style>
+ <rect x="-1.907e-5" y="4.775e-7" width="720" height="385.7" fill="#aaf" fill-rule="evenodd" style="paint-order:markers fill stroke"/>
+ <g stroke="#000">
+  <g stroke-linecap="round">
+   <g transform="matrix(2.572 0 0 2.572 550.3 41.15)" stroke-linejoin="round">
+    <g fill="#fff" stroke-width="2px">
+     <line class="cls-2" x1="10" x2="10" y1="37.98" y2="34"/>
+     <line class="cls-2" x1="8.001" x2="12" y1="36" y2="36"/>
+     <line class="cls-2" x1="27" x2="31" y1="36" y2="36"/>
+     <line class="cls-2" x1="29" x2="29" y1="37.98" y2="34"/>
+     <line class="cls-2" x1="27" x2="31" y1="47.01" y2="47.01"/>
+     <line class="cls-2" x1="29" x2="29" y1="48.98" y2="45.01"/>
+     <line class="cls-2" x1="18" x2="22" y1="41.01" y2="41.01"/>
+     <line class="cls-2" x1="20" x2="20" y1="43.01" y2="39"/>
+     <line class="cls-2" x1="8.001" x2="12" y1="47.01" y2="47.01"/>
+     <line class="cls-2" x1="10" x2="10" y1="48.98" y2="45.01"/>
+     <line class="cls-2" x1="36" x2="39.98" y1="41.01" y2="41.01"/>
+     <line class="cls-2" x1="37.98" x2="37.98" y1="43.01" y2="39"/>
+    </g>
+    <path d="m41.51 30.5 5-5v-3.998l-3.998-3.998-10-5-3.998-8.001-3-3-8.998 4e-7 -2 2-3 5.998-3.998 2-3.998 3.998 7e-7 10 5 5z" fill="#fff" stroke-width="3"/>
+    <path d="m33.5 13.5-5.998-3-8.001 3.998-1.5 3" fill="none" stroke-width="2"/>
+   </g>
+   <g stroke-linejoin="round">
+    <g transform="matrix(9.719,0,0,9.719,552.9,195.4)">
+     <path d="m10.72 10.45 1.323-1.323v-1.058l-1.058-1.058-2.646-1.323-1.058-2.117-0.7938-0.7938-2.381 1e-7 -0.5292 0.5292-0.7938 1.587-1.058 0.5292-1.058 1.058 2e-7 2.646 1.323 1.323z" fill="#fff" stroke-width=".7938"/>
+     <path d="m8.599 5.953-1.587-0.7938-2.117 1.058-0.3969 0.7937" fill="none" stroke-width=".5292"/>
+    </g>
+    <g transform="matrix(9.719,0,0,9.719,550.3,216)" fill="none" stroke-width=".5292">
+     <path d="m2.91 9.525v0.7936"/>
+     <path d="m2.91 12.17v0.7937"/>
+     <path d="m8.202 9.525v0.7936"/>
+     <path d="m5.556 10.85v0.7936"/>
+    </g>
+    <g transform="matrix(9.719,0,0,9.719,43.71,38.57)">
+     <path d="m10.72 10.98 1.323-1.323v-1.588l-1.058-1.058-2.646-1.323-1.058-2.117-0.7938-0.7938-2.381 1e-7 -0.5292 0.5292-0.7938 1.587-1.058 0.5292-1.058 1.058v3.175l1.323 1.323z" fill="#fff" stroke-width=".7938"/>
+     <path d="m8.599 5.953-1.587-0.7938-2.117 1.058-0.3969 0.7937" fill="none" stroke-width=".5292"/>
+    </g>
+    <g transform="matrix(9.719,0,0,9.719,385.8,192.8)">
+     <path d="m10.72 10.98 1.323-1.323v-1.588l-1.058-1.058-2.646-1.323-1.058-2.117-0.7938-0.7938-2.381 1e-7 -0.5292 0.5292-0.7938 1.587-1.058 0.5292-1.058 1.058v3.175l1.323 1.323z" fill="#fff" stroke-width=".7938"/>
+     <path d="m8.599 5.953-1.587-0.7938-2.117 1.058-0.3969 0.7937" fill="none" stroke-width=".5292"/>
+    </g>
+   </g>
+   <g transform="matrix(9.719,0,0,9.719,533.6,495)" fill="none" stroke-width=".5292">
+    <path d="m-13.36-19.05-1.588 3.175"/>
+    <path d="m-11.24-18.92-1.323 2.646"/>
+    <path d="m-9.128-18.92-0.7938 1.72"/>
+    <path d="m-7.011-18.92-0.5292 1.058"/>
+   </g>
+  </g>
+  <g transform="matrix(9.719,0,0,9.719,210.9,216)">
+   <g transform="matrix(1.001 0 0 1 -.2678 -.2646)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m10.72 10.98 1.323-1.323v-1.588l-1.058-1.058-2.646-1.323-1.058-2.117-0.7938-0.7938-2.381 1e-7 -0.5292 0.5292-0.7938 1.587-1.058 0.5292-1.058 1.058v3.175l1.323 1.323z" fill="#fff" stroke-width=".7936"/>
+    <path d="m8.599 5.953-1.587-0.7938-2.117 1.058-0.3969 0.7937" fill="none" stroke-width=".529"/>
+   </g>
+   <g fill="#fff" stroke-width=".5292">
+    <path d="m9.924 1.058v-0.6551" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m9.313 2.117h1.222l0.7127 0.7123v1.221l-0.7127 0.7123h-1.222l-0.7127-0.7123v-1.221z" stroke-linecap="square"/>
+    <g stroke-linecap="round" stroke-linejoin="round">
+     <path d="m11.51 1.72 0.5244-0.5241"/>
+     <path d="m12.31 3.44h0.6555"/>
+     <path d="m11.51 5.159 0.5244 0.5241"/>
+     <path d="m8.336 1.72-0.5244-0.5241"/>
+    </g>
+   </g>
+   <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5292">
+    <path d="m4.233 11.91v0.7936"/>
+    <path d="m2.381 11.64v0.7937"/>
+    <path d="m6.085 12.17v0.7936"/>
+   </g>
+  </g>
+  <g transform="matrix(2.572 0 0 2.572 380.6 41.14)" stroke-linecap="round" stroke-linejoin="round">
+   <path d="m41.51 30.5 5-5v-3.998l-3.998-3.998-10-5-3.998-8.001-3-3-8.998 4e-7 -2 2-3 5.998-3.998 2-3.998 3.998 7e-7 10 5 5z" fill="#fff" stroke-width="3"/>
+   <path d="m33.5 13.5-5.998-3-8.001 3.998-1.5 3" fill="none" stroke-width="2"/>
+   <g fill="#fff" stroke-width="2">
+    <line class="cls-2" x1="10" x2="10" y1="37.98" y2="34"/>
+    <line class="cls-2" x1="27" x2="31" y1="36" y2="36"/>
+    <line class="cls-2" x1="29" x2="29" y1="37.98" y2="34"/>
+    <line class="cls-2" x1="29" x2="29" y1="48" y2="43.99"/>
+    <line class="cls-2" x1="20" x2="20" y1="41.99" y2="37.98"/>
+    <line class="cls-2" x1="8.001" x2="12" y1="47.01" y2="47.01"/>
+    <line class="cls-2" x1="10" x2="10" y1="48.98" y2="45.01"/>
+    <line class="cls-2" x1="36" x2="39.98" y1="39.98" y2="39.98"/>
+    <line class="cls-2" x1="37.98" x2="37.98" y1="41.99" y2="37.98"/>
+   </g>
+  </g>
+  <g transform="matrix(2.572 0 0 2.572 210.9 41.11)" stroke-linecap="round" stroke-linejoin="round">
+   <path d="m41.51 31.5 5-5v-3.998l-3.998-3.998-10-5-3.998-8.001-3-3-8.998 4e-7 -2 2-3 5.998-3.998 2-3.998 3.998 8e-7 10 5 5z" fill="#fff" stroke-width="3"/>
+   <path d="m33.5 14.5-5.998-3-8.001 3.998-1.5 3" fill="none" stroke-width="2"/>
+   <g fill="#fff" stroke-width="2px">
+    <line class="cls-2" x1="32" x2="32" y1="40" y2="36"/>
+    <line class="cls-2" x1="12" x2="12" y1="40" y2="36"/>
+    <line class="cls-2" x1="10" x2="14" y1="38" y2="38"/>
+    <line class="cls-2" x1="30" x2="34" y1="38" y2="38"/>
+    <line class="cls-2" x1="20" x2="24" y1="46.01" y2="46.01"/>
+    <line class="cls-2" x1="22" x2="22" y1="48.01" y2="44.01"/>
+   </g>
+  </g>
+  <g transform="matrix(9.719,0,0,9.719,41.14,216)">
+   <g fill="#fff" stroke-width=".5292">
+    <path d="m9.785 1.323v-0.7777" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m9.79 6.818v-0.7327" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m9.179 2.381h1.222l0.7127 0.7123v1.221l-0.7127 0.7123h-1.222l-0.7127-0.7123v-1.221z" stroke-linecap="square"/>
+    <g stroke-linecap="round" stroke-linejoin="round">
+     <path d="m11.51 1.984 0.5244-0.5241"/>
+     <path d="m12.17 3.704h0.7936"/>
+     <path d="m6.615 3.704h0.7936"/>
+     <path d="m11.51 5.424 0.5244 0.5241"/>
+     <path d="m8.07 1.984-0.5244-0.5241"/>
+    </g>
+   </g>
+   <g transform="translate(0,2.117)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m10.72 10.45 1.323-1.323v-1.058l-1.058-1.058-2.646-1.323-1.058-2.117-0.7938-0.7938-2.381 1e-7 -0.5292 0.5292-0.7938 1.587-1.058 0.5292-1.058 1.058 2e-7 2.646 1.323 1.323z" fill="#fff" stroke-width=".7938"/>
+    <path d="m8.599 5.953-1.587-0.7938-2.117 1.058-0.3969 0.7937" fill="none" stroke-width=".5292"/>
+   </g>
+  </g>
+ </g>
+</svg>

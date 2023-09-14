@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+<meta property="og:image" content="/img/wiki/fonts.svg" />
+<meta property="og:description" 
+  content="A guide to combing 2 or more fonts into one using Fontforge."/>
+<title> Font Combining  • d00k.net</title></head>
+<body><div class="wrapper">
+<header><nav><div><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+<img class="highlight" src="/img/wiki/fonts.svg" alt="" loading="lazy">
+<div class="title"><h1 id="top">Font Combining</h1><hr></div>
+<p>When making Rockbox themes, there are numerous built in fonts to choose from. However sometimes, these may not suit the theme you are building. In situations like these, users can make their own fonts. This guide goes over several ways people can achieve this, including a guide on combining two different fonts together to create a wider language supporting font.</p>
+<hr>
+
+<h2 id="making-rockbox-fonts">Making Rockbox Fonts</h2><p>Rockbox uses it&rsquo;s own, custom font format for it&rsquo;s interface. Therefore it&rsquo;s necessary to convert our fonts for use in themes. This process is slightly different for colour and monochrome models, the former allowing anti-aliasing and the latter using exclusively bitmaps fonts. For the moment I&rsquo;ve focused on the non-bitmap conversion process.</p>
+<div class="listbox box"><h3>Getting convttf</h3><p>If you don&rsquo;t already have the convttf tool, then you&rsquo;ll need to build it from the source using the following guide.</p><hr><ul>
+
+<li>⚬ Start by cloning the Rockbox repo: <strong>git clone git://git.rockbox.org/rockbox</strong>.</li>
+<li>⚬ Navigate to the tools folder and run the command <strong>make convttf</strong>.</li>
+- If you encounter errors with this, make sure "freetype-devel" and "freetype2" (or "ftgl") are installed.
+</ul></div>
+
+<h3 id="using-convttf">Using Convttf</h3><p>Convttf is used via the command line, and I find it useful to move the executable into the directory of fonts I&rsquo;m working with. The executable can be used like the following.</p>
+<pre><code>/convttf -p 16 -c 1 fontfile.ttf</code></pre><div class="listbox box"><h4>Notes</h4><hr><ul>
+
+<li>⚬ The number beside <strong>-p</strong> is the size of the font, this unit isn&rsquo;t pt or px so you will have to experiment.</li>
+<li>⚬ <strong>-c</strong> is for the spacing between letters, 1 is an all round good option for most sizes and fonts.</li>
+<li>⚬ If you wish to add padding to the top and bottom of fonts, say for the menu (see <a href="https://themes.rockbox.org/index.php?themeid=3359&amp;target=ipodvideo" target="_blank" rel="noopener">Interpod</a> for an example), then two values can be added: <strong>-Ta</strong> and <strong>-Td</strong>.</li>
+<li>⚬ The values for -Ta and -Td should be negative, used like the following <strong>-Ta &lsquo;-3&rsquo; -Td &lsquo;-2&rsquo;</strong>. Ta is the top padding, and Td the bottom.</li>
+</ul></div>
+<hr>
+
+<img class="highlight" src="/img/wiki/ipod_modding/fonts02.jpg" loading="lazy" alt="A desktop running fontforge, with a text document and a file browser open.">
+
+
+<h2 id="combining-two-fonts-with-fontforge">Combining Two Fonts with Fontforge</h2><p>This is a method of combining two different .ttf fonts into one. Useful for making CJK supported fonts for Rockbox, or adding glyphs into a font for web purposes etc. Fontforge is the main application used, however if you intend to make fonts for Rockbox, you&rsquo;ll need convttf from their dev tools. This guide focuses on combining CJK fonts with non-CJK fonts.</p>
+<div class="listbox box"><h3>Preparing the Secondary Font</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p><hr><ul>
+
+<li>⚬ Download language specific .otf file - The best font to use here is . However make sure you download the <strong>Region Specific Subset</strong> OTF file for each language you want.</li>
+<li>⚬ Open the file in Fontforge and flatten CID Layers.</li>
+<li>⚬ Remove any unnecessary characters (non-CJK letters, emoji etc).</li>
+<li>⚬ Re-encode as <strong>Unicode Full</strong>.</li>
+<li>⚬ Save as <strong>.sfd</strong>.</li>
+</ul></div>
+<div class="listbox box"><h3>Combining the Fonts</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p><hr><ul>
+<li>⚬ Open the Base Font, which we want to combine with.</li>
+<li>⚬ Remove any unnecessary characters, like emoji.</li>
+<li>⚬ Go to <strong>Element &gt; Merge Fonts</strong> choose the .sfd Font we just made, and merge.</li>
+<li>⚬ Go to <strong>Edit &gt; Select &gt; Changed Glyphs</strong>.</li>
+<li>⚬ Go to <strong>Element &gt; Transform</strong> and select Scale.</li>
+<li>⚬ Select Origin: <strong>Glyph Origin &gt; Scale: 250% 250%</strong> &gt; select all boxes. (Note: Scale will differ on the font, so experiment).</li>
+<li>⚬ Export the font by going to <strong>File &gt;  Make Font</strong> choose true type and validate.</li>
+</ul></div>
+
+<nav><a class="prev navbut" href="/wiki/">← Back to  Wiki </a>
+
+</nav>
+</main>
+<div class="push"></div></div>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>June 2022</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg">
+</footer>
+</body>

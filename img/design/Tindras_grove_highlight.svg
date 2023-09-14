@@ -1,0 +1,150 @@
+<svg version="1.1" viewBox="0 0 720 360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="t">
+   <stop stop-color="#79afed" offset=".589"/>
+   <stop stop-color="#5f92ed" offset="1"/>
+  </linearGradient>
+  <filter id="w" x="-.184" y="-.427" width="1.37" height="1.85" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="8.6889969"/>
+  </filter>
+  <radialGradient id="b" cx="678" cy="178" r="56.9" gradientTransform="matrix(.781 -.000774 .000409 .413 1385 385)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f4e8d7" offset=".0202"/>
+   <stop stop-color="#ebd7bc" offset="1"/>
+  </radialGradient>
+  <radialGradient id="c" cx="654" cy="121" r="57.3" gradientTransform="matrix(1 0 0 .338 1276 392)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f4e8d7" offset=".498"/>
+   <stop stop-color="#ebd7bc" offset="1"/>
+  </radialGradient>
+  <radialGradient id="d" cx="658" cy="91.7" r="52.7" gradientTransform="matrix(1 0 0 .338 1276 373)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f4e8d7" offset=".045"/>
+   <stop stop-color="#ebd7bc" offset="1"/>
+  </radialGradient>
+  <filter id="v" x="-.241" y="-.826" width="1.48" height="2.65" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="3.7264471"/>
+  </filter>
+  <radialGradient id="a" cx="99.9" cy="43" r="31" gradientTransform="matrix(-1.08 -.00392 .0045 -1.24 2041 407)" gradientUnits="userSpaceOnUse" xlink:href="#t"/>
+  <linearGradient id="u" x1="1590" x2="1702" y1="521" y2="521" gradientTransform="translate(285 -99.6)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#5e6b7b" offset="0"/>
+   <stop stop-color="#505866" offset="1"/>
+  </linearGradient>
+  <linearGradient id="s" x1="75" x2="154" y1="78.6" y2="72.2" gradientTransform="translate(1833 313)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#7c97b6" offset="0"/>
+   <stop stop-color="#8facd1" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(-13420 -4020)">
+  <path id="j" d="m984-608c65.9 10.7 131-10.4 145-62.6" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <path id="o" d="m953-747c38.4-52.4 123-42.9 158 1.17" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <text transform="rotate(4.65 1061 -658)" fill="#241f31" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing=".42px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#o"><tspan>Tindra's</tspan></textPath></text>
+  <text transform="rotate(7.38 860 -699)" fill="#241f31" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing="4.07px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 700;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#j"><tspan>Grove</tspan></textPath></text>
+  <path id="g" d="m714-607c65.9 10.7 131-10.4 145-62.6" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <path id="l" d="m683-746c38.4-52.4 123-42.9 158 1.17" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <text transform="rotate(4.65 804 -694)" fill="#241f31" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing=".42px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#l"><tspan>Tindra's</tspan></textPath></text>
+  <text transform="rotate(7.38 589 -671)" fill="#241f31" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing="4.07px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 700;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#g"><tspan>Grove</tspan></textPath></text>
+  <path id="i" d="m1255-599c65.9 10.7 131-10.4 145-62.6" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <path id="n" d="m1224-738c38.4-52.4 123-42.9 158 1.17" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <text transform="rotate(4.65 1466 -634)" fill="#ddebfa" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing=".42px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#n"><tspan fill="#ddebfa">Tindra's</tspan></textPath></text>
+  <text transform="rotate(7.38 1244 -657)" fill="#ddebfa" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing="4.07px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 700;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#i"><tspan fill="#ddebfa">Grove</tspan></textPath></text>
+  <path id="h" d="m1523-599c65.9 10.7 131-10.4 145-62.6" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <path id="m" d="m1493-738c38.4-52.4 123-42.9 158 1.17" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <text transform="rotate(4.65 1719 -612)" fill="#ddebfa" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing=".42px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#m"><tspan fill="#ddebfa">Tindra's</tspan></textPath></text>
+  <text transform="rotate(7.38 1498 -635)" fill="#ddebfa" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing="4.07px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 700;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#h"><tspan fill="#ddebfa">Grove</tspan></textPath></text>
+  <path id="k" d="m2255-600c65.9 10.7 131-10.4 145-62.6" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <path id="p" d="m2225-739c38.4-52.4 123-42.9 158 1.17" fill="none" stroke="#f00" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" stroke-width="5" style="paint-order:fill markers stroke"/>
+  <text transform="rotate(4.65 2312 -656)" fill="#241f31" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing=".42px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#p"><tspan>Tindra's</tspan></textPath></text>
+  <text transform="rotate(7.38 2168 -669)" fill="#241f31" font-family="'CatV 6x12 9'" font-size="40px" letter-spacing="4.07px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 700;line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#k"><tspan>Grove</tspan></textPath></text>
+  <path id="r" d="m1057 350c18.9-21 42.5-27.8 63.2-28.1 21.3-0.363 43.9 7.68 63.1 28.1" fill="none" style="paint-order:markers stroke fill"/>
+  <path id="f" d="m1062 503c37.8 14.4 75.6 14.6 113 0" fill="none" style="paint-order:markers stroke fill"/>
+  <text font-family="'Noto Sans Mono CJK HK'" font-size="40px" font-weight="bold" letter-spacing=".42px" style="line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#r"><tspan font-family="'CatV 6x12 9'" font-weight="normal"><tspan letter-spacing="-2px">Ti</tspan><tspan letter-spacing="2px">nd</tspan><tspan letter-spacing="0px">r</tspan><tspan letter-spacing="-8px">a</tspan><tspan letter-spacing="-5px">'</tspan>s</tspan></textPath></text>
+  <text transform="translate(1.62 7)" font-family="'CatV 6x12 9'" font-size="40px" font-weight="bold" letter-spacing=".42px" style="line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#f"><tspan font-family="'CatV 6x12 9'" font-weight="bold"><tspan letter-spacing="5px">G</tspan><tspan letter-spacing="3px">ro</tspan><tspan letter-spacing="5px">v</tspan>e</tspan></textPath></text>
+  <path id="q" d="m1321 350c18.9-21 42.5-27.8 63.2-28.1 21.3-0.363 43.9 7.68 63.1 28.1" fill="none" style="paint-order:markers stroke fill"/>
+  <path id="e" d="m1326 503c37.8 14.4 75.6 14.6 113 0" fill="none" style="paint-order:markers stroke fill"/>
+  <g>
+   <text fill="#ddebfa" font-family="'Noto Sans Mono CJK HK'" font-size="40px" font-weight="bold" letter-spacing=".42px" style="line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#q"><tspan font-family="'CatV 6x12 9'" font-weight="normal"><tspan fill="#ddebfa" letter-spacing="-2px">Ti</tspan><tspan fill="#ddebfa" letter-spacing="2px">nd</tspan><tspan fill="#ddebfa" letter-spacing="0px">r</tspan><tspan fill="#ddebfa" letter-spacing="-8px">a</tspan><tspan fill="#ddebfa" letter-spacing="-5px">'</tspan>s</tspan></textPath></text>
+   <text transform="translate(1.62 7)" fill="#ddebfa" font-family="'CatV 6x12 9'" font-size="40px" font-weight="bold" letter-spacing=".42px" style="line-height:1.25;white-space:pre" xml:space="preserve"><textPath xlink:href="#e"><tspan font-family="'CatV 6x12 9'" font-weight="bold"><tspan fill="#ddebfa" letter-spacing="5px">G</tspan><tspan fill="#ddebfa" letter-spacing="3px">ro</tspan><tspan fill="#ddebfa" letter-spacing="5px">v</tspan>e</tspan></textPath></text>
+   <rect x="13420" y="4020" width="720" height="360" fill="#241f31" stroke-dashoffset="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="58" style="paint-order:stroke fill markers"/>
+  </g>
+  <g transform="matrix(.735 0 0 .735 13584 4014)">
+   <g transform="matrix(2.77 0 0 2.77 -5104 -874)">
+    <path d="m1880 463 73.7 11.3 39.4-38-81-10.8-32.1 37.5" filter="url(#w)" opacity=".705" style="paint-order:fill markers stroke"/>
+    <g>
+     <path d="m1881 446c-2.86 4.71-2.77 9.18 0.462 13.4l72.4 11.5 38.8-37.5c-1.37-3.86-1.25-8.31 0.165-13.3l-39.1 35.4z" fill="url(#b)" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+     <g fill="#bcd7f6">
+      <path d="m1931 450 22 2.87 39.2-35.3-5.06-0.746z" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+      <g transform="translate(1833 313)" stroke="#000" stroke-dashoffset="3" stroke-linejoin="round" stroke-miterlimit="128" style="paint-order:fill markers stroke">
+       <path d="m47.5 150c-4.02-0.641-4.92-7.17-4.92-9.93 0-3.74 2.3-9.75 5-9.43l72 9.41 39.2-35.3c0.479-0.439 1.39-0.278 1.72 0.0213 0.437 0.398 0.592 1.31 0.0433 1.82l-40.4 36.6-72.8-9.5c-2.69 4.07-2.98 8.48 0.462 13.4l72.4 11.5 38.6-37.2c0.537-0.526 1.49-0.343 1.87 0.0507 0.354 0.373 0.484 1.2-0.108 1.83l-39.4 38c-0.254 0.205-0.849 0.317-1.15 0.269z" fill="#bcd7f6" fill-rule="evenodd" stroke-linecap="square" style="paint-order:fill markers stroke"/>
+       <g>
+        <path d="m120 159c-1.72-4.76-1.56-9.87-0.0815-15.4" fill="none" style="paint-order:fill markers stroke"/>
+        <path d="m159 121c-0.654-1.32-1.88-7.88 0.165-13.3" fill="none" style="paint-order:fill markers stroke"/>
+        <path d="m159 105-5.06-0.746" fill="#bcd7f6" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+       </g>
+      </g>
+     </g>
+    </g>
+    <g>
+     <path d="m1876 422c-4.4 5.46-3.9 10.7 0.411 15.9l37.8 15 73.3-25.1c-1.81-3.34-1.91-7.91-0.449-13.6l-72.5 23.5z" fill="url(#c)" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+     <path d="m1875 418 39.2 16.1 72.2-23.4-12.6-2.47-42.9 16.1-44.4-10.3z" fill="url(#u)" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+     <g transform="translate(1833 313)" stroke="#000" stroke-dashoffset="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="65.1" style="paint-order:markers fill stroke">
+      <path d="m43.5 106 37.3 14.8c0.416 0.167 0.832 0.186 1.19 0.0716l69.6-22.1c1.08-0.303 2.11-0.559 2.88-0.572 1.04 0.104 1.21 0.791 0.9 1.47-0.202 0.45-0.863 0.763-1.65 1.05-18.6 6.81-53.5 17.8-72.5 23.5l-38.5-15.6c-4.34 5.41-3.95 11.5 0.411 15.9l37.8 15 73-25c0.792-0.221 1.26 0.0906 1.48 0.655 0.225 0.598-0.0761 1.29-0.817 1.62l-72.9 25.6c-0.192 0.0699-0.527 0.046-0.697-9e-3l-38.5-15.1c-3.74-1.19-5.61-7.9-5.56-11.4 0.0852-5.31 3.63-10.9 6.62-9.77z" fill="#5e6b7b" fill-rule="evenodd" style="paint-order:markers fill stroke"/>
+      <path d="m40.6 107c0.42-0.423 1.5-1.36 2.57-1.71l12.4-4.2m98.9-2.55-13.4-2.63m13.1 18.8c-1.48-2.11-2.13-5.74-0.449-13.6m-72.8 38.7c-1.11-3.29-1.92-10.3 0.272-15.2" fill="none" style="paint-order:markers fill stroke"/>
+     </g>
+     <g fill="#120f1a" fill-rule="evenodd" stroke="#120f1a" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1">
+      <path d="m1884 434 0.014 2.71c-0.788-1.01-1.41-2.51-3.03-1.17l0.025-2.98c0.104-0.941 0.71-1.41 1.97-1.87l2.93 1.19c-0.711 0.249-1.89 0.684-1.91 2.12z" stroke-linejoin="round" stroke-width=".5" style="paint-order:fill markers stroke"/>
+      <path d="m1885 431 2.86 1.05-2.81-1.32-3-1.2z" stroke-width=".2" style="paint-order:fill markers stroke"/>
+     </g>
+    </g>
+    <g>
+     <path d="m1883 393c14.9 4.21 31 7.39 46.9 10.7l58.2-20.7-26.7-4.09-53.8 5.3z" fill="url(#s)" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+     <path d="m1883 397c-2.66 4.75-2.32 9.56-0.249 13.9l47.5 11.6 56.3-21.2c-1.15-1.95-1.41-4.36-1.52-6.84l-1.3-0.29 1.19-0.55c-0.097-2.29 0.25-4.56 1.05-6.8l-56 20.9z" fill="url(#d)" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+     <g transform="translate(1833 312)" stroke="#000" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="65.1" style="paint-order:fill markers stroke">
+      <path d="m51 81.2c0.285 0.0772 1.66 0.486 1.95 0.563 14.9 4 29.3 6.68 44 9.82 0.418 0.104 0.697 0.0381 0.847-0.0202l55.2-20.2c0.755-0.274 1.51-0.532 2.2-0.488 0.907 0.029 1.71 1.54-0.217 2.41l-57.5 21.4c-15.6-3.2-31-5.81-46.8-9.97-2.81 4.17-2.56 9.94-0.487 13.2l47.5 11.6 55.6-20.9c0.978-0.329 2.4-0.53 2.74 0.26 0.34 0.79-0.306 1.75-1.77 2.24l-55.4 21c-0.285 0.123-0.787 0.133-1.09 0.0697l-48.6-11.4c-3.09-0.769-3.98-6.92-3.92-10.2 0.0858-4.8 3.18-9.91 5.77-9.35z" fill="#7c97b6" fill-rule="evenodd" stroke-linejoin="round" style="paint-order:fill markers stroke"/>
+      <g fill="none">
+       <path d="m97.5 94.8c-3.63 3.74-0.688 13 0.218 14.8" stroke-linejoin="round" style="paint-order:fill markers stroke"/>
+       <path d="m152 80.8-4.81 2.15 4.8-1.46" stroke-width=".3" style="paint-order:fill markers stroke"/>
+       <path d="m153 74c-0.615 2.05-1.1 4.14-1.14 6.55m0.185 1.35c0.022 2.74 0.425 4.94 1.53 6.52" style="paint-order:fill markers stroke"/>
+      </g>
+      <path d="m155 70.9-26.5-4.04" fill="#7c97b6" fill-rule="evenodd" stroke-linejoin="round" style="paint-order:fill markers stroke"/>
+      <path d="m48.5 82.2c0.417-0.516 1.74-1.57 2.88-2.06l24.7-8.51" fill="none" stroke-linejoin="round" style="paint-order:fill markers stroke"/>
+     </g>
+    </g>
+    <g stroke="#000" stroke-dashoffset="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="65.1" stroke-width=".2">
+     <path d="m1985 393 0.021-0.452" fill-opacity="0" style="paint-order:fill markers stroke"/>
+     <path d="m1986 394-1.06-0.146" fill="#fff" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+    </g>
+    <ellipse cx="1933" cy="394" rx="18.7" ry="5.48" filter="url(#v)" opacity=".183" stroke="#120f1a" stroke-dashoffset="3" stroke-linecap="round" stroke-miterlimit="58" stroke-width=".2" style="paint-order:fill markers stroke"/>
+    <g fill="url(#a)" stroke="#120f1a" stroke-dashoffset="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="65.1">
+     <path d="m1964 367c0 19.1-14.9 31.3-29.5 31.3-18 0-31.2-11.8-31.2-29.9 0-17.9 14.6-30.8 32.6-30.8 12.1 0 28.1 11.5 28.1 29.4z" stroke-width="1.3" style="paint-order:fill markers stroke"/>
+     <g>
+      <path d="m1906 356c-1.09 22.2 17.5 39.9 22.3 41.8" style="paint-order:fill markers stroke"/>
+      <path d="m1910 349c-0.467 22.8 11.1 41.5 30.4 48.1" style="paint-order:fill markers stroke"/>
+      <path d="m1915 344c-4.62 19.7 7.66 46.9 34.3 49.6" style="paint-order:fill markers stroke"/>
+      <path d="m1922 340c-11.9 20.8 13.6 54.7 33.1 49.2" style="paint-order:fill markers stroke"/>
+      <path d="m1919 349c9.81-7.94 22.2-9.14 30.2-7.36" style="paint-order:fill markers stroke"/>
+      <path d="m1924 345c-0.212-1.11 0.219-4.09 1.62-6.23" style="paint-order:fill markers stroke"/>
+      <path d="m1929 343c-0.901-2.2 0.815-4.68 0.923-4.98" style="paint-order:fill markers stroke"/>
+      <path d="m1934 341c-0.541-0.586-0.468-2.87-0.112-4.01" style="paint-order:fill markers stroke"/>
+      <path d="m1938 341c0.144-0.406 0.541-1.84-0.012-3.24" style="paint-order:fill markers stroke"/>
+      <path d="m1919 356c6.63-8.28 23.3-12.4 35.8-10.1" style="paint-order:fill markers stroke"/>
+      <path d="m1920 362c11.9-13.8 32.3-11.6 39.5-10.2" style="paint-order:fill markers stroke"/>
+      <path d="m1922 368c9.32-12.8 26.8-14.1 40.1-10.3" style="paint-order:fill markers stroke"/>
+      <path d="m1925 373c8.46-8.35 18.5-14.9 38.3-10.6" style="paint-order:fill markers stroke"/>
+      <path d="m1930 379c9.81-11.7 21.4-13.3 33.7-11.3" style="paint-order:fill markers stroke"/>
+      <path d="m1957 368c1.13 1.48 3.25 2.61 6.72 3.27" style="paint-order:fill markers stroke"/>
+      <path d="m1950 368c2.06 4.78 8.83 7.14 12.8 7.52" style="paint-order:fill markers stroke"/>
+      <path d="m1944 369c2.34 5.66 9.4 10 17.3 10" style="paint-order:fill markers stroke"/>
+      <path d="m1939 372c2.9 6.97 12.5 12.3 20.2 11.8" style="paint-order:fill markers stroke"/>
+      <path d="m1934 375c4.12 8.03 13 13.1 21.9 12.7" style="paint-order:fill markers stroke"/>
+     </g>
+    </g>
+    <path d="m1964 367c0 19.1-14.9 31.3-29.5 31.3-18 0-31.2-11.8-31.2-29.9 0-17.9 14.6-30.8 32.6-30.8 12.1 0 28.1 11.5 28.1 29.4z" fill="none" stroke="#07060a" stroke-dashoffset="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="65.1" stroke-width="1.3" style="paint-order:fill markers stroke"/>
+    <g transform="translate(1833 310)" fill="#bcd7f6" stroke="#000" stroke-dashoffset="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="65.1" stroke-width="2" style="paint-order:markers stroke fill">
+     <path d="m126 50.6 5.96-2.24c1.23-0.471 2.41-0.808 3.57-1.13 0.447-0.134 0.794-0.0644 0.921-0.0353s0.247 0.174 0.209 0.35c-0.0378 0.176-0.225 0.437-0.464 0.531l-9.37 4.11c-0.421 0.146-1.04-0.171-1.17-0.41-0.19-0.359-0.0697-1 0.336-1.17z" style="paint-order:markers stroke fill"/>
+     <path d="m125 70.8c-0.256-0.023-0.406 0.28-0.413 0.444-8e-3 0.177-0.01 0.501 0.251 0.57 2.08 0.606 4.39 1.29 6.01 1.65s3.33 0.94 5.04 0.917c0.447 0.0133 0.98-0.0978 1.06-0.29 0.0635-0.202 0.0494-0.39-0.233-0.527-1.59-0.658-2.94-1.13-4.97-1.51-2.04-0.387-4.38-0.932-6.74-1.26z" style="paint-order:markers stroke fill"/>
+     <path d="m52 48.5 23.2 6.08c0.527 0.0528 0.62 0.832 0.58 1.14-0.045 0.349-0.211 0.879-0.768 0.794l-23.7-6.02c-0.407 0.778-0.768 1.08-1.65 0.987-0.885-0.095-0.918-1.5-0.668-2.81 0.25-1.3 1.36-2.31 2.12-2.21 0.761 0.104 1.22 0.912 0.944 2.04z" style="paint-order:markers stroke fill"/>
+     <path d="m52.6 73.1 24-7.5c0.727-0.185 1.23 1.5 0.65 1.68l-24.3 8c0.267 0.897-0.218 1.11-0.49 1.15-0.707 0.0966-1.11-0.756-1.33-1.63-0.22-0.879-0.261-2.05 0.521-2.2 0.514-0.141 0.745 0.135 0.906 0.513z" style="paint-order:markers stroke fill"/>
+    </g>
+    <path d="m1881 446 0.462 13.4" fill="#7c97b6" fill-rule="evenodd" style="paint-order:fill markers stroke"/>
+   </g>
+  </g>
+ </g>
+</svg>

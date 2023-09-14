@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+
+<title> Colophon  • d00k.net</title></head>
+<body><div class="wrapper">
+<header><nav><div><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+
+<div class="title"><h1 id="top">Colophon</h1><hr></div>
+<p>Since I first started d00k.net in 2021, it has existed as a place of information on the web for both myself and others, as well as an on-going experiment exploring the limits of web design.</p>
+
+<h2 id="philosophy">Philosophy</h2><p>The site is built around a core idea that websites can both have good design, and be fast. This is seen in the three fundamentals of d00k.net: <strong>design</strong>,  <strong>compatibility</strong> and <strong>speed</strong>. Together, they work to make the site accessible to those using all kinds of devices, connections and tools.</p>
+<p>My own personal beliefs are reflected here too, with no javascript or tracking, and all fonts being free, open-source typefaces.</p>
+
+<h2 id="visual-language">Visual Language</h2><p>A set, greyscale colourscheme is used across all features. Chosen using the HSL colourspace, with each colour being a step of 5 from the last in lightness.</p>
+<p>Abstract iconography is used for the site&rsquo;s central identity. Using various ambiguous shapes in place of a logo. Iconographic representations of certain topics can be found throughout the site.</p>
+<p>For low-importance images, a reduced colourset based on the site&rsquo;s colourscheme is used. For images that hold important information for the topic at hand, the images are converted to jpg with 80% quality using the following script.</p>
+<pre><code>mogrify -format jpg \
+        -scale 720x \
+        -sampling-factor 4:2:0 \
+        -strip -quality 80 \
+        -interlace line input.jpg</code></pre>
+<h2 id="generation">Generation</h2><p>Static Site Generation is handled by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. A basic template is used for all pages, and layouts are done using markdown files. A variety of shortcodes were made to handle the content widgets designed for the site, for things like quotes, lists of links, indexes and more. These can be called on in any markdown file.</p>
+<p>The CSS file for the site was designed by hand with wide-compatibility in mind. Making sure to use as basic CSS as possible, with backups in place whenever more modern features have been used. A large amount of tedious work was put into optimising the file to be as small as possible, currently sitting at 3.3kBs.</p>
+
+<h2 id="typography">Typography</h2><p>A duo of fonts are used across the site, <a href="https://tribby.com/fonts/barlow/" target="_blank" rel="noopener">Barlow</a> Extra Bold for all headers and <a href="https://www.theleagueofmoveabletype.com/league-spartan" target="_blank" rel="noopener">League Spartan</a> Regular for all text. Some items on the site use default system fonts, like the navigation menu, back button, footer and codeblocks.</p>
+<p>Fonts are subsetted and optimised automatically using <a href="https://github.com/zachleat/glyphhanger" target="_blank" rel="noopener">glyphhanger</a>, and are present in Woff2, Woff and TTF formats in the CSS file. In case of your browser not supporting custom fonts, the default sans-serif fault is used site-wide.</p>
+<div class="listbox box"><h2>Further Reading</h2><hr><ul>
+<li><a class="linklist" href="identity" >• Identity</a></li>
+<li><a class="linklist" href="testpage" >• d00k.net Test Page</a></li>
+<li><a class="linklist" href="testpage" >• Performance and Compliance Stats</a></li>
+</ul></div>
+
+<nav><a class="prev navbut" href="/about/">← Back to  About </a>
+
+</nav>
+</main>
+<div class="push"></div></div>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>September 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg">
+</footer>
+</body>

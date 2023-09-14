@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<meta property="og:description" 
+  content="A tear-down of the web optimizations I developed while putting this site together."/>
+<title> Extreme Web Optimizations, without Compromising Style  • d00k.net</title></head>
+<body><div class="wrapper">
+<header><nav><div><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+
+<div class="title"><h1 id="top">Extreme Web Optimizations, without Compromising Style</h1><hr></div>
+<p>Over the past 10 months, I&rsquo;ve worked on and off tweaking my site to get it closer to how I want it to look and perform. The main goal was simple: make a site that looks good, and loads fast. A quick solution would&rsquo;ve been to keep the css to a minimum, use browser defaults for fonts etc. However that would&rsquo;ve made my vision of a styled site difficult if not impossible. This pushed me to seek gains elsewhere as much as I could.</p>
+<hr>
+
+<h2 id="limitations">Limitations</h2><p>One of the major limitations I set was to not use media queries for layouts. While there&rsquo;s nothing wrong in particular with using them, I felt that flexboxes and calculated variables did a much better job in far less lines of css. This does make the site header look a little unusual on mobile devices, however it&rsquo;s grown on me much more than I thought it would to the point that it doesn&rsquo;t bother me. Another big limitation was not using Javascript, however due to the simplicity of my site, it wasn&rsquo;t going to be a problem.</p>
+
+<h2 id="fonts">Fonts</h2><p>In other projects this year, I&rsquo;ve messed around with combining and editing fonts in FontForge and when it came to look at the fonts for the site, I returned to it once more. Tools like Fontsquirrel&rsquo;s <a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank" rel="noopener">webfont generator</a> are great for optimising fonts quickly, but I had a feeling I could make the filesizes even smaller.</p>
+<p>The reason I originally thought of using FontForge here was because of issues with default fonts on other systems. In my site logo, I have two unicode &lsquo;whiskers&rsquo; on either side, however one of the only fonts that even has this character is Symbola. On Firefox Desktop, Symbola is a default font and is automatically used to display characters that aren&rsquo;t in the supplied font. However, on other browsers I found this wasn&rsquo;t the case and my characters would show blank boxes. The temporary solution was just throwing Symbola in with the rest, but at a whopping 2.2mb? It wasn&rsquo;t gonna be permanent. So I went and copied what I did when I made single file Latin+CJK fonts for Rockbox, and transplanted the characters into Lunchtype22 for the title. I did a full writeup on how to do this, which you can find <a href="/knowledge/font_modifying/">here</a></p>
+<p>When it came to thinning down the character selection of the fonts, FontForge made it pretty easy to pick and choose what stayed and what went. I kept a very minimal range of basic Latin characters, symbols and numbers. In the future I have the option to add some of these back on if they&rsquo;re needed. Tweaking the export settings saved some extra space as well. All in all, these optimisations helped reduce the combined font&rsquo;s filesizes from several MBs to just under 38KBs.</p>
+
+<h2 id="optimising-svgs">Optimising SVGs</h2><p>SVGs are always some of the smallest resources you can use, but there&rsquo;s also plenty of room to make optimisations with them. For making simple icons, like my RSS icons, I found <a href="https://wiki.xxiivv.com/site/dotgrid.html" target="_blank" rel="noopener">dotgrid</a> from hundred rabbits to be a fantastic editor that exports good svgs to work with. You&rsquo;ll still want to tweak and edit the file to fit your usecase, but overall the easiest to use for icons. For other svg images, I use Inkscape. But I was only able to get usable files if I exported using their Optimised Svg output, with most options turned on. On top of all these, removing xml declarations, version attributes and other stuff not needed or read by browsers helps to trim even just a kilobyte or two off your files, which adds up.</p>
+
+<h2 id="images">Images</h2><p>Easily the largest part of any webpage, images became a tricky problem early on. One of the main parts of my site is the <a href="/gallery/">Gallery</a> section holding all my photography, and having up to 10 images per page would take forever to load. The first step I took was to match the resolution of the images to their displayed max-width, 720px. I also made a separate folder for section lists images which display at 400px wide, saving loading times for those pages. After doing some searching, I found <a href="https://kokorobot.ca/site/leanimages.html" target="_blank" rel="noopener">Rekka Bellums&rsquo;s guide</a> for optimising images. I took their ImageMagick script and changed it a little to suit my needs, getting rid of colorspace setting and reducing the quality to 80% in order to keep file sizes low. I&rsquo;ve yet to create a good workflow for optimising gifs, using some web tools in the meantime as I don&rsquo;t tend to work with gifs much at all.</p>
+
+<h2 id="css-compression">CSS Compression</h2><p>One of the last optimisations I made was to compress the css. It was really only worth doing after I finalised everything, as it makes reading the raw css file pretty difficult (though I do have to scroll less now which is nice). I reduced all functions to a single line, as well as removing any space that wasn&rsquo;t strictly necessary. This saved me over a KB. A lot of functions like borders, margins, text-decorations etc. also have shorthand ways of writing them which reduces overall bloat. I wouldn&rsquo;t recommend the compression step for most use cases, but for simple static sites that wont be used by many, it&rsquo;s such a simple and quick way to save a few KBs.</p>
+
+<h2 id="conclusion">Conclusion</h2><p>In the end, I managed to keep even the largest page under 800KBs. For comparison, the most minimal page is the homepage, coming in at just 48KBs. It was probably all in all more work than it was worth, but I&rsquo;m glad with the results. Thankfully wont be having any more urges to tweak and optimise the site when I know there&rsquo;s very little left on the table to save.</p>
+
+<nav><a class="prev navbut" href="/blog/">← Back to  Blog </a>
+
+</nav>
+</main>
+<div class="push"></div></div>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>October 2022</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg">
+</footer>
+</body>

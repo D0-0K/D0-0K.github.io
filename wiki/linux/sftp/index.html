@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+<meta property="og:image" content="/img/wiki/linux/sftp.svg" />
+<meta property="og:description" 
+  content="How to use SFTP to transfer files &amp; SSH to connect to devices."/>
+<title> SFTP &amp; SSH  • d00k.net</title></head>
+<body><div class="wrapper">
+<header><nav><div><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+<img class="highlight" src="/img/wiki/linux/sftp.svg" alt="" loading="lazy">
+<div class="title"><h1 id="top">SFTP &amp; SSH</h1><hr></div>
+<p>SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.</p>
+<hr>
+
+<h2 id="ssh">SSH</h2><p>SSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP. It needs to be set up and configured on both ends, however it&rsquo;s not too difficult a process. The best guide I&rsquo;ve found is homebrewserver.club&rsquo;s <a href="https://homebrewserver.club/demystifying-ssh.html" target="_blank" rel="noopener">Demystifying SSH</a> tutorial. Following it with zero experience, I was able to get SSH set up with no issues fairly quickly and highly recommend it if you&rsquo;re also a beginner wanting to get into SSH.</p>
+
+<h3 id="using-sftp">Using SFTP</h3><p>Connecting with SFTP to a system is identical to SSH, using the address or set server name alongside the command. Another similarity is stopping the connection, <strong>Ctrl + D</strong> doing so on Linux.</p>
+
+<h4 id="connecting">Connecting</h4><pre><code>sftp servername</code></pre>
+<h3 id="executing-commands">Executing Commands</h3><p>As you&rsquo;re essentially controlling two terminals with one command line, a trick is needed to tell SFTP which end we want to execute a command at. This is done by putting a lowercase <strong>L</strong> before our command to denote local execution, so for expample <strong>cd</strong> would become <strong>lcd</strong> when we want to go somewhere in the filesystem in the device were using SFTP on.</p>
+
+<h4 id="using-a-command-on-the-connected-end">Using a command on the connected end.</h4><pre><code>sftp&gt; command</code></pre>
+<h4 id="using-a-command-on-the-local-end">Using a command on the local end.</h4><pre><code>sftp&gt; lcommand</code></pre>
+<h3 id="transferring-files">Transferring Files</h3><p>We can send files both ways across the connection. There are specific commands used for sending files to and from the connected system.</p>
+
+<h4 id="putting-files-on-the-connected-system">Putting Files on the connected system.</h4><pre><code>sftp&gt; put location/filename</code></pre>
+<h4 id="getting-files-from-the-connected-system">Getting Files from the connected system.</h4><pre><code>sftp&gt; get location/filename</code></pre><div class="text borderless box">
+
+<div><h3 id="notes">Notes</h3><p>To transfer a whole directory of files, the <strong>-r</strong> flag can be used.</div>
+</div>
+<hr>
+<div class="listbox box"><h2>Links</h2><hr><ul>
+<li><a class="linklist" href="https://homebrewserver.club/category/fundamentals.html"  target="_blank" rel="noreferrer" >⬩&nbsp; HomeBrewServer.club&#39;s fundamentals guides</a></li>
+
+</ul></div>
+
+<nav><a class="prev navbut" href="/wiki/#linux-wiki">← Back to  Wiki </a>
+
+</nav>
+</main>
+<div class="push"></div></div>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>January 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg">
+</footer>
+</body>

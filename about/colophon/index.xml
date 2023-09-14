@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Colophon on d00k</title>
+    <link>https://d00k.net/about/colophon/</link>
+    <description>Recent content in Colophon on d00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Tue, 05 Sep 2023 14:06:09 +0100</lastBuildDate><atom:link href="https://d00k.net/about/colophon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity</title>
+      <link>https://d00k.net/about/colophon/identity/</link>
+      <pubDate>Thu, 14 Sep 2023 14:55:51 +0100</pubDate>
+      
+      <guid>https://d00k.net/about/colophon/identity/</guid>
+      <description>A guide to the various visual aspects of this site and the presentation of Dook as an identity.
+Personal Flag The flag, which features as the favicon for d00k.net, serves as a cartographic representation of my aesthetic and philosophies. The design and colourscheme were chosen for their visual synergy, rather than having any distinct meaning.
+Pieces The central core to the visual identity of d00k.net, Pieces serve as an abstract yet meaningless method of communication to the viewer.</description>
+    </item>
+    
+    <item>
+      <title>Test Page</title>
+      <link>https://d00k.net/about/colophon/testpage/</link>
+      <pubDate>Wed, 16 Feb 2022 21:39:18 +0000</pubDate>
+      
+      <guid>https://d00k.net/about/colophon/testpage/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Inline Link
+Header 1 Header 2 Header 3 Header 4 Table of Contents Expand • First Section • Second Section • Third Section First Section Clickable BoxLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant.</description>
+    </item>
+    
+  </channel>
+</rss>

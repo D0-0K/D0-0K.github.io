@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+<meta property="og:image" content="/img/wiki/pdf.svg" />
+<meta property="og:description" 
+  content="How to create, combine, add indexes, pull and add pages and more with PDFs in the Terminal"/>
+<title> PDF Utilities  • d00k.net</title></head>
+<body><div class="wrapper">
+<header><nav><div><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+<img class="highlight" src="/img/wiki/pdf.svg" alt="" loading="lazy">
+<div class="title"><h1 id="top">PDF Utilities</h1><hr></div>
+<p>There&rsquo;s been plenty of times I&rsquo;ve had to work on PDFs, be it taking out certain pages to sign and adding them back, or even creating PDFs from scratch with images. Common advice would direct you to websites online with loads of different tools for this, but privacy concerns combined with having to wait for uploads and so on make them pretty inconvenient. I&rsquo;ve found a couple of command line tools which make working with PDFs almost painless.</p>
+<hr>
+
+<h2 id="img2pdf">Img2pdf</h2><p>Ever needed to combine a bunch of images into a PDF? There are different ways of doing this. For example <a href="../imagemagick">ImageMagick</a> can convert images into PDFs, however it&rsquo;s lossy process and images will come out blurry. For a lossless conversion, I found <a href="https://github.com/myollie/img2pdf" target="_blank" rel="noopener">Img2pdf</a>. It produces crisp images with a simple to use command, while also having a lot of flexibility. I recommend checking out it&rsquo;s <strong>-h</strong> output, it goes into an incredible amount of detail about what you can do.</p>
+<pre><code> img2pdf img1.png img2.jpg -o output.pdf
+or..
+ img2pdf *.png -o output.pdf</code></pre><hr>
+
+<h2 id="pdf-toolkit">PDF Toolkit</h2><p>PDF Toolkit, or PDFTK, is a brilliant command suite of tools for working with PDFs in the terminal. I&rsquo;ve used this for many things, even adding index metadata to a PDF that didn&rsquo;t have any. There&rsquo;s also much more features like rotating pages, password protecting files and so on that I haven&rsquo;t gotten around to trying yet. I&rsquo;ll like to an article below that covers all that.</p>
+
+<h4 id="removing-pages">Removing Pages</h4><pre><code> pdftk input.pdf cat [pages-to-keep] output output.pdf
+Example, remove page 2 and 6:
+ pdftk input.pdf cat 1 3-5 7-end output output.pdf</code></pre>
+<h4 id="combining-pdfs">Combining PDFs</h4><pre><code>pdftk input1.pdf input2.pdf output output.pdf</code></pre>
+<h4 id="separate-pdf">Separate PDF</h4><p>This splits up an inputted PDF into individual PDF files.</p>
+<pre><code>pdftk input.pdf burst</code></pre>
+<h3 id="pulling-metdata">Pulling Metdata</h3><p>Updating metadata with pdftk requires firstly extracting the information from our chosen PDF. Then we add or remove what we want before combining the file with our PDF.</p>
+
+<h4 id="data-dump">Data Dump</h4><pre><code>pdftk input.pdf \
+data_dump \
+output metadata.txt</code></pre>
+<h3 id="adding-bookmarks">Adding Bookmarks</h3><p>Adding bookmarks to our metadata file follows a simple pattern. A single bookmark starts with the <strong>BookmarkBegin</strong> marker, and then we add <strong>BookmarkTitle</strong> which is the text displayed in the index and to the user. <strong>BookmarkLevel</strong> determines if the bookmark is a parent or child. Lastly <strong>BookmarkPageNumber</strong> is the page the bookmark links to. Here&rsquo;s an example:</p>
+<pre><code>BookmarkBegin
+BookmarkTitle: Chapter One
+BookmarkLevel: 1
+BookmarkPageNumber: 2
+BookmarkBegin
+BookmarkTitle: First Point
+BookmarkLevel: 2
+BookmarkPageNumber: 4</code></pre>
+<h3 id="updating-metadata">Updating Metadata</h3><p>Once we&rsquo;re done, we can update the original PDF and add the metadata file we just added our bookmarks to.</p>
+<pre><code>pdftk input.pdf \
+update_info metadata.txt \
+output output.pdf</code></pre><hr>
+<div class="listbox box"><h2>Links</h2><hr><ul>
+<li><a class="linklist" href="https://www.tomshardware.com/how-to/manipulate-pdf-files-with-pdftk"  target="_blank" rel="noreferrer" >⬩&nbsp; PDFTK Guide on tom&#39;s hardware</a></li>
+
+<li><a class="linklist" href="https://en.wikipedia.org/wiki/PDFtk"  target="_blank" rel="noreferrer" >⬩&nbsp; PDFTK Wikipedia Page</a></li>
+
+<li><a class="linklist" href="https://github.com/myollie/img2pdf"  target="_blank" rel="noreferrer" >⬩&nbsp; Img2Pdf Github</a></li>
+</ul></div>
+
+<nav><a class="prev navbut" href="/wiki/#linux-wiki">← Back to  Wiki </a>
+
+</nav>
+</main>
+<div class="push"></div></div>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>January 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg">
+</footer>
+</body>

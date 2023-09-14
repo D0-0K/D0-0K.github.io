@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on d00k</title>
+    <link>https://d00k.net/tags/</link>
+    <description>Recent content in Tags on d00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Thu, 01 Sep 2022 19:19:54 +0100</lastBuildDate><atom:link href="https://d00k.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>games</title>
+      <link>https://d00k.net/tags/games/</link>
+      <pubDate>Thu, 01 Sep 2022 19:19:54 +0100</pubDate>
+      
+      <guid>https://d00k.net/tags/games/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pico8</title>
+      <link>https://d00k.net/tags/pico8/</link>
+      <pubDate>Thu, 01 Sep 2022 19:19:54 +0100</pubDate>
+      
+      <guid>https://d00k.net/tags/pico8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

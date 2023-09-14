@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on d00k</title>
+    <link>https://d00k.net/blog/</link>
+    <description>Recent content in Blog on d00k</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ie</language>
+    <lastBuildDate>Fri, 25 Aug 2023 12:59:23 +0100</lastBuildDate><atom:link href="https://d00k.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re-designing my site, one more time</title>
+      <link>https://d00k.net/blog/redesigning_again/</link>
+      <pubDate>Sat, 02 Sep 2023 14:52:19 +0100</pubDate>
+      
+      <guid>https://d00k.net/blog/redesigning_again/</guid>
+      <description>Firstly, I&amp;rsquo;m so sorry for anyone subscribed to my RSS feed that just got spammed. I made some big changes to the site, but I&amp;rsquo;m confident this will be the final time.
+Secondly, I went and did it. At the end of my first-year celebration post in March, I talked about changing some core parts of this site. Namely new static site generation (SSG) and fixing the janky CSS. Quite frankly, I thought that would be all that was needed, but over the past few months I&amp;rsquo;ve grown less and less satisfied with everything.</description>
+    </item>
+    
+    <item>
+      <title>Celebrating a Year of d00k.net</title>
+      <link>https://d00k.net/blog/one-year-of-dook-net/</link>
+      <pubDate>Tue, 28 Mar 2023 19:14:28 +0100</pubDate>
+      
+      <guid>https://d00k.net/blog/one-year-of-dook-net/</guid>
+      <description>This article was written in March 2023 and, since August 2023, is no longer an accurate reflection of the current site. This time a year ago, d00k.net opened for the first time. The dates are a bit fuzzy, the domain was purchased in early March around my birthday, but I consider the site&amp;rsquo;s first real day to be when it was added to the XXIVV Webring on March 22nd. Dates aside, in just this one year the site has changed a lot.</description>
+    </item>
+    
+    <item>
+      <title>A Look Inside Themify</title>
+      <link>https://d00k.net/blog/inside_themify/</link>
+      <pubDate>Tue, 14 Mar 2023 15:12:17 +0000</pubDate>
+      
+      <guid>https://d00k.net/blog/inside_themify/</guid>
+      <description>After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.</description>
+    </item>
+    
+    <item>
+      <title>Year Review 2022</title>
+      <link>https://d00k.net/blog/year-review-2022/</link>
+      <pubDate>Sat, 31 Dec 2022 19:25:18 +0000</pubDate>
+      
+      <guid>https://d00k.net/blog/year-review-2022/</guid>
+      <description>Table of Contents Expand • Changes • Favourite Things • Projects • The Goal for 2023 • Conclusion This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure.</description>
+    </item>
+    
+    <item>
+      <title>Leaving Spotify for Freer Pastures</title>
+      <link>https://d00k.net/blog/leaving-spotify/</link>
+      <pubDate>Wed, 30 Nov 2022 17:10:26 +0000</pubDate>
+      
+      <guid>https://d00k.net/blog/leaving-spotify/</guid>
+      <description>Over the past year, I&amp;rsquo;ve slowly worked on moving my listening activities away from Spotify and towards a setup where I have much more control over how I listen. As people will be checking out their Spotify Unwrapped, I thought it&amp;rsquo;d be a great time to talk about my thoughts on the platform and why I&amp;rsquo;m moving away from it.
+Why leave?Don&amp;rsquo;t get me wrong, Spotify is pretty great. Being able to listen to just about whatever I want, whenever I want and in decent quality is a great privilege.</description>
+    </item>
+    
+    <item>
+      <title>Extreme Web Optimizations, without Compromising Style</title>
+      <link>https://d00k.net/blog/web-optimisations/</link>
+      <pubDate>Wed, 05 Oct 2022 15:50:41 +0100</pubDate>
+      
+      <guid>https://d00k.net/blog/web-optimisations/</guid>
+      <description>Over the past 10 months, I&amp;rsquo;ve worked on and off tweaking my site to get it closer to how I want it to look and perform. The main goal was simple: make a site that looks good, and loads fast. A quick solution would&amp;rsquo;ve been to keep the css to a minimum, use browser defaults for fonts etc. However that would&amp;rsquo;ve made my vision of a styled site difficult if not impossible.</description>
+    </item>
+    
+    <item>
+      <title>Year Review 2021</title>
+      <link>https://d00k.net/blog/year-review-2021/</link>
+      <pubDate>Fri, 18 Feb 2022 10:52:41 +0000</pubDate>
+      
+      <guid>https://d00k.net/blog/year-review-2021/</guid>
+      <description>At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.</description>
+    </item>
+    
+  </channel>
+</rss>
