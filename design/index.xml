@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Wed, 16 Feb 2022 21:39:18 +0000</lastBuildDate><atom:link href="https://d00k.net/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>compacticons</title>
+      <link>https://d00k.net/design/compacticons/</link>
+      <pubDate>Fri, 15 Sep 2023 18:58:06 +0100</pubDate>
+      
+      <guid>https://d00k.net/design/compacticons/</guid>
+      <description>Compacticons is an open-source symbolic icon set designed around a core limitation of 14x13 pixels and 28x13 pixels. This strict limitation came from a desire to create more compact user interfaces without obstructing the user&amp;rsquo;s ability to discern information.
+Each icon is designed to be highly legible, with care put into pixel hinting for perfect results. This makes them great to use on devices of all resolutions. The current initial set of icons are designed for music based apps and systems, however the range of targetted usecases will be expanded over time.</description>
+    </item>
+    
+    <item>
       <title>Tindra&#39;s Grove Logo</title>
       <link>https://d00k.net/design/tindra_grove/</link>
       <pubDate>Fri, 01 Sep 2023 14:02:00 +0100</pubDate>
