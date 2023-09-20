@@ -107,16 +107,7 @@
     <loc>https://d00k.net/blog/web-optimisations/</loc>
     <lastmod>2022-10-05T15:50:41+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/tags/games/</loc>
-    <lastmod>2022-09-01T19:19:54+01:00</lastmod>
-  </url><url>
     <loc>https://d00k.net/wiki/pico8-games/</loc>
-    <lastmod>2022-09-01T19:19:54+01:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/tags/pico8/</loc>
-    <lastmod>2022-09-01T19:19:54+01:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/tags/</loc>
     <lastmod>2022-09-01T19:19:54+01:00</lastmod>
   </url><url>
     <loc>https://d00k.net/design/rebble_weather/</loc>
@@ -208,7 +199,5 @@
   </url><url>
     <loc>https://d00k.net/about/</loc>
     <lastmod>2022-02-10T16:57:40+00:00</lastmod>
-  </url><url>
-    <loc>https://d00k.net/categories/</loc>
   </url>
 </urlset>
