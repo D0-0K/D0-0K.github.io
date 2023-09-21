@@ -5,7 +5,7 @@
   content="Information on the image formats of Rockbox Theming and how to optimise them best."/>
 <title> Rockbox Image Optimisation  • d00k.net</title></head>
 <body><div class="wrapper">
-<header><nav><div><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true"></a></div><div class="menu"><ul role="list">
+<header><nav><div style="width:45vw;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="100%" height="100%"></a></div><div class="menu"><ul role="list">
 <li><a href="/photos/">Photos</a></li>
 <li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
 <ul role="list" style="border-left:1px solid #808080">
@@ -20,7 +20,7 @@
 
 <h2 id="the-bitmap-image-format">The Bitmap image format</h2><p>Rockbox&rsquo;s primary image format is the Bitmap. Versions 3 and 4 of the bitmap spec are recognised, while any lower specs are not. The wiki <a href="https://www.rockbox.org/wiki/CustomWPS#LCD_Screen_Sizes_47_BMP_Compatibility" target="_blank" rel="noopener">states</a> that 1-bit, 24-bit and 32-bit Bitmaps are supported, however from experience 16-bit is also acceptable. I bring up 16-bits as all images used by Rockbox are converted into 16-bit colour regardless. This brings up the first issues. When this conversion is done, no dithering is applied, leaving an often unsavoury and harsh result. By pre-processing our images, we can not only achieve better looking results but also much smaller filesizes.</p>
 
-<figure><img src="/img/wiki/ipod_modding/dither_comparison.png" loading="lazy" alt="a comparison of an image with no dither and with a dither">
+<figure><img src="/img/wiki/ipod_modding/dither_comparison.png" loading="lazy" alt="a comparison of an image with no dither and with a dither" width="100%" height="100%">
 <figcaption>No dither versus ordered dither.</figcaption></figure>
 
 
@@ -29,21 +29,21 @@
 <h3 id="colour-dithering">Colour dithering</h3><p>To produce better looking images in Rockbox, we must pre-process our images by limiting the colour palette and use dithering to blend these together. We find this tool by going to <strong>Colors &gt; Dither&hellip;</strong></p>
 <p>Inside, it may seem a little complicated at first, but understanding what we need should help. Rockbox uses a 16-bit colorspace, we can get a good visualisation of this by using Rockbox&rsquo;s built-in colour tools in the theme settings. Both the Red and Blue colours are limited to just 32 options, while Green has 64. This is known as RGB565. If we take these maximum limits, and input them into the Red, Green and Blue levels of our Dither tool in GIMP, we can dither our image in this colorspace. The rest of the options are not of importance, except for <strong>Dithering method</strong>. This changes the dithering style, and is entirely up to you and what you think looks best.</p>
 
-<figure><img src="/img/wiki/ipod_modding/Dither_Tool.jpg" loading="lazy" alt="The gimp dither tool">
+<figure><img src="/img/wiki/ipod_modding/Dither_Tool.jpg" loading="lazy" alt="The gimp dither tool" width="100%" height="100%">
 <figcaption>GIMP Dither tool.</figcaption></figure>
 
 
 <h3 id="indexed-colors">Indexed Colors</h3><p>The simplest step to achieving optimised filesizes is the Indexed Color tool. This is found by going to <strong>Image &gt; Mode &gt; Indexed</strong>. Once in we, have several options available. Under <strong>Colormap</strong> we can choose what limitations we wish to put on the image&rsquo;s palette. For 1-bit images, the black and white palette is perfect and you shouldn&rsquo;t need any other steps.</p>
 <p>For colour images, we use <strong>Generate optimum palette</strong> which lets us set a number. This number, however, is only a maximum. If we select <strong>Remove unused and duplicate colors from colormap</strong>, GIMP will automatically trim the Colormap down to only the colours used by the image. In the second part of the dialog, we can choose what dithering to use. This can be purely preference based, however for small, low-colour images like icons I recommend not using dithering at all and setting it to <strong>None</strong>.</p>
 
-<figure><img src="/img/wiki/ipod_modding/Index_Color.jpg" loading="lazy" alt="The gimp indexed colour tool">
+<figure><img src="/img/wiki/ipod_modding/Index_Color.jpg" loading="lazy" alt="The gimp indexed colour tool" width="100%" height="100%">
 <figcaption>GIMP Indexed Colour Tool.</figcaption></figure>
 
 
 <h3 id="exporting-from-gimp">Exporting from GIMP</h3><p>Exporting as a Bitmap in GIMP provides several options. The <strong>Advanced Options</strong> dialog will be unavailable if you have used indexed colour, but if you haven&rsquo;t, the options dictate the format of your bitmap image. Generally you want <strong>R5 G6 B5</strong> under the <strong>16 bits</strong> list, however if you are using true transparency (not the magenta-based masking) <strong>A8 R8 G8 B8</strong> under <strong>32 bits</strong> is used.</p>
 <p>The other option available is the <strong>Compatibility Options</strong>. I uncheck <strong>Do not write color space information</strong>, this saves some bytes in filesize and is also unnecessary since Rockbox will convert our image&rsquo;s colour space regardless</p>
 
-<figure><img src="/img/wiki/ipod_modding/Export_Options.jpg" loading="lazy" alt="Gimp exporting options">
+<figure><img src="/img/wiki/ipod_modding/Export_Options.jpg" loading="lazy" alt="Gimp exporting options" width="100%" height="100%">
 <figcaption>GIMP&#39;s exporting options for bitmaps.</figcaption></figure>
 
 
@@ -74,13 +74,13 @@ mogrify -ordered-dither o8x8,32,64,32 -compress None -type palette -format bmp -
 <div class="push"></div></div>
 <footer>
 <div class="layout">
-<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright"></a>
-<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring"></a>
-<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed"></a>
-<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git"></a>
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28px"height="28px"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30px"height="27px"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed" width="28px"height="28px"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git" width="25px"height="28px"></a>
 <hr>
 <div style="margin:20px 0 8px">Published: <strong>May 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
 </div>
-<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg">
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg" height="64px" width="553px">
 </footer>
 </body>
