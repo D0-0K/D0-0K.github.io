@@ -18,9 +18,8 @@ li,h2,.title{width:fit-content}
 p,p a,q,li,em,.linklist{font-family:LeagueSpartan,sans-serif}
 header ul{padding:0 4px 0 10px;vertical-align:top}
 .menu{float:right;padding:5% 5% 5% 0;line-height:150%}
-.logo{padding:0;width:45vw;max-width:180px}
+.logo{padding:0;width:100%;height:auto}
 .logo:hover{filter:saturate(99)}
-.wrapper{min-height:100%;margin-bottom:-94px}
 header{max-width:780px}
 .layout{padding:26px;padding:min(5%,26px);max-width:720px}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
@@ -45,8 +44,8 @@ main>*,.title hr{margin:0 0 16px}
 .clickbox img{float:left;margin:0 16px 8px 0}
 .clickdiv{padding:12px 15px}
 .clickbox:hover,.listbox,figure{background:#d0d0d0}
+figure{max-width:720px}
 .clickbox:active{background:#bbb}
-.push{height:100px}
 summary{cursor:pointer;padding:12px 0}
 .text{background:#c4c4c4;border-left:16px solid #b2b2b2}
 hr{background:#aaa;height:1px}
@@ -64,5 +63,5 @@ pre{padding:16px 2%;overflow:auto;background:#444;border-left:20px solid #333;fo
 .info,code{color:#fff}
 code{font-family:monospace}
 q{font-size:large}
-img,iframe{max-width:100%}
+img,iframe{max-width:100%;height: auto}
 .highlight{margin:16px 0 16px -26px;border-radius:0 20px 20px 0}
