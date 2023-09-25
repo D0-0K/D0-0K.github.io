@@ -35,7 +35,7 @@
 %?and(%if(%ps, !=, 1),%if(%mm, &gt;, 1),%or(%if(%fc, !=, 4),%if(%fc, !=, 5),%if(%fc, !=, 7),%if(%fc, !=, 11),%if(%fc, !=, 13)))&lt;%xd(statusextra,3)&gt;
 %?and(%if(%ps, !=, 1),%if(%mm, =, 1),%or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13)))&lt;%xd(statusextra,3)&gt;</code></pre><p>I also added automatic line splitting to the song title text and playlist position indicator. The song title is a bit imperfect, I detect the length of the title, and if it fits the necessary parameters then it will be displayed in two lines. I intended for this feature to be smarter, splitting the text in a way that respected words and didnt chop them up, however Rockbox theme files are unable to detect space characters, stopping this feature in it&rsquo;s tracks.</p>
 
-<img  src="/img/journal/themify_02.jpg" loading="lazy" alt="Examples of adaptive elements in the ui" width="100%" height="100%">
+<img  src="/img/journal/themify_02.jpg" loading="lazy" alt="Examples of adaptive elements in the ui">
 
 
 <h2 id="the-lockscreen">The Lockscreen</h2><p>Easily my favourite feature, Themify&rsquo;s lockscreen is my most impressive yet. Using a full screen transparent bitmap for the background, it looks stunning. I also added the largest analog clock attempted in Rockbox to date. Using the newer image loading logic, I was able to keep at least the hour hand&rsquo;s code small. I had to compromise with the minute hands since they couldn&rsquo;t be 1-bit bitmaps, and to have 60 individual hands produced a massive file size. I kept the logic as small as I could however, so the result isn&rsquo;t actually half bad, especially compared to other attempts at this feature.</p>
