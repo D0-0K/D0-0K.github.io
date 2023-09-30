@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<meta property="og:description" 
+  content="List of things that can&#39;t be done in Rockbox, but I wish to see added."/>
+<title> Missing Features List  • d00k.net</title></head>
+<body><header><nav><div style="width:45vw;height:auto;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="100%" height="100%"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+
+<div class="title"><h1 id="top">Missing Features List</h1><hr></div>
+<p>Rockbox&rsquo;s theming engine is incredibly rich as it is, however there are some parts of it that I believe have a high potential to go further and make the user experience even better. I intend to slowly get to some of these over time, but if you&rsquo;re a developer interested in taking on some of these do consider giving me a shout.</p>
+<hr>
+
+<h2 id="better-album-art">Better Album Art</h2><p>Album art is one the more basic parts of the theming engine, with just a single tag allowed per file. This makes dynamic features and different positions impossible. For most themes, this isn&rsquo;t an issue. But for those that have Lockscreens, it can be difficult to fit it in (adwaitapod suffers from this issue for example).</p>
+<p>There is already a patch for this from 10 years ago, but unfortunately was <a href="https://gerrit.rockbox.org/r/c/rockbox/&#43;/839" target="_blank" rel="noopener">never merged</a> and the author soon stopped contributing. The solution proposed is actually quite good, and if I&rsquo;m correct it was designed in mind to add support for displaying previous and next playing song&rsquo;s album art.</p>
+<p>Bonus addition would be adding a feature to these to set corner radius. Currently adding anti-aliased rounded corners to Album art is a bit complicated.</p>
+
+<h2 id="nesting-st-tags">Nesting %St tags</h2><p>The Setting tag %St(..) is an incredibly useful tag, allowing you to grab information from any setting in Rockbox, however I believe with a small change to behaviour it can fill in some important gaps in the theming engine.</p>
+<p>Allowing Setting tags to be nested, especially inside other Setting tags, opens up to the possibility of theming the Quickscreen. Currently you can get the name of the Quickscreen items (using %St(qs top) etc.), but this doesn&rsquo;t give you the status of the item. Nesting Setting tags would let you use something like %St(%St(qs top)) to solve this.</p>
+<p>Allowing other tags, like the %dr rectangle drawing tag or %Vf foreground colour tag, to use Setting tags would also solve a long problem of themes not being able to access the user&rsquo;s menu selector colour (among other colour settings).</p>
+
+<h2 id="viewport-non-render-case">Viewport non-render case</h2><p>Currently, if a menu viewport is set to have zero width and height, it will still render the contents in some situations. It&rsquo;s not very consistent however. In some contexts like the Quickscreen, doing this will actually cause Rockbox to crash. Turning off viewports is important for features like Lockscreens, custom Quickscreens etc.</p>
+<p>This is more of a bug fix than a feature request, but I believe a good solution here would be to not display the current page&rsquo;s menu/system display if a menu viewport with zero width and height is turned on.</p>
+
+<h2 id="theme-tag-for-manual-screen-refresh">Theme tag for manual screen refresh</h2><p>A lot of complex theming involves working around the limitations of Rockbox&rsquo;s viewport refresh system. For example, changing the size of a menu viewport while the theme is running will not update the viewport on screen, and it won&rsquo;t update until a refresh is applied (commonly by changing screen).</p>
+<p>Having a tag that can be used (albeit would want to be done sparingly) to call a refresh would alleviate a lot of issues and headaches. It would remove the need for things like &ldquo;scroll to refresh&rdquo; and certain bugs with menus being changed, improving user experience a decent amount.</p>
+
+<h2 id="tiling-image-tag">Tiling Image tag.</h2><p>A tag to tile a set image across a desired area would be massively helpful. I suspect it would just need to work like %xT(image).</p>
+
+<h2 id="solution-for-two-line-text">Solution for two line text</h2><p>Displaying text over two lines is a great feature in my opinion, and one I&rsquo;ve tried to create by hand in the likes of Themify. However this is massively imperfect and results in words being cut in half. My solution is mind for this was to detect the presence of a space at certain parts of the song name, and display the text around that, but detecting spaces is not possible currently.</p>
+<p>Adding some way of detecting spaces could solve this problem, or perhaps some way of display text over two lines could be added to the theming engine.</p>
+
+<h2 id="page-directory-tags">Page directory tags</h2><p>There&rsquo;s a tag for the current playing song&rsquo;s directory information: %d(n), which gets you the title of the 1st, 2nd, etc directory of the song&rsquo;s filepath.</p>
+<p>I think creating an analog of this for the current page would open up the ability to theme pages in the Database and File explorers.</p>
+<p>For example, in the database you could have styled pages for artist or album pages specifically, using the following:</p>
+<pre><code>%?if(%l(2), =, Albums)&lt;%Lt&gt;</code></pre>
+<h2 id="artist-art-tag">Artist art tag</h2><p>This is a far bigger change, even than it would seem at first glance, but my proposal would be to add support for Artist images in Rockbox.</p>
+<p>These could be used to show the current song&rsquo;s Artist in the player. But it could also be used in the Database to give a more rich interface.</p>
+<p>This would however require actually obtaining art of artists. There&rsquo;s existing methods of doing this, but you&rsquo;d require some kind of software to generate this. It&rsquo;s more of a pipe dream than anything, but I can see myself in the future adding it to a theme and building a script users can run to add this functionality themselves.</p>
+
+<h2 id="song-metadata-tags-for-menus">Song Metadata tags for menus</h2><p>Currently for the Database menus, Rockbox will display the song&rsquo;s filename and length in a single line of text. It&rsquo;s great for simple themes, but I think this could be split up into different tags for use with the &ldquo;Skinned Menus&rdquo; feature.</p>
+<p>Visually, this will help create more beautiful and informative Database menus. Something which I think would help user satisfaction, as the menu experience is complained about a lot in iPod communities.</p>
+<p>This feature would depend on having Page directory tags to be useful</p>
+
+<nav><a class="prev navbut" href="/wiki/">← Back to  Wiki </a>
+
+</nav>
+</main>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed" width="28"height="28"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git" width="25"height="28"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>September 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg" height="64" width="553">
+</footer>
+</body>

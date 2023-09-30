@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Tue, 05 Jul 2022 14:56:48 +0100</lastBuildDate><atom:link href="https://d00k.net/about/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>September Update</title>
+      <link>https://d00k.net/about/journal/2023-09-30/</link>
+      <pubDate>Sat, 30 Sep 2023 18:41:28 +0100</pubDate>
+      
+      <guid>https://d00k.net/about/journal/2023-09-30/</guid>
+      <description>It&amp;rsquo;s been a while, huh? I had been intending to update this every month this year, but unfortunately life had other ideas and I got fairly busy.
+Some major projects have been completed during the summer. Adwaitapod 3.0 was released, and is now pretty much stable and bug-free. This update has really brought the project to where I envisioned it from the start, and brings so much to the table for iPods.</description>
+    </item>
+    
+    <item>
       <title>April Update</title>
       <link>https://d00k.net/about/journal/2023-04-30/</link>
       <pubDate>Sun, 30 Apr 2023 15:11:13 +0100</pubDate>
