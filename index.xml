@@ -16,6 +16,27 @@
     
     
       <item>
+        <title>September Update</title>
+        <link>https://d00k.net/about/journal/2023-09-30/</link>
+        <guid>https://d00k.net/about/journal/2023-09-30/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sat, 30 Sep 2023 18:41:28 EST</pubDate>
+        
+        <description>&lt;p&gt;It&amp;rsquo;s been a while, huh? I had been intending to update this every month this year, but unfortunately life had other ideas and I got fairly busy.&lt;/p&gt;
+&lt;p&gt;Some major projects have been completed during the summer. &lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34;&gt;Adwaitapod 3.0&lt;/a&gt; was released, and is now pretty much stable and bug-free. This update has really brought the project to where I envisioned it from the start, and brings so much to the table for iPods. I pushed the limits of what Rockbox&amp;rsquo;s theming engine can do, which was difficult, but the results have been worth it. I still have a promo push I want to do for this project, with a friend of mine making up a small trailer for it, and a dedicated website ready to go alongside it. I want to experiment with doing publicity for my themes, hopefully it can save a few more devices from landfill.&lt;/p&gt;
+&lt;p&gt;After that, I got to redesigning and rebuilding my website. A massive undertaking, with a goal to make it more efficient and better designed. It&amp;rsquo;s also now the smallest it&amp;rsquo;s ever been, with the homepage sitting at a tiny 43kB (which includes fonts &lt;em&gt;and&lt;/em&gt; a png image!). The css file is 3.33kB, which I&amp;rsquo;m really proud of since I managed to cram so much into it. The wiki has been massively expanded, and now is a lot better organised. There&amp;rsquo;s been a bunch of big changes, I really recommend checking it all out and also &lt;a href=&#34;https://d00k.net/blog/redesigning_again/&#34;&gt;reading the blog post about it!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s been a bunch more stuff completed this summer, but things will also be slowing down a lot now sadly. I recently started back up in college after a two year break, I&amp;rsquo;m now doing a bachelor of arts in Interaction Design, something that is far more catered towards my interests and focuses with design as a tool. It&amp;rsquo;s pretty full on, so my free time is practically non-existent now which is disappointing. But I aim to slowly get to work on stuff when I can!&lt;/p&gt;
+&lt;p&gt;Until next time, whenever that may be - Dook&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;It&amp;rsquo;s been a while, huh? I had been intending to update this every month this year, but unfortunately life had other ideas and I got fairly busy.&lt;/p&gt;
+&lt;p&gt;Some major projects have been completed during the summer. &lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34;&gt;Adwaitapod 3.0&lt;/a&gt; was released, and is now pretty much stable and bug-free. This update has really brought the project to where I envisioned it from the start, and brings so much to the table for iPods. I pushed the limits of what Rockbox&amp;rsquo;s theming engine can do, which was difficult, but the results have been worth it. I still have a promo push I want to do for this project, with a friend of mine making up a small trailer for it, and a dedicated website ready to go alongside it. I want to experiment with doing publicity for my themes, hopefully it can save a few more devices from landfill.&lt;/p&gt;
+&lt;p&gt;After that, I got to redesigning and rebuilding my website. A massive undertaking, with a goal to make it more efficient and better designed. It&amp;rsquo;s also now the smallest it&amp;rsquo;s ever been, with the homepage sitting at a tiny 43kB (which includes fonts &lt;em&gt;and&lt;/em&gt; a png image!). The css file is 3.33kB, which I&amp;rsquo;m really proud of since I managed to cram so much into it. The wiki has been massively expanded, and now is a lot better organised. There&amp;rsquo;s been a bunch of big changes, I really recommend checking it all out and also &lt;a href=&#34;https://d00k.net/blog/redesigning_again/&#34;&gt;reading the blog post about it!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s been a bunch more stuff completed this summer, but things will also be slowing down a lot now sadly. I recently started back up in college after a two year break, I&amp;rsquo;m now doing a bachelor of arts in Interaction Design, something that is far more catered towards my interests and focuses with design as a tool. It&amp;rsquo;s pretty full on, so my free time is practically non-existent now which is disappointing. But I aim to slowly get to work on stuff when I can!&lt;/p&gt;
+&lt;p&gt;Until next time, whenever that may be - Dook&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
         <title>Re-designing my site, one more time</title>
         <link>https://d00k.net/blog/redesigning_again/</link>
         <guid>https://d00k.net/blog/redesigning_again/</guid>
@@ -117,6 +138,50 @@
 &lt;p&gt;I want to thank all the people who have been following me along building this site, as well as it&amp;rsquo;s redesign. And for all my friends for providing incredible feedback and advice.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s to d00k.net, and this design lasting a little bit longer than the last one!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;- Dook&lt;/em&gt;&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>April Update</title>
+        <link>https://d00k.net/about/journal/2023-04-30/</link>
+        <guid>https://d00k.net/about/journal/2023-04-30/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sun, 30 Apr 2023 15:11:13 EST</pubDate>
+        
+        <description>&lt;p&gt;What a fast month! It&amp;rsquo;s hard to believe it&amp;rsquo;s already the end of April. I haven&amp;rsquo;t been working on too many projects this month, but the ones I have been working on were pretty important.&lt;/p&gt;
+&lt;p&gt;The biggest project this month has been the next update to my iPod UI project: &lt;a href=&#34;https://d00k.net/projects/ipod/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt;. This has been a major undertaking, rewriting the entire thing from scratch. But it&amp;rsquo;s been worthwhile. The massive gains made with compression, efficiency and so on have made enough room to add a wide range of new features and still come in smaller than the last version of adwaitapod. I took the chance to take a proper design-orientated approach, rather than simply copying the GNOME desktop design, I used their principles to interpret the user experience of an iPod and make it as user friendly as possible. I&amp;rsquo;m immensely happy with the results so far. The last few things to do involve writing documentation and creating some promo materials, which I&amp;rsquo;ve commissioned a friend to help with. All things going well, adwaitapod 3.0 should be out next month!&lt;/p&gt;
+&lt;p&gt;I also completed my first paid work this month! I reached out to &lt;a href=&#34;https://thesam.zone/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sam&lt;/a&gt; on fedi after they made a post looking for a designer to make a logo for their project &lt;a href=&#34;https://thesam.zone/blog/beryl-todo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beyrl&lt;/a&gt;. I was mostly interested in using it as a chance to gain experience working with a client and designing icons/branding, but we were both very happy with the results! I&amp;rsquo;ll put together a proper page for this project after I deliver the end product.&lt;/p&gt;
+&lt;p&gt;A major milestone this month was the submission of my final college portfolio. I&amp;rsquo;m still looking to complete my degree in Design, so hopefully by this September I&amp;rsquo;ll be back in college again.&lt;/p&gt;
+&lt;p&gt;Lastly, some small changes and updates to the site this month. The colourscheme was changed slightly to be less yellow, and improve reading contrast. I also updated the Bee Encyclopedia with the newly captured &lt;a href=&#34;https://d00k.net/knowledge/bees/#early-mining-bee&#34;&gt;Early Mining Bee&lt;/a&gt;, we&amp;rsquo;re in peak bee season right now so I&amp;rsquo;m hoping to capture some more species that I haven&amp;rsquo;t managed to yet!&lt;/p&gt;
+&lt;p&gt;Things have been slowing down (thankfully) but hopefully sometime next month I&amp;rsquo;ll begin my migration over to a better SSG, I also have a few websites to design and build for friends over the summer that I&amp;rsquo;m very much looking forward to! Till next month - Dook.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;What a fast month! It&amp;rsquo;s hard to believe it&amp;rsquo;s already the end of April. I haven&amp;rsquo;t been working on too many projects this month, but the ones I have been working on were pretty important.&lt;/p&gt;
+&lt;p&gt;The biggest project this month has been the next update to my iPod UI project: &lt;a href=&#34;https://d00k.net/projects/ipod/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt;. This has been a major undertaking, rewriting the entire thing from scratch. But it&amp;rsquo;s been worthwhile. The massive gains made with compression, efficiency and so on have made enough room to add a wide range of new features and still come in smaller than the last version of adwaitapod. I took the chance to take a proper design-orientated approach, rather than simply copying the GNOME desktop design, I used their principles to interpret the user experience of an iPod and make it as user friendly as possible. I&amp;rsquo;m immensely happy with the results so far. The last few things to do involve writing documentation and creating some promo materials, which I&amp;rsquo;ve commissioned a friend to help with. All things going well, adwaitapod 3.0 should be out next month!&lt;/p&gt;
+&lt;p&gt;I also completed my first paid work this month! I reached out to &lt;a href=&#34;https://thesam.zone/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sam&lt;/a&gt; on fedi after they made a post looking for a designer to make a logo for their project &lt;a href=&#34;https://thesam.zone/blog/beryl-todo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beyrl&lt;/a&gt;. I was mostly interested in using it as a chance to gain experience working with a client and designing icons/branding, but we were both very happy with the results! I&amp;rsquo;ll put together a proper page for this project after I deliver the end product.&lt;/p&gt;
+&lt;p&gt;A major milestone this month was the submission of my final college portfolio. I&amp;rsquo;m still looking to complete my degree in Design, so hopefully by this September I&amp;rsquo;ll be back in college again.&lt;/p&gt;
+&lt;p&gt;Lastly, some small changes and updates to the site this month. The colourscheme was changed slightly to be less yellow, and improve reading contrast. I also updated the Bee Encyclopedia with the newly captured &lt;a href=&#34;https://d00k.net/knowledge/bees/#early-mining-bee&#34;&gt;Early Mining Bee&lt;/a&gt;, we&amp;rsquo;re in peak bee season right now so I&amp;rsquo;m hoping to capture some more species that I haven&amp;rsquo;t managed to yet!&lt;/p&gt;
+&lt;p&gt;Things have been slowing down (thankfully) but hopefully sometime next month I&amp;rsquo;ll begin my migration over to a better SSG, I also have a few websites to design and build for friends over the summer that I&amp;rsquo;m very much looking forward to! Till next month - Dook.&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>March Update</title>
+        <link>https://d00k.net/about/journal/2023-03-31/</link>
+        <guid>https://d00k.net/about/journal/2023-03-31/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Fri, 31 Mar 2023 19:15:47 EST</pubDate>
+        
+        <description>&lt;p&gt;I think this month has been one of my most productive in a really long time! A good chunk of time was spent completing and releasing my latest UI theme for Rockbox, &lt;a href=&#34;https://d00k.net/projects/ipod/themify/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Themify&lt;/a&gt;. It&amp;rsquo;s so far been received incredibly well, and has even reached my own goal of using design to convince people to use old devices.&lt;/p&gt;
+&lt;p&gt;Once I finished Themify, I set my eyes on the original UI theme I made called &lt;a href=&#34;https://d00k.net/projects/ipod/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt;, based on GNOME&amp;rsquo;s design principals. I decided to remake it entirely from scratch, since I&amp;rsquo;d learned so much in the last year that it was just easier to rewrite it all. This time I approached everything much smarter, the new version is about 65% smaller while having new features and performing much better. I just need to focus on some font issues in the github repo, fix a few bugs and work on the dark theme and then I can release it to the world!&lt;/p&gt;
+&lt;p&gt;Alongside everything else, I was approached recently to design an original user interface for a project. I&amp;rsquo;ve spent some time creating an icon set, which I plan to open source soon, as well as brainstorming other parts of the interface. I haven&amp;rsquo;t had a chance yet to design on a proper scale like this, so it&amp;rsquo;s been very exciting and interesting having free reign as the sole designer on this part.&lt;/p&gt;
+&lt;p&gt;Lastly, my website turned a year old in March! I put together a &lt;a href=&#34;https://d00k.net/journal/one-year-of-dook-net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt; where I discussed how the site came to be, as well as the changes it went through during the year. I also took the last paragraph to think about where I want to website to go next, something I hope to work on really soon!&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s all for now, I have another 2 weeks to cram some projects in before I need to finish my final portfolio for college entry. Once that&amp;rsquo;s done I plan on taking a break for the rest of the month to refresh and get ready for the rest of the year. Till then! - Dook.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;I think this month has been one of my most productive in a really long time! A good chunk of time was spent completing and releasing my latest UI theme for Rockbox, &lt;a href=&#34;https://d00k.net/projects/ipod/themify/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Themify&lt;/a&gt;. It&amp;rsquo;s so far been received incredibly well, and has even reached my own goal of using design to convince people to use old devices.&lt;/p&gt;
+&lt;p&gt;Once I finished Themify, I set my eyes on the original UI theme I made called &lt;a href=&#34;https://d00k.net/projects/ipod/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt;, based on GNOME&amp;rsquo;s design principals. I decided to remake it entirely from scratch, since I&amp;rsquo;d learned so much in the last year that it was just easier to rewrite it all. This time I approached everything much smarter, the new version is about 65% smaller while having new features and performing much better. I just need to focus on some font issues in the github repo, fix a few bugs and work on the dark theme and then I can release it to the world!&lt;/p&gt;
+&lt;p&gt;Alongside everything else, I was approached recently to design an original user interface for a project. I&amp;rsquo;ve spent some time creating an icon set, which I plan to open source soon, as well as brainstorming other parts of the interface. I haven&amp;rsquo;t had a chance yet to design on a proper scale like this, so it&amp;rsquo;s been very exciting and interesting having free reign as the sole designer on this part.&lt;/p&gt;
+&lt;p&gt;Lastly, my website turned a year old in March! I put together a &lt;a href=&#34;https://d00k.net/journal/one-year-of-dook-net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt; where I discussed how the site came to be, as well as the changes it went through during the year. I also took the last paragraph to think about where I want to website to go next, something I hope to work on really soon!&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s all for now, I have another 2 weeks to cram some projects in before I need to finish my final portfolio for college entry. Once that&amp;rsquo;s done I plan on taking a break for the rest of the month to refresh and get ready for the rest of the year. Till then! - Dook.&lt;/p&gt;
 </content:encoded>
       </item>
     
@@ -263,6 +328,38 @@
 &lt;li&gt;&lt;a class=&#34;linklist&#34; href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;⬩&amp;nbsp; Github Repository&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;linklist&#34; href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;⬩&amp;nbsp; Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>February Update</title>
+        <link>https://d00k.net/about/journal/2023-02-28/</link>
+        <guid>https://d00k.net/about/journal/2023-02-28/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Tue, 28 Feb 2023 19:13:59 EST</pubDate>
+        
+        <description>&lt;p&gt;Spent the first week of this month completing my portfolio for college entry, but in-between made some big improvements to the site. I simplified the inline links style to be far more visible than they were before, which also led to my stand-alone font for links becoming unnecessary. Getting rid of it has made my home page even smaller now, to just over 30kb.&lt;/p&gt;
+&lt;p&gt;After that, I began to work on a new iPod theme called Themify. I made it mostly to showcase some features of Rockbox I found that would let users fully customise the UI&amp;rsquo;s colourscheme. The beta was shared on my Ko-Fi &lt;a href=&#34;https://ko-fi.com/s/ec908b61b4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;, and some people have shown support which has been really nice. At the same time, I&amp;rsquo;ve been working on a commission I received to port a previous Rockbox theme of mine to a touch-screen device which has been a lot of fun.&lt;/p&gt;
+&lt;p&gt;This month I also started learning a few different programming languages including Uxntal, Python and bits of GTK for making a desktop app. I started learning Uxntal after getting an idea for a virtual pet synthesizer in a dream, so far compudanzas&amp;rsquo; &lt;a href=&#34;https://compudanzas.net/introduction_to_uxn_programming_book.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uxn book&lt;/a&gt; has been extremely useful and makes uxn appear quite inviting, even as a relative beginner with programming. On the other hand GTK has been a nightmare to figure out, but I seem to make progress in big leaps at once. It&amp;rsquo;s been quite enjoyable working on apps and software that I want or need.&lt;/p&gt;
+&lt;p&gt;Hopefully by the end of March I should have an update with a bunch of finished projects!&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;Spent the first week of this month completing my portfolio for college entry, but in-between made some big improvements to the site. I simplified the inline links style to be far more visible than they were before, which also led to my stand-alone font for links becoming unnecessary. Getting rid of it has made my home page even smaller now, to just over 30kb.&lt;/p&gt;
+&lt;p&gt;After that, I began to work on a new iPod theme called Themify. I made it mostly to showcase some features of Rockbox I found that would let users fully customise the UI&amp;rsquo;s colourscheme. The beta was shared on my Ko-Fi &lt;a href=&#34;https://ko-fi.com/s/ec908b61b4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;, and some people have shown support which has been really nice. At the same time, I&amp;rsquo;ve been working on a commission I received to port a previous Rockbox theme of mine to a touch-screen device which has been a lot of fun.&lt;/p&gt;
+&lt;p&gt;This month I also started learning a few different programming languages including Uxntal, Python and bits of GTK for making a desktop app. I started learning Uxntal after getting an idea for a virtual pet synthesizer in a dream, so far compudanzas&amp;rsquo; &lt;a href=&#34;https://compudanzas.net/introduction_to_uxn_programming_book.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;uxn book&lt;/a&gt; has been extremely useful and makes uxn appear quite inviting, even as a relative beginner with programming. On the other hand GTK has been a nightmare to figure out, but I seem to make progress in big leaps at once. It&amp;rsquo;s been quite enjoyable working on apps and software that I want or need.&lt;/p&gt;
+&lt;p&gt;Hopefully by the end of March I should have an update with a bunch of finished projects!&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>January Update</title>
+        <link>https://d00k.net/about/journal/2023-01-31/</link>
+        <guid>https://d00k.net/about/journal/2023-01-31/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Tue, 31 Jan 2023 19:47:12 EST</pubDate>
+        
+        <description>&lt;p&gt;Happy new year! I&amp;rsquo;ve decided this year to use my short journal as a more detailed monthly record. This month was largely focused on my college application. I&amp;rsquo;m attempting to return to college in September, switching institutions as I do so to be closer to home. This requires a whole new application, portfolio etc which I spent most of this month handling. In my off time I put a decent amount of work into my website, solidifying parts of the website that have been disjointed up until now. I also started a &lt;a href=&#34;https://d00k.net/knowledge/linux&#34;&gt;Linux Wiki&lt;/a&gt; of various cheatsheets I&amp;rsquo;ve written over the past year. These were received quite well, and I hope this knowledge will help others learn too. Lastly, this month I was shortlisted and exhibited in The Photographer&amp;rsquo;s Gallery&amp;rsquo;s &lt;a href=&#34;https://unthinking.photography/commissions/small-file-photo-festival&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Small File Photo Festival&lt;/a&gt;. I&amp;rsquo;m very proud of this exhibition, combining two of my interests: Photography and Image Compression. I&amp;rsquo;m hoping this year I&amp;rsquo;ll be able to move about more and take photos again.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;Happy new year! I&amp;rsquo;ve decided this year to use my short journal as a more detailed monthly record. This month was largely focused on my college application. I&amp;rsquo;m attempting to return to college in September, switching institutions as I do so to be closer to home. This requires a whole new application, portfolio etc which I spent most of this month handling. In my off time I put a decent amount of work into my website, solidifying parts of the website that have been disjointed up until now. I also started a &lt;a href=&#34;https://d00k.net/knowledge/linux&#34;&gt;Linux Wiki&lt;/a&gt; of various cheatsheets I&amp;rsquo;ve written over the past year. These were received quite well, and I hope this knowledge will help others learn too. Lastly, this month I was shortlisted and exhibited in The Photographer&amp;rsquo;s Gallery&amp;rsquo;s &lt;a href=&#34;https://unthinking.photography/commissions/small-file-photo-festival&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Small File Photo Festival&lt;/a&gt;. I&amp;rsquo;m very proud of this exhibition, combining two of my interests: Photography and Image Compression. I&amp;rsquo;m hoping this year I&amp;rsquo;ll be able to move about more and take photos again.&lt;/p&gt;
 </content:encoded>
       </item>
     
@@ -471,6 +568,34 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 &lt;li&gt;&lt;a class=&#34;linklist&#34; href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;linklist&#34; href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>November Update</title>
+        <link>https://d00k.net/about/journal/2022-11-25/</link>
+        <guid>https://d00k.net/about/journal/2022-11-25/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Fri, 25 Nov 2022 20:05:31 EST</pubDate>
+        
+        <description>&lt;p&gt;What a wild month! I started the month updating a finishing off my &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt; theme for rockbox. I also spent the past 3 weeks learning to program in C, building up to the Rebble Hackathon last weekend where I put together my watchface design, &lt;a href=&#34;https://d00k.net/projects/pebble/timetwistpop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Time Twist Pop&lt;/a&gt; and released it! It was incredibly frustrating at times, since I really have very little experience programming. However, by the end of the weekend I was getting into the zone and pumping out some really good stuff and was having a blast! Really looking forward to making more with C in the future!&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;What a wild month! I started the month updating a finishing off my &lt;a href=&#34;https://d00k.net/projects/adwaitapod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;adwaitapod&lt;/a&gt; theme for rockbox. I also spent the past 3 weeks learning to program in C, building up to the Rebble Hackathon last weekend where I put together my watchface design, &lt;a href=&#34;https://d00k.net/projects/pebble/timetwistpop/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Time Twist Pop&lt;/a&gt; and released it! It was incredibly frustrating at times, since I really have very little experience programming. However, by the end of the weekend I was getting into the zone and pumping out some really good stuff and was having a blast! Really looking forward to making more with C in the future!&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
+        <title>Autumn Update</title>
+        <link>https://d00k.net/about/journal/2022-10-9/</link>
+        <guid>https://d00k.net/about/journal/2022-10-9/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Sun, 09 Oct 2022 13:27:32 EST</pubDate>
+        
+        <description>&lt;p&gt;It&amp;rsquo;s a crazy couple of months for me, but I finally found some time to tend to the website. First thing I did was get to finalising it&amp;rsquo;s design, the way it had been before was overly garish and pretty difficult to look at on some pages, the new style is far better in this regard. I also took the time to go absolutely overboard on optimising every possible thing I could, making each pretty tiny for what it is, I made a writeup on everything I did &lt;a href=&#34;https://d00k.net/journal/web-optimisations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also managed to find a new home on mastodon during this time at Lurk! It&amp;rsquo;s a great community. A few new projects have been started as well; an accessible version of my ipod them after some user feedback, as well as a book for other people looking into making their own themes. Currently everything I&amp;rsquo;m doing is building up for my portfolio to switch colleges with next year, so I&amp;rsquo;m gonna be busy for the the next few months!&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;It&amp;rsquo;s a crazy couple of months for me, but I finally found some time to tend to the website. First thing I did was get to finalising it&amp;rsquo;s design, the way it had been before was overly garish and pretty difficult to look at on some pages, the new style is far better in this regard. I also took the time to go absolutely overboard on optimising every possible thing I could, making each pretty tiny for what it is, I made a writeup on everything I did &lt;a href=&#34;https://d00k.net/journal/web-optimisations/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I also managed to find a new home on mastodon during this time at Lurk! It&amp;rsquo;s a great community. A few new projects have been started as well; an accessible version of my ipod them after some user feedback, as well as a book for other people looking into making their own themes. Currently everything I&amp;rsquo;m doing is building up for my portfolio to switch colleges with next year, so I&amp;rsquo;m gonna be busy for the the next few months!&lt;/p&gt;
 </content:encoded>
       </item>
     
