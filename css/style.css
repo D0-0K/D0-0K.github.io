@@ -45,7 +45,8 @@ main>*,.title hr{margin:0 0 16px}
 .clickdiv{padding:12px 15px}
 .clickbox:hover,.listbox,figure{background:#d0d0d0}
 figure{max-width:720px}
-.clickbox:active{background:#bbb}
+.clickbox:active{background:#bbb;
+	scale:.99}
 summary{cursor:pointer;padding:12px 0}
 .text{background:#c4c4c4;border-left:16px solid #b2b2b2}
 hr{background:#aaa;height:1px}
