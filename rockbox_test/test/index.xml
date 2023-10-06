@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tests on My New Hugo Site</title>
+    <link>http://example.org/test/</link>
+    <description>Recent content in Tests on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Oct 2023 22:56:45 +0100</lastBuildDate><atom:link href="http://example.org/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second Test Post</title>
+      <link>http://example.org/test/second_test_post/</link>
+      <pubDate>Fri, 06 Oct 2023 22:56:45 +0100</pubDate>
+      
+      <guid>http://example.org/test/second_test_post/</guid>
+      <description>Second Test Page Generated from Markdown Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam Athenis, ut e patre audiebam facete et urbane Stoicos irridente, statua est in quo a nobis philosophia defensa et collaudata est, cum id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</description>
+    </item>
+    
+  </channel>
+</rss>
