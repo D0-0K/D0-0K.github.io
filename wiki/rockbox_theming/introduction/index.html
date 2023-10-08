@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+
+<title> Introduction  • d00k.net</title></head>
+<body><header><nav><div style="width:45vw;height:auto;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="100%" height="100%"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+
+<div class="title"><h1 id="top">Introduction</h1><hr></div>
+<p>Since the mid-2000s, Rockbox has allowed users to modify the user-interface. Over time, this feature has evolved and matured into an intricate system of tags and markup. The theming system as it stands today provides the user with an incredible amount of freedom and control, with the possibility to do so much.</p>
+<p>Despite this however, the barrier for entry has historically been incredibly high. If someone wished to learn how to build themes from scratch, all that was available were existing themes, a single page of documentation, along with frustrating trial and error.</p>
+<p>Ultimately, the goal of this guide series is to provide those who have a desire to make themes with all the information they could possibly need to do just that.</p>
+<p>This beginners guide will break down the core concepts of the rockbox theme engine, walk you through implementing basic features, and show you how to use external tools to make your theme look and perform the best it can. By the end, you&rsquo;ll have a basic template of a theme, but what you learn to get there should be enough to help you realise your own vision.</p>
+<div class="text borderless box">
+
+<div>
+<h2 id="note-on-learning-from-themes">Note on learning from themes</h2><p>Learning from existing themes is a great way to see things in action and experiment, however there are some downsides to be aware of.</p>
+<p>Almost every existing theme right now was made by someone who learned from other themes, as mentioned previously.
+This has meant that older, more complicated (and inefficient) ways of implementing features have become the de-facto standard.</p>
+<p>This can, and most likely will, make theming seem far harder than it is and confuse you a fair amount.</p>
+</div>
+</div>
+<p>This guide however will follow a style of creating themes I developed myself independently, making use of the full capabilities in the theming system. This style is incredibly simple, versatile and easy to learn and should be a great starting point for those new to theming.</p>
+<hr>
+
+<h2 id="what-youll-need">What you&rsquo;ll need</h2><p>Creating themes is an incredibly simple process, and all you&rsquo;ll really need is a basic text editor, some kind of image editor and creation software (GIMP and Inkscape) and a device to test on.</p>
+<p>I highly recommend checking out the <a href="https://www.rockbox.org/wiki/UiSimulator" target="_blank" rel="noopener">Ui Simulator</a> as an alternative to using a device to test, as it allows for must faster iteration and can provide detailed errors from the command line.</p>
+
+<h2 id="basic-terminology">Basic Terminology</h2><p>There is no concrete terminology used when talking about themes, but there&rsquo;s been some loose terms used over the years that I will attempt to frame here.</p>
+<div class="listbox box"><ul>
+
+<li>⚬ <strong>Theming Engine</strong> - A common term used to describe the internal system which manages the creation of themes.</li>
+<li>⚬ <strong>WPS</strong> - While Playing Screen. The name given to the music player part of a theme.</li>
+<li>⚬ <strong>SBS</strong> - Status Bar Screen. The name given to the part of a theme managing the status bar, menus etc.</li>
+<li>⚬ <strong>FMS</strong> - FM Screen. The part of a theme that manages the FM Radio player.</li>
+<li>⚬ <strong>Tag</strong> or <strong>Theme Tag</strong> - The part of the markup system controlling content on screen.</li>
+<li>⚬ <strong>Viewport</strong> - Content sandboxes in themes. Will be covered next chapter..</li>
+</ul></div>
+
+<h3 id="theme-files">Theme files</h3><p>For each instance of the WPS, SBS and FMS mentioned above, a text file is used to code these part of the themes. Each file is saved with a corresponding file ending that Rockbox can read, for example a WPS theme file would be named &lsquo;<strong>filename.wps</strong>&rsquo;. These files live inside a folder on your Rockbox device named &lsquo;wps&rsquo;.</p>
+<p>To manage these files, and tell Rockbox what to load, there is another folder on your device called &rsquo;themes&rsquo;. Inside here we find config files typically titled &lsquo;<strong>themename.cfg</strong>&rsquo;.</p>
+
+<nav><a class="prev navbut" href="/wiki/rockbox_theming/">← Back to  Rockbox Theming for Beginners </a>
+
+</nav>
+</main>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed" width="28"height="28"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git" width="25"height="28"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>October 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg" height="64" width="553">
+</footer>
+</body>

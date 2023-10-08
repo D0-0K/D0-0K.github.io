@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<meta property="og:description" 
+  content="Various notes about the Themed Lists feature of Rockbox"/>
+<title> Themed Lists Exploration Notes  • d00k.net</title></head>
+<body><header><nav><div style="width:45vw;height:auto;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="100%" height="100%"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #808080">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></header>
+<main class="layout">
+
+<div class="title"><h1 id="top">Themed Lists Exploration Notes</h1><hr></div>
+<p>Some loose notes on the Rockbox Theme engine feature that allows you to theme the menu lists of the Ui. Mostly covering my own exploration and experimentation to achieve desired results.</p>
+<p>This feature is largely unexplored territory in terms of it&rsquo;s potential. Only a very small handful of people have made themes from scratch with this feature, gevaerts who is a Rockbox developer and Frankenpod who is one of the most experienced creators of themes. Recently with adwaitapod 3.0, I utilised the feature to create the highly custom <a href="https://github.com/D0-0K/adwaitapod/wiki/User-Preference-Settings" target="_blank" rel="noopener">user preference settings menus</a>, but this is as far as I&rsquo;ve gotten.</p>
+<hr>
+
+<h2 id="setting-up-a-basic-list">Setting up a basic list</h2><p>To create a basic list, you need three elements. A <strong>%Lb</strong> tag, a <strong>%Vi</strong> viewport, and a <strong>%Vl</strong> Viewport. The <strong>%Lb</strong> and <strong>%Vl</strong> functions must have the same title, this will define an entry in your menu. The <strong>%Vi</strong> or main viewport, will define the range of space we want our menu entries to tile within. Here&rsquo;s a quick example:</p>
+<pre><code>%Lb(entry,100,10)
+%Vi(range,0,0,100,60,-)
+%Vl(entry,0,0,100,10,-)text</code></pre><p>From the above example, we would get a simple menu where 6 items would be displayed on screen.</p>
+
+<h2 id="single-item-display">Single Item Display</h2><p>So for adwaitapod, I wanted to have the numerical selection screens be like the libadwaita style, where you see a single number and can increase or decrease it. To achieve this in Rockbox we need to first set up a <strong>%Lb</strong> function that wont render, then using a <strong>%Vl</strong> viewport we render the numbers by utilising the <strong>%LT</strong> current text item.</p>
+<pre><code>%Vd(numbers)%Lb(hide,1,1)
+%Vl(hide,0,0,1,1,-)
+%Vl(numbers,46,45,75,25,-)%LT</code></pre><p>It should be noted here that the <strong>hide</strong> functions are set to 1x1, instead of 0x0 as you might instinctively do. This is done to prevent crashes due to memory bugs, you might also need to test this on different hardware as it can still crash like this.</p>
+<p>If all else fails, use the smallest font you can possibly make, fit the viewport to that and then colour it to the background (if possible).</p>
+
+<h2 id="themed-scroll-bar">Themed Scroll Bar</h2><p>Arguably the best feature of theming lists, themed scroll bars, this has a bit of setup to keep in mind. For starters, you want to treat it like any old progress bar, so setup a viewport where you want this scrollbar. Next set up an <strong>%LB</strong> tag using the basic progress bar setup.</p>
+<p>This will initially not function like you&rsquo;d expect, partly because it&rsquo;s still basically just a progress bar but based on your position on a page. To fix this we can use the <strong>invert</strong> and <strong>nobar</strong> parameters, then add a slider from an image that will be our actual scrollbar.</p>
+<p>Setting a backdrop on the scroll bar wont work like it does for other progress bars, so here to do that you can use an identical viewport but rendered on the backdrop layer and display your image.</p>
+<pre><code>%Vl(scrollbar,310,30,5,205,-)%VB
+%xd(scroll_backdrop)
+#
+%Vl(scrollbar,310,30,5,-,-)
+%LB(0,0,5,210,invert,noborder,nobar,slider,scrollbar_image)</code></pre><p>One last note is that it&rsquo;s <em>crucial</em> to still consider the user&rsquo;s preferences and settings. Make sure to use <strong>%?LB</strong> to only call the scrollbar when needed, and use the <strong>%St</strong> tag to respect the user&rsquo;s scrollbar position settings.</p>
+
+<h2 id="incorporating-with-a-lockscreen">Incorporating with a Lockscreen</h2><p>Switching off viewports to create a Lockscreen is pretty similar to how it works with regular list menus. You need to set up your <strong>%Lb</strong> and <strong>%VI</strong> loading with hold triggers. You will want to set up a screen flushing viewport to clear the menu from the screen, this can just be a simple fullscreen viewport.</p>
+<pre><code>%?mh&lt;%Vd(flush)|%Lb(entry,100,10)%VI(range)&gt;
+#
+%Vl(entry,0,0,100,10,-)text
+#
+%Vl(flush,0,0,-,-,-)</code></pre><p>One thing to note if you are using a themed scrollbar: you will want to place the code setting up the scrollbar after all this, and the code rendering the scrollbar before. This prevents strange clipping after deactivating the lockscreen.</p>
+
+<nav><a class="prev navbut" href="/wiki/#rockbox-theming">← Back to  Wiki </a>
+
+</nav>
+</main>
+<footer>
+<div class="layout">
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed" width="28"height="28"></a>
+<a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git" width="25"height="28"></a>
+<hr>
+<div style="margin:20px 0 8px">Published: <strong>October 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+</div>
+<img aria-hidden="true" style="max-width:none" src="/img/assets/footer.svg" height="64" width="553">
+</footer>
+</body>

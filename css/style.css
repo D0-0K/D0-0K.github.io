@@ -1,5 +1,5 @@
 body,p,h1,h3,h4,h5,ul,.logo,.navbut,footer a,.clickbox p{margin:0}
-body{background:#ddd}
+body{background:#ddd;display:flex;flex-flow:column;min-height:100vh}
 *{color:#000;font-family:sans-serif;text-rendering:optimizeSpeed;text-decoration:none;transition:filter .75s}
 @font-face{font-family:LeagueSpartan;src:url(fonts/LeagueSpartan-Regular.woff2)format(woff2),url(fonts/LeagueSpartan-Regular.woff)format(woff);font-display:swap}
 @font-face{font-family:Barlow;font-weight:900;src:url(fonts/Barlow-ExtraBold.woff2)format(woff2),url(fonts/Barlow-ExtraBold.woff)format(woff);font-display:swap}
@@ -8,7 +8,7 @@ a{padding:7px 10px 4px;margin:-5px -9px -5px -10px}
 a:hover{background:#000;color:#fff;border-color:#777}
 .icon:hover{background:0;opacity:.6}
 .icon{padding:5px}
-footer{overflow:hidden;background:#ccc}
+footer{overflow:hidden;background:#ccc;margin-top:auto}
 footer hr{max-width:230px}
 li{list-style:none;padding:4px 10px;margin:0 -10px}
 li a,.box,q,cite,img,.logo{display:block}

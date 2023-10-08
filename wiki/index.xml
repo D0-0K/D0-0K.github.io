@@ -8,6 +8,16 @@
     <language>en-ie</language>
     <lastBuildDate>Wed, 16 Feb 2022 21:39:09 +0000</lastBuildDate><atom:link href="https://d00k.net/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Themed Lists Exploration Notes</title>
+      <link>https://d00k.net/wiki/rockbox_advanced/themed_lists_notes/</link>
+      <pubDate>Sat, 07 Oct 2023 00:06:49 +0100</pubDate>
+      
+      <guid>https://d00k.net/wiki/rockbox_advanced/themed_lists_notes/</guid>
+      <description>Some loose notes on the Rockbox Theme engine feature that allows you to theme the menu lists of the Ui. Mostly covering my own exploration and experimentation to achieve desired results.
+This feature is largely unexplored territory in terms of it&amp;rsquo;s potential. Only a very small handful of people have made themes from scratch with this feature, gevaerts who is a Rockbox developer and Frankenpod who is one of the most experienced creators of themes.</description>
+    </item>
+    
+    <item>
       <title>Missing Features List</title>
       <link>https://d00k.net/wiki/rockbox_advanced/missing_features/</link>
       <pubDate>Sat, 30 Sep 2023 17:12:08 +0100</pubDate>
