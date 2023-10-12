@@ -17,7 +17,7 @@ li,h2,.title{width:fit-content}
 p,p a,q,li,em,.linklist{font-family:LeagueSpartan,sans-serif}
 .header ul{padding:0 4px 0 10px;vertical-align:top}
 .menu{float:right;padding:5% 5% 5% 0;line-height:150%}
-.logo{padding:0;width:100%;height:auto}
+.logo{padding:0}
 .logo:hover{filter:saturate(99)}
 .header{max-width:780px}
 .layout{padding:26px;padding:min(5%,26px);max-width:720px}
