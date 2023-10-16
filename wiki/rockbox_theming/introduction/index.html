@@ -1,7 +1,8 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
 
-
+<meta property="og:description" 
+  content="A gentle introduction to the world of rockbox theming"/>
 <title> Introduction  • d00k.net</title></head>
 <body><div class="header"><nav><div style="width:45vw;height:auto;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu"><ul role="list">
 <li><a href="/photos/">Photos</a></li>
@@ -41,15 +42,21 @@ This has meant that older, more complicated (and inefficient) ways of implementi
 <li>⚬ <strong>SBS</strong> - Status Bar Screen. The name given to the part of a theme managing the status bar, menus etc.</li>
 <li>⚬ <strong>FMS</strong> - FM Screen. The part of a theme that manages the FM Radio player.</li>
 <li>⚬ <strong>Tag</strong> or <strong>Theme Tag</strong> - The part of the markup system controlling content on screen.</li>
-<li>⚬ <strong>Viewport</strong> - Content sandboxes in themes. Will be covered next chapter..</li>
+<li>⚬ <strong>Viewport</strong> - Content sandboxes in themes. Will be covered next chapter.</li>
 </ul></div>
 
-<h3 id="theme-files">Theme files</h3><p>For each instance of the WPS, SBS and FMS mentioned above, a text file is used to code these part of the themes. Each file is saved with a corresponding file ending that Rockbox can read, for example a WPS theme file would be named &lsquo;<strong>filename.wps</strong>&rsquo;. These files live inside a folder on your Rockbox device named &lsquo;wps&rsquo;.</p>
-<p>To manage these files, and tell Rockbox what to load, there is another folder on your device called &rsquo;themes&rsquo;. Inside here we find config files typically titled &lsquo;<strong>themename.cfg</strong>&rsquo;.</p>
+<h3 id="theme-files">Theme files</h3><p>For each instance of the WPS, SBS and FMS mentioned above, a text file is used to code these part of the themes. Each file is saved with a corresponding file ending that Rockbox can read, for example a WPS theme file would be named &lsquo;<strong>filename.wps</strong>&rsquo;. These files live inside the .rockbox directory of your device, in a folder named &lsquo;wps&rsquo;.</p>
+<p>To manage these files, and tell Rockbox what to load, there is another folder on your device called &rsquo;themes&rsquo;. Inside here we find config files typically titled &lsquo;<strong>themename.cfg</strong>&rsquo;. This is what allows your theme to appear in the theme selection menu on your device, and ties together all the parts that make up your theme. It includes the location of WPS, SBS, FMS and icon files, as well as the default fonts, colours and other settings.</p>
+<p>Font files are contained in a fonts folder in the .rockbox directory of your device. You don&rsquo;t in fact need to create custom fonts for your theme, and can make use of any existing fonts in this folder that are installed as part of rockbox. Fonts are called by referring to their filename.</p>
+<p>Assets, image files you load for the visuals of your theme, are stored in a folder named after your theme inside the wps folder. The name should be the exact same name used for the config file, and should be used across all theme files.</p>
+<p>Images themselves are exclusively in the bmp format, however there is no need to worry about this yet as there will be an entire chapter dedicated to them.</p>
+<hr>
+
+<h3 id="whats-next">What&rsquo;s next?</h3><p>Over the next few chapters, we will start with a blank slate. Working from nothing, we will make a theme up from scratch and cover some core topics of the theming system by example. I highly recommend following along, if you can, to get a good feel for the system.</p>
 
 <nav><a class="prev navbut" href="/wiki/rockbox_theming/">← Back to  Rockbox Theming for Beginners </a>
 
-</nav>
+<a class="next navbut" href="../the_viewport">Next Page →</a></nav>
 </div>
 <div class="footer">
 <div class="layout">
