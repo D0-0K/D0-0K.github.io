@@ -7,7 +7,7 @@ body{background:#ddd;display:flex;flex-flow:column;min-height:100vh}
 a{padding:7px 10px 4px;margin:-5px -9px -5px -10px}
 a:hover{background:#000;color:#fff;border-color:#777}
 .icon:hover{background:0;opacity:.6}
-.icon{padding:5px}
+.icon{padding:5px;height:28px}
 .footer{overflow:hidden;background:#ccc;margin-top:auto}
 .footer hr{max-width:230px}
 li{list-style:none;padding:4px 10px;margin:0 -10px}
@@ -20,7 +20,7 @@ p,p a,q,li,em,.linklist{font-family:LeagueSpartan,sans-serif}
 .logo{padding:0}
 .logo:hover{filter:saturate(99)}
 .header{max-width:780px}
-.layout{padding:26px;padding:min(5%,26px);max-width:720px}
+.layout{padding:2ex;padding:min(5%,26px);max-width:720px}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
 h1{font-size:3.3em;font-size:clamp(2.5em,10vw,3.3em);line-height:1.1em}
 h2{font-size:2.25em;margin:4px 0}
