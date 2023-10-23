@@ -27,7 +27,7 @@ h2{font-size:2.25em;margin:4px 0}
 .main>h2{border-bottom:6px solid #bbb;display:inline-block}
 .main>h3{border-left:8px solid #bbb;padding-left:8px}
 .main>h4{font-size:1.6rem;margin:0 0 8px}
-.main>h4::before{content:"⚬";color:#888;}
+.main>h4::before{content:"⚬ ";color:#888;}
 h3{font-size:2rem;margin:0 0 8px}
 h4{font-size:1.85rem;margin:0 0 8px}
 h5{font-size:1.65rem;margin:16px 0}
