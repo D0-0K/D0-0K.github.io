@@ -1,4 +1,4 @@
-body,p,h1,h3,h4,h5,ul,.logo,.navbut,.footer a,.clickbox p{margin:0}
+body,p,h1,h3,h4,h5,ul,.logo,.footer a,.clickbox p{margin:0}
 body{background:#ddd;display:flex;flex-flow:column;min-height:100vh}
 html,body{overflow-x:hidden}
 *{color:#000;font-family:sans-serif;text-rendering:optimizeSpeed;text-decoration:none;transition:filter .75s}
@@ -9,11 +9,11 @@ a{padding:7px 10px 4px;margin:-5px -9px -5px -10px}
 a:hover{background:#000;color:#fff;border-color:#777}
 .icon:hover{background:0;opacity:.6}
 .icon{padding:5px;height:28px}
-.footer{overflow:hidden;background:#ccc;margin-top:auto}
+.footer{overflow:hidden;background:#ccc;margin-top:auto;border-top:16px solid #ddd;z-index:1}
 .footer hr{max-width:230px}
 li{list-style:none;padding:4px 10px;margin:0 -10px}
 li a,.box,q,cite,img,.logo{display:block}
-.footer a,.header div,.navbut,.highlight,.main>img,figure,.header ul,.main>h2{display:inline-block}
+.footer a,.header div,.navbut a,.highlight,.main>img,figure,.header ul,.main>h2{display:inline-block}
 li,h2,.title{width:fit-content}
 p,p a,q,li,em,.linklist a{font-family:LeagueSpartan,sans-serif}
 .header ul{padding:0 4px 0 10px;vertical-align:top}
@@ -57,7 +57,8 @@ hr,.borderless{border:0}
 figcaption{padding:10px 12px 9px;border-left:24px solid #bbb}
 q,cite,.footer hr{margin:16px 0}
 .box ul{margin:12px 0 8px;padding:0;line-height:160%}
-.navbut{border-style:solid;padding:7px 10px 5px;margin-top:22px;margin:22px 12px 0 0;}
+.navbut{margin:0}
+.navbut a{border-style:solid;padding:7px 10px 5px;margin-top:22px;margin:22px 12px 0 0}
 .prev{border-width:1px 1px 2px 10px;border-color:#bbb}
 .top{border-width:1px 1px 2px 1px;border-color:#aaa}
 .next{border-width:1px 10px 2px 1px;border-color:#aaa}
@@ -68,4 +69,5 @@ q{font-size:large}
 img,iframe{max-width:100%;height:auto}
 picture img{width:auto}
 .highlight{margin:16px 0 16px -26px;margin-left:calc(-1 * min(5vw,26px));border-radius:0 20px 20px 0}
-.toc{position:fixed;top:219px;left:785px;width: max-content;overflow:hidden;padding:16px 28px;background:#d6d6d6;border-left:8px solid #ccc}
+aside{position:fixed;top:26px;left:785px;bottom: 26px;display:flex}
+.toc{width:max-content;padding:16px 28px;background:#d6d6d6;border-left:8px solid #ccc;max-height:97%;margin:auto}
