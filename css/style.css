@@ -14,13 +14,13 @@ li{list-style:none;padding:4px 10px;margin:0 -10px}
 li a,.box,q,cite,img,.logo{display:block}
 .footer a,.header div,.navbut,.highlight,.main>img,figure,.header ul,.main>h2{display:inline-block}
 li,h2,.title{width:fit-content}
-p,p a,q,li,em,.linklist{font-family:LeagueSpartan,sans-serif}
+p,p a,q,li,em,.linklist a{font-family:LeagueSpartan,sans-serif}
 .header ul{padding:0 4px 0 10px;vertical-align:top}
 .menu{float:right;padding:5% 5% 5% 0;line-height:150%}
 .logo{padding:0}
 .logo:hover{filter:saturate(99)}
 .header{max-width:780px}
-.layout{padding:2ex;padding:min(5%,26px);max-width:720px}
+.layout{padding:2ex;padding:min(5%,26px);max-width:720px;overflow:hidden}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
 h1{font-size:3.3em;font-size:clamp(2.5em,10vw,3.3em);line-height:1.1em}
 h2{font-size:2.25em;margin:4px 0}
@@ -67,3 +67,4 @@ q{font-size:large}
 img,iframe{max-width:100%;height:auto}
 picture img{width:auto}
 .highlight{margin:16px 0 16px -26px;border-radius:0 20px 20px 0}
+.toc{position:fixed;top:219px;left:785px;width: max-content;overflow:hidden;padding:16px 28px;background:#d6d6d6;}

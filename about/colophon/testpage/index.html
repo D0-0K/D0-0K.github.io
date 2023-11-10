@@ -11,6 +11,23 @@
 <li><a href="/blog/">Blog</a></li>   
 <li><a href="/about/">About</a></li>
 </ul></div></nav></div>
+
+<aside class="toc">
+<h2>Test Page Index</h2>
+<hr>
+<nav>
+  <ul class="linklist" style="margin:12px 0 8px;padding:0;line-height:145%">
+    <li><a href="#header-2">• Header 2</a></li>
+    <ul>
+      <li><a href="#header-3">• Header 3</a></li>
+    </ul>
+    <li><a href="#first-section">• First Section</a></li>
+    <li><a href="#second-section">• Second Section</a></li>
+    <li><a href="#third-section">• Third Section</a></li>
+  </ul>
+</nav>
+</aside>
+
 <div class="main layout">
 
 <div class="title"><h1 id="top">Test Page</h1><hr></div>
@@ -22,10 +39,10 @@
 <h4 id="header-4">Header 4</h4><div class="listbox box">
 <h2>Table of Contents</h2>
 <details><summary>Expand</summary>
-<ul>
-<li><a class="linklist" href="#first-section" >• First Section</a></li>
-<li><a class="linklist" href="#second-section" >• Second Section</a></li>
-<li><a class="linklist" href="#third-section" >• Third Section</a></li>
+<ul class="linklist">
+<li><a href="#first-section" >• First Section</a></li>
+<li><a href="#second-section" >• Second Section</a></li>
+<li><a href="#third-section" >• Third Section</a></li>
 </ul>
 </details></div>
 
@@ -58,7 +75,7 @@
 
 <div><h3 id="text-box">Text Box</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste.</div>
 </div>
-<div class="listbox box"><h2>Text Box with List</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste.</p><hr><ul>
+<div class="listbox box"><h2>Text Box with List</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste.</p><hr><ul class="linklist">
 
 <li>⚬ Item One.</li>
 <li>⚬ Item Two.</li>
@@ -72,16 +89,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 <pre><code>Example Codeblock
 
-%?and(%if(%ps, !=, 1),%if(%mm, =, 1),%or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13)))&lt;%xd(lossless)&gt;</code></pre><div class="listbox box"><h2>List of Links</h2><hr><ul>
-<li><a class="linklist" href="/" >• Option One</a></li>
-<li><a class="linklist" href="/" >• Option Two</a></li>
-<li><a class="linklist" href="/" >• Option Three</a></li>
-<li><a class="linklist" href="https://d00k.net/"  target="_blank" rel="noreferrer" >⬩&nbsp; External Link</a></li>
+%?and(%if(%ps, !=, 1),%if(%mm, =, 1),%or(%if(%fc, =, 4),%if(%fc, =, 5),%if(%fc, =, 7),%if(%fc, =, 11),%if(%fc, =, 13)))&lt;%xd(lossless)&gt;</code></pre><div class="listbox box"><h2>List of Links</h2><hr><ul class="linklist">
+<li><a href="/" >• Option One</a></li>
+<li><a href="/" >• Option Two</a></li>
+<li><a href="/" >• Option Three</a></li>
+<li><a href="https://d00k.net/"  target="_blank" rel="noreferrer" >⬩&nbsp; External Link</a></li>
 </ul></div>
-<div class="listbox box"><h2>List of Links w/ Text</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste.</p><hr><ul>
-<li><a class="linklist" href="/" >• Option One</a></li>
-<li><a class="linklist" href="/" >• Option Two</a></li>
-<li><a class="linklist" href="/" >• Option Three</a></li>
+<div class="listbox box"><h2>List of Links w/ Text</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste.</p><hr><ul class="linklist">
+<li><a href="/" >• Option One</a></li>
+<li><a href="/" >• Option Two</a></li>
+<li><a href="/" >• Option Three</a></li>
 </ul></div>
 <hr>
 
