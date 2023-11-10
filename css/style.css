@@ -67,5 +67,5 @@ code{font-family:monospace}
 q{font-size:large}
 img,iframe{max-width:100%;height:auto}
 picture img{width:auto}
-.highlight{margin:16px 0 16px -26px !important;border-radius:0 20px 20px 0}
+.highlight{margin-left:-26px;margin:16px 0 16px min(-5%,-26px) !important;border-radius:0 20px 20px 0}
 .toc{position:fixed;top:219px;left:785px;width: max-content;overflow:hidden;padding:16px 28px;background:#d6d6d6;border-left:8px solid #ccc}
