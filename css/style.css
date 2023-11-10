@@ -1,5 +1,6 @@
 body,p,h1,h3,h4,h5,ul,.logo,.navbut,.footer a,.clickbox p{margin:0}
 body{background:#ddd;display:flex;flex-flow:column;min-height:100vh}
+html,body{overflow-x:hidden}
 *{color:#000;font-family:sans-serif;text-rendering:optimizeSpeed;text-decoration:none;transition:filter .75s}
 @font-face{font-family:LeagueSpartan;src:url(fonts/LeagueSpartan-Regular.woff2)format(woff2),url(fonts/LeagueSpartan-Regular.woff)format(woff);font-display:swap}
 @font-face{font-family:Barlow;font-weight:900;src:url(fonts/Barlow-ExtraBold.woff2)format(woff2),url(fonts/Barlow-ExtraBold.woff)format(woff);font-display:swap}
@@ -20,7 +21,7 @@ p,p a,q,li,em,.linklist a{font-family:LeagueSpartan,sans-serif}
 .logo{padding:0}
 .logo:hover{filter:saturate(99)}
 .header{max-width:780px}
-.layout{padding:2ex;padding:min(5%,26px);max-width:720px;overflow:hidden}
+.layout{padding:2ex;padding:min(5%,26px);max-width:720px}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
 h1{font-size:3.3em;font-size:clamp(2.5em,10vw,3.3em);line-height:1.1em}
 h2{font-size:2.25em;margin:4px 0}
@@ -66,5 +67,5 @@ code{font-family:monospace}
 q{font-size:large}
 img,iframe{max-width:100%;height:auto}
 picture img{width:auto}
-.highlight{margin:16px 0 16px -26px !important;border-radius:0 20px 20px 0}
+.highlight{margin:16px 0 16px -26px;border-radius:0 20px 20px 0}
 .toc{position:fixed;top:219px;left:785px;width: max-content;overflow:hidden;padding:16px 28px;background:#d6d6d6;border-left:8px solid #ccc}
