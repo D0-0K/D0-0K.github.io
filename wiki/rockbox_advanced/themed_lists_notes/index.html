@@ -7,7 +7,7 @@
 <body><div class="header"><nav><div style="width:45vw;height:auto;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu"><ul role="list">
 <li><a href="/photos/">Photos</a></li>
 <li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
-<ul role="list" style="border-left:1px solid #808080">
+<ul role="list" style="border-left:1px solid #aaa">
 <li><a href="/design/">Design</a></li>
 <li><a href="/blog/">Blog</a></li>   
 <li><a href="/about/">About</a></li>
@@ -22,8 +22,9 @@
 
 <h2 id="setting-up-a-basic-list">Setting up a basic list</h2><p>To create a basic list, you need three elements. A <strong>%Lb</strong> tag, a <strong>%Vi</strong> viewport, and a <strong>%Vl</strong> Viewport. The <strong>%Lb</strong> and <strong>%Vl</strong> functions must have the same title, this will define an entry in your menu. The <strong>%Vi</strong> or main viewport, will define the range of space we want our menu entries to tile within. Here&rsquo;s a quick example:</p>
 <pre><code>%Lb(entry,100,10)
-%Vi(range,0,0,100,60,-)
+%Vi(-,0,0,100,60,-)
 %Vl(entry,0,0,100,10,-)text</code></pre><p>From the above example, we would get a simple menu where 6 items would be displayed on screen.</p>
+<div class="info box">Using the %VI tag with skinned lists will create out of bounds errors and device crashed, hence &lsquo;-&rsquo; must be used instead of identifiers.</div>
 
 <h2 id="single-item-display">Single Item Display</h2><p>So for adwaitapod, I wanted to have the numerical selection screens be like the libadwaita style, where you see a single number and can increase or decrease it. To achieve this in Rockbox we need to first set up a <strong>%Lb</strong> function that wont render, then using a <strong>%Vl</strong> viewport we render the numbers by utilising the <strong>%LT</strong> current text item.</p>
 <pre><code>%Vd(numbers)%Lb(hide,1,1)
@@ -47,6 +48,12 @@
 #
 %Vl(flush,0,0,-,-,-)</code></pre><p>One thing to note if you are using a themed scrollbar: you will want to place the code setting up the scrollbar after all this, and the code rendering the scrollbar before. This prevents strange clipping after deactivating the lockscreen.</p>
 
+<h2 id="styling-menu-lists">Styling Menu Lists</h2><p>You can style your menu item selectors using themed lists, adding images, extra text and more. This is done simply by making more viewports and adding your elements. Use %?Lc to only show elements on the currently selected item.</p>
+<p>One important rule to follow here is that in order for the current selected text to scroll, it must be placed last in the viewport order. If there is anything else placed after the viewport with %LT, then the text wont be able to scroll</p>
+<pre><code>%Vl(main,0,0,10,26,-)%?Lc&lt;%xd(left_corner)&gt;
+%Vl(main,7,0,20,26,-)%xd(icon)
+%Vl(main,292,0,10,26,-)%?Lc&lt;%xd(right_corner)&gt;
+%Vl(main,27,0,265,26,-)%s%LT</code></pre>
 <nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming">← Back to  Wiki </a>
 
 </nav>
@@ -58,7 +65,7 @@
 <a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed" width="28"height="28"></a>
 <a class="icon" href="https://github.com/D0-0K" target="_blank" alt="git"><img src="/img/assets/git.svg" loading="lazy" alt="Git" width="22"height="28"></a>
 <hr>
-<div style="margin:20px 0 8px">Published: <strong>October 2023</strong></div><div>d00k.net © 2023 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
+<div style="margin:20px 0 8px">Published: <strong>October 2023</strong></div><div>d00k.net © 2024 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a></div>
 </div>
 <img aria-hidden="true" style="max-width:none;width:521px;height:64px" src="/img/assets/footer.svg" height="64" width="521">
 </div>
