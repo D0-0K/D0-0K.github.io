@@ -6,83 +6,63 @@
     <description>Recent content in Dook&#39;s Journal on d00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 05 Jul 2022 14:56:48 +0100</lastBuildDate><atom:link href="https://d00k.net/about/journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jul 2022 14:56:48 +0100</lastBuildDate>
+    <atom:link href="https://d00k.net/about/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prepping for Travel</title>
       <link>https://d00k.net/about/journal/2024-01-11/</link>
       <pubDate>Thu, 11 Jan 2024 23:01:03 +0000</pubDate>
-      
       <guid>https://d00k.net/about/journal/2024-01-11/</guid>
-      <description>Currently I&amp;rsquo;m preparing to leave for a week long trip to Tokyo! This was pretty spontaneous, we found out very late that we would be getting a month off over the new year in college. Me and friend were looking at getting away somewhere, and found some flights to Japan for an incredibly low price that was too good to not go for. And so here I am now!
-A lot of my prep has been pretty simple, filling out some forms and getting my documentation ready.</description>
+      <description>Currently I&amp;rsquo;m preparing to leave for a week long trip to Tokyo! This was pretty spontaneous, we found out very late that we would be getting a month off over the new year in college. Me and friend were looking at getting away somewhere, and found some flights to Japan for an incredibly low price that was too good to not go for. And so here I am now!&#xA;A lot of my prep has been pretty simple, filling out some forms and getting my documentation ready.</description>
     </item>
-    
     <item>
       <title>September Update</title>
       <link>https://d00k.net/about/journal/2023-09-30/</link>
       <pubDate>Sat, 30 Sep 2023 18:41:28 +0100</pubDate>
-      
       <guid>https://d00k.net/about/journal/2023-09-30/</guid>
-      <description>It&amp;rsquo;s been a while, huh? I had been intending to update this every month this year, but unfortunately life had other ideas and I got fairly busy.
-Some major projects have been completed during the summer. Adwaitapod 3.0 was released, and is now pretty much stable and bug-free. This update has really brought the project to where I envisioned it from the start, and brings so much to the table for iPods.</description>
+      <description>It&amp;rsquo;s been a while, huh? I had been intending to update this every month this year, but unfortunately life had other ideas and I got fairly busy.&#xA;Some major projects have been completed during the summer. Adwaitapod 3.0 was released, and is now pretty much stable and bug-free. This update has really brought the project to where I envisioned it from the start, and brings so much to the table for iPods.</description>
     </item>
-    
     <item>
       <title>April Update</title>
       <link>https://d00k.net/about/journal/2023-04-30/</link>
       <pubDate>Sun, 30 Apr 2023 15:11:13 +0100</pubDate>
-      
       <guid>https://d00k.net/about/journal/2023-04-30/</guid>
-      <description>What a fast month! It&amp;rsquo;s hard to believe it&amp;rsquo;s already the end of April. I haven&amp;rsquo;t been working on too many projects this month, but the ones I have been working on were pretty important.
-The biggest project this month has been the next update to my iPod UI project: adwaitapod. This has been a major undertaking, rewriting the entire thing from scratch. But it&amp;rsquo;s been worthwhile. The massive gains made with compression, efficiency and so on have made enough room to add a wide range of new features and still come in smaller than the last version of adwaitapod.</description>
+      <description>What a fast month! It&amp;rsquo;s hard to believe it&amp;rsquo;s already the end of April. I haven&amp;rsquo;t been working on too many projects this month, but the ones I have been working on were pretty important.&#xA;The biggest project this month has been the next update to my iPod UI project: adwaitapod. This has been a major undertaking, rewriting the entire thing from scratch. But it&amp;rsquo;s been worthwhile. The massive gains made with compression, efficiency and so on have made enough room to add a wide range of new features and still come in smaller than the last version of adwaitapod.</description>
     </item>
-    
     <item>
       <title>March Update</title>
       <link>https://d00k.net/about/journal/2023-03-31/</link>
       <pubDate>Fri, 31 Mar 2023 19:15:47 +0100</pubDate>
-      
       <guid>https://d00k.net/about/journal/2023-03-31/</guid>
-      <description>I think this month has been one of my most productive in a really long time! A good chunk of time was spent completing and releasing my latest UI theme for Rockbox, Themify. It&amp;rsquo;s so far been received incredibly well, and has even reached my own goal of using design to convince people to use old devices.
-Once I finished Themify, I set my eyes on the original UI theme I made called adwaitapod, based on GNOME&amp;rsquo;s design principals.</description>
+      <description>I think this month has been one of my most productive in a really long time! A good chunk of time was spent completing and releasing my latest UI theme for Rockbox, Themify. It&amp;rsquo;s so far been received incredibly well, and has even reached my own goal of using design to convince people to use old devices.&#xA;Once I finished Themify, I set my eyes on the original UI theme I made called adwaitapod, based on GNOME&amp;rsquo;s design principals.</description>
     </item>
-    
     <item>
       <title>February Update</title>
       <link>https://d00k.net/about/journal/2023-02-28/</link>
       <pubDate>Tue, 28 Feb 2023 19:13:59 +0000</pubDate>
-      
       <guid>https://d00k.net/about/journal/2023-02-28/</guid>
-      <description>Spent the first week of this month completing my portfolio for college entry, but in-between made some big improvements to the site. I simplified the inline links style to be far more visible than they were before, which also led to my stand-alone font for links becoming unnecessary. Getting rid of it has made my home page even smaller now, to just over 30kb.
-After that, I began to work on a new iPod theme called Themify.</description>
+      <description>Spent the first week of this month completing my portfolio for college entry, but in-between made some big improvements to the site. I simplified the inline links style to be far more visible than they were before, which also led to my stand-alone font for links becoming unnecessary. Getting rid of it has made my home page even smaller now, to just over 30kb.&#xA;After that, I began to work on a new iPod theme called Themify.</description>
     </item>
-    
     <item>
       <title>January Update</title>
       <link>https://d00k.net/about/journal/2023-01-31/</link>
       <pubDate>Tue, 31 Jan 2023 19:47:12 +0000</pubDate>
-      
       <guid>https://d00k.net/about/journal/2023-01-31/</guid>
       <description>Happy new year! I&amp;rsquo;ve decided this year to use my short journal as a more detailed monthly record. This month was largely focused on my college application. I&amp;rsquo;m attempting to return to college in September, switching institutions as I do so to be closer to home. This requires a whole new application, portfolio etc which I spent most of this month handling. In my off time I put a decent amount of work into my website, solidifying parts of the website that have been disjointed up until now.</description>
     </item>
-    
     <item>
       <title>November Update</title>
       <link>https://d00k.net/about/journal/2022-11-25/</link>
       <pubDate>Fri, 25 Nov 2022 20:05:31 +0000</pubDate>
-      
       <guid>https://d00k.net/about/journal/2022-11-25/</guid>
       <description>What a wild month! I started the month updating a finishing off my adwaitapod theme for rockbox. I also spent the past 3 weeks learning to program in C, building up to the Rebble Hackathon last weekend where I put together my watchface design, Time Twist Pop and released it! It was incredibly frustrating at times, since I really have very little experience programming. However, by the end of the weekend I was getting into the zone and pumping out some really good stuff and was having a blast!</description>
     </item>
-    
     <item>
       <title>Autumn Update</title>
       <link>https://d00k.net/about/journal/2022-10-9/</link>
       <pubDate>Sun, 09 Oct 2022 13:27:32 +0100</pubDate>
-      
       <guid>https://d00k.net/about/journal/2022-10-9/</guid>
       <description>It&amp;rsquo;s a crazy couple of months for me, but I finally found some time to tend to the website. First thing I did was get to finalising it&amp;rsquo;s design, the way it had been before was overly garish and pretty difficult to look at on some pages, the new style is far better in this regard. I also took the time to go absolutely overboard on optimising every possible thing I could, making each pretty tiny for what it is, I made a writeup on everything I did here.</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,16 +6,14 @@
     <description>Recent content in Rockbox Theming for Beginners on d00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Thu, 07 Sep 2023 14:21:30 +0100</lastBuildDate><atom:link href="https://d00k.net/wiki/rockbox_theming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 14:21:30 +0100</lastBuildDate>
+    <atom:link href="https://d00k.net/wiki/rockbox_theming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
       <link>https://d00k.net/wiki/rockbox_theming/introduction/</link>
       <pubDate>Tue, 03 Oct 2023 22:45:01 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/rockbox_theming/introduction/</guid>
-      <description>Since the mid-2000s, Rockbox has allowed users to modify the user-interface. Over time, this feature has evolved and matured into an intricate system of tags and markup. The theming system as it stands today provides the user with an incredible amount of freedom and control, with the possibility to do so much.
-Despite this however, the barrier for entry has historically been incredibly high. If someone wished to learn how to build themes from scratch, all that was available were existing themes, a single page of documentation, along with frustrating trial and error.</description>
+      <description>Since the mid-2000s, Rockbox has allowed users to modify the user-interface. Over time, this feature has evolved and matured into an intricate system of tags and markup. The theming system as it stands today provides the user with an incredible amount of freedom and control, with the possibility to do so much.&#xA;Despite this however, the barrier for entry has historically been incredibly high. If someone wished to learn how to build themes from scratch, all that was available were existing themes, a single page of documentation, along with frustrating trial and error.</description>
     </item>
-    
   </channel>
 </rss>

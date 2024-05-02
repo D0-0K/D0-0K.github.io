@@ -24,7 +24,6 @@
 <pre><code>%Lb(entry,100,10)
 %Vi(-,0,0,100,60,-)
 %Vl(entry,0,0,100,10,-)text</code></pre><p>From the above example, we would get a simple menu where 6 items would be displayed on screen.</p>
-<div class="info box">Using the %VI tag with skinned lists will create out of bounds errors and device crashed, hence &lsquo;-&rsquo; must be used instead of identifiers.</div>
 
 <h2 id="single-item-display">Single Item Display</h2><p>So for adwaitapod, I wanted to have the numerical selection screens be like the libadwaita style, where you see a single number and can increase or decrease it. To achieve this in Rockbox we need to first set up a <strong>%Lb</strong> function that wont render, then using a <strong>%Vl</strong> viewport we render the numbers by utilising the <strong>%LT</strong> current text item.</p>
 <pre><code>%Vd(numbers)%Lb(hide,1,1)
@@ -54,6 +53,13 @@
 %Vl(main,7,0,20,26,-)%xd(icon)
 %Vl(main,292,0,10,26,-)%?Lc&lt;%xd(right_corner)&gt;
 %Vl(main,27,0,265,26,-)%s%LT</code></pre>
+<h2 id="multiple-viewports">Multiple Viewports</h2><p>Setting up multiple viewports is a little less straight forward than with the default menu system as there are a lot of out-of-bounds crashes than can be encountered if you don&rsquo;t set up correctly. From what I can tell, having a fallback viewport is crucial to avoiding any crashes and errors.</p>
+<p>This is done by creating a default viewport before any of the viewports you intend to use like the following:</p>
+<pre><code>%Vi(-,3,28,302,-,-)
+%Vi(Main_Menu,3,28,302,-,-)
+%Vi(Sub_Menu,3,55,302,-,-)
+%Vi(Half_Menu,3,28,182,-,-)</code></pre><p>These viewports can then be called alongside your %Lb viewports wherever you manage those.</p>
+
 <nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming">← Back to  Wiki </a>
 
 </nav>

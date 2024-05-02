@@ -6,157 +6,112 @@
     <description>Recent content in Wiki on d00k</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ie</language>
-    <lastBuildDate>Wed, 16 Feb 2022 21:39:09 +0000</lastBuildDate><atom:link href="https://d00k.net/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Feb 2022 21:39:09 +0000</lastBuildDate>
+    <atom:link href="https://d00k.net/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Themed Lists Exploration Notes</title>
       <link>https://d00k.net/wiki/rockbox_advanced/themed_lists_notes/</link>
       <pubDate>Sat, 07 Oct 2023 00:06:49 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/rockbox_advanced/themed_lists_notes/</guid>
-      <description>Some loose notes on the Rockbox Theme engine feature that allows you to theme the menu lists of the Ui. Mostly covering my own exploration and experimentation to achieve desired results.
-This feature is largely unexplored territory in terms of it&amp;rsquo;s potential. Only a very small handful of people have made themes from scratch with this feature, gevaerts who is a Rockbox developer and Frankenpod who is one of the most experienced creators of themes.</description>
+      <description>Some loose notes on the Rockbox Theme engine feature that allows you to theme the menu lists of the Ui. Mostly covering my own exploration and experimentation to achieve desired results.&#xA;This feature is largely unexplored territory in terms of it&amp;rsquo;s potential. Only a very small handful of people have made themes from scratch with this feature, gevaerts who is a Rockbox developer and Frankenpod who is one of the most experienced creators of themes.</description>
     </item>
-    
     <item>
       <title>Missing Features List</title>
       <link>https://d00k.net/wiki/rockbox_advanced/missing_features/</link>
       <pubDate>Sat, 30 Sep 2023 17:12:08 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/rockbox_advanced/missing_features/</guid>
-      <description>Rockbox&amp;rsquo;s theming engine is incredibly rich as it is, however there are some parts of it that I believe have a high potential to go further and make the user experience even better. I intend to slowly get to some of these over time, but if you&amp;rsquo;re a developer interested in taking on some of these do consider giving me a shout.
-Better Album ArtAlbum art is one the more basic parts of the theming engine, with just a single tag allowed per file.</description>
+      <description>This page serves as documentation for my plans to extend the system which powers themes in Rockbox. This current plan aims to extend the abilities available to themes while following the intentions which the theme engine was built around.&#xA;Table of Contents Expand • Currently Working On • Planned Features • Distant Plans Currently Working OnThese are features I&amp;rsquo;m currently working on programming within Rockbox&amp;rsquo;s source code.&#xA;Themeable Quickscreen AbilitiesI&amp;rsquo;m currently working to add theme tags which expose the data of the Quickscreen shortcuts feature.</description>
     </item>
-    
     <item>
       <title>Image Compression Tests</title>
       <link>https://d00k.net/wiki/web/images/</link>
       <pubDate>Sun, 20 Aug 2023 13:50:19 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/web/images/</guid>
-      <description>Requirements- Images must be smaller than the current ImageMagick script.
-- The maximum resolution must be 720x480.
-- Images must have colour to maintain readability.
-HypothesisTwo possible routes come to mind immediately. The first would be using a modern image format, likely webp for now, however this method would leave users on older browsers stuck with whatever alternative. The other route might actually provide a nice alternative, or be just as good on it&amp;rsquo;s own.</description>
+      <description>Requirements- Images must be smaller than the current ImageMagick script.&#xA;- The maximum resolution must be 720x480.&#xA;- Images must have colour to maintain readability.&#xA;HypothesisTwo possible routes come to mind immediately. The first would be using a modern image format, likely webp for now, however this method would leave users on older browsers stuck with whatever alternative. The other route might actually provide a nice alternative, or be just as good on it&amp;rsquo;s own.</description>
     </item>
-    
     <item>
       <title>Rockbox Image Optimisation</title>
       <link>https://d00k.net/wiki/rockbox_advanced/rockbox_image_optimisation/</link>
       <pubDate>Mon, 22 May 2023 17:20:17 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/rockbox_advanced/rockbox_image_optimisation/</guid>
-      <description>When producing Rockbox themes with large feature-sets, images can quickly become a bottleneck both in terms of filesize as well as graphical quality. There are many ways to address these issues, however in this guide I will cover the best practices I have discovered and incorporated into my toolbox.
-The Bitmap image formatRockbox&amp;rsquo;s primary image format is the Bitmap. Versions 3 and 4 of the bitmap spec are recognised, while any lower specs are not.</description>
+      <description>When producing Rockbox themes with large feature-sets, images can quickly become a bottleneck both in terms of filesize as well as graphical quality. There are many ways to address these issues, however in this guide I will cover the best practices I have discovered and incorporated into my toolbox.&#xA;The Bitmap image formatRockbox&amp;rsquo;s primary image format is the Bitmap. Versions 3 and 4 of the bitmap spec are recognised, while any lower specs are not.</description>
     </item>
-    
     <item>
       <title>PDF Utilities</title>
       <link>https://d00k.net/wiki/linux/pdf/</link>
       <pubDate>Wed, 18 Jan 2023 21:18:39 +0000</pubDate>
-      
       <guid>https://d00k.net/wiki/linux/pdf/</guid>
       <description>There&amp;rsquo;s been plenty of times I&amp;rsquo;ve had to work on PDFs, be it taking out certain pages to sign and adding them back, or even creating PDFs from scratch with images. Common advice would direct you to websites online with loads of different tools for this, but privacy concerns combined with having to wait for uploads and so on make them pretty inconvenient. I&amp;rsquo;ve found a couple of command line tools which make working with PDFs almost painless.</description>
     </item>
-    
     <item>
       <title>SFTP &amp; SSH</title>
       <link>https://d00k.net/wiki/linux/sftp/</link>
       <pubDate>Sun, 15 Jan 2023 18:48:52 +0000</pubDate>
-      
       <guid>https://d00k.net/wiki/linux/sftp/</guid>
-      <description>SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.
-SSHSSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP.</description>
+      <description>SFTP, or the SSH File Transfer Protocol, is a tool for transferring files between systems and is an extension of the SSH protocol. SFTP gives you access to the terminal of both the machine you are using, as well as the system you are connecting to, at the same time.&#xA;SSHSSH, or the Secure Shell Protocol, is a method of connecting to the terminal of another system. Without it, we cannot use SFTP.</description>
     </item>
-    
     <item>
       <title>ImageMagick Guide</title>
       <link>https://d00k.net/wiki/linux/imagemagick/</link>
       <pubDate>Sat, 07 Jan 2023 22:20:57 +0000</pubDate>
-      
       <guid>https://d00k.net/wiki/linux/imagemagick/</guid>
-      <description>The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&amp;rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.
-Mogrify vs ConvertMost of what we&amp;rsquo;ll be looking at will be using the Mogrify command, however there are other ImageMagick commands, the most relevant to use here being the Convert command.</description>
+      <description>The ImageMagick suite is a widely useful collection of commands for editing, modifying and converting images. When converting large amounts of images it really comes into it&amp;rsquo;s own, you can easily convert entire directories of images in a single command. I use ImageMagick for many things, mainly though for optimising images here on the website.&#xA;Mogrify vs ConvertMost of what we&amp;rsquo;ll be looking at will be using the Mogrify command, however there are other ImageMagick commands, the most relevant to use here being the Convert command.</description>
     </item>
-    
     <item>
       <title>Pico-8 Games List</title>
       <link>https://d00k.net/wiki/pico8-games/</link>
       <pubDate>Thu, 01 Sep 2022 19:19:54 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/pico8-games/</guid>
-      <description>Pico-8 is a fantasy console for playing and making smol games. There has been a vibrant community surrounding the system for years, and some fantastic games have been produced during that time. This list is a compiled collection of my personal favourites, and games I consider to be some of the best on the system.
-Time WastersThese games a short and quick to play, but an absolute blast whenever you want to waste some time or just chill!</description>
+      <description>Pico-8 is a fantasy console for playing and making smol games. There has been a vibrant community surrounding the system for years, and some fantastic games have been produced during that time. This list is a compiled collection of my personal favourites, and games I consider to be some of the best on the system.&#xA;Time WastersThese games a short and quick to play, but an absolute blast whenever you want to waste some time or just chill!</description>
     </item>
-    
     <item>
       <title>Seed Harvesting</title>
       <link>https://d00k.net/wiki/seedharvesting/</link>
       <pubDate>Tue, 02 Aug 2022 11:05:14 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/seedharvesting/</guid>
-      <description>Recently I have researched wild flowers and their benefits over hybrid seeds and plants found in garden centers. Part of this led me to harvesting seeds from my garden and planting them. I still have some flowers I harvested that I&amp;rsquo;ve yet to write up.
-BluebellsMy first experiment in seed harvesting was with bluebells. In recent years we&amp;rsquo;ve gotten a large patch of wild bluebells, however due to the scale of the garden, they&amp;rsquo;d never naturally spread to some areas where I&amp;rsquo;d like them so I took a shot at gathering seeds from them.</description>
+      <description>Recently I have researched wild flowers and their benefits over hybrid seeds and plants found in garden centers. Part of this led me to harvesting seeds from my garden and planting them. I still have some flowers I harvested that I&amp;rsquo;ve yet to write up.&#xA;BluebellsMy first experiment in seed harvesting was with bluebells. In recent years we&amp;rsquo;ve gotten a large patch of wild bluebells, however due to the scale of the garden, they&amp;rsquo;d never naturally spread to some areas where I&amp;rsquo;d like them so I took a shot at gathering seeds from them.</description>
     </item>
-    
     <item>
       <title>Bee Encyclopedia</title>
       <link>https://d00k.net/wiki/bees/</link>
       <pubDate>Wed, 27 Jul 2022 18:01:43 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/bees/</guid>
-      <description>Ireland is home to 100 different bee species, with 78% being solitary bee species. This incredible amount of diversity that lives right under our noses fascinates me, and I&amp;rsquo;ve set out to photograph and record as many as I possibly can. As this encyclopedia progresses, I expect the need for it to be further categorised and sectioned.
-Another thing to note is that I don&amp;rsquo;t believe my common bumble bee classifications to be correct, and am in the process of recording more photos to fix this.</description>
+      <description>Ireland is home to 100 different bee species, with 78% being solitary bee species. This incredible amount of diversity that lives right under our noses fascinates me, and I&amp;rsquo;ve set out to photograph and record as many as I possibly can. As this encyclopedia progresses, I expect the need for it to be further categorised and sectioned.&#xA;Another thing to note is that I don&amp;rsquo;t believe my common bumble bee classifications to be correct, and am in the process of recording more photos to fix this.</description>
     </item>
-    
     <item>
       <title>Font Combining</title>
       <link>https://d00k.net/wiki/rockbox_advanced/font_combining/</link>
       <pubDate>Thu, 16 Jun 2022 13:00:21 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/rockbox_advanced/font_combining/</guid>
-      <description>When making Rockbox themes, there are numerous built in fonts to choose from. However sometimes, these may not suit the theme you are building. In situations like these, users can make their own fonts. This guide goes over several ways people can achieve this, including a guide on combining two different fonts together to create a wider language supporting font.
-Making Rockbox FontsRockbox uses it&amp;rsquo;s own, custom font format for it&amp;rsquo;s interface.</description>
+      <description>When making Rockbox themes, there are numerous built in fonts to choose from. However sometimes, these may not suit the theme you are building. In situations like these, users can make their own fonts. This guide goes over several ways people can achieve this, including a guide on combining two different fonts together to create a wider language supporting font.&#xA;Making Rockbox FontsRockbox uses it&amp;rsquo;s own, custom font format for it&amp;rsquo;s interface.</description>
     </item>
-    
     <item>
       <title>Reusing Technology</title>
       <link>https://d00k.net/wiki/reusingtech/</link>
       <pubDate>Sat, 02 Apr 2022 18:13:21 +0100</pubDate>
-      
       <guid>https://d00k.net/wiki/reusingtech/</guid>
-      <description>Our world has a tech waste problemThere&amp;rsquo;s really no hiding the fact. Our world is built around fast fashion and fast tech, we buy and we throw out. Because of this, there&amp;rsquo;s loads of old, unused phones and other bits lying around the house that I&amp;rsquo;ve sought to utilise and solve problems with.
-Smartphone Alarm Clock The Nokia 530 My first smartphone was this Nokia 530 running Windows Phone. I still have a huge soft spot for it, being small, light and bright it&amp;rsquo;s hard not to have a smile on your face using it.</description>
+      <description>Our world has a tech waste problemThere&amp;rsquo;s really no hiding the fact. Our world is built around fast fashion and fast tech, we buy and we throw out. Because of this, there&amp;rsquo;s loads of old, unused phones and other bits lying around the house that I&amp;rsquo;ve sought to utilise and solve problems with.&#xA;Smartphone Alarm Clock The Nokia 530 My first smartphone was this Nokia 530 running Windows Phone. I still have a huge soft spot for it, being small, light and bright it&amp;rsquo;s hard not to have a smile on your face using it.</description>
     </item>
-    
     <item>
       <title>Ecovillages</title>
       <link>https://d00k.net/wiki/ecovillage/</link>
       <pubDate>Mon, 21 Mar 2022 19:24:03 +0000</pubDate>
-      
       <guid>https://d00k.net/wiki/ecovillage/</guid>
-      <description>Wikipedia describes an Ecovillage as &amp;ldquo;..a traditional or intentional community with the goal of becoming more socially, culturally, economically, and/or ecologically sustainable&amp;rdquo;, which perfectly describes the community in Cloughjordan EcoVillage. The village, which spreads over 67 acres, houses an amphitheatre, a large community farm, the riot rye bakery, a hostel and even a lovely bookstore that specialises in permaculture, sustainable living and activism.
-Village Characteristics Cloughjordan Ecovillage has a large variety in housing, near the village entrance are a number of spacey apartment blocks surrounding the town square.</description>
+      <description>Wikipedia describes an Ecovillage as &amp;ldquo;..a traditional or intentional community with the goal of becoming more socially, culturally, economically, and/or ecologically sustainable&amp;rdquo;, which perfectly describes the community in Cloughjordan EcoVillage. The village, which spreads over 67 acres, houses an amphitheatre, a large community farm, the riot rye bakery, a hostel and even a lovely bookstore that specialises in permaculture, sustainable living and activism.&#xA;Village Characteristics Cloughjordan Ecovillage has a large variety in housing, near the village entrance are a number of spacey apartment blocks surrounding the town square.</description>
     </item>
-    
     <item>
       <title>Origami Designs</title>
       <link>https://d00k.net/wiki/origami-designs/</link>
       <pubDate>Tue, 22 Feb 2022 18:07:35 +0000</pubDate>
-      
       <guid>https://d00k.net/wiki/origami-designs/</guid>
-      <description>Origami Modular Festive Tree The Origami festive tree is a modular origami tree with little slots in the leaves to put whatever you want! It was designed as a modular, flat-packable festive tree that could be practical, allowing you to put different decorations or items in it. The design still needs some tweaking before I&amp;rsquo;m happy with posting instructions, I&amp;rsquo;ll probably get around to it soon.
-Origami Cat This is my take on the origami cat design, there isn&amp;rsquo;t too much to say about it, the design itself isn&amp;rsquo;t all too complicated.</description>
+      <description>Origami Modular Festive Tree The Origami festive tree is a modular origami tree with little slots in the leaves to put whatever you want! It was designed as a modular, flat-packable festive tree that could be practical, allowing you to put different decorations or items in it. The design still needs some tweaking before I&amp;rsquo;m happy with posting instructions, I&amp;rsquo;ll probably get around to it soon.&#xA;Origami Cat This is my take on the origami cat design, there isn&amp;rsquo;t too much to say about it, the design itself isn&amp;rsquo;t all too complicated.</description>
     </item>
-    
     <item>
       <title>Beach Fossils</title>
       <link>https://d00k.net/wiki/beachfossils/</link>
       <pubDate>Mon, 21 Feb 2022 18:09:22 +0000</pubDate>
-      
       <guid>https://d00k.net/wiki/beachfossils/</guid>
-      <description>Beaches are filled with a vast number of different types of rocks and stones, but the ones that have always fascinated me are beach fossils. Fossil types can vary greatly based on your located, plants, shells and coral are all common types the can be found. Even chalk chunks are technically fossils!
-In my area, coral fossils are by far the most common. I&amp;rsquo;ve found ones of different shapes, sizes and quantities.</description>
+      <description>Beaches are filled with a vast number of different types of rocks and stones, but the ones that have always fascinated me are beach fossils. Fossil types can vary greatly based on your located, plants, shells and coral are all common types the can be found. Even chalk chunks are technically fossils!&#xA;In my area, coral fossils are by far the most common. I&amp;rsquo;ve found ones of different shapes, sizes and quantities.</description>
     </item>
-    
   </channel>
 </rss>
