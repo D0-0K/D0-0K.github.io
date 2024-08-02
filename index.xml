@@ -16,6 +16,73 @@
     
     
       <item>
+        <title>A new way to theme the Quickscreen in Rockbox</title>
+        <link>https://d00k.net/blog/quickscreen_rockbox_tags/</link>
+        <guid>https://d00k.net/blog/quickscreen_rockbox_tags/</guid>
+        <dc:creator>Dook</dc:creator>
+        <pubDate>Wed, 24 Jul 2024 14:48:28 EST</pubDate>
+        
+        <description>&lt;p&gt;For the past year, I&amp;rsquo;ve been working on a major redesign of &lt;a href=&#34;https://d00k.net/design/themify&#34;&gt;Themify&lt;/a&gt;, my user-customisable Rockbox theme. It&amp;rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&amp;rsquo;s Quickscreen.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-the-quickscreen&#34;&gt;What is the Quickscreen?&lt;/h2&gt;&lt;p&gt;For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&amp;rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&amp;rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&amp;rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.&lt;/p&gt;
+
+&lt;h2 id=&#34;theorizing-a-path-to-custom-quickscreens&#34;&gt;Theorizing a path to custom Quickscreens&lt;/h2&gt;&lt;p&gt;During Adwaitapod 3.0&amp;rsquo;s development, I began to theorize a method of creating custom Quickscreens. Theme creators are no strangers to using hacks and tricks to get around the limitations of the theme engine, and I adapted some of these to make the first prototype a reality.&lt;/p&gt;
+&lt;p&gt;Themes in Rockbox are constructed using Viewports with contents. Viewports are essentially a C struct that you provide coordinates, dimensions and information like a font. The theme engine has a few different kinds of viewports, but the important one here is the &amp;ldquo;menu&amp;rdquo; viewport. This is a mandatory inclusion in every theme, essentially drawing the main interface of Rockbox. It&amp;rsquo;s within this viewport that the default Quickscreen is drawn.&lt;/p&gt;
+&lt;p&gt;Typically default viewports can be suppressed using a 1px wide viewport, essentially making it so small that the contents don&amp;rsquo;t appear. However on the Quickscreen, this caused Rockbox to hard crash, something which could cause major issues on a user&amp;rsquo;s device. To solve this, I ended up creating the smallest possible font I could, and fine tuned the viewport size until it didn&amp;rsquo;t crash anymore. This could then be hidden using colour to blend it into a solid backdrop.&lt;/p&gt;
+&lt;p&gt;I was then left with a (nearly) blank canvas to create my own Quickscreen on. However, I discovered a major limitation that prevented this being a feasible implementation for current themes.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&lt;p&gt;Rockbox&amp;rsquo;s large number of settings and options are made available to themes via strings. These strings can be called upon via a tag in a theme&amp;rsquo;s code that displays the output of a given setting. This includes features like the user&amp;rsquo;s Quicksettings, which are accessible via &amp;ldquo;qs top&amp;rdquo;, &amp;ldquo;qs right&amp;rdquo; etc.&lt;/p&gt;
+&lt;p&gt;The issue is however, is that these strings only output the name of the setting saved to each Quicksetting slot. To be feature-compliant with the default Quickscreen, a theme would need to be able to display the value of those settings.&lt;/p&gt;
+&lt;p&gt;But this is not something that was technically possible in the Rockbox theme engine. There&amp;rsquo;s no string available for Quicksetting values, nor any way to recursively find the values using the Quicksetting&amp;rsquo;s strings. It was clear that in order to make these improvements feasible, I would need to expand the Rockbox theming engine.&lt;/p&gt;
+
+&lt;h2 id=&#34;working-in-rockboxs-codebase&#34;&gt;Working in Rockbox&amp;rsquo;s codebase&lt;/h2&gt;&lt;p&gt;While I had come up with a potential in my mind before looking at the codebase, once I actually got hands on with understanding how the theme engine works it proved to be not the best solution. There was a moment at the start of my attempts where I got rather chastised for what was quite frankly brainless code, however once the person realised that I had no idea what I was doing they were quick to begin explaining to me where I went wrong and how memory in C works.&lt;/p&gt;
+&lt;p&gt;This was a rather pivotal moment on my journey as I realised that in order to succeed I needed to be smart rather than just brute forcing my way to a solution. My original attempts involved copying how the settings strings worked, and basically running it again to get the Quickscreen item&amp;rsquo;s values. This eventually worked, but the values got mangled somewhere between my code and the display output. After taking a month off, one day the solution came to me out of nowhere: just copy what the default Quickscreen does.&lt;/p&gt;
+&lt;p&gt;The default Quickscreen&amp;rsquo;s solution is quite simple. Simply searching up the settings list for the Quickscreen item, then either returning it&amp;rsquo;s value with a function or simply turning the pointer into a string and returning that. I got results very quickly using this method, not to mention stable ones too (which were not common in my previous attempts).&lt;/p&gt;
+
+&lt;h2 id=&#34;the-final-result&#34;&gt;The final result&lt;/h2&gt;&lt;p&gt;My merge request ended up with 8 new tags for the theme engine. I broke down what was needed into a simple formula: take the four directions the Quicksettings are mapped to on the controls (Top, Bottom, Left and Right) and assign a single character representation (T, B, L and R). Then assign the title of the Quicksetting to the uppercase characters, and the value of the Quicksetting to the lowercase characters. Finally prefix with the letter Q to annunciate it&amp;rsquo;s relation to the Quickscreen.&lt;/p&gt;
+&lt;p&gt;It results in a large number of tags, but allows the code to be easily read at a glance. See a small example below of the left Quicksetting tags in use.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Left Button
+%Vl(Quicksetting_Title,45,130,100,18,3)%QL
+%Vl(Quickscreen_Value,45,149,100,16,4)%Ql&lt;/code&gt;&lt;/pre&gt;
+&lt;figure&gt;&lt;img src=&#34;https://d00k.net/img/blog/quicksettings.png&#34; loading=&#34;lazy&#34; alt=&#34;two ipods, showing a before and after situation. The before uses basic text to display quicksettings, the after uses graphics and buttons to show the same information but more visually&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;
+&lt;figcaption&gt;The Quickscreen tags being used in Themify 2.&lt;/figcaption&gt;&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;wrap-up-and-thanks&#34;&gt;Wrap up and thanks&lt;/h2&gt;&lt;p&gt;My original merge request proved to be rather lengthy, mostly out of fear of adding too much code outside my tags. However major thanks to Chris on the Rockbox team who came up with a brilliantly clever change that turned my code into a small function that the tags could call on. He also helped to get the merge request approved and added to the main repository.&lt;/p&gt;
+&lt;p&gt;This side quest has proved to be a big lesson for me in many parts of programming. I think the biggest thing I&amp;rsquo;ve gotten out of it is properly using git as I develop my projects, keeping track of every change made to the codebase rather than only updating every few months. I have some more changes to work on in the coming future to improve the quality of life for Rockbox users in the years to come, not to mention adding these new Quickscreen features to my current themes.&lt;/p&gt;
+</description>
+        <content:encoded>&lt;p&gt;For the past year, I&amp;rsquo;ve been working on a major redesign of &lt;a href=&#34;https://d00k.net/design/themify&#34;&gt;Themify&lt;/a&gt;, my user-customisable Rockbox theme. It&amp;rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&amp;rsquo;s Quickscreen.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-the-quickscreen&#34;&gt;What is the Quickscreen?&lt;/h2&gt;&lt;p&gt;For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&amp;rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&amp;rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&amp;rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.&lt;/p&gt;
+
+&lt;h2 id=&#34;theorizing-a-path-to-custom-quickscreens&#34;&gt;Theorizing a path to custom Quickscreens&lt;/h2&gt;&lt;p&gt;During Adwaitapod 3.0&amp;rsquo;s development, I began to theorize a method of creating custom Quickscreens. Theme creators are no strangers to using hacks and tricks to get around the limitations of the theme engine, and I adapted some of these to make the first prototype a reality.&lt;/p&gt;
+&lt;p&gt;Themes in Rockbox are constructed using Viewports with contents. Viewports are essentially a C struct that you provide coordinates, dimensions and information like a font. The theme engine has a few different kinds of viewports, but the important one here is the &amp;ldquo;menu&amp;rdquo; viewport. This is a mandatory inclusion in every theme, essentially drawing the main interface of Rockbox. It&amp;rsquo;s within this viewport that the default Quickscreen is drawn.&lt;/p&gt;
+&lt;p&gt;Typically default viewports can be suppressed using a 1px wide viewport, essentially making it so small that the contents don&amp;rsquo;t appear. However on the Quickscreen, this caused Rockbox to hard crash, something which could cause major issues on a user&amp;rsquo;s device. To solve this, I ended up creating the smallest possible font I could, and fine tuned the viewport size until it didn&amp;rsquo;t crash anymore. This could then be hidden using colour to blend it into a solid backdrop.&lt;/p&gt;
+&lt;p&gt;I was then left with a (nearly) blank canvas to create my own Quickscreen on. However, I discovered a major limitation that prevented this being a feasible implementation for current themes.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&lt;p&gt;Rockbox&amp;rsquo;s large number of settings and options are made available to themes via strings. These strings can be called upon via a tag in a theme&amp;rsquo;s code that displays the output of a given setting. This includes features like the user&amp;rsquo;s Quicksettings, which are accessible via &amp;ldquo;qs top&amp;rdquo;, &amp;ldquo;qs right&amp;rdquo; etc.&lt;/p&gt;
+&lt;p&gt;The issue is however, is that these strings only output the name of the setting saved to each Quicksetting slot. To be feature-compliant with the default Quickscreen, a theme would need to be able to display the value of those settings.&lt;/p&gt;
+&lt;p&gt;But this is not something that was technically possible in the Rockbox theme engine. There&amp;rsquo;s no string available for Quicksetting values, nor any way to recursively find the values using the Quicksetting&amp;rsquo;s strings. It was clear that in order to make these improvements feasible, I would need to expand the Rockbox theming engine.&lt;/p&gt;
+
+&lt;h2 id=&#34;working-in-rockboxs-codebase&#34;&gt;Working in Rockbox&amp;rsquo;s codebase&lt;/h2&gt;&lt;p&gt;While I had come up with a potential in my mind before looking at the codebase, once I actually got hands on with understanding how the theme engine works it proved to be not the best solution. There was a moment at the start of my attempts where I got rather chastised for what was quite frankly brainless code, however once the person realised that I had no idea what I was doing they were quick to begin explaining to me where I went wrong and how memory in C works.&lt;/p&gt;
+&lt;p&gt;This was a rather pivotal moment on my journey as I realised that in order to succeed I needed to be smart rather than just brute forcing my way to a solution. My original attempts involved copying how the settings strings worked, and basically running it again to get the Quickscreen item&amp;rsquo;s values. This eventually worked, but the values got mangled somewhere between my code and the display output. After taking a month off, one day the solution came to me out of nowhere: just copy what the default Quickscreen does.&lt;/p&gt;
+&lt;p&gt;The default Quickscreen&amp;rsquo;s solution is quite simple. Simply searching up the settings list for the Quickscreen item, then either returning it&amp;rsquo;s value with a function or simply turning the pointer into a string and returning that. I got results very quickly using this method, not to mention stable ones too (which were not common in my previous attempts).&lt;/p&gt;
+
+&lt;h2 id=&#34;the-final-result&#34;&gt;The final result&lt;/h2&gt;&lt;p&gt;My merge request ended up with 8 new tags for the theme engine. I broke down what was needed into a simple formula: take the four directions the Quicksettings are mapped to on the controls (Top, Bottom, Left and Right) and assign a single character representation (T, B, L and R). Then assign the title of the Quicksetting to the uppercase characters, and the value of the Quicksetting to the lowercase characters. Finally prefix with the letter Q to annunciate it&amp;rsquo;s relation to the Quickscreen.&lt;/p&gt;
+&lt;p&gt;It results in a large number of tags, but allows the code to be easily read at a glance. See a small example below of the left Quicksetting tags in use.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Left Button
+%Vl(Quicksetting_Title,45,130,100,18,3)%QL
+%Vl(Quickscreen_Value,45,149,100,16,4)%Ql&lt;/code&gt;&lt;/pre&gt;
+&lt;figure&gt;&lt;img src=&#34;https://d00k.net/img/blog/quicksettings.png&#34; loading=&#34;lazy&#34; alt=&#34;two ipods, showing a before and after situation. The before uses basic text to display quicksettings, the after uses graphics and buttons to show the same information but more visually&#34; width=&#34;100%&#34; height=&#34;100%&#34;&gt;
+&lt;figcaption&gt;The Quickscreen tags being used in Themify 2.&lt;/figcaption&gt;&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;wrap-up-and-thanks&#34;&gt;Wrap up and thanks&lt;/h2&gt;&lt;p&gt;My original merge request proved to be rather lengthy, mostly out of fear of adding too much code outside my tags. However major thanks to Chris on the Rockbox team who came up with a brilliantly clever change that turned my code into a small function that the tags could call on. He also helped to get the merge request approved and added to the main repository.&lt;/p&gt;
+&lt;p&gt;This side quest has proved to be a big lesson for me in many parts of programming. I think the biggest thing I&amp;rsquo;ve gotten out of it is properly using git as I develop my projects, keeping track of every change made to the codebase rather than only updating every few months. I have some more changes to work on in the coming future to improve the quality of life for Rockbox users in the years to come, not to mention adding these new Quickscreen features to my current themes.&lt;/p&gt;
+</content:encoded>
+      </item>
+    
+      <item>
         <title>Prepping for Travel</title>
         <link>https://d00k.net/about/journal/2024-01-11/</link>
         <guid>https://d00k.net/about/journal/2024-01-11/</guid>
@@ -431,7 +498,7 @@
 #... and so on &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This implementation also features a fix for an issue that has long plagued Lockscreen designs. When the song switches to the next, if a Lockscreen is open, it will refresh the menu the Lockscreen is drawn over. This creates a glitchy mess, and stops this feature from being any more than a neat tech demo. However, I finally fixed this (literally just before I launched the theme) by drawing a viewport over the main menu whenever a song changes, effectively refreshing the Lockscreen effect.&lt;/p&gt;
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• Themify Web Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;⬩&amp;nbsp; Github Repository&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;⬩&amp;nbsp; Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
@@ -475,7 +542,7 @@
 #... and so on &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This implementation also features a fix for an issue that has long plagued Lockscreen designs. When the song switches to the next, if a Lockscreen is open, it will refresh the menu the Lockscreen is drawn over. This creates a glitchy mess, and stops this feature from being any more than a neat tech demo. However, I finally fixed this (literally just before I launched the theme) by drawing a viewport over the main menu whenever a song changes, effectively refreshing the Lockscreen effect.&lt;/p&gt;
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• Themify Web Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;⬩&amp;nbsp; Github Repository&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;⬩&amp;nbsp; Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
@@ -536,14 +603,14 @@
 &lt;p&gt;This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;
 &lt;p&gt;Overall I had a lot of time this year, much more than even in 2021, but I feel I really put as much of it as I could to use and created some great things.&lt;/p&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Sold my Motorola and got a Pixel 3a so I could use LineageOS.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Kobo Libra 2 ereader.&lt;/li&gt;
 &lt;li&gt;⚬ Got an old iPod Classic Gen 5.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a cheap Pebble Time Steel which has become my daily driver watch.&lt;/li&gt;
 &lt;li&gt;⚬ Got a Mechanical Keyboard.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Switched to LineageOS on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Started using Cmus in the terminal for my offline music.&lt;/li&gt;
 &lt;li&gt;⚬ Learned how to use SSH and SFTP.&lt;/li&gt;
@@ -609,14 +676,14 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 &lt;p&gt;This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;
 &lt;p&gt;Overall I had a lot of time this year, much more than even in 2021, but I feel I really put as much of it as I could to use and created some great things.&lt;/p&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Sold my Motorola and got a Pixel 3a so I could use LineageOS.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Kobo Libra 2 ereader.&lt;/li&gt;
 &lt;li&gt;⚬ Got an old iPod Classic Gen 5.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a cheap Pebble Time Steel which has become my daily driver watch.&lt;/li&gt;
 &lt;li&gt;⚬ Got a Mechanical Keyboard.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Switched to LineageOS on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Started using Cmus in the terminal for my offline music.&lt;/li&gt;
 &lt;li&gt;⚬ Learned how to use SSH and SFTP.&lt;/li&gt;
@@ -694,7 +761,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 
 
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
@@ -716,7 +783,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 
 
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
@@ -804,13 +871,13 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
         <description>&lt;p&gt;At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Added a shelf to my desk to allow me to use my computer standing.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Pebble Time watch.&lt;/li&gt;
 &lt;li&gt;⚬ Repaired my Ds Lite and replaced it&amp;rsquo;s shell with a snazzy Lime one.&lt;/li&gt;
 &lt;li&gt;⚬ Swapped my Thinkpad&amp;rsquo;s old Hard-drive for a new SSD.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Ditched Windows for Fedora Linux. Best choice of the year right here.&lt;/li&gt;
 &lt;li&gt;⚬ Went full Free Open Source Software on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Began using RSS feeds to compile my favourite sites and blogs in one place.&lt;/li&gt;
@@ -858,13 +925,13 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
         <content:encoded>&lt;p&gt;At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Added a shelf to my desk to allow me to use my computer standing.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Pebble Time watch.&lt;/li&gt;
 &lt;li&gt;⚬ Repaired my Ds Lite and replaced it&amp;rsquo;s shell with a snazzy Lime one.&lt;/li&gt;
 &lt;li&gt;⚬ Swapped my Thinkpad&amp;rsquo;s old Hard-drive for a new SSD.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;hr&gt;&lt;ul class=&#34;linklist&#34;&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul class=&#34;linklist&#34;&gt;
 &lt;li&gt;⚬ Ditched Windows for Fedora Linux. Best choice of the year right here.&lt;/li&gt;
 &lt;li&gt;⚬ Went full Free Open Source Software on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Began using RSS feeds to compile my favourite sites and blogs in one place.&lt;/li&gt;

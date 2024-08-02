@@ -20,7 +20,7 @@
 <hr>
 
 <h2 id="making-rockbox-fonts">Making Rockbox Fonts</h2><p>Rockbox uses it&rsquo;s own, custom font format for it&rsquo;s interface. Therefore it&rsquo;s necessary to convert our fonts for use in themes. This process is slightly different for colour and monochrome models, the former allowing anti-aliasing and the latter using exclusively bitmaps fonts. For the moment I&rsquo;ve focused on the non-bitmap conversion process.</p>
-<div class="listbox box"><h3>Getting convttf</h3><p>If you don&rsquo;t already have the convttf tool, then you&rsquo;ll need to build it from the source using the following guide.</p><hr><ul class="linklist">
+<div class="listbox box"><div><h3>Getting convttf</h3><p>If you don&rsquo;t already have the convttf tool, then you&rsquo;ll need to build it from the source using the following guide.</p></div><ul class="linklist">
 
 <li>⚬ Start by cloning the Rockbox repo: <strong>git clone git://git.rockbox.org/rockbox</strong>.</li>
 <li>⚬ Navigate to the tools folder and run the command <strong>make convttf</strong>.</li>
@@ -28,7 +28,7 @@
 </ul></div>
 
 <h3 id="using-convttf">Using Convttf</h3><p>Convttf is used via the command line, and I find it useful to move the executable into the directory of fonts I&rsquo;m working with. The executable can be used like the following.</p>
-<pre><code>/convttf -p 16 -c 1 fontfile.ttf</code></pre><div class="listbox box"><h4>Notes</h4><hr><ul class="linklist">
+<pre><code>/convttf -p 16 -c 1 fontfile.ttf</code></pre><div class="listbox box"><div><h4>Notes</h4></div><ul class="linklist">
 
 <li>⚬ The number beside <strong>-p</strong> is the size of the font, this unit isn&rsquo;t pt or px so you will have to experiment.</li>
 <li>⚬ <strong>-c</strong> is for the spacing between letters, 1 is an all round good option for most sizes and fonts.</li>
@@ -41,7 +41,7 @@
 
 
 <h2 id="combining-two-fonts-with-fontforge">Combining Two Fonts with Fontforge</h2><p>This is a method of combining two different .ttf fonts into one. Useful for making CJK supported fonts for Rockbox, or adding glyphs into a font for web purposes etc. Fontforge is the main application used, however if you intend to make fonts for Rockbox, you&rsquo;ll need convttf from their dev tools. This guide focuses on combining CJK fonts with non-CJK fonts.</p>
-<div class="listbox box"><h3>Preparing the Secondary Font</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p><hr><ul class="linklist">
+<div class="listbox box"><div><h3>Preparing the Secondary Font</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p></div><ul class="linklist">
 
 <li>⚬ Download language specific .otf file - The best font to use here is . However make sure you download the <strong>Region Specific Subset</strong> OTF file for each language you want.</li>
 <li>⚬ Open the file in Fontforge and flatten CID Layers.</li>
@@ -49,7 +49,7 @@
 <li>⚬ Re-encode as <strong>Unicode Full</strong>.</li>
 <li>⚬ Save as <strong>.sfd</strong>.</li>
 </ul></div>
-<div class="listbox box"><h3>Combining the Fonts</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p><hr><ul class="linklist">
+<div class="listbox box"><div><h3>Combining the Fonts</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p></div><ul class="linklist">
 <li>⚬ Open the Base Font, which we want to combine with.</li>
 <li>⚬ Remove any unnecessary characters, like emoji.</li>
 <li>⚬ Go to <strong>Element &gt; Merge Fonts</strong> choose the .sfd Font we just made, and merge.</li>

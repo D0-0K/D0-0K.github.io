@@ -9,6 +9,13 @@
     <lastBuildDate>Wed, 16 Feb 2022 21:39:09 +0000</lastBuildDate>
     <atom:link href="https://d00k.net/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Vector_graphics</title>
+      <link>https://d00k.net/wiki/rockbox_advanced/vector_graphics/</link>
+      <pubDate>Thu, 02 May 2024 22:31:10 +0100</pubDate>
+      <guid>https://d00k.net/wiki/rockbox_advanced/vector_graphics/</guid>
+      <description>In Rockbox themes, there is a missing link between re-colourable graphics and anti-aliased graphics. With all of the classical features, it is impossible to achieve an asset that exhibits both of these properties. However if we take advantage of the font system, we can created accurate vector graphics that behave exactly like images which are anti-aliased and can be re-coloured. This guide will go over my notes and explorations into this new practice.</description>
+    </item>
+    <item>
       <title>Themed Lists Exploration Notes</title>
       <link>https://d00k.net/wiki/rockbox_advanced/themed_lists_notes/</link>
       <pubDate>Sat, 07 Oct 2023 00:06:49 +0100</pubDate>

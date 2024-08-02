@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 25 Aug 2023 12:59:23 +0100</lastBuildDate>
     <atom:link href="https://d00k.net/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A new way to theme the Quickscreen in Rockbox</title>
+      <link>https://d00k.net/blog/quickscreen_rockbox_tags/</link>
+      <pubDate>Wed, 24 Jul 2024 14:48:28 +0100</pubDate>
+      <guid>https://d00k.net/blog/quickscreen_rockbox_tags/</guid>
+      <description>For the past year, I&amp;rsquo;ve been working on a major redesign of Themify, my user-customisable Rockbox theme. It&amp;rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&amp;rsquo;s Quickscreen.&#xA;What is the Quickscreen?For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen.</description>
+    </item>
+    <item>
       <title>Year Review 2023</title>
       <link>https://d00k.net/blog/year-review-2023/</link>
       <pubDate>Sun, 31 Dec 2023 13:54:08 +0000</pubDate>

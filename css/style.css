@@ -39,15 +39,19 @@ p a{text-decoration:underline;text-decoration-thickness:2px;padding:9px 5px 5px;
 .main>*,.title hr{margin:0 0 16px}
 .title{margin:2% 0 -16px 2%}
 .title hr{height:30px;background:#b3b3b3;position:relative;top:-20px;left:-16px;z-index:-1;width:50%;min-width:150px}
-.box{padding:16px 5%}
+.box{padding:16px 5%;border-radius:20px}
 .clickbox{border:1px solid #999;padding:4px;border-bottom-width:2px}
 .clickimg{min-height:134px}
-.clickbox img{float:left;margin:0 16px 8px 0}
+.clickbox img{float:left;margin:0 16px 8px 0;border-radius:16px}
 .clickdiv{padding:12px 15px}
 .clickbox:hover,.listbox,figure{background:#d0d0d0}
 figure{max-width:720px}
 .clickbox:active{background:#bbb;
 	scale:.99}
+.listbox{padding: 0}
+.listbox div{padding:16px 5%;background:#c4c4c4;  border-bottom:2px #aaa solid;border-radius:20px 20px 0 0}
+.listbox .linklist{padding:0 5% 12px}
+.linklist a{border-radius:10px}
 summary{cursor:pointer;padding:12px 0}
 .text{background:#c4c4c4;border-left:16px solid #b2b2b2}
 hr{background:#aaa;height:1px}
