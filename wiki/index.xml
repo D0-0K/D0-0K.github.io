@@ -27,7 +27,7 @@
       <link>https://d00k.net/wiki/rockbox_advanced/missing_features/</link>
       <pubDate>Sat, 30 Sep 2023 17:12:08 +0100</pubDate>
       <guid>https://d00k.net/wiki/rockbox_advanced/missing_features/</guid>
-      <description>This page serves as documentation for my plans to extend the system which powers themes in Rockbox. This current plan aims to extend the abilities available to themes while following the intentions which the theme engine was built around.&#xA;Table of Contents Expand • Currently Working On • Planned Features • Distant Plans Currently Working OnThese are features I&amp;rsquo;m currently working on programming within Rockbox&amp;rsquo;s source code.&#xA;Themeable Quickscreen AbilitiesI&amp;rsquo;m currently working to add theme tags which expose the data of the Quickscreen shortcuts feature.</description>
+      <description>This page serves as documentation for my plans to extend the system which powers themes in Rockbox. This current plan aims to extend the abilities available to themes while following the intentions which the theme engine was built around.&#xA;Table of Contents Menu • Currently Working On • Planned Features • Distant Plans Currently Working OnThese are features I&amp;rsquo;m currently working on programming within Rockbox&amp;rsquo;s source code.&#xA;Themeable Quickscreen AbilitiesI&amp;rsquo;m currently working to add theme tags which expose the data of the Quickscreen shortcuts feature.</description>
     </item>
     <item>
       <title>Image Compression Tests</title>

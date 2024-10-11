@@ -4,7 +4,7 @@ body{background:#ddd;min-height:100vh}
 @font-face{font-family:LeagueSpartan;src:url(fonts/LeagueSpartan-Regular.woff2)format(woff2),url(fonts/LeagueSpartan-Regular.woff)format(woff);font-display:swap}
 @font-face{font-family:Barlow;font-weight:900;src:url(fonts/Barlow-ExtraBold.woff2)format(woff2),url(fonts/Barlow-ExtraBold.woff)format(woff);font-display:swap}
 ::selection{background:orange}
-a{padding:7px 10px 4px;margin:-5px -9px -5px -10px}
+a{padding:7px 12px 4px 10px;margin:-5px -8px -5px -10px}
 a:hover{background:#000;color:#fff;border-color:#777}
 .icon:hover{background:0;opacity:.6}
 .icon{padding:5px;height:28px}
@@ -14,16 +14,16 @@ li{list-style:none;padding:4px 10px;margin:0 -10px}
 li a,.box,q,cite,img,.logo{display:block}
 .footer a,.header div,.navbut a,.highlight,.main>img,figure,.header ul,.main>h2{display:inline-block}
 li,h2,.title{width:fit-content}
-p,p a,q,li,em,.linklist a{font-family:LeagueSpartan,sans-serif}
+p,p a,q,li,em,.listbox a{font-family:LeagueSpartan,sans-serif}
 .header ul{padding:0 4px 0 10px;vertical-align:top}
 .menu{float:right;padding:5% 5% 5% 0;line-height:150%}
 .logo{padding:0}
 .logo:hover{filter:saturate(99)}
 .header{max-width:780px}
-.layout{padding:2ex;padding:min(5%,26px);max-width:720px}
+.layout{padding:2ex;padding:min(4%,26px);max-width:720px}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
 h1{font-size:3.3em;font-size:clamp(2.5em,10vw,3.3em);line-height:1.1em}
-h2{font-size:2.25em;margin:4px 0}
+h2{font-size:2.25em;margin:2px 0 4px}
 .main>h2{border-bottom:6px solid #bbb}
 .main>h3{border-left:8px solid #bbb;padding-left:8px}
 .main>h4{font-size:1.6rem;margin:0 0 8px}
@@ -33,7 +33,7 @@ h4{font-size:1.85rem;margin:0 0 8px}
 h5{font-size:1.65rem;margin:16px 0}
 p{line-height:170%;margin:8px 0}
 .main>p{text-indent:.5em}
-p a{text-decoration:underline;text-decoration-thickness:2px;padding:9px 5px 5px;margin:0 -5px}
+p a{text-decoration:underline 2px;padding:9px 5px 5px;margin:0 -5px;border-radius: 6px;}
 .main>*,.title hr{margin:0 0 16px}
 .title{margin:2% 0 -16px 2%}
 .title hr{height:30px;background:#b3b3b3;position:relative;top:-20px;left:-16px;z-index:-1;width:50%;min-width:150px}
@@ -46,11 +46,13 @@ p a{text-decoration:underline;text-decoration-thickness:2px;padding:9px 5px 5px;
 figure{max-width:720px}
 .clickbox:active{background:#bbb;
 	scale:.99}
-.listbox{padding: 0}
-.listbox div{padding:16px 5%;background:#c4c4c4;  border-bottom:2px #aaa solid;border-radius:20px 20px 0 0}
-.listbox .linklist{padding:0 5% 12px}
-.linklist a{border-radius:10px}
-summary{cursor:pointer;padding:12px 0}
+.box ul{line-height:175%;padding:12px 5% 14px;background:#d0d0d0;border-top:2px #aaa solid}
+.listbox{padding:0;overflow:hidden;background:#c4c4c4}
+.listbox div{padding:12px 5%}
+.listbox a{border-radius:10px}
+summary{cursor:pointer;padding:12px 3%;margin:8px;background:#b3b3b3;border-radius:12px}
+summary:hover{background:#aaa}
+summary:active{background:#a0a0a0}
 .text{background:#c4c4c4;border-left:16px solid #b2b2b2}
 hr{background:#aaa;height:1px}
 hr,.borderless{border:0}
@@ -58,7 +60,6 @@ hr,.borderless{border:0}
 .info{border-left:50px solid #555;background:#666}
 figcaption{padding:10px 12px 9px;border-left:24px solid #bbb}
 q,cite,.footer hr{margin:16px 0}
-.box ul{margin:12px 0 8px;padding:0;line-height:160%}
 .navbut{margin:0}
 .navbut a{border-style:solid;padding:7px 10px 5px;margin:22px 12px 0 0}
 .prev{border-width:1px 1px 2px 10px;border-color:#bbb}
@@ -70,4 +71,4 @@ code{font-family:monospace}
 q{font-size:large}
 img,iframe{max-width:100%;height:auto}
 picture img{width:auto}
-.highlight{margin:16px 0 16px -26px;margin-left:calc(-1 * min(5vw,26px));border-radius:0 20px 20px 0}
+.highlight{margin:16px 0 16px -26px;margin-left:calc(-1 * min(4vw,26px));border-radius:0 20px 20px 0}
