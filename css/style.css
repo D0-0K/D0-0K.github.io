@@ -61,10 +61,13 @@ hr,.borderless{border:0}
 figcaption{padding:10px 12px 9px;border-left:24px solid #bbb}
 q,cite,.footer hr{margin:16px 0}
 .navbut{margin:0}
-.navbut a{border-style:solid;padding:7px 10px 5px;margin:22px 12px 0 0}
-.prev{border-width:1px 1px 2px 10px;border-color:#bbb}
-.top{border-width:1px 1px 2px 1px;border-color:#aaa}
-.next{border-width:1px 10px 2px 1px;border-color:#aaa}
+.navbut a{padding:8px 16px;margin:16px 12px 0 0;border-radius:100vh;color:#000}
+.prev{background:#ccc}
+.prev:hover{background:#bbb}
+.prev:active{background:#b0b0b0}
+.next{background:#bbb}
+.next:hover{background:#aaa}
+.next:active{background:#a0a0a0}
 pre{padding:16px 2%;overflow:auto;background:#444;border-left:20px solid #333;font-size:.9rem}
 .info,code{color:#fff}
 code{font-family:monospace}
