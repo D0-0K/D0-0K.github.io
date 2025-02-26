@@ -4,7 +4,7 @@
     <link>https://d00k.net/</link>
     <description>Recent posts on the site</description>
     <language>en-ie</language>
-    <lastBuildDate>Fri, 25 Aug 2023 12:59:23 EST</lastBuildDate>
+    <lastBuildDate>Fri, 25 Aug 2023 00:00:00 EST</lastBuildDate>
 
     
       <atom:link href="https://d00k.net/index.xml" rel="self" type="application/rss+xml" />
@@ -498,7 +498,7 @@
 #... and so on &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This implementation also features a fix for an issue that has long plagued Lockscreen designs. When the song switches to the next, if a Lockscreen is open, it will refresh the menu the Lockscreen is drawn over. This creates a glitchy mess, and stops this feature from being any more than a neat tech demo. However, I finally fixed this (literally just before I launched the theme) by drawing a viewport over the main menu whenever a song changes, effectively refreshing the Lockscreen effect.&lt;/p&gt;
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• Themify Web Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Github Repository&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
@@ -542,7 +542,7 @@
 #... and so on &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This implementation also features a fix for an issue that has long plagued Lockscreen designs. When the song switches to the next, if a Lockscreen is open, it will refresh the menu the Lockscreen is drawn over. This creates a glitchy mess, and stops this feature from being any more than a neat tech demo. However, I finally fixed this (literally just before I launched the theme) by drawing a viewport over the main menu whenever a song changes, effectively refreshing the Lockscreen effect.&lt;/p&gt;
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• Themify Web Page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Github Repository&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
@@ -592,6 +592,7 @@
         <description>&lt;div class=&#34;listbox box&#34;&gt;
 &lt;h2 style=&#34;padding:12px 5%;&#34;&gt;Table of Contents&lt;/h2&gt;
 &lt;details&gt;&lt;summary&gt;Menu&lt;/summary&gt;
+&lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#changes&#34; &gt;• Changes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#favourite-things&#34; &gt;• Favourite Things&lt;/a&gt;&lt;/li&gt;
@@ -604,14 +605,14 @@
 &lt;p&gt;This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;
 &lt;p&gt;Overall I had a lot of time this year, much more than even in 2021, but I feel I really put as much of it as I could to use and created some great things.&lt;/p&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Sold my Motorola and got a Pixel 3a so I could use LineageOS.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Kobo Libra 2 ereader.&lt;/li&gt;
 &lt;li&gt;⚬ Got an old iPod Classic Gen 5.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a cheap Pebble Time Steel which has become my daily driver watch.&lt;/li&gt;
 &lt;li&gt;⚬ Got a Mechanical Keyboard.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Switched to LineageOS on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Started using Cmus in the terminal for my offline music.&lt;/li&gt;
 &lt;li&gt;⚬ Learned how to use SSH and SFTP.&lt;/li&gt;
@@ -666,6 +667,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
         <content:encoded>&lt;div class=&#34;listbox box&#34;&gt;
 &lt;h2 style=&#34;padding:12px 5%;&#34;&gt;Table of Contents&lt;/h2&gt;
 &lt;details&gt;&lt;summary&gt;Menu&lt;/summary&gt;
+&lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#changes&#34; &gt;• Changes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#favourite-things&#34; &gt;• Favourite Things&lt;/a&gt;&lt;/li&gt;
@@ -678,14 +680,14 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 &lt;p&gt;This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;
 &lt;p&gt;Overall I had a lot of time this year, much more than even in 2021, but I feel I really put as much of it as I could to use and created some great things.&lt;/p&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Sold my Motorola and got a Pixel 3a so I could use LineageOS.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Kobo Libra 2 ereader.&lt;/li&gt;
 &lt;li&gt;⚬ Got an old iPod Classic Gen 5.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a cheap Pebble Time Steel which has become my daily driver watch.&lt;/li&gt;
 &lt;li&gt;⚬ Got a Mechanical Keyboard.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Switched to LineageOS on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Started using Cmus in the terminal for my offline music.&lt;/li&gt;
 &lt;li&gt;⚬ Learned how to use SSH and SFTP.&lt;/li&gt;
@@ -763,7 +765,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 
 
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
@@ -785,7 +787,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 
 
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
@@ -873,19 +875,20 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
         <description>&lt;p&gt;At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Added a shelf to my desk to allow me to use my computer standing.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Pebble Time watch.&lt;/li&gt;
 &lt;li&gt;⚬ Repaired my Ds Lite and replaced it&amp;rsquo;s shell with a snazzy Lime one.&lt;/li&gt;
 &lt;li&gt;⚬ Swapped my Thinkpad&amp;rsquo;s old Hard-drive for a new SSD.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Ditched Windows for Fedora Linux. Best choice of the year right here.&lt;/li&gt;
 &lt;li&gt;⚬ Went full Free Open Source Software on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Began using RSS feeds to compile my favourite sites and blogs in one place.&lt;/li&gt;
 &lt;li&gt;⚬ Started my blog!.&lt;/li&gt;
 &lt;li&gt;⚬ Joined Mastodon.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2 id=&#34;favourite-things&#34;&gt;Favourite things&lt;/h2&gt;&lt;div class=&#34;text borderless box&#34;&gt;
 
@@ -919,6 +922,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Lore_Olympus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Lore Olympus&lt;/a&gt; - There&amp;rsquo;s not much not to love about Lore Olympus. It&amp;rsquo;s style is vivid and easy to read, and it&amp;rsquo;s story engaging, really making you look forward for the next chapter.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2 id=&#34;going-forward&#34;&gt;Going Forward&lt;/h2&gt;&lt;p&gt;The goal for 2022 is to get my health back into shape and sharpen my mind. I&amp;rsquo;d like to focus my time learning to properly program in a way that will actually be useful to me. The first project of the new year will likely be a rebuilding of this site, I&amp;rsquo;m unhappy hosting the site on github pages, not mention the code being an absolute mess. But I&amp;rsquo;ve got a clear vision of what I want to do this time, which makes it a lot easier to plan for. After that I plan to dabble in some C for the Pebble and make some watchfaces for a challenge.&lt;/p&gt;
 
@@ -927,19 +931,20 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
         <content:encoded>&lt;p&gt;At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;h2 id=&#34;changes&#34;&gt;Changes&lt;/h2&gt;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Hardware&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Added a shelf to my desk to allow me to use my computer standing.&lt;/li&gt;
 &lt;li&gt;⚬ Bought a Pebble Time watch.&lt;/li&gt;
 &lt;li&gt;⚬ Repaired my Ds Lite and replaced it&amp;rsquo;s shell with a snazzy Lime one.&lt;/li&gt;
 &lt;li&gt;⚬ Swapped my Thinkpad&amp;rsquo;s old Hard-drive for a new SSD.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
-&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Software&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
 &lt;li&gt;⚬ Ditched Windows for Fedora Linux. Best choice of the year right here.&lt;/li&gt;
 &lt;li&gt;⚬ Went full Free Open Source Software on my phone.&lt;/li&gt;
 &lt;li&gt;⚬ Began using RSS feeds to compile my favourite sites and blogs in one place.&lt;/li&gt;
 &lt;li&gt;⚬ Started my blog!.&lt;/li&gt;
 &lt;li&gt;⚬ Joined Mastodon.&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2 id=&#34;favourite-things&#34;&gt;Favourite things&lt;/h2&gt;&lt;div class=&#34;text borderless box&#34;&gt;
 
@@ -973,6 +978,7 @@ rest of the 40 minute album. It has a very unique feeling to it all, one that I 
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Lore_Olympus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;⬩ Lore Olympus&lt;/a&gt; - There&amp;rsquo;s not much not to love about Lore Olympus. It&amp;rsquo;s style is vivid and easy to read, and it&amp;rsquo;s story engaging, really making you look forward for the next chapter.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2 id=&#34;going-forward&#34;&gt;Going Forward&lt;/h2&gt;&lt;p&gt;The goal for 2022 is to get my health back into shape and sharpen my mind. I&amp;rsquo;d like to focus my time learning to properly program in a way that will actually be useful to me. The first project of the new year will likely be a rebuilding of this site, I&amp;rsquo;m unhappy hosting the site on github pages, not mention the code being an absolute mess. But I&amp;rsquo;ve got a clear vision of what I want to do this time, which makes it a lot easier to plan for. After that I plan to dabble in some C for the Pebble and make some watchfaces for a challenge.&lt;/p&gt;
 
