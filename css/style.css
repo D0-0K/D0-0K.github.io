@@ -31,7 +31,7 @@ h3{font-size:2rem;margin:0 0 8px}
 h4{font-size:1.85rem;margin:0 0 8px}
 h5{font-size:1.65rem;margin:16px 0}
 p{line-height:170%;margin:8px 0}
-.main>p{text-indent:.5em}Menu
+.main>p{text-indent:.5em}
 p a{text-decoration:underline 2px;padding:9px 5px 5px;margin:0 -5px;border-radius: 6px;}
 .main>*,.title hr{margin:0 0 16px}
 .title{margin:2% 0 -16px 2%}
@@ -71,3 +71,4 @@ img,iframe{max-width:100%;height:auto}
 picture img{width:auto}
 .highlight{width:100%}
 .highlight img{margin:16px 0 16px -26px;margin-left:calc(-1 * min(4vw,26px));border-radius:0 20px 20px 0}
+kbd{border:1px solid;padding:4px 14px 3px;border-radius:10px;border-bottom:2px solid;background:#c4c4c4;border-color:grey;margin-left:4px;font-size:large}

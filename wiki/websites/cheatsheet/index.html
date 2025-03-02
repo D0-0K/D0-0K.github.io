@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+<meta property="og:image" content="/img/" />
+<link rel="me" href="https://post.lurk.org/@dook">
+<title> Website Building Cheatsheet  • d00k.net</title></head>
+<body><div class="header"><nav><div style="width:45vw;height:auto;max-width:180px"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu"><ul role="list">
+<li><a href="/photos/">Photos</a></li>
+<li style="margin-left:auto"><a href="/wiki/">Wiki</a></li></ul>  
+<ul role="list" style="border-left:1px solid #ccc">
+<li><a href="/design/">Design</a></li>
+<li><a href="/blog/">Blog</a></li>   
+<li><a href="/about/">About</a></li>
+</ul></div></nav></div>
+
+<div class="main layout">
+<div class="highlight"><img src="/img/" alt="" loading="lazy"></div>
+<div class="title"><h1 id="top">Website Building Cheatsheet</h1><hr></div>
+<p>A cheatsheet on all things that are good-to-know when making a website. Intended for beginners, but helpful as a reference for everyone!</p>
+<div class="listbox box">
+<h2 style="padding:12px 5%;">Table of Contents</h2>
+<details><summary>Menu</summary>
+<hr>
+<ul>
+<li><a href="#forcefully-refreshing-your-css" >• Forcefully refreshing your CSS</a></li>
+<li><a href="#simple-font-sizes" >• Simple Font Sizes</a></li>
+<li><a href="#margins-paddings-and-borders" >• Margins, Paddings and Borders</a></li>
+<li><a href="#Stackoverflow%20and%20MDN%20Web%20Docs" >• Stackoverflow and MDN Web Docs</a></li>
+</ul>
+</details></div>
+
+<hr>
+
+<h2 id="forcefully-refreshing-your-css">Forcefully refreshing your CSS</h2><p>Often when working with CSS, your changes wont appear when you refresh the page. This is due to the previous version being kept by the browser in the cache (this is usually a good thing since you wont need to re-download the CSS file every time you visit the site.) To refresh the site and forcefully update the CSS, use the following:</p>
+<p><strong>MacOS:</strong> <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>R</kbd></p>
+<p><strong>Windows/Linux:</strong> <kbd>Ctrl</kbd> <kbd>⇧</kbd> <kbd>R</kbd></p>
+<hr>
+
+<h2 id="simple-font-sizes">Simple Font Sizes</h2><p>While you can set font sizes using units like pixels and points, there is actually a really simple way you can control the size of your text on your website. font-size supports words like &lsquo;small&rsquo; &rsquo;large&rsquo; etc. These also have the added benefit of being more accessible as their size is dependent on the user&rsquo;s browser settings.</p>
+<pre><code>/* Font sizes based on browser settings */
+font-size: xx-small;
+font-size: x-small;
+font-size: small;
+font-size: medium; /* this is the default size */
+font-size: large;
+font-size: x-large;
+font-size: xx-large;
+font-size: xxx-large;</code></pre><hr>
+
+<h2 id="margins-paddings-and-borders">Margins, Paddings and Borders</h2><p>Margins, Paddings and Borders have some specific ways of changing in which the results of your code can change depending on how it&rsquo;s written.</p>
+
+<h3 id="margins-and-paddings">Margins and Paddings</h3><p>Margins and paddings function almost identically in the way you write them, with 3 different ways you can use these CSS properties.</p>
+<p>The first, when you have 4 values lets you fine control the padding or margin. The order of the values you are writing for are in a clockwise order, beginning with the top-ward value.</p>
+<p>The second, when you have 2 values controls both the top and bottom pairs and the left and right pairs. The top and bottom, or vertical, pairs are first. The left and right, or horizontal, pairs are second.</p>
+<p>The third is for when you have just 1 value, controlling all sides on the padding or margin at once.</p>
+<div class="text borderless box">
+
+<div><h4 id="margin-auto-values">Margin auto values</h4><p>The only difference between margins and padding properties is that margins allow the value to be set as &lsquo;auto&rsquo;. The auto value will only work when used on horizontal values, and is most useful to align content in the center of the page.</p></div>
+</div>
+<pre><code>/* 4 values */
+padding: top right bottom left;
+
+/* 2 values */
+padding: vertical horizontal;
+
+/* 1 value */
+padding: all;
+
+/* center aligning content horizontally */
+margin: 8px auto;</code></pre>
+<h3 id="borders">Borders</h3><p>Borders have an interesting way of being written, as you need to specify the style of line as well as the colour of the border. Without these, you&rsquo;ll see nothing. There are various types of border styles you can chose from, with <strong>solid</strong> being the most simple one.</p>
+<pre><code>border: size style colour;
+
+/* Keyword values */
+border-style: solid;
+border-style: dotted;CUAS
+border-style: dashed;
+border-style: double;
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;</code></pre><hr>
+
+<h2 id="stackoverflow-and-mdn-web-docs">Stackoverflow and MDN Web Docs</h2><p>With how many tags and properties there are between both HTML and CSS, it&rsquo;s unrealistic that you&rsquo;ll ever remember them or how to use them all. One of the best tips I have is to simply look it up! The best part about how widely used HTML and CSS are is that if you&rsquo;re trying to do something or fix an issue, somebody has already been there and asked for help online. There&rsquo;s absolutely no shame in needing to search for things like <em>&ldquo;how to center my content&rdquo;</em> or <em>&ldquo;how to use my own font on my website&rdquo;</em>.</p>
+<p><a href="https://stackoverflow.com/questions" target="_blank" rel="noopener">Stackoverflow</a> is a fantastic resource of problems and solutions, often with high quality answers from professionals on their forums. Keep an eye out for search results from this site.</p>
+<p><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN Web Docs</a> is the best resource out there for making websites. Their HTML and CSS references are incredibly detailed, with great break down of each tag and property with examples on how to use them. They also have high-quality tutorials to learn HTML and CSS from.</p>
+<hr>
+<div class="listbox box"><div><h2>To-Do</h2><p>Stuff I still need to add to the cheatsheet</p></div><hr><ul>
+
+<li>⚬ CSS Filters.</li>
+<li>⚬ Text Editors with autocorrect.</li>
+<li>⚬ Using Content Management Systems for blogs.</li>
+<li>⚬ Using your own fonts.</li>
+<li>⚬ Controlling how links are opened.</li>
+<li>⚬ Getting the most out of Inspect Element.</li>
+</ul></div>
+
+<nav class="navbut"><a class="prev" href="/wiki/websites/">← Back to  Web Wiki </a>
+</nav>
+</div>
+<div class="footer layout">
+<div style="background:#bbb;padding:16px 16px 14px;border-radius:35px;min-height:40px">
+<div>
+<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
+<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+<a class="icon" href="/index.xml" target="_blank"><img src="/img/assets/rss.svg" loading="lazy" alt="RSS Feed" width="28"height="28"></a>
+</div>
+<details style="direction:rtl;margin-top:-46px">
+<summary style="width:fit-content;margin:0;border-radius:19px;background:#9f9f9f;padding:6px 18px">Info</summary>
+<div style="direction:ltr;margin:16px 2% 4px">
+Originally Published: <strong>March 2025</strong><br/>
+
+
+
+d00k.net © 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+</div>
+</details>
+</div>
+</div>
+</div>
+</body>
