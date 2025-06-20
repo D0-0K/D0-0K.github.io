@@ -6,7 +6,7 @@
     <description>Recent content in Blog on d00k</description>
     <generator>Hugo</generator>
     <language>en-ie</language>
-    <lastBuildDate>Tue, 25 Feb 2025 20:03:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2024 18:37:52 +0100</lastBuildDate>
     <atom:link href="https://d00k.net/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A new way to theme the Quickscreen in Rockbox</title>
@@ -14,13 +14,6 @@
       <pubDate>Wed, 24 Jul 2024 14:48:28 +0100</pubDate>
       <guid>https://d00k.net/blog/quickscreen_rockbox_tags/</guid>
       <description>&lt;p&gt;For the past year, I&amp;rsquo;ve been working on a major redesign of &lt;a href=&#34;https://d00k.net/design/themify&#34;&gt;Themify&lt;/a&gt;, my user-customisable Rockbox theme. It&amp;rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&amp;rsquo;s Quickscreen.&lt;/p&gt;&#xA;&#xA;&lt;h2 id=&#34;what-is-the-quickscreen&#34;&gt;What is the Quickscreen?&lt;/h2&gt;&lt;p&gt;For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&amp;rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&amp;rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&amp;rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Year Review 2023</title>
-      <link>https://d00k.net/blog/year-review-2023/</link>
-      <pubDate>Sun, 31 Dec 2023 13:54:08 +0000</pubDate>
-      <guid>https://d00k.net/blog/year-review-2023/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s that time of year again! Kind of incredible in a way, it doesn&amp;rsquo;t feel like it&amp;rsquo;s been that long since I wrote last year&amp;rsquo;s review. And what a crazy year it&amp;rsquo;s been, despite a lot of chaos and changes I feel incredibly accomplished with what I managed to achieve and create over the past 12 months.&lt;/p&gt;&#xA;&lt;p&gt;The past couple of years have been marked by bad health for me, and thankfully I&amp;rsquo;ve felt pretty good and have been on the mend in 2023. Surprisingly, this was actually one of the only goals for this year that I got to! I was so intensely focused on design and programming this year that I never got around to working on art, unfortunately there wasn&amp;rsquo;t a Rebble Hackathon this year so I never got around to making more watchfaces for my pebble.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Re-designing my site, one more time</title>
@@ -44,13 +37,6 @@
       <description>&lt;p&gt;After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Year Review 2022</title>
-      <link>https://d00k.net/blog/year-review-2022/</link>
-      <pubDate>Sat, 31 Dec 2022 19:25:18 +0000</pubDate>
-      <guid>https://d00k.net/blog/year-review-2022/</guid>
-      <description>&lt;div class=&#34;listbox box&#34;&gt;&#xA;&lt;h2 style=&#34;padding:12px 5%;&#34;&gt;Table of Contents&lt;/h2&gt;&#xA;&lt;details&gt;&lt;summary&gt;Menu&lt;/summary&gt;&#xA;&lt;hr&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#changes&#34; &gt;• Changes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#favourite-things&#34; &gt;• Favourite Things&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#projects&#34; &gt;• Projects&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#the-goal-for-2023&#34; &gt;• The Goal for 2023&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#conclusion&#34; &gt;• Conclusion&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/details&gt;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;This year I kept my goals fairly open ended, I had a feeling it wasn’t going to be the most straightforward year and it proved to be the correct assumption. One of my main goals was to get my health back in shape, which was thrown an entire curveball when my kidneys spent over half the year in a state of failure. I’m on the mend now though thankfully. The second biggest goal was to rebuild my website from scratch, it took several months as well as redesigning the CSS twice, but I’m quite proud of the final result and especially with how incredibly lightweight I managed to make it. Without a doubt it’s my biggest success this year. The last goal was to learn how to properly program, as well to produce some watchfaces for the Pebble watch. It took until the Rebble Hackathon in November to actually achieve both of these, but I had a lot of fun programming and I hope to keep it up.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Leaving Spotify for Freer Pastures</title>
       <link>https://d00k.net/blog/leaving-spotify/</link>
       <pubDate>Wed, 30 Nov 2022 17:10:26 +0000</pubDate>
@@ -63,13 +49,6 @@
       <pubDate>Wed, 05 Oct 2022 15:50:41 +0100</pubDate>
       <guid>https://d00k.net/blog/web-optimisations/</guid>
       <description>&lt;p&gt;Over the past 10 months, I&amp;rsquo;ve worked on and off tweaking my site to get it closer to how I want it to look and perform. The main goal was simple: make a site that looks good, and loads fast. A quick solution would&amp;rsquo;ve been to keep the css to a minimum, use browser defaults for fonts etc. However that would&amp;rsquo;ve made my vision of a styled site difficult if not impossible. This pushed me to seek gains elsewhere as much as I could.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Year Review 2021</title>
-      <link>https://d00k.net/blog/year-review-2021/</link>
-      <pubDate>Fri, 18 Feb 2022 10:52:41 +0000</pubDate>
-      <guid>https://d00k.net/blog/year-review-2021/</guid>
-      <description>&lt;p&gt;At a glance, this year has been a bit of a writeoff for me. I was diagnosed with Crohn&amp;rsquo;s earlier in the year and I&amp;rsquo;ve spent most of the rest recovering, going so far to drop out of college on medical leave. My high risk to covid has left me isolating in my home for a large amount of time as well. Both have hampered my ability to do much physical things, but allowed me to read and research more than I could before.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
