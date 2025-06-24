@@ -67,7 +67,7 @@ mogrify -ordered-dither o8x8,32,64,32 -compress None -type palette -format bmp -
 <h2 id="where-imagemagick-failed">Where ImageMagick failed</h2><p>I ran into more than a few issues with Imagemagick making these scripts. The biggest was certain sized images having bigger filesizes than the exact same processes in GIMP, just 600-1000 bytes. Which may not be a problem for some but in a project pushing the extremes of Rockbox&rsquo;s file upload limits, these small gains can help a lot. I tracked this issue down to the colormaps of the files containing a large number of junk entries, the colormap would be set to 255 and any image with less would have the remainding space filled with these junk entries. Another issue with Imagemagick is the lack of dithering algorithms, just 2 compared to GIMP having around 7-8.</p>
 <p>My solution for this will be to create my own image conversion tool specifically for making these Rockbox-targetting bitmaps. The backbone will be makew0rld&rsquo;s <a href="https://github.com/makew0rld/dither" target="_blank" rel="noopener">dither library</a>. Having this level of fine control over the conversion should hopefully allow for the creation of incredible accurate images with the smallest file sizes possible (even smaller than GIMP!) I&rsquo;ll probably get to making this the next time I encounter the tedium of image conversion.</p>
 
-<nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming">← Back to  Wiki </a>
+<nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a>
 </nav>
 </div>
 <div class="footer layout">
