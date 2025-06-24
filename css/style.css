@@ -39,7 +39,7 @@ p a{text-decoration:underline 2px;padding:9px 5px 5px;margin:0 -5px;border-radiu
 .box{padding:16px 5%;border-radius:28px}
 .clickbox{border:1px solid #999;padding:4px;border-bottom-width:2px}
 .clickimg{min-height:134px}
-.clickbox img{float:left;margin:0 16px 8px 0;border-radius:26px !important}
+.clickbox img{float:left;margin:0 16px 8px 0;border-radius:24px !important}
 .clickdiv{padding:12px 15px}
 .clickbox:hover,.listbox{background:#d0d0d0}
 figure{max-width:720px}
