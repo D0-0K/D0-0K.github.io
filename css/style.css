@@ -10,11 +10,15 @@ a:hover{background:#000;color:#fff;border-color:#777}
 .icon{padding:5px;height:28px}
 li{list-style:none;padding:4px 10px;margin:0 -10px}
 li a,.box,q,cite,img,.logo{display:block}
-.footer a,.header div,.navbut a,.highlight,.main>img,figure,.header ul,.main>h2{display:inline-block}
+.footer a,.header div,.navbut a,.highlight,.main>img,figure,.main>h2{display:inline-block}
 li,h2,.title{width:fit-content}
 p,p a,q,li,em,.listbox a,.navbut a{font-family:LeagueSpartan,sans-serif}
-.header ul{padding:0 4px 0 10px;vertical-align:top}
-.menu{float:right;padding:5%;padding: 3% 3% 5% 2%;line-height:150%;background:#e7e7e7;  border-radius:0 0 min(calc(5vw - 20px), 24px) 24px}
+.header ul{padding:6px;background:#e7e7e7;border-radius:30px;width:clamp(103px,230vw - 1280px, 471px)}
+.menu li{display:inline-block;margin:0;padding:0}
+.menu a{padding:18px 24px 16px;margin:0;border-radius:26px;font-family:LeagueSpartan}
+.menu a:hover{background:#ccc;color:#000}
+.menu a:active{background:#bbb}
+.menu{padding:2ex;padding:clamp(4%,175vw - 1280px,50px);float:right}
 .logo{padding:0;transition:filter .75s}
 .logo:hover{filter:saturate(99)}
 .header{max-width:780px}
