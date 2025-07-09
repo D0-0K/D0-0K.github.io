@@ -13,11 +13,11 @@ li a,.box,q,cite,img,.logo{display:block}
 .footer a,.header div,.navbut a,.highlight,.main>img,figure,.main>h2{display:inline-block}
 li,h2,.title{width:fit-content}
 p,p a,q,li,em,.listbox a,.navbut a{font-family:LeagueSpartan,sans-serif}
-.header ul{padding:6px;background:#e7e7e7;border-radius:30px;width:clamp(103px,230vw - 1280px, 471px)}
+.header ul{padding:5px;background:#d0d0d0;border-radius:30px;width:clamp(103px,230vw - 1280px, 471px);line-height:clamp(12px,230vw - 1280px,20px)}
 .menu li{display:inline-block;margin:0;padding:0}
 .menu a{padding:18px 24px 16px;margin:0;border-radius:26px;font-family:LeagueSpartan}
-.menu a:hover{background:#ccc;color:#000}
-.menu a:active{background:#bbb}
+.menu a:hover{background:#bbb;color:#000}
+.menu a:active{background:#aaa}
 .menu{padding:2ex;padding:clamp(4%,175vw - 1280px,50px);float:right}
 .logo{padding:0;transition:filter .75s}
 .logo:hover{filter:saturate(99)}
@@ -64,11 +64,11 @@ figcaption{padding:10px 4%;background:#c4c4c4;margin-top:8px;border-radius:24px;
 q,cite{margin:16px 0}
 .navbut{margin:0}.navbut a:hover{background:#aaa}.navbut a:active{background:#999}
 .navbut a{padding:18px 26px 16px;margin:16px 12px 0 0;border-radius:32px;color:#000}
-.navbut a img{display:inline;height:18px}
+.navbut a img{display:inline;height:18px;border-radius:0}
 .prev{background:#ccc}
 .up{background:#d0d0d0}
 .next{background:#bbb}
-pre{padding:16px 2%;overflow:auto;background:#444;border-left:20px solid #333;font-size:.9rem;border-radius:28px}
+pre{padding:16px 2%;overflow:auto;background:#444;border-left:20px solid #333;font-size:.9rem;border-radius:28px}.border_button{background:0;border:3px solid #bbb;padding:14px 18px 12px !important}
 .info,code{color:#fff}
 code{font-family:monospace}
 q{font-size:large}
