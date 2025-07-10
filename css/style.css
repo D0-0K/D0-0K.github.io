@@ -38,8 +38,8 @@ p{line-height:170%;margin:8px 0}
 .main>p{text-indent:.5em}
 p a{text-decoration:underline 2px;padding:9px 5px 5px;margin:0 -5px;border-radius: 8px;}
 .main>*,.title hr{margin:0 0 16px}
-.title{margin:2% 0 -16px 2%}
-.title hr{height:30px;background:#b3b3b3;position:relative;top:-20px;left:-16px;z-index:-1;width:50%;min-width:150px;border-radius:8px}
+.title{margin:2% 0 -0 2%;display:inline-block}
+.title hr{height:30px;background:#b3b3b3;position:relative;top:-20px;left:-12px;z-index:-1;width:50%;min-width:150px;border-radius:8px;margin-bottom:-4px}
 .box{padding:16px 5%;border-radius:28px}
 .clickbox{border:1px solid #999;padding:4px;border-bottom-width:2px}
 .clickimg{min-height:134px}
