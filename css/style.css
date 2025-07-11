@@ -1,10 +1,10 @@
 body,p,hr,h1,h3,h4,h5,ul,.logo,.footer a,.clickbox p{margin:0}
 body{background:#ddd;min-height:100vh}
-*{color:#000;font-family:sans-serif;text-rendering:optimizeSpeed;text-decoration:none}
+*{color:#000;font-family:LeagueSpartan,sans-serif;text-rendering:optimizeSpeed;text-decoration:none}
 @font-face{font-family:LeagueSpartan;src:url(fonts/LeagueSpartan-Regular.woff2)format(woff2),url(fonts/LeagueSpartan-Regular.woff)format(woff);font-display:swap}
 @font-face{font-family:Barlow;font-weight:900;src:url(fonts/Barlow-ExtraBold.woff2)format(woff2),url(fonts/Barlow-ExtraBold.woff)format(woff);font-display:swap}
 ::selection{background:orange}
-a{padding:7px 12px 4px 10px;margin:-5px -8px -5px -10px;border-radius:16px}
+a{padding:7px 14px 4px 10px;margin:-5px -8px -5px -10px;border-radius:16px}
 a:hover{background:#000;color:#fff;border-color:#777}
 .icon:hover{background:0;opacity:.5}
 .icon{padding:5px;height:28px}
@@ -12,10 +12,9 @@ li{list-style:none;padding:4px 10px;margin:0 -10px}
 li a,.box,q,cite,img,.logo{display:block}
 .footer a,.header div,.navbut a,.highlight,.main>img,figure,.main>h2{display:inline-block}
 li,h2,.title{width:fit-content}
-p,p a,q,li,em,.listbox a,.navbut a{font-family:LeagueSpartan,sans-serif}
 .header ul{padding:5px;background:#d0d0d0;border-radius:30px;width:clamp(103px,230vw - 1280px, 471px);line-height:clamp(12px,230vw - 1280px,20px)}
 .menu li{display:inline-block;margin:0;padding:0}
-.menu a{padding:18px 24px 16px;margin:0;border-radius:26px;font-family:LeagueSpartan}
+.menu a{padding:18px 24px 16px;margin:0;border-radius:26px}
 .menu a:hover{background:#bbb;color:#000}
 .menu a:active{background:#aaa}
 .menu{padding:2ex;padding:clamp(4%,175vw - 1280px,50px);float:right}
@@ -78,3 +77,4 @@ picture img{width:auto}
 .highlight{width:100%}
 .highlight img{margin:16px 0 16px -26px;margin-left:calc(-1 * min(4vw,26px));border-radius:0 28px 28px 0}
 kbd{border:1px solid;padding:4px 14px 3px;border-radius:10px;border-bottom:2px solid;background:#c4c4c4;border-color:grey;margin-left:4px;font-size:large}
+.underline{color:inherit;text-decoration:2px underline #aaa}

@@ -278,9 +278,9 @@
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
 &lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• Themify Web Page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Github Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• &lt;span class=&#34;underline&#34;&gt;Themify Web Page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ &lt;span class=&#34;underline&#34;&gt;Github Repository&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ &lt;span class=&#34;underline&#34;&gt;Rockbox Theme page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
 </description>
         <content:encoded>&lt;p&gt;After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.&lt;/p&gt;
@@ -322,9 +322,9 @@
 
 &lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;&lt;p&gt;Overall, I&amp;rsquo;m quite happy and proud of this theme&amp;rsquo;s outcome. I hope many people will find joy in being able to change their colour scheme to fit themselves, or however they feel, whenever they want. If you enjoy Themify, feel free to send some feedback or suggest improvements in the &lt;a href=&#34;https://github.com/D0-0K/themify/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github discussions&lt;/a&gt;!&lt;/p&gt;
 &lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Links&lt;/h2&gt;&lt;p&gt;Themify can be downloaded from the Github, or via Rockbox sources. (The recommended method being the Rockbox Utility app)&lt;/p&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• Themify Web Page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Github Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ Rockbox Theme page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://d00k.net/journal/inside_themify&#34; &gt;• &lt;span class=&#34;underline&#34;&gt;Themify Web Page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/D0-0K/themify&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ &lt;span class=&#34;underline&#34;&gt;Github Repository&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://themes.rockbox.org/index.php?themeid=3320&amp;amp;target=ipodvideo&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34; &gt;↗ &lt;span class=&#34;underline&#34;&gt;Rockbox Theme page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
 </content:encoded>
       </item>
@@ -354,8 +354,8 @@
 
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
 &lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• &lt;span class=&#34;underline&#34;&gt;Bandcamp Buyin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• &lt;span class=&#34;underline&#34;&gt;adwaitapod iPod Theme&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
 </description>
         <content:encoded>&lt;p&gt;Over the past year, I&amp;rsquo;ve slowly worked on moving my listening activities away from Spotify and towards a setup where I have much more control over how I listen. As people will be checking out their Spotify Unwrapped, I thought it&amp;rsquo;d be a great time to talk about my thoughts on the platform and why I&amp;rsquo;m moving away from it.&lt;/p&gt;
@@ -376,8 +376,8 @@
 
 &lt;h2 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next?&lt;/h2&gt;&lt;p&gt;Going forward, I want to continue on this path for sure. Next year I&amp;rsquo;ll be doing bandcamp buyin&amp;rsquo; again, and continuing to collect my favourite music off Spotify. For music I can&amp;rsquo;t buy off the platform, there&amp;rsquo;s plenty of methods usable to collect this that I won&amp;rsquo;t go into here, but a quick search online should give you answers. And hopefully by this time next year I&amp;rsquo;ll be in a position where I&amp;rsquo;m happy enough to cancel my Spotify Premium and hop off the platform for once and for all.&lt;/p&gt;
 &lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Further Reading&lt;/h2&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• Bandcamp Buyin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• adwaitapod iPod Theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;about/music/bandcamp_buyin_22/&#34; &gt;• &lt;span class=&#34;underline&#34;&gt;Bandcamp Buyin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://d00k.net/design/adwaitapod/&#34; &gt;• &lt;span class=&#34;underline&#34;&gt;adwaitapod iPod Theme&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;
 </content:encoded>
       </item>
