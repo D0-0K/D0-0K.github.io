@@ -37,7 +37,7 @@ p{line-height:170%;margin:8px 0}
 .main>p{text-indent:.5em}
 .main>hr{margin:42px 0;height:3px;background:#ccc}
 p a{text-decoration:underline;text-decoration-thickness:2px;padding:9px 5px 5px;margin:0 -5px;border-radius:8px}
-.main>*,.title hr{margin:0 0 16px}
+.main>*{margin:0 0 16px}
 .title{margin:2% 0 -0 2%;display:inline-block}
 .title hr{height:30px;background:#b3b3b3;position:relative;top:-20px;left:-12px;z-index:-1;width:50%;min-width:150px;border-radius:8px;margin-bottom:-4px}
 .box{padding:16px 5%;border-radius:28px}
@@ -79,4 +79,4 @@ picture img{width:auto}
 .highlight{margin:16px 0 16px -26px;margin-left:calc(-1 * min(4vw,26px));border-radius:0 28px 28px 0 !important}
 kbd{border:1px solid;padding:4px 14px 3px;border-radius:10px;border-bottom:2px solid;background:#c4c4c4;border-color:grey;margin-left:4px;font-size:large}
 .underline{color:inherit;text-decoration:underline;text-decoration-color:inherit;text-decoration-thickness:2px}
-@media (prefers-color-scheme: dark){.layout,.clickbox img,.main > img,figure img,.menu{filter:invert(1)}body{background:#222}.logo{content:url(/img/assets/Logo_Dark.svg);}}
+@media (prefers-color-scheme: dark){.main>*,.clickbox img,.main > img,figure img,.menu{filter:invert(1)}body{background:#222}.logo{content:url(/img/assets/Logo_Dark.svg);}}
