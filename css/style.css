@@ -17,10 +17,10 @@ li,h2,.title{width:fit-content}
 .menu a{padding:18px 24px 16px;margin:0;border-radius:26px}
 .menu a:hover{background:#bbb;color:#111}
 .menu a:active{background:#aaa}
-.menu{padding:2ex;padding:clamp(4%,175vw - 1280px,50px);float:right}
+.menu{padding:2ex;padding:clamp(4%,175vw - 1280px,50px)}
 .logo{padding:0;transition:filter .75s;border-radius:0}
 .logo:hover{filter:saturate(99)}
-.header{max-width:780px}
+.header{max-width:780px;text-align:right}
 .layout{padding:2ex;padding:min(4%,26px);max-width:720px}
 .footer{line-height:175%}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
@@ -79,4 +79,4 @@ picture img{width:auto}
 .highlight{margin:16px 0 16px -26px;margin-left:calc(-1 * min(4vw,26px));border-radius:0 28px 28px 0 !important}
 kbd{border:1px solid;padding:4px 14px 3px;border-radius:10px;border-bottom:2px solid;background:#c4c4c4;border-color:grey;margin-left:4px;font-size:large}
 .underline{color:inherit;text-decoration:underline;text-decoration-color:inherit;text-decoration-thickness:2px}
-@media (prefers-color-scheme: dark){.main>*,.clickbox img,.main > img,figure img,.menu{filter:invert(1)}body{background:#222}.logo{content:url(/img/assets/Logo_Dark.svg);}}
+@media (prefers-color-scheme: dark){.layout,.clickbox img,.main > img,figure img,.menu{filter:invert(1)}body{background:#222}.logo{content:url(/img/assets/Logo_Dark.svg)}}
