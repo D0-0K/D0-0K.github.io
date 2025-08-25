@@ -53,9 +53,12 @@ figure{max-width:720px}
 .listbox{padding:0;overflow:hidden;background:#c4c4c4}
 .listbox div{padding:16px 5% 14px}
 .listbox p{margin-bottom:0}
-summary{cursor:pointer;padding:12px 3%;margin:8px;background:#b3b3b3;border-radius:20px}
+summary{cursor:pointer;padding:12px 3% 12px 9px;margin:8px;background:#b3b3b3;border-radius:20px;list-style:none}
 summary:hover{filter:brightness(.95)}
 summary:active{filter:brightness(.9)}
+.footer summary{width:fit-content;margin:0;border-radius:24px;background:#9f9f9f;height:43px;padding:0 10px 0 18px;line-height:43px;list-style:none}
+details>summary:before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='%23111'%3E%3Crect width='13' height='3' y='5' rx='1'/%3E%3Crect width='3' height='13' x='5' rx='1'/%3E%3C/svg%3E");margin:0 8px}
+details[open]>summary:before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='%23111'%3E%3Crect width='13' height='3' y='5' rx='1'/%3E%3C/svg%3E%0A");}
 .text{background:#c4c4c4;border-left:16px solid #b2b2b2}
 hr{background:#aaa;height:2px}
 hr,.borderless{border:0}
