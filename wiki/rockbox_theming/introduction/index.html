@@ -4,73 +4,71 @@
 <meta property="og:description" 
   content="A gentle introduction to the world of rockbox theming"/><link rel="me" href="https://post.lurk.org/@dook">
 <title> Introduction  • d00k.net</title></head>
-<body><div class="header"><nav><div style="width:45vw;height:auto;max-width:184px;float:left"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu">
-<ul><li><a href="/photos/">Photos</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/design/">Design</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
 </div></nav></div>
 
 <div class="main layout">
 
 <div class="title"><h1 id="top">Introduction</h1><hr></div>
-<p>Since the mid-2000s, Rockbox has allowed users to modify the user-interface. Over time, this feature has evolved and matured into an intricate system of tags and markup. The theming system as it stands today provides the user with an incredible amount of freedom and control, with the possibility to do so much.</p>
-<p>Despite this however, the barrier for entry has historically been incredibly high. If someone wished to learn how to build themes from scratch, all that was available were existing themes, a single page of documentation, along with frustrating trial and error.</p>
-<p>Ultimately, the goal of this guide series is to provide those who have a desire to make themes with all the information they could possibly need to do just that.</p>
-<p>This beginners guide will break down the core concepts of the rockbox theme engine, walk you through implementing basic features, and show you how to use external tools to make your theme look and perform the best it can. By the end, you&rsquo;ll have a basic template of a theme, but what you learn to get there should be enough to help you realise your own vision.</p>
-<div class="text borderless box">
-
-<div>
-<h2 id="note-on-learning-from-themes">Note on learning from themes</h2><p>Learning from existing themes is a great way to see things in action and experiment, however there are some downsides to be aware of.</p>
-<p>Almost every existing theme right now was made by someone who learned from other themes, as mentioned previously.
-This has meant that older, more complicated (and inefficient) ways of implementing features have become the de-facto standard.</p>
-<p>This can, and most likely will, make theming seem far harder than it is and confuse you a fair amount.</p>
-</div>
-</div>
-<p>This guide however will follow a style of creating themes I developed myself independently, making use of the full capabilities in the theming system. This style is incredibly simple, versatile and easy to learn and should be a great starting point for those new to theming.</p>
+<p>For almost two decades, Rockbox has allowed users to modify the user interfaces of their music players. Over this time, functionality has evolved and matured into an intricate system of possibilities. The theming system today provides users with an incredible amount of freedom and control in a simple and performant manner.</p>
+<p>Despite this however, the barrier for entry has historically been quite high. While places like the Rockbox Manual provided some explanations of core concepts, most people often resorted to learning from existing themes and experimentation through trial and error.</p>
+<p>I myself began making themes in 2022. Learning from the fantastically documented Interpod series from Christian Soffke, and the bold, experimental FreshOS from Yuuiko. When working on my own theme designs, I sought to explore the boundaries and learn as much of the Theme Engine&rsquo;s intricacies and quirks. Through this I refined many of the experiments of others and developed a clean, modern approach to building Rockbox themes.</p>
+<p>Ultimately, my goal with this book is to break down the core methods of making Rockbox themes into simple and easy to understand concepts. Walking you through each one as we build a functioning theme together using the same process I do. By the end, you&rsquo;ll have a beautiful theme, but also the knowledge and skills to go out and realise your own Rockbox Theme designs.</p>
 <hr>
 
-<h2 id="what-youll-need">What you&rsquo;ll need</h2><p>Creating themes is an incredibly simple process, and all you&rsquo;ll really need is a basic text editor, some kind of image editor and creation software (GIMP and Inkscape) and a device to test on.</p>
-<p>I highly recommend checking out the <a href="https://www.rockbox.org/wiki/UiSimulator" target="_blank" rel="noopener">Ui Simulator</a> as an alternative to using a device to test, as it allows for must faster iteration and can provide detailed errors from the command line.</p>
+<span><h2 id="what-youll-need">What you&rsquo;ll need</h2 id="what-youll-need"><a href="#what-youll-need" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Creating themes doesn&rsquo;t require any specialist software. Really all you will need is a basic text editor, software to design and edit images in and a device to test on.</p>
+<p>You can use any text editor you like, since our theme will be made from simple text files. I myself use GNOME&rsquo;s default <a href="https://apps.gnome.org/TextEditor/" target="_blank" rel="noopener">Text Editor</a> for linux, I added syntax highlighting to their engine it uses which improves the readability of theme code. If you&rsquo;re interested in adding syntax highlighting to other code editors please check out the repo I created for this.</p>
+<p>I use <a href="https://inkscape.org/" target="_blank" rel="noopener">Inkscape</a> to design my themes, and we&rsquo;ll be using it here in this book as it&rsquo;s free and highly capable. However you can easily replace this with Affinity Designer, Adobe Illustrator or even UI Mockup tools like Figma.</p>
+<p>We&rsquo;ll be using <a href="https://www.gimp.org/" target="_blank" rel="noopener">GIMP</a> for editing our assets, again being free with all the capabilities we need but easy to replace with a tool you may be more familiar with.</p>
+<p>Lastly, while not strictly neccesary, I highly recommend checking out the <a href="https://www.rockbox.org/wiki/UiSimulator" target="_blank" rel="noopener">Ui Simulator</a> as an alternative to using a device to test on. It allows for must faster iteration and can provide detailed errors from the command line which can be helpful if you make a mistake.</p>
+<hr>
+<div class="listbox box"><div><h2>Basic Terminology</h2><p>There is no concrete terminology used when talking about themes, but there&rsquo;s been some loose terms used over the years that I will attempt to frame here.</p></div><hr><ul>
 
-<h2 id="basic-terminology">Basic Terminology</h2><p>There is no concrete terminology used when talking about themes, but there&rsquo;s been some loose terms used over the years that I will attempt to frame here.</p>
-<div class="listbox box"><ul>
+<li><strong>Theming Engine::</strong> A common term used to describe the internal system which manages the rendering of theme files.</li>
 
-<li>⚬ <strong>Theming Engine</strong> - A common term used to describe the internal system which manages the creation of themes.</li>
-<li>⚬ <strong>WPS</strong> - While Playing Screen. The name given to the music player part of a theme.</li>
-<li>⚬ <strong>SBS</strong> - Status Bar Screen. The name given to the part of a theme managing the status bar, menus etc.</li>
-<li>⚬ <strong>FMS</strong> - FM Screen. The part of a theme that manages the FM Radio player.</li>
-<li>⚬ <strong>Tag</strong> or <strong>Theme Tag</strong> - The part of the markup system controlling content on screen.</li>
-<li>⚬ <strong>Viewport</strong> - Content sandboxes in themes. Will be covered next chapter.</li>
+<li><strong>WPS:</strong> While Playing Screen. The name given to the music player part of a theme.</li>
+
+<li><strong>SBS:</strong> Base Skin. The part of a theme handling menus and the quicksettings screen.</li>
+
+<li><strong>FMS:</strong> FM Screen. The part of a theme that manages the FM Radio player.</li>
+
+<li><strong>Tag</strong> or <strong>Theme Tag:</strong> The part of the markup system controlling content on screen.</li>
+
+<li><strong>Viewport:</strong> Content sandboxes in themes. We&rsquo;ll go into more detail on these next chapter.</li>
+
 </ul></div>
+<hr>
 
-<h3 id="theme-files">Theme files</h3><p>For each instance of the WPS, SBS and FMS mentioned above, a text file is used to code these part of the themes. Each file is saved with a corresponding file ending that Rockbox can read, for example a WPS theme file would be named &lsquo;<strong>filename.wps</strong>&rsquo;. These files live inside the .rockbox directory of your device, in a folder named &lsquo;wps&rsquo;.</p>
+<span><h2 id="theme-files">Theme files</h2 id="theme-files"><a href="#theme-files" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>For each instance of the WPS, SBS and FMS mentioned above, a text file is used to code these part of the themes. Each file is saved with a corresponding file ending that Rockbox can read, for example a WPS theme file would be named &lsquo;<strong>filename.wps</strong>&rsquo;. These files live inside the .rockbox directory of your device, in a folder named &lsquo;wps&rsquo;.</p>
 <p>To manage these files, and tell Rockbox what to load, there is another folder on your device called &rsquo;themes&rsquo;. Inside here we find config files typically titled &lsquo;<strong>themename.cfg</strong>&rsquo;. This is what allows your theme to appear in the theme selection menu on your device, and ties together all the parts that make up your theme. It includes the location of WPS, SBS, FMS and icon files, as well as the default fonts, colours and other settings.</p>
 <p>Font files are contained in a fonts folder in the .rockbox directory of your device. You don&rsquo;t in fact need to create custom fonts for your theme, and can make use of any existing fonts in this folder that are installed as part of rockbox. Fonts are called by referring to their filename.</p>
 <p>Assets, image files you load for the visuals of your theme, are stored in a folder named after your theme inside the wps folder. The name should be the exact same name used for the config file, and should be used across all theme files.</p>
 <p>Images themselves are exclusively in the bmp format, however there is no need to worry about this yet as there will be an entire chapter dedicated to them.</p>
 <hr>
 
-<h3 id="whats-next">What&rsquo;s next?</h3><p>Over the next few chapters, we will start with a blank slate. Working from nothing, we will make a theme up from scratch and cover some core topics of the theming system by example. I highly recommend following along, if you can, to get a good feel for the system.</p>
+<span><h2 id="whats-next">What&rsquo;s next?</h2 id="whats-next"><a href="#whats-next" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Over the next chapters, we will start with a blank slate. Working from nothing, we will cover the core concepts of theme creation from scratch. Each concept will be followed by an Exercise chapter to help you gain confidence in writing themes. I highly recommend following along, if you can, to get a good feel for writing themes.</p>
 
-<nav class="navbut"><a class="prev" href="/wiki/rockbox_theming/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Rockbox Theming for Beginners </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a>
-<a class="next" href="../the_viewport">Next <img style="margin:0 -6px -2px 8px" src="/img/assets/right.svg"></a></nav>
+<nav class="navbut"><a class="prev" href="/wiki/rockbox_theming/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Rockbox Theming for Beginners </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a><a class="next" href="../the_viewport">Next <img style="margin:0 -6px -2px 8px" src="/img/assets/right.svg"></a></nav>
 </div>
 <div class="footer layout">
-<div style="background:#bbb;padding:16px 16px 14px;border-radius:35px;min-height:40px">
-<div>
-<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
-<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
-</div>
-<details style="direction:rtl;margin-top:-50px">
-<summary>Info</summary>
-<div style="direction:ltr;margin:16px 2% 4px">
-Originally Published: <strong>October 2023</strong><br/>
-
-
-
-</div>
-<div style="direction:ltr;padding:4px 24px;background:#acacac;border-radius:20px;margin-top:8px;font-size:.9rem">© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>October 2023</strong><br/>
+				
+				
+				Last Updated: <strong>October 2025</strong>
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
 </div>
 </details>
 </div>
-</div>
+	</div>
 </div>
 </body>

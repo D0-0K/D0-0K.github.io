@@ -4,77 +4,101 @@
 <meta property="og:description" 
   content="A guide to combing 2 or more fonts into one using Fontforge."/><link rel="me" href="https://post.lurk.org/@dook">
 <title> Font Combining  • d00k.net</title></head>
-<body><div class="header"><nav><div style="width:45vw;height:auto;max-width:184px;float:left"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu">
-<ul><li><a href="/photos/">Photos</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/design/">Design</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
 </div></nav></div>
 
 <div class="main layout">
 <img class="highlight" src="/img/wiki/fonts.svg" alt="" loading="lazy">
 <div class="title"><h1 id="top">Font Combining</h1><hr></div>
-<p>When making Rockbox themes, there are numerous built in fonts to choose from. However sometimes, these may not suit the theme you are building. In situations like these, users can make their own fonts. This guide goes over several ways people can achieve this, including a guide on combining two different fonts together to create a wider language supporting font.</p>
+<p>When creating a Rockbox theme, you&rsquo;ll often have a font you&rsquo;re set on using that doesn&rsquo;t support many languages. It&rsquo;s not difficult however to go about adding support for other languages to these fonts by combining them with one that does. This guide goes over how to do that for vector and bitmap fonts, while also showing you how to convert them for use with Rockbox.</p>
 <hr>
 
-<h2 id="making-rockbox-fonts">Making Rockbox Fonts</h2><p>Rockbox uses it&rsquo;s own, custom font format for it&rsquo;s interface. Therefore it&rsquo;s necessary to convert our fonts for use in themes. This process is slightly different for colour and monochrome models, the former allowing anti-aliasing and the latter using exclusively bitmaps fonts. For the moment I&rsquo;ve focused on the non-bitmap conversion process.</p>
+<img class="highlight" src="/img/wiki/ipod_modding/Font_Combining.jpg" loading="lazy" alt="A desktop running fontforge."  >
+
+
+<span><h2 id="combining-two-fonts-using-fontforge">Combining Two Fonts using Fontforge</h2 id="combining-two-fonts-using-fontforge"><a href="#combining-two-fonts-using-fontforge" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>There&rsquo;s more than a few different apps for combining and modifying fonts, I know glyphs is quite popular especially with professionals, however this guide is around my own setup which is Linux focused. Fontforge is the best tool in this space for Linux, and it&rsquo;s perfectly equipped for our needs combining fonts. There&rsquo;s a few minor differences between working with bitmap fonts and vector fonts, so I&rsquo;ve divided them into their own sections below.</p>
+<div class="listbox box"><div><h3>Combining .otf and .ttf Fonts</h3><p>Firstly, you&rsquo;re going to need a font to add to your base font. I created a fork of NotoSans called <a href="https://github.com/D0-0K/MicroNotoSans" target="_blank" rel="noopener">MicroNotoSans</a> designed to provide maximum language coverage with minimum size. It&rsquo;s modular so you can choose which languages you need if you want to save even more space.</p></div><hr><ul>
+<li>Open the Base Font, which we want to combine with.</li>
+
+<li>Go to <strong>Element &gt; Merge Fonts</strong> choose the MicroNotoSans font, and merge.</li>
+
+Often, the merged font won't match the base font in scale. To fix this we can transform the imported glyphs specifically:
+<li>Go to <strong>Edit &gt; Select &gt; Changed Glyphs</strong>.</li>
+
+<li>Go to <strong>Element &gt; Transform</strong> and select Scale.</li>
+
+<li>Select Origin: <strong>Glyph Origin &gt; Scale: 250% 250%</strong> &gt; select all boxes. (Note: Scale will differ on the font, so experiment).</li>
+
+<li>And finally export the font by going to <strong>File &gt;  Generate Font</strong> choosing &lsquo;TrueType&rsquo; or &lsquo;OpenType (CFF)&rsquo; and clicking Generate.</li>
+
+</ul></div>
+<div class="listbox box"><div><h3>Combining .bdf Fonts</h3><p>Again, you&rsquo;re going to want a font to combine with your base font. I don&rsquo;t have any Font recommendations, but <a href="https://github.com/robhagemans/hoard-of-bitfonts" target="_blank" rel="noopener">Rob Hageman&rsquo;s bitmap font hoard</a> might be of use.</p></div><hr><ul>
+<li>Open the Base Font, which we want to combine with.</li>
+
+<li>Go to <strong>File &gt; Import&hellip;</strong> choose your other Font, and import.</li>
+
+<li>Export the font by going to <strong>File &gt;  Generate Fonts&hellip;</strong>. Click the right drop down menu to select &lsquo;BDF&rsquo; and then click Generate..</li>
+
+</ul></div>
+<hr>
+
+<span><h2 id="making-rockbox-fonts">Making Rockbox Fonts</h2 id="making-rockbox-fonts"><a href="#making-rockbox-fonts" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Rockbox uses it&rsquo;s own, custom font format for it&rsquo;s interface. Therefore it&rsquo;s necessary to convert our fonts for use in themes. This process is slightly different for colour and monochrome models, the former allowing anti-aliasing and the latter using exclusively bitmaps fonts. For the moment I&rsquo;ve focused on the non-bitmap conversion process.</p>
 <div class="listbox box"><div><h3>Getting convttf</h3><p>If you don&rsquo;t already have the convttf tool, then you&rsquo;ll need to build it from the source using the following guide.</p></div><hr><ul>
 
-<li>⚬ Start by cloning the Rockbox repo: <strong>git clone git://git.rockbox.org/rockbox</strong>.</li>
-<li>⚬ Navigate to the tools folder and run the command <strong>make convttf</strong>.</li>
+<li>Start by cloning the Rockbox repo: <strong>git clone git://git.rockbox.org/rockbox</strong>.</li>
+
+<li>Navigate to the tools folder and run the command <strong>make convttf</strong>.</li>
+
 - If you encounter errors with this, make sure "freetype-devel" and "freetype2" (or "ftgl") are installed.
 </ul></div>
 
-<h3 id="using-convttf">Using Convttf</h3><p>Convttf is used via the command line, and I find it useful to move the executable into the directory of fonts I&rsquo;m working with. The executable can be used like the following.</p>
+<span><h3 id="convert-otf-or-ttf-files-with-convttf">Convert OTF or TTF files with convttf</h3 id="convert-otf-or-ttf-files-with-convttf"><a href="#convert-otf-or-ttf-files-with-convttf" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Convttf is used via the command line, and I find it useful to move the executable into the directory of fonts I&rsquo;m working with. The executable can be used like the following.</p>
 <pre><code>/convttf -p 16 -c 1 fontfile.ttf</code></pre><div class="listbox box"><div><h4>Notes</h4></div><hr><ul>
 
-<li>⚬ The number beside <strong>-p</strong> is the size of the font, this unit isn&rsquo;t pt or px so you will have to experiment.</li>
-<li>⚬ <strong>-c</strong> is for the spacing between letters, 1 is an all round good option for most sizes and fonts.</li>
-<li>⚬ If you wish to add padding to the top and bottom of fonts, say for the menu (see <a href="https://themes.rockbox.org/index.php?themeid=3359&amp;target=ipodvideo" target="_blank" rel="noopener">Interpod</a> for an example), then two values can be added: <strong>-Ta</strong> and <strong>-Td</strong>.</li>
-<li>⚬ The values for -Ta and -Td should be negative, used like the following <strong>-Ta &lsquo;-3&rsquo; -Td &lsquo;-2&rsquo;</strong>. Ta is the top padding, and Td the bottom.</li>
-</ul></div>
-<hr>
+<li>The number beside <strong>-p</strong> is the size of the font, this unit isn&rsquo;t pt or px so you will have to experiment.</li>
 
-<img class="highlight" src="/img/wiki/ipod_modding/fonts02.jpg" loading="lazy" alt="A desktop running fontforge, with a text document and a file browser open.">
+<li><strong>-c</strong> is for the spacing between letters, 1 is an all round good option for most sizes and fonts.</li>
 
+<li>If you wish to add padding to the top and bottom of fonts, say for the menu (see <a href="https://themes.rockbox.org/index.php?themeid=3359&amp;target=ipodvideo" target="_blank" rel="noopener">Interpod</a> for an example), then two values can be added: <strong>-Ta</strong> and <strong>-Td</strong>.</li>
 
-<h2 id="combining-two-fonts-with-fontforge">Combining Two Fonts with Fontforge</h2><p>This is a method of combining two different .ttf fonts into one. Useful for making CJK supported fonts for Rockbox, or adding glyphs into a font for web purposes etc. Fontforge is the main application used, however if you intend to make fonts for Rockbox, you&rsquo;ll need convttf from their dev tools. This guide focuses on combining CJK fonts with non-CJK fonts.</p>
-<div class="listbox box"><div><h3>Preparing the Secondary Font</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p></div><hr><ul>
+<li>The values for -Ta and -Td should be negative, used like the following <strong>-Ta &lsquo;-3&rsquo; -Td &lsquo;-2&rsquo;</strong>. Ta is the top padding, and Td the bottom.</li>
 
-<li>⚬ Download language specific .otf file - The best font to use here is . However make sure you download the <strong>Region Specific Subset</strong> OTF file for each language you want.</li>
-<li>⚬ Open the file in Fontforge and flatten CID Layers.</li>
-<li>⚬ Remove any unnecessary characters (non-CJK letters, emoji etc).</li>
-<li>⚬ Re-encode as <strong>Unicode Full</strong>.</li>
-<li>⚬ Save as <strong>.sfd</strong>.</li>
-</ul></div>
-<div class="listbox box"><div><h3>Combining the Fonts</h3><p>Firstly, we&rsquo;re going to get a secondary font. In this case we&rsquo;ll be looking for a font for asian characters, known as a CJK Font (for <strong>C</strong>hinese, <strong>J</strong>apanese and <strong>K</strong>orean). The best font for this job is <a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto CJK</a>.</p></div><hr><ul>
-<li>⚬ Open the Base Font, which we want to combine with.</li>
-<li>⚬ Remove any unnecessary characters, like emoji.</li>
-<li>⚬ Go to <strong>Element &gt; Merge Fonts</strong> choose the .sfd Font we just made, and merge.</li>
-<li>⚬ Go to <strong>Edit &gt; Select &gt; Changed Glyphs</strong>.</li>
-<li>⚬ Go to <strong>Element &gt; Transform</strong> and select Scale.</li>
-<li>⚬ Select Origin: <strong>Glyph Origin &gt; Scale: 250% 250%</strong> &gt; select all boxes. (Note: Scale will differ on the font, so experiment).</li>
-<li>⚬ Export the font by going to <strong>File &gt;  Make Font</strong> choose true type and validate.</li>
 </ul></div>
 
-<nav class="navbut"><a class="prev" href="/wiki/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a>
-</nav>
+<span><h3 id="converting-bdf-files-with-convbdf">Converting bdf files with convbdf</h3 id="converting-bdf-files-with-convbdf"><a href="#converting-bdf-files-with-convbdf" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Convbdf is specifically for working with bitmap fonts. Again, I recommend keeping it in your /bin folder if you&rsquo;re on Linux and will use it more than once. There&rsquo;s a lot less control here (though you don&rsquo;t really need it) Most of the times you can simply use it like this:</p>
+<pre><code>/convbdf -f 16-fontfile.bdf</code></pre><div class="listbox box"><div><h4>Notes</h4></div><hr><ul>
+
+<li>Unlike convttf, with convbdf the start of the filename denotes the font size. In the above example, the font will be 16px.</li>
+
+
+<li>The -f flag makes sure the file outputs as a .fnt file neccesary for use in themes..</li>
+
+
+<li>Usin -a and -d flags work similarly to -Ta and -Td with convttf. Allowing you to trim the ascent and descent of the font if neccesary.</li>
+
+</ul></div>
+
+<nav class="navbut"><a class="prev" href="/wiki/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
 </div>
 <div class="footer layout">
-<div style="background:#bbb;padding:16px 16px 14px;border-radius:35px;min-height:40px">
-<div>
-<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
-<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
-</div>
-<details style="direction:rtl;margin-top:-50px">
-<summary>Info</summary>
-<div style="direction:ltr;margin:16px 2% 4px">
-Originally Published: <strong>June 2022</strong><br/>
-
-
-Last Updated: <strong>September 2023</strong>
-</div>
-<div style="direction:ltr;padding:4px 24px;background:#acacac;border-radius:20px;margin-top:8px;font-size:.9rem">© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>June 2022</strong><br/>
+				
+				
+				Last Updated: <strong>September 2025</strong>
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
 </div>
 </details>
 </div>
-</div>
+	</div>
 </div>
 </body>

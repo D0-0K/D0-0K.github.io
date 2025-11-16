@@ -6,14 +6,21 @@
     <description>Recent content in Rockbox Theming for Beginners on d00k</description>
     <generator>Hugo</generator>
     <language>en-ie</language>
-    <lastBuildDate>Mon, 16 Oct 2023 13:37:12 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 20:37:12 +0100</lastBuildDate>
     <atom:link href="https://d00k.net/wiki/rockbox_theming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Viewport</title>
+      <link>https://d00k.net/wiki/rockbox_theming/the_viewport/</link>
+      <pubDate>Tue, 21 Oct 2025 19:00:57 +0100</pubDate>
+      <guid>https://d00k.net/wiki/rockbox_theming/the_viewport/</guid>
+      <description>&lt;p&gt;At it&amp;rsquo;s simplest, making Rockbox themes is all about making what are called Viewports. Viewports provide an easy and reliable way to position and control visual elements on the screen. They will be your main way of bringing a theme design to life.&lt;/p&gt;&#xA;&#xA;&lt;span&gt;&lt;h2 id=&#34;visualising-the-viewport&#34;&gt;Visualising the Viewport&lt;/h2 id=&#34;visualising-the-viewport&#34;&gt;&lt;a href=&#34;#visualising-the-viewport&#34; class=&#34;header_link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 13.2 13.2&#34; height=&#34;21&#34;&gt;&lt;path d=&#34;m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3&#34; style=&#34;fill:none;stroke-linecap:round;stroke-width:2;&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;&lt;p&gt;Lets think of our device&amp;rsquo;s screen like a sheet of paper. Creating a Viewport is like cutting a rectangular shape out of that piece of paper. We have to decide where to cut it, and how tall or wide to cut.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Introduction</title>
       <link>https://d00k.net/wiki/rockbox_theming/introduction/</link>
       <pubDate>Tue, 03 Oct 2023 22:45:01 +0100</pubDate>
       <guid>https://d00k.net/wiki/rockbox_theming/introduction/</guid>
-      <description>&lt;p&gt;Since the mid-2000s, Rockbox has allowed users to modify the user-interface. Over time, this feature has evolved and matured into an intricate system of tags and markup. The theming system as it stands today provides the user with an incredible amount of freedom and control, with the possibility to do so much.&lt;/p&gt;&#xA;&lt;p&gt;Despite this however, the barrier for entry has historically been incredibly high. If someone wished to learn how to build themes from scratch, all that was available were existing themes, a single page of documentation, along with frustrating trial and error.&lt;/p&gt;</description>
+      <description>&lt;p&gt;For almost two decades, Rockbox has allowed users to modify the user interfaces of their music players. Over this time, functionality has evolved and matured into an intricate system of possibilities. The theming system today provides users with an incredible amount of freedom and control in a simple and performant manner.&lt;/p&gt;&#xA;&lt;p&gt;Despite this however, the barrier for entry has historically been quite high. While places like the Rockbox Manual provided some explanations of core concepts, most people often resorted to learning from existing themes and experimentation through trial and error.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

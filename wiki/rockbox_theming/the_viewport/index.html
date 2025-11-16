@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<link rel="me" href="https://post.lurk.org/@dook">
+<title> The Viewport  • d00k.net</title></head>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+</div></nav></div>
+
+<div class="main layout">
+
+<div class="title"><h1 id="top">The Viewport</h1><hr></div>
+<p>At it&rsquo;s simplest, making Rockbox themes is all about making what are called Viewports. Viewports provide an easy and reliable way to position and control visual elements on the screen. They will be your main way of bringing a theme design to life.</p>
+
+<span><h2 id="visualising-the-viewport">Visualising the Viewport</h2 id="visualising-the-viewport"><a href="#visualising-the-viewport" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Lets think of our device&rsquo;s screen like a sheet of paper. Creating a Viewport is like cutting a rectangular shape out of that piece of paper. We have to decide where to cut it, and how tall or wide to cut.</p>
+<p>(image of cutting)</p>
+<p>The most basic of Viewports works just like this. Two values for position, X and Y, and two values for width and height, H and W. In the example below you can also see a 5th value, this designates the font a Viewport will be drawn with, which we&rsquo;ll take a look at in a minute.</p>
+<pre><code># Basic Viewport
+# %V(x,y,width,height,font)
+%V(0,0,32,16,-)</code></pre>
+<span><h2 id="turning-viewports-on-and-off">Turning Viewports On and Off</h2 id="turning-viewports-on-and-off"><a href="#turning-viewports-on-and-off" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>In our previous example the Viewport would remain on at all times. But what if we want to control when the Viewport is displayed? Our second type of Viewport, the Conditional Viewport, allows a name to be assigned and then called upon whenever we like.</p>
+<p>The name comes first before any other values and the same name can be shared among different Viewports. When you want to then display these Conditional Viewports, a seperate tag is used to call them.</p>
+<pre><code># Calling the Conditional Viewport.
+# Generally we place this before the Conditional Viewport.
+%Vd(1st_Viewport_Label)
+#
+# Conditional Viewport
+# %Vl(label,x,y,width,height,font)
+%Vl(1st_Viewport_Label,8,8,32,64,-)</code></pre>
+<span><h2 id="drawing-info-viewports">Drawing Info Viewports</h2 id="drawing-info-viewports"><a href="#drawing-info-viewports" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Thankfully when making a theme we don&rsquo;t have to code everything. Rockbox provides us with some handy defaults for displaying things like the menus and quicksettings.</p>
+<p>These Info Viewports function almost identically to Conditional Viewports just with some different tag names. It&rsquo;s important to note that you can&rsquo;t set anything to be drawn inside these Viewports. Despite looking similar to the other Viewports, these function exclusively to tell Rockbox where to draw it&rsquo;s Menus and Quicksettings displays.</p>
+<pre><code># Calling the Info Viewport
+%VI(Info_Menu)
+#
+# Info Viewport Declaration
+# %Vi(label,x,y,width,height,font)
+%Vi(Info_Menu,8,42,200,100,-)</code></pre>
+<span><h2 id="viewport-modifier-tags">Viewport Modifier Tags</h2 id="viewport-modifier-tags"><a href="#viewport-modifier-tags" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>There are a number of Tags which allow us further control over parts of displaying Viewports. By default Viewports will make some assumptions that are not crucial to their function, which provides a simpler syntax. Rockbox gives us the opportunity to change these values through the use of Modifier Tags that are used after a Viewport is defined.</p>
+
+<span><h3 id="backdrop-layer-tag">Backdrop Layer Tag</h3 id="backdrop-layer-tag"><a href="#backdrop-layer-tag" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Rockbox provides us with two layers to draw our theme on. By default all Viewports will be drawn on the Foreground layer, but we can designate a Viewport to be drawn on the Backdrop by attaching a %VB tag to any Viewport declaration.</p>
+<pre><code>%V(x,y,w,h,f)%VB</code></pre><p>However if we leave it like this, more than likely you&rsquo;ll find that nothing will show up on your screen.The Backdrop layer will typically not update itself. Hence, whenever a Viewport is drawn in the Backdrop, the same area needs to be cut out in the Foreground.</p>
+<pre><code># Our Backdrop drawing layer
+%V(x,y,w,h,f)%VB
+#
+# Our Foreground Layer Cutout
+%V(x,y,w,h,f)</code></pre><p>If we return to our paper metaphor from earlier, the Backdrop layer is basically a separate piece of paper placed underneath. We obviously would not be able to see what is on the sheet underneath unless we cut out a piece from the sheet on top.</p>
+<div class="note listbox box"><div><h4>Quirks of the Backdrop Layer</h4></div><hr><p>
+There are some notable quirks with the Backdrop layer that are worth noting now. Rendering speed difference, bugginess, etc.
+</p></div>
+
+
+
+<span><h3 id="viewport-colours">Viewport Colours</h3 id="viewport-colours"><a href="#viewport-colours" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Easily one of the most common Viewport Modifiers,</p>
+
+<nav class="navbut"><a class="prev" href="/wiki/rockbox_theming/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Rockbox Theming for Beginners </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
+</div>
+<div class="footer layout">
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>October 2025</strong><br/>
+				
+				
+				
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+</div>
+</details>
+</div>
+	</div>
+</div>
+</body>

@@ -4,8 +4,9 @@
 <meta property="og:description" 
   content="Information on the image formats of Rockbox Theming and how to optimise them best."/><link rel="me" href="https://post.lurk.org/@dook">
 <title> Rockbox Image Optimisation  • d00k.net</title></head>
-<body><div class="header"><nav><div style="width:45vw;height:auto;max-width:184px;float:left"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu">
-<ul><li><a href="/photos/">Photos</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/design/">Design</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
 </div></nav></div>
 
 <div class="main layout">
@@ -13,38 +14,38 @@
 <div class="title"><h1 id="top">Rockbox Image Optimisation</h1><hr></div>
 <p>When producing Rockbox themes with large feature-sets, images can quickly become a bottleneck both in terms of filesize as well as graphical quality. There are many ways to address these issues, however in this guide I will cover the best practices I have discovered and incorporated into my toolbox.</p>
 
-<h2 id="the-bitmap-image-format">The Bitmap image format</h2><p>Rockbox&rsquo;s primary image format is the Bitmap. Versions 3 and 4 of the bitmap spec are recognised, while any lower specs are not. The wiki <a href="https://www.rockbox.org/wiki/CustomWPS#LCD_Screen_Sizes_47_BMP_Compatibility" target="_blank" rel="noopener">states</a> that 1-bit, 24-bit and 32-bit Bitmaps are supported, however from experience 16-bit is also acceptable. I bring up 16-bits as all images used by Rockbox are converted into 16-bit colour regardless. This brings up the first issues. When this conversion is done, no dithering is applied, leaving an often unsavoury and harsh result. By pre-processing our images, we can not only achieve better looking results but also much smaller filesizes.</p>
+<span><h2 id="the-bitmap-image-format">The Bitmap image format</h2 id="the-bitmap-image-format"><a href="#the-bitmap-image-format" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Rockbox&rsquo;s primary image format is the Bitmap. Versions 3 and 4 of the bitmap spec are recognised, while any lower specs are not. The wiki <a href="https://www.rockbox.org/wiki/CustomWPS#LCD_Screen_Sizes_47_BMP_Compatibility" target="_blank" rel="noopener">states</a> that 1-bit, 24-bit and 32-bit Bitmaps are supported, however from experience 16-bit is also acceptable. I bring up 16-bits as all images used by Rockbox are converted into 16-bit colour regardless. This brings up the first issues. When this conversion is done, no dithering is applied, leaving an often unsavoury and harsh result. By pre-processing our images, we can not only achieve better looking results but also much smaller filesizes.</p>
 
-<figure><img src="/img/wiki/ipod_modding/dither_comparison.png" loading="lazy" alt="a comparison of an image with no dither and with a dither" width="100%" height="100%">
+<figure><img src="/img/wiki/ipod_modding/dither_comparison.png" loading="lazy" alt="a comparison of an image with no dither and with a dither"  >
 <figcaption>No dither versus ordered dither.</figcaption></figure>
 
 
-<h2 id="optimising-with-gimp">Optimising with GIMP</h2><p>The best free method of optimising images I have found is with <a href="https://www.gimp.org/" target="_blank" rel="noopener">GIMP</a>. It has a wide range of dithering algorithms that produce nice results, as well as a predictable colour indexing that consistently provides small file sizes. The only downside to GIMP is that the steps cannot be automated, and thus must be repeated each time an image needs to be converted.</p>
+<span><h2 id="optimising-with-gimp">Optimising with GIMP</h2 id="optimising-with-gimp"><a href="#optimising-with-gimp" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>The best free method of optimising images I have found is with <a href="https://www.gimp.org/" target="_blank" rel="noopener">GIMP</a>. It has a wide range of dithering algorithms that produce nice results, as well as a predictable colour indexing that consistently provides small file sizes. The only downside to GIMP is that the steps cannot be automated, and thus must be repeated each time an image needs to be converted.</p>
 
-<h3 id="colour-dithering">Colour dithering</h3><p>To produce better looking images in Rockbox, we must pre-process our images by limiting the colour palette and use dithering to blend these together. We find this tool by going to <strong>Colors &gt; Dither&hellip;</strong></p>
+<span><h3 id="colour-dithering">Colour dithering</h3 id="colour-dithering"><a href="#colour-dithering" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>To produce better looking images in Rockbox, we must pre-process our images by limiting the colour palette and use dithering to blend these together. We find this tool by going to <strong>Colors &gt; Dither&hellip;</strong></p>
 <p>Inside, it may seem a little complicated at first, but understanding what we need should help. Rockbox uses a 16-bit colorspace, we can get a good visualisation of this by using Rockbox&rsquo;s built-in colour tools in the theme settings. Both the Red and Blue colours are limited to just 32 options, while Green has 64. This is known as RGB565. If we take these maximum limits, and input them into the Red, Green and Blue levels of our Dither tool in GIMP, we can dither our image in this colorspace. The rest of the options are not of importance, except for <strong>Dithering method</strong>. This changes the dithering style, and is entirely up to you and what you think looks best.</p>
 
-<figure><img src="/img/wiki/ipod_modding/Dither_Tool.jpg" loading="lazy" alt="The gimp dither tool" width="100%" height="100%">
+<figure><img src="/img/wiki/ipod_modding/Dither_Tool.jpg" loading="lazy" alt="The gimp dither tool"  >
 <figcaption>GIMP Dither tool.</figcaption></figure>
 
 
-<h3 id="indexed-colors">Indexed Colors</h3><p>The simplest step to achieving optimised filesizes is the Indexed Color tool. This is found by going to <strong>Image &gt; Mode &gt; Indexed</strong>. Once in we, have several options available. Under <strong>Colormap</strong> we can choose what limitations we wish to put on the image&rsquo;s palette. For 1-bit images, the black and white palette is perfect and you shouldn&rsquo;t need any other steps.</p>
+<span><h3 id="indexed-colors">Indexed Colors</h3 id="indexed-colors"><a href="#indexed-colors" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>The simplest step to achieving optimised filesizes is the Indexed Color tool. This is found by going to <strong>Image &gt; Mode &gt; Indexed</strong>. Once in we, have several options available. Under <strong>Colormap</strong> we can choose what limitations we wish to put on the image&rsquo;s palette. For 1-bit images, the black and white palette is perfect and you shouldn&rsquo;t need any other steps.</p>
 <p>For colour images, we use <strong>Generate optimum palette</strong> which lets us set a number. This number, however, is only a maximum. If we select <strong>Remove unused and duplicate colors from colormap</strong>, GIMP will automatically trim the Colormap down to only the colours used by the image. In the second part of the dialog, we can choose what dithering to use. This can be purely preference based, however for small, low-colour images like icons I recommend not using dithering at all and setting it to <strong>None</strong>.</p>
 
-<figure><img src="/img/wiki/ipod_modding/Index_Color.jpg" loading="lazy" alt="The gimp indexed colour tool" width="100%" height="100%">
+<figure><img src="/img/wiki/ipod_modding/Index_Color.jpg" loading="lazy" alt="The gimp indexed colour tool"  >
 <figcaption>GIMP Indexed Colour Tool.</figcaption></figure>
 
 
-<h3 id="exporting-from-gimp">Exporting from GIMP</h3><p>Exporting as a Bitmap in GIMP provides several options. The <strong>Advanced Options</strong> dialog will be unavailable if you have used indexed colour, but if you haven&rsquo;t, the options dictate the format of your bitmap image. Generally you want <strong>R5 G6 B5</strong> under the <strong>16 bits</strong> list, however if you are using true transparency (not the magenta-based masking) <strong>A8 R8 G8 B8</strong> under <strong>32 bits</strong> is used.</p>
+<span><h3 id="exporting-from-gimp">Exporting from GIMP</h3 id="exporting-from-gimp"><a href="#exporting-from-gimp" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Exporting as a Bitmap in GIMP provides several options. The <strong>Advanced Options</strong> dialog will be unavailable if you have used indexed colour, but if you haven&rsquo;t, the options dictate the format of your bitmap image. Generally you want <strong>R5 G6 B5</strong> under the <strong>16 bits</strong> list, however if you are using true transparency (not the magenta-based masking) <strong>A8 R8 G8 B8</strong> under <strong>32 bits</strong> is used.</p>
 <p>The other option available is the <strong>Compatibility Options</strong>. I uncheck <strong>Do not write color space information</strong>, this saves some bytes in filesize and is also unnecessary since Rockbox will convert our image&rsquo;s colour space regardless</p>
 
-<figure><img src="/img/wiki/ipod_modding/Export_Options.jpg" loading="lazy" alt="Gimp exporting options" width="100%" height="100%">
+<figure><img src="/img/wiki/ipod_modding/Export_Options.jpg" loading="lazy" alt="Gimp exporting options"  >
 <figcaption>GIMP&#39;s exporting options for bitmaps.</figcaption></figure>
 
 
-<h2 id="automating-the-process">Automating the Process</h2><p>While GIMP is useful, the amount of manual inputs that need to be done can be time consuming and tedious in projects with a large number of assets. To counter this, I attempted to produce a script using <a href="https://imagemagick.org/" target="_blank" rel="noopener">ImageMagick</a> that could automate the process. The project was somewhat a success, however ImageMagick proved to be the wrong tool for the job (which I&rsquo;ll talk a bit more about at the end). I&rsquo;ve split it into several different scripts based on the job and results desired.</p>
+<span><h2 id="automating-the-process">Automating the Process</h2 id="automating-the-process"><a href="#automating-the-process" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>While GIMP is useful, the amount of manual inputs that need to be done can be time consuming and tedious in projects with a large number of assets. To counter this, I attempted to produce a script using <a href="https://imagemagick.org/" target="_blank" rel="noopener">ImageMagick</a> that could automate the process. The project was somewhat a success, however ImageMagick proved to be the wrong tool for the job (which I&rsquo;ll talk a bit more about at the end). I&rsquo;ve split it into several different scripts based on the job and results desired.</p>
 
-<h3 id="background-images">Background Images</h3><p>These scripts take your backdrop images, 320x240 pixels, and converts them into the RGB565 bitmaps. If you wish to understand to script options chosen, <em>-type palette</em> turns on indexed colour, <em>-compress none</em> turns off compression, which isn&rsquo;t supported by Rockbox, and the final format and define section outputs the image as a version 3 bitmap.</p>
+<span><h3 id="background-images">Background Images</h3 id="background-images"><a href="#background-images" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>These scripts take your backdrop images, 320x240 pixels, and converts them into the RGB565 bitmaps. If you wish to understand to script options chosen, <em>-type palette</em> turns on indexed colour, <em>-compress none</em> turns off compression, which isn&rsquo;t supported by Rockbox, and the final format and define section outputs the image as a version 3 bitmap.</p>
 <p>There&rsquo;s two versions here, one uses ordered dithering and the other Floyd-Steinberg dithering. Floyd Steinberg does require an image to use as a colormap. I&rsquo;ve used <a href="https://commons.wikimedia.org/wiki/File:RGB_16bits_palette.png" target="_blank" rel="noopener">this</a> png of 16-bit colourspace.</p>
 <p>These two scripts will both produce colour-accurate bitmaps that are always 77.9kBs large. They can also be used on other images, however I will cover why you mightn&rsquo;t want to.</p>
 <pre><code># Floyd Steinberg Dither
@@ -52,37 +53,35 @@ mogrify -dither FloydSteinberg -remap RGB_16bits_palette.png -compress None -typ
 
 # Ordered/Positioned Dither
 mogrify -ordered-dither o8x8,32,64,32 -compress None -type palette -format bmp -define bmp:format=bmp3 INPUT.png</code></pre>
-<h3 id="icon-images">Icon Images</h3><p>Generally, small icons do not need to be dithered with a pattern. For this case, I made a script that converts images with a basic, direct dither.</p>
+<span><h3 id="icon-images">Icon Images</h3 id="icon-images"><a href="#icon-images" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Generally, small icons do not need to be dithered with a pattern. For this case, I made a script that converts images with a basic, direct dither.</p>
 <p>One thing to note here is the optional <strong>-kmeans 16</strong> option. This limits the colormap of the image, and can give you a decent filesize reduction. However it&rsquo;s worth testing different values for their results, hence this script is non-destructive and keeps the original input (unlike mogrify, which will overwrite the original image if it is the same filetype). You can still get a respectable filesize without using kmeans, it&rsquo;s also worth mentioning that sometimes it doesn&rsquo;t work (and I don&rsquo;t know why, but the feature is buggy apparently).</p>
 <pre><code>convert INPUT.png -kmeans 16 -ordered-dither 1x1,32,64,32 -compress None -type palette BMP3:OUTPUT.bmp </code></pre>
-<h3 id="mix-and-match">Mix and Match</h3><p>You might find yourself in situations not covered by these scripts, for example small icon images with a lot of colour you want dithered in a fancy style. In this case, mix and match the options! The optional <strong>-kmeans</strong> can work with the background image scripts, and visa versa.</p>
+<span><h3 id="mix-and-match">Mix and Match</h3 id="mix-and-match"><a href="#mix-and-match" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>You might find yourself in situations not covered by these scripts, for example small icon images with a lot of colour you want dithered in a fancy style. In this case, mix and match the options! The optional <strong>-kmeans</strong> can work with the background image scripts, and visa versa.</p>
 
-<h3 id="1-bit-bitmaps">1-bit bitmaps</h3><p>A quick and simple script to convert images into 1-bit bitmaps with the smallest size. The <strong>-type bilevel</strong> converts them to indexed 1-bit bitmaps with just 2 colours (black and white)</p>
+<span><h3 id="1-bit-bitmaps">1-bit bitmaps</h3 id="1-bit-bitmaps"><a href="#1-bit-bitmaps" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>A quick and simple script to convert images into 1-bit bitmaps with the smallest size. The <strong>-type bilevel</strong> converts them to indexed 1-bit bitmaps with just 2 colours (black and white)</p>
 <pre><code>mogrify -depth 1 -type bilevel -compress None -type palette -format bmp -define bmp:format=bmp3 INPUT.png</code></pre>
-<h2 id="where-imagemagick-failed">Where ImageMagick failed</h2><p>I ran into more than a few issues with Imagemagick making these scripts. The biggest was certain sized images having bigger filesizes than the exact same processes in GIMP, just 600-1000 bytes. Which may not be a problem for some but in a project pushing the extremes of Rockbox&rsquo;s file upload limits, these small gains can help a lot. I tracked this issue down to the colormaps of the files containing a large number of junk entries, the colormap would be set to 255 and any image with less would have the remainding space filled with these junk entries. Another issue with Imagemagick is the lack of dithering algorithms, just 2 compared to GIMP having around 7-8.</p>
+<span><h2 id="where-imagemagick-failed">Where ImageMagick failed</h2 id="where-imagemagick-failed"><a href="#where-imagemagick-failed" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>I ran into more than a few issues with Imagemagick making these scripts. The biggest was certain sized images having bigger filesizes than the exact same processes in GIMP, just 600-1000 bytes. Which may not be a problem for some but in a project pushing the extremes of Rockbox&rsquo;s file upload limits, these small gains can help a lot. I tracked this issue down to the colormaps of the files containing a large number of junk entries, the colormap would be set to 255 and any image with less would have the remainding space filled with these junk entries. Another issue with Imagemagick is the lack of dithering algorithms, just 2 compared to GIMP having around 7-8.</p>
 <p>My solution for this will be to create my own image conversion tool specifically for making these Rockbox-targetting bitmaps. The backbone will be makew0rld&rsquo;s <a href="https://github.com/makew0rld/dither" target="_blank" rel="noopener">dither library</a>. Having this level of fine control over the conversion should hopefully allow for the creation of incredible accurate images with the smallest file sizes possible (even smaller than GIMP!) I&rsquo;ll probably get to making this the next time I encounter the tedium of image conversion.</p>
 
-<nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a>
-</nav>
+<nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
 </div>
 <div class="footer layout">
-<div style="background:#bbb;padding:16px 16px 14px;border-radius:35px;min-height:40px">
-<div>
-<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
-<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
-</div>
-<details style="direction:rtl;margin-top:-50px">
-<summary>Info</summary>
-<div style="direction:ltr;margin:16px 2% 4px">
-Originally Published: <strong>May 2023</strong><br/>
-
-
-Last Updated: <strong>September 2023</strong>
-</div>
-<div style="direction:ltr;padding:4px 24px;background:#acacac;border-radius:20px;margin-top:8px;font-size:.9rem">© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>May 2023</strong><br/>
+				
+				
+				Last Updated: <strong>September 2023</strong>
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
 </div>
 </details>
 </div>
-</div>
+	</div>
 </div>
 </body>

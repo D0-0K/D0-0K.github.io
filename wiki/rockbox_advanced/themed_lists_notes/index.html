@@ -4,8 +4,9 @@
 <meta property="og:description" 
   content="Various notes about the Themed Lists feature of Rockbox"/><link rel="me" href="https://post.lurk.org/@dook">
 <title> Themed Lists Exploration Notes  • d00k.net</title></head>
-<body><div class="header"><nav><div style="width:45vw;height:auto;max-width:184px;float:left"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu">
-<ul><li><a href="/photos/">Photos</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/design/">Design</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
 </div></nav></div>
 
 <div class="main layout">
@@ -15,18 +16,18 @@
 <p>This feature is largely unexplored territory in terms of it&rsquo;s potential. Only a very small handful of people have made themes from scratch with this feature, gevaerts who is a Rockbox developer and Frankenpod who is one of the most experienced creators of themes. Recently with adwaitapod 3.0, I utilised the feature to create the highly custom <a href="https://github.com/D0-0K/adwaitapod/wiki/User-Preference-Settings" target="_blank" rel="noopener">user preference settings menus</a>, but this is as far as I&rsquo;ve gotten.</p>
 <hr>
 
-<h2 id="setting-up-a-basic-list">Setting up a basic list</h2><p>To create a basic list, you need three elements. A <strong>%Lb</strong> tag, a <strong>%Vi</strong> viewport, and a <strong>%Vl</strong> Viewport. The <strong>%Lb</strong> and <strong>%Vl</strong> functions must have the same title, this will define an entry in your menu. The <strong>%Vi</strong> or main viewport, will define the range of space we want our menu entries to tile within. Here&rsquo;s a quick example:</p>
+<span><h2 id="setting-up-a-basic-list">Setting up a basic list</h2 id="setting-up-a-basic-list"><a href="#setting-up-a-basic-list" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>To create a basic list, you need three elements. A <strong>%Lb</strong> tag, a <strong>%Vi</strong> viewport, and a <strong>%Vl</strong> Viewport. The <strong>%Lb</strong> and <strong>%Vl</strong> functions must have the same title, this will define an entry in your menu. The <strong>%Vi</strong> or main viewport, will define the range of space we want our menu entries to tile within. Here&rsquo;s a quick example:</p>
 <pre><code>%Lb(entry,100,10)
 %Vi(-,0,0,100,60,-)
 %Vl(entry,0,0,100,10,-)text</code></pre><p>From the above example, we would get a simple menu where 6 items would be displayed on screen.</p>
 
-<h2 id="single-item-display">Single Item Display</h2><p>So for adwaitapod, I wanted to have the numerical selection screens be like the libadwaita style, where you see a single number and can increase or decrease it. To achieve this in Rockbox we need to first set up a <strong>%Lb</strong> function that wont render, then using a <strong>%Vl</strong> viewport we render the numbers by utilising the <strong>%LT</strong> current text item.</p>
+<span><h2 id="single-item-display">Single Item Display</h2 id="single-item-display"><a href="#single-item-display" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>So for adwaitapod, I wanted to have the numerical selection screens be like the libadwaita style, where you see a single number and can increase or decrease it. To achieve this in Rockbox we need to first set up a <strong>%Lb</strong> function that wont render, then using a <strong>%Vl</strong> viewport we render the numbers by utilising the <strong>%LT</strong> current text item.</p>
 <pre><code>%Vd(numbers)%Lb(hide,1,1)
 %Vl(hide,0,0,1,1,-)
 %Vl(numbers,46,45,75,25,-)%LT</code></pre><p>It should be noted here that the <strong>hide</strong> functions are set to 1x1, instead of 0x0 as you might instinctively do. This is done to prevent crashes due to memory bugs, you might also need to test this on different hardware as it can still crash like this.</p>
 <p>If all else fails, use the smallest font you can possibly make, fit the viewport to that and then colour it to the background (if possible).</p>
 
-<h2 id="themed-scroll-bar">Themed Scroll Bar</h2><p>Arguably the best feature of theming lists, themed scroll bars, this has a bit of setup to keep in mind. For starters, you want to treat it like any old progress bar, so setup a viewport where you want this scrollbar. Next set up an <strong>%LB</strong> tag using the basic progress bar setup.</p>
+<span><h2 id="themed-scroll-bar">Themed Scroll Bar</h2 id="themed-scroll-bar"><a href="#themed-scroll-bar" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Arguably the best feature of theming lists, themed scroll bars, this has a bit of setup to keep in mind. For starters, you want to treat it like any old progress bar, so setup a viewport where you want this scrollbar. Next set up an <strong>%LB</strong> tag using the basic progress bar setup.</p>
 <p>This will initially not function like you&rsquo;d expect, partly because it&rsquo;s still basically just a progress bar but based on your position on a page. To fix this we can use the <strong>invert</strong> and <strong>nobar</strong> parameters, then add a slider from an image that will be our actual scrollbar.</p>
 <p>Setting a backdrop on the scroll bar wont work like it does for other progress bars, so here to do that you can use an identical viewport but rendered on the backdrop layer and display your image.</p>
 <pre><code>%Vl(scrollbar,310,30,5,205,-)%VB
@@ -35,49 +36,47 @@
 %Vl(scrollbar,310,30,5,-,-)
 %LB(0,0,5,210,invert,noborder,nobar,slider,scrollbar_image)</code></pre><p>One last note is that it&rsquo;s <em>crucial</em> to still consider the user&rsquo;s preferences and settings. Make sure to use <strong>%?LB</strong> to only call the scrollbar when needed, and use the <strong>%St</strong> tag to respect the user&rsquo;s scrollbar position settings.</p>
 
-<h2 id="incorporating-with-a-lockscreen">Incorporating with a Lockscreen</h2><p>Switching off viewports to create a Lockscreen is pretty similar to how it works with regular list menus. You need to set up your <strong>%Lb</strong> and <strong>%VI</strong> loading with hold triggers. You will want to set up a screen flushing viewport to clear the menu from the screen, this can just be a simple fullscreen viewport.</p>
+<span><h2 id="incorporating-with-a-lockscreen">Incorporating with a Lockscreen</h2 id="incorporating-with-a-lockscreen"><a href="#incorporating-with-a-lockscreen" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Switching off viewports to create a Lockscreen is pretty similar to how it works with regular list menus. You need to set up your <strong>%Lb</strong> and <strong>%VI</strong> loading with hold triggers. You will want to set up a screen flushing viewport to clear the menu from the screen, this can just be a simple fullscreen viewport.</p>
 <pre><code>%?mh&lt;%Vd(flush)|%Lb(entry,100,10)%VI(range)&gt;
 #
 %Vl(entry,0,0,100,10,-)text
 #
 %Vl(flush,0,0,-,-,-)</code></pre><p>One thing to note if you are using a themed scrollbar: you will want to place the code setting up the scrollbar after all this, and the code rendering the scrollbar before. This prevents strange clipping after deactivating the lockscreen.</p>
 
-<h2 id="styling-menu-lists">Styling Menu Lists</h2><p>You can style your menu item selectors using themed lists, adding images, extra text and more. This is done simply by making more viewports and adding your elements. Use %?Lc to only show elements on the currently selected item.</p>
+<span><h2 id="styling-menu-lists">Styling Menu Lists</h2 id="styling-menu-lists"><a href="#styling-menu-lists" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>You can style your menu item selectors using themed lists, adding images, extra text and more. This is done simply by making more viewports and adding your elements. Use %?Lc to only show elements on the currently selected item.</p>
 <p>One important rule to follow here is that in order for the current selected text to scroll, it must be placed last in the viewport order. If there is anything else placed after the viewport with %LT, then the text wont be able to scroll</p>
 <pre><code>%Vl(main,0,0,10,26,-)%?Lc&lt;%xd(left_corner)&gt;
 %Vl(main,7,0,20,26,-)%xd(icon)
 %Vl(main,292,0,10,26,-)%?Lc&lt;%xd(right_corner)&gt;
 %Vl(main,27,0,265,26,-)%s%LT</code></pre>
-<h2 id="multiple-viewports">Multiple Viewports</h2><p>Setting up multiple viewports is a little less straight forward than with the default menu system as there are a lot of out-of-bounds crashes than can be encountered if you don&rsquo;t set up correctly. From what I can tell, having a fallback viewport is crucial to avoiding any crashes and errors.</p>
+<span><h2 id="multiple-viewports">Multiple Viewports</h2 id="multiple-viewports"><a href="#multiple-viewports" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Setting up multiple viewports is a little less straight forward than with the default menu system as there are a lot of out-of-bounds crashes than can be encountered if you don&rsquo;t set up correctly. From what I can tell, having a fallback viewport is crucial to avoiding any crashes and errors.</p>
 <p>This is done by creating a default viewport before any of the viewports you intend to use like the following:</p>
 <pre><code>%Vi(-,3,28,302,-,-)
 %Vi(Main_Menu,3,28,302,-,-)
 %Vi(Sub_Menu,3,55,302,-,-)
 %Vi(Half_Menu,3,28,182,-,-)</code></pre><p>These viewports can then be called alongside your %Lb viewports wherever you manage those.</p>
 
-<h2 id="dont-draw-on-the-backdrop">Don&rsquo;t draw on the Backdrop</h2><p>It&rsquo;ll crash :(</p>
+<span><h2 id="dont-draw-on-the-backdrop">Don&rsquo;t draw on the Backdrop</h2 id="dont-draw-on-the-backdrop"><a href="#dont-draw-on-the-backdrop" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>It&rsquo;ll crash :(</p>
 
-<nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a>
-</nav>
+<nav class="navbut"><a class="prev" href="/wiki/#rockbox-theming"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
 </div>
 <div class="footer layout">
-<div style="background:#bbb;padding:16px 16px 14px;border-radius:35px;min-height:40px">
-<div>
-<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
-<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
-</div>
-<details style="direction:rtl;margin-top:-50px">
-<summary>Info</summary>
-<div style="direction:ltr;margin:16px 2% 4px">
-Originally Published: <strong>October 2023</strong><br/>
-
-
-Last Updated: <strong>September 2024</strong>
-</div>
-<div style="direction:ltr;padding:4px 24px;background:#acacac;border-radius:20px;margin-top:8px;font-size:.9rem">© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>October 2023</strong><br/>
+				
+				
+				Last Updated: <strong>September 2024</strong>
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
 </div>
 </details>
 </div>
-</div>
+	</div>
 </div>
 </body>

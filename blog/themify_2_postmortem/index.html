@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<meta property="og:description" 
+  content="Some thoughts and reflections on the development process of Themify 2."/><link rel="me" href="https://post.lurk.org/@dook">
+<title> Themify 2 Post Mortem  • d00k.net</title></head>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+</div></nav></div>
+
+<div class="main layout">
+
+<div class="title"><h1 id="top">Themify 2 Post Mortem</h1><hr></div>
+<p>I&rsquo;ve finally completed Themify 2 after a gruelling 2+ year development.</p>
+<p>Recently while thinking over the development process of the project, the term &ldquo;development hell&rdquo; came to mind as a fitting way to describe it. While there were moments when things felt fun and fluid to work on, these moments were few and far between and more often than not I was hitting my head against a wall and having to solve unbelievably frustrating problems.</p>
+<p>It&rsquo;s fairly telling of how difficult it was that on several occasions, maybe around 3 separate times, I was convinced that it would be impossible to ship the project.</p>
+<p>Nonetheless, it has been completed. And I&rsquo;m glad to get it out, both to be finally done with this chapter but also to get it into user&rsquo;s hands. The feedback has been great already. I learned and grew an awful lot throughout the development process, I&rsquo;d like to use this post as a chance to reflect on some of the biggest changes I had throughout these past 2 years.</p>
+
+<span><h2 id="becoming-a-better-designer">Becoming a Better Designer</h2 id="becoming-a-better-designer"><a href="#becoming-a-better-designer" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>It probably feels obvious that we get better at our main skills over time, but looking back I think the change in my capabilities as a designer grew enormously over the course of the past 2 years. This is in large part from my time studying Interaction Design in college, but also I think how I approach design has changed drastically.</p>
+<p>I want to go into more detail about this in another blog post soon, but specifically I feel that I&rsquo;ve become more of a Interaction or UX designer than a UI one. For me the distinction is that when I design for UI, I was focused on aesthetics, placement, coolness etc. Nowadays, I&rsquo;m far more interested in a User&rsquo;s actual experience with my interface. How are they interacting with this? How do they feel when something glitches, would they actually expect X feature to do Y?</p>
+<p>It&rsquo;s questions like that which drove such a revolution in Themify 2, for the first year I was so dead focused on the technical feasibility of my design, making it a reality. But in the second year I had the time to step and ask myself if some of my design decisions were actually <em>good</em>.</p>
+<p>More often than not, they really weren’t. Does the Quickscreen really need it&rsquo;s own status bar, wont it confuse users if the battery switches sides? Do I really need an ambiguous dot as the storage access indicator? Is an inaccurate battery level even necessary?</p>
+<p>It was questions like these that slowly started to make Themify 2 sharper and sharper, I cut away the fat so to speak, and in doing so I became a lot prouder of what I was making and more confident in my own abilities.</p>
+<p>It definitely was not something that happened out of nowhere. I&rsquo;ve had a very good tutor for a couple of years now in college, who has really driven me to question what I design and actually focus on the user rather than the industry status-quo. Without him, I certainly don&rsquo;t think Themify 2 would have ended up as strong as it did.</p>
+
+<span><h2 id="project-managing-with-intent">Project Managing with Intent</h2 id="project-managing-with-intent"><a href="#project-managing-with-intent" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>With previous projects, I was absolutely guilty of failing on project management. I was typically go with the flow and just focus on programming or design. These horrendously poor habits flowed over into Themify 2 and really sabotaged things for a while. Eventually, earlier this year I realised that it had gone on far too long and I finally started organising and managing the project with a focus on making my life a lot easier.</p>
+<p>The first big change I made was to branch out my testing simulator. I rarely test on device, rather using Rockbox&rsquo;s simulator for the 5th gen iPod classic as it makes iterating and testing much faster. However I always used just a single sim build for all my projects, so for example when I wanted to take the code and upload it to a git repo I&rsquo;d have to go fishing and it would take forever. On many occasions I&rsquo;d forget updated font files which would cause big issues. What I did to fix this was to spin up a simulator instance just for Themify 2, along with a bash scrip to make loading it even faster. This meant I could write quick, and upload to my git repo without any missed files. This has been a huge game changer.</p>
+<p>I also spun off my designs into individual files for each feature. This would seem like the obvious direction, but typically I used to work in a giant, single file. This usually wouldn&rsquo;t be an issue, however Themify 2 grew so complex that the only way to insure things stayed in order was to properly organise the individual components as design references. I think this made a big difference in keeping me focus and speeding up the design process, and have simple reference was also incredibly helpful when working on the manual with Kristine and also making promotional material.</p>
+<p>One of the best changes I made was with language support in my fonts. My old approach for adwaitapod and Themify 1 followed someone else&rsquo;s method of taking your base font and combining it with NotoSans CJK. This worked for the most part, but I knew it was overkill while also not supporting other alphabets like Cyrillic or Arabic. Not to mention the filesizes were utterly huge. Working on fonts used to be the part I hated the most when working with themes, but it was absolutely necessary to me. Going into Themify 2 I knew that I had to change how I prepared multi-language fonts. My solution was to break the problem down and create a repeatable, trusted method.</p>
+<p>I ended up creating a fork of Noto Sans called &ldquo;Noto Micro Sans&rdquo;, aimed at being a minimum viable subset for low-memory devices. This required a lot of research, for many languages their alphabets were quite simple and easily taken from existing unicode blocks. But for the Asian languages I had a nightmare in research and reading to find viable subsets for daily use. My first attempt ended up being a failure, but my second has actually turned out pretty well. The result project was highly modular, letting people pick and choose what they want to support, but also incredibly small. It&rsquo;s something like a 3x reduction in size, with more support than before, <em>and</em> I can use it easily with future projects!</p>
+<p>There have been a lot of other things I&rsquo;ve done different, especially in organisation. I used lists a lot more, I also kept track of changes via git instead of just dumping them on all in one go (this has saved me on a number of occasions)</p>
+
+<span><h2 id="actually-using-my-brain">Actually using my Brain</h2 id="actually-using-my-brain"><a href="#actually-using-my-brain" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>I don&rsquo;t know why, but typically I used to work on instinct. Solving problems by brute force rather than actually thinking them out. This created some serious wastes of time, especially when developing new solutions for the project.</p>
+<p>One of the major developments in the project was the font UI drawing system. Themify is designed to be completely recolourable by the end user, so the UI needs to accommodate this. In the prototype, I achieved this by using 1-bit images that Rockbox coloured itself. This worked, but with no anti-aliasing it looked pretty poor. I realised that the way for my to create my user-changeable UI with anti-aliasing was to shoehorn my graphics into a font.</p>
+<p>This was a <em>lot</em> easier said than done. Rockbox using a custom font format, with a convertor that essentially rasterises vector fonts. Straight forward enough&hellip; if the convertor didn&rsquo;t randomise font height. You can direct it to get <em>close</em> to a specific pixel height, but it will always be off in some way. This made it frustratingly difficult to make my UI render pixel perfect.</p>
+<p>So instead of thinking it through and doing some maths, I went straight to brute forcing the correct values for font size and scale in the convertor. I spent over 50 hours in December 2023 doing this, until I eventually found the one combination of values that worked. Now to be fair, it would have been difficult to work out an equation for generating the correct size. The brute force effort created a reliable base line that I was able to use eventually to find the magic number for conversion at any size. However it also took me over a year to actually think to search for that magic number, so I think I can say I&rsquo;ve been stupid at many points here.</p>
+<p>I think once I started treating the project seriously, like a job instead of a random hobby, I started actually using my head and being smarter with what I was doing. Surprisingly enough things were more fun when I was able to make them easier too.</p>
+
+<span><h2 id="overall-reflections">Overall Reflections</h2 id="overall-reflections"><a href="#overall-reflections" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Looking at things after the fact, the project was far too stressful and difficult. I put myself in a position where I felt I had no choice but to complete the project, though I did learn to cut features and compromise on perfection.</p>
+<p>I&rsquo;ve always been someone who learns by doing, and I think as a whole Themify 2&rsquo;s development has represented a major shift in my life and career as a designer. It&rsquo;s been the tumultuous trial and error of applying what I was learning to a real world project, while also trying to take myself more seriously and trust in my own decisions.</p>
+<p>It&rsquo;s been an uncharacteristically dry spell of projects and updates on here. I&rsquo;m really looking forward to moving on to new things, I have a bunch of exciting stuff I&rsquo;m working on that I can&rsquo;t wait to share!</p>
+<p>Thanks for sticking around,</p>
+<p>Dook</p>
+
+<nav class="navbut"><a class="prev" href="/blog/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Blog </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
+</div>
+<div class="footer layout">
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>September 2025</strong><br/>
+				
+				
+				
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+</div>
+</details>
+</div>
+	</div>
+</div>
+</body>

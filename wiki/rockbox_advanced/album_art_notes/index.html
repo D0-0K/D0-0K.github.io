@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<link rel="me" href="https://post.lurk.org/@dook">
+<title> Album Art Tag Exploration  • d00k.net</title></head>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+</div></nav></div>
+
+<div class="main layout">
+
+<div class="title"><h1 id="top">Album Art Tag Exploration</h1><hr></div>
+
+<span><h2 id="initialisation">Initialisation</h2 id="initialisation"><a href="#initialisation" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Album Art is drawn using two tags: <strong>%Cl</strong> to select an area and size, and <strong>%Cd</strong> to draw.</p>
+<p>An Example would be the following:</p>
+<pre><code>%Cl(0,0,120,120)%Cd</code></pre>
+<span><h2 id="relative-viewports">Relative Viewports</h2 id="relative-viewports"><a href="#relative-viewports" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Rockbox supports less rigid values for viewport dimensions. &ldquo;-&rdquo; makes a viewport&rsquo;s width or height fill up the remaining screen space. Using negative values designates where the viewport will stop being drawn from the right or bottom side of the screen. Lastly percentage values allows a viewport to be drawn in relation to a device&rsquo;s screen dimensions. Some examples of these in use:</p>
+<pre><code># Full Screen Viewport.
+%V(0,0,-,-,-)
+#
+# Viewport with a 10px margin around the screen.
+%V(10,10,-10,-10,-) 
+#
+# Viewport drawn with percentages.
+%V(2%,2%,90%,90%,-) 
+#</code></pre>
+<span><h3 id="relative-viewports-with-album-art">Relative Viewports with Album Art</h3 id="relative-viewports-with-album-art"><a href="#relative-viewports-with-album-art" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Using &ldquo;-&rdquo; or any negative values in the <strong>%Cl</strong> tag cause the album art to fail to render. This seems to happen regardless of wether or not the parent viewport is drawn with relative dimensions.</p>
+<p>Using percentage values in <strong>%Cl</strong> draws the album art in relation to the values of the parent viewport.</p>
+
+<span><h2 id="layers">Layers</h2 id="layers"><a href="#layers" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Themes appear to be rendered from top to bottom. In this way, viewports called last render on top.</p>
+
+<nav class="navbut"><a class="prev" href="/wiki/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
+</div>
+<div class="footer layout">
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>October 2025</strong><br/>
+				
+				
+				
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+</div>
+</details>
+</div>
+	</div>
+</div>
+</body>

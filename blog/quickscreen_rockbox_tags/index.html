@@ -4,8 +4,9 @@
 <meta property="og:description" 
   content="Discussing work I&#39;ve been doing recently to improve the ability to theme Rockbox&#39;s Quickscreen."/><link rel="me" href="https://post.lurk.org/@dook">
 <title> A new way to theme the Quickscreen in Rockbox  • d00k.net</title></head>
-<body><div class="header"><nav><div style="width:45vw;height:auto;max-width:184px;float:left"><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="184px" height="172px"></a></div><div class="menu">
-<ul><li><a href="/photos/">Photos</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/design/">Design</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><img src="/img/assets/Logo.svg" aria-hidden="true" width="240px" height="188px"></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
 </div></nav></div>
 
 <div class="main layout">
@@ -13,54 +14,52 @@
 <div class="title"><h1 id="top">A new way to theme the Quickscreen in Rockbox</h1><hr></div>
 <p>For the past year, I&rsquo;ve been working on a major redesign of <a href="/design/themify">Themify</a>, my user-customisable Rockbox theme. It&rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&rsquo;s Quickscreen.</p>
 
-<h2 id="what-is-the-quickscreen">What is the Quickscreen?</h2><p>For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.</p>
+<span><h2 id="what-is-the-quickscreen">What is the Quickscreen?</h2 id="what-is-the-quickscreen"><a href="#what-is-the-quickscreen" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.</p>
 
-<h2 id="theorizing-a-path-to-custom-quickscreens">Theorizing a path to custom Quickscreens</h2><p>During Adwaitapod 3.0&rsquo;s development, I began to theorize a method of creating custom Quickscreens. Theme creators are no strangers to using hacks and tricks to get around the limitations of the theme engine, and I adapted some of these to make the first prototype a reality.</p>
+<span><h2 id="theorizing-a-path-to-custom-quickscreens">Theorizing a path to custom Quickscreens</h2 id="theorizing-a-path-to-custom-quickscreens"><a href="#theorizing-a-path-to-custom-quickscreens" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>During Adwaitapod 3.0&rsquo;s development, I began to theorize a method of creating custom Quickscreens. Theme creators are no strangers to using hacks and tricks to get around the limitations of the theme engine, and I adapted some of these to make the first prototype a reality.</p>
 <p>Themes in Rockbox are constructed using Viewports with contents. Viewports are essentially a C struct that you provide coordinates, dimensions and information like a font. The theme engine has a few different kinds of viewports, but the important one here is the &ldquo;menu&rdquo; viewport. This is a mandatory inclusion in every theme, essentially drawing the main interface of Rockbox. It&rsquo;s within this viewport that the default Quickscreen is drawn.</p>
 <p>Typically default viewports can be suppressed using a 1px wide viewport, essentially making it so small that the contents don&rsquo;t appear. However on the Quickscreen, this caused Rockbox to hard crash, something which could cause major issues on a user&rsquo;s device. To solve this, I ended up creating the smallest possible font I could, and fine tuned the viewport size until it didn&rsquo;t crash anymore. This could then be hidden using colour to blend it into a solid backdrop.</p>
 <p>I was then left with a (nearly) blank canvas to create my own Quickscreen on. However, I discovered a major limitation that prevented this being a feasible implementation for current themes.</p>
 
-<h2 id="the-problem">The Problem</h2><p>Rockbox&rsquo;s large number of settings and options are made available to themes via strings. These strings can be called upon via a tag in a theme&rsquo;s code that displays the output of a given setting. This includes features like the user&rsquo;s Quicksettings, which are accessible via &ldquo;qs top&rdquo;, &ldquo;qs right&rdquo; etc.</p>
+<span><h2 id="the-problem">The Problem</h2 id="the-problem"><a href="#the-problem" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Rockbox&rsquo;s large number of settings and options are made available to themes via strings. These strings can be called upon via a tag in a theme&rsquo;s code that displays the output of a given setting. This includes features like the user&rsquo;s Quicksettings, which are accessible via &ldquo;qs top&rdquo;, &ldquo;qs right&rdquo; etc.</p>
 <p>The issue is however, is that these strings only output the name of the setting saved to each Quicksetting slot. To be feature-compliant with the default Quickscreen, a theme would need to be able to display the value of those settings.</p>
 <p>But this is not something that was technically possible in the Rockbox theme engine. There&rsquo;s no string available for Quicksetting values, nor any way to recursively find the values using the Quicksetting&rsquo;s strings. It was clear that in order to make these improvements feasible, I would need to expand the Rockbox theming engine.</p>
 
-<h2 id="working-in-rockboxs-codebase">Working in Rockbox&rsquo;s codebase</h2><p>While I had come up with a potential in my mind before looking at the codebase, once I actually got hands on with understanding how the theme engine works it proved to be not the best solution. There was a moment at the start of my attempts where I got rather chastised for what was quite frankly brainless code, however once the person realised that I had no idea what I was doing they were quick to begin explaining to me where I went wrong and how memory in C works.</p>
+<span><h2 id="working-in-rockboxs-codebase">Working in Rockbox&rsquo;s codebase</h2 id="working-in-rockboxs-codebase"><a href="#working-in-rockboxs-codebase" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>While I had come up with a potential in my mind before looking at the codebase, once I actually got hands on with understanding how the theme engine works it proved to be not the best solution. There was a moment at the start of my attempts where I got rather chastised for what was quite frankly brainless code, however once the person realised that I had no idea what I was doing they were quick to begin explaining to me where I went wrong and how memory in C works.</p>
 <p>This was a rather pivotal moment on my journey as I realised that in order to succeed I needed to be smart rather than just brute forcing my way to a solution. My original attempts involved copying how the settings strings worked, and basically running it again to get the Quickscreen item&rsquo;s values. This eventually worked, but the values got mangled somewhere between my code and the display output. After taking a month off, one day the solution came to me out of nowhere: just copy what the default Quickscreen does.</p>
 <p>The default Quickscreen&rsquo;s solution is quite simple. Simply searching up the settings list for the Quickscreen item, then either returning it&rsquo;s value with a function or simply turning the pointer into a string and returning that. I got results very quickly using this method, not to mention stable ones too (which were not common in my previous attempts).</p>
 
-<h2 id="the-final-result">The final result</h2><p>My merge request ended up with 8 new tags for the theme engine. I broke down what was needed into a simple formula: take the four directions the Quicksettings are mapped to on the controls (Top, Bottom, Left and Right) and assign a single character representation (T, B, L and R). Then assign the title of the Quicksetting to the uppercase characters, and the value of the Quicksetting to the lowercase characters. Finally prefix with the letter Q to annunciate it&rsquo;s relation to the Quickscreen.</p>
+<span><h2 id="the-final-result">The final result</h2 id="the-final-result"><a href="#the-final-result" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>My merge request ended up with 8 new tags for the theme engine. I broke down what was needed into a simple formula: take the four directions the Quicksettings are mapped to on the controls (Top, Bottom, Left and Right) and assign a single character representation (T, B, L and R). Then assign the title of the Quicksetting to the uppercase characters, and the value of the Quicksetting to the lowercase characters. Finally prefix with the letter Q to annunciate it&rsquo;s relation to the Quickscreen.</p>
 <p>It results in a large number of tags, but allows the code to be easily read at a glance. See a small example below of the left Quicksetting tags in use.</p>
 <pre><code># Left Button
 %Vl(Quicksetting_Title,45,130,100,18,3)%QL
 %Vl(Quickscreen_Value,45,149,100,16,4)%Ql</code></pre>
-<figure><img src="/img/blog/quicksettings.png" loading="lazy" alt="two ipods, showing a before and after situation. The before uses basic text to display quicksettings, the after uses graphics and buttons to show the same information but more visually" width="100%" height="100%">
+<figure><img src="/img/blog/quicksettings.png" loading="lazy" alt="two ipods, showing a before and after situation. The before uses basic text to display quicksettings, the after uses graphics and buttons to show the same information but more visually"  >
 <figcaption>The Quickscreen tags being used in Themify 2.</figcaption></figure>
 
 
-<h2 id="wrap-up-and-thanks">Wrap up and thanks</h2><p>My original merge request proved to be rather lengthy, mostly out of fear of adding too much code outside my tags. However major thanks to Chris on the Rockbox team who came up with a brilliantly clever change that turned my code into a small function that the tags could call on. He also helped to get the merge request approved and added to the main repository.</p>
+<span><h2 id="wrap-up-and-thanks">Wrap up and thanks</h2 id="wrap-up-and-thanks"><a href="#wrap-up-and-thanks" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>My original merge request proved to be rather lengthy, mostly out of fear of adding too much code outside my tags. However major thanks to Chris on the Rockbox team who came up with a brilliantly clever change that turned my code into a small function that the tags could call on. He also helped to get the merge request approved and added to the main repository.</p>
 <p>This side quest has proved to be a big lesson for me in many parts of programming. I think the biggest thing I&rsquo;ve gotten out of it is properly using git as I develop my projects, keeping track of every change made to the codebase rather than only updating every few months. I have some more changes to work on in the coming future to improve the quality of life for Rockbox users in the years to come, not to mention adding these new Quickscreen features to my current themes.</p>
 
-<nav class="navbut"><a class="prev" href="/blog/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Blog </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a>
-</nav>
+<nav class="navbut"><a class="prev" href="/blog/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Blog </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
 </div>
 <div class="footer layout">
-<div style="background:#bbb;padding:16px 16px 14px;border-radius:35px;min-height:40px">
-<div>
-<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a>
-<a class="icon" href="https://webring.xxiivv.com/" target="_blank"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
-</div>
-<details style="direction:rtl;margin-top:-50px">
-<summary>Info</summary>
-<div style="direction:ltr;margin:16px 2% 4px">
-Originally Published: <strong>July 2024</strong><br/>
-
-
-Last Updated: <strong>August 2024</strong>
-</div>
-<div style="direction:ltr;padding:4px 24px;background:#acacac;border-radius:20px;margin-top:8px;font-size:.9rem">© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>July 2024</strong><br/>
+				
+				
+				Last Updated: <strong>August 2024</strong>
+			</div>
+			<div>© 2022—2025 &nbsp;-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> BY-NC-SA 4.0</a>
 </div>
 </details>
 </div>
-</div>
+	</div>
 </div>
 </body>
