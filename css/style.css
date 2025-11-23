@@ -24,7 +24,7 @@ li a,.footer a,.header div,.navbut a,kbd,span,span>*,.title{display:inline-block
 .logo:hover{filter:saturate(99)}
 .layout{padding:2ex;padding:min(4%,32px)}
 .footer{line-height:175%}
-.footer details{direction:rtl;margin-top:-66px;div{direction:ltr}div:nth-child(2){margin:14px 2% 16px;line-height:170%}div:nth-child(3){padding:4px 24px;background:#acacac;border-radius:24px;margin-top:8px;font-size:1rem;line-height:32px}}
+.footer details{direction:rtl;margin-top:-66px;div{direction:ltr}div:nth-child(2){margin:14px 2% 16px;line-height:170%}div:nth-child(3){padding:12px 24px 7px;background:#acacac;border-radius:24px;font-size:1rem;display:flex;justify-content:space-between}}
 .footer>div{background:#bbb;padding:12px 12px 11px;border-radius:36px;min-height:52px}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
 h1{font-size:3rem;font-size:clamp(2.5em,10vw,3rem);line-height:1.1em}
@@ -61,6 +61,7 @@ p a{text-decoration:underline;text-decoration-thickness:2px;padding:9px 5px 5px;
 .cardbox div{padding:12px 5% 28px;}
 .cardbox .hero{padding:0;position:relative;overflow:hidden}
 summary{cursor:pointer;padding:0 3% 0 10px;margin:8px;background:#b3b3b3;border-radius:22px;list-style:none;line-height:50px;height:48px}
+details>summary::-webkit-details-marker {display:none}
 summary:hover{filter:brightness(.95)}
 summary:active{filter:brightness(.9)}
 .footer summary{width:67px;margin:0;border-radius:32px;background:#9f9f9f;padding:3px 8px 3px 21px;text-align:left}
