@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on d00k</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://d00k.net/blog/</link>
     <description>Recent content in Blog on d00k</description>
     <generator>Hugo</generator>
     <language>en-ie</language>
     <lastBuildDate>Sun, 28 Dec 2025 22:58:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://d00k.net/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating from Github to Sourcehut</title>
-      <link>http://localhost:1313/blog/migrating-from-github-to-sourcehut/</link>
+      <link>https://d00k.net/blog/migrating-from-github-to-sourcehut/</link>
       <pubDate>Sun, 28 Dec 2025 22:22:36 +0000</pubDate>
-      <guid>http://localhost:1313/blog/migrating-from-github-to-sourcehut/</guid>
+      <guid>https://d00k.net/blog/migrating-from-github-to-sourcehut/</guid>
       <description>&lt;p&gt;Earlier this year, I began migrating off of Github. My reasons are fairly simple and probably obvious for many people aware of the platform. With Microsoft&amp;rsquo;s participation in the genocide of Palestinians, I no longer want to be a user of their products nor do I want my projects to be associated with their platform.&lt;/p&gt;&#xA;&lt;p&gt;All active development this year has been on &lt;a href=&#34;https://sr.ht/~dook/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sourcehut&lt;/a&gt;, having had an account for several years now (their irc bouncer/client is a great product that I was happy to pay for) it was a simple decision to move there when I no longer wanted to be on Github.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A new way to theme the Quickscreen in Rockbox</title>
-      <link>http://localhost:1313/blog/quickscreen_rockbox_tags/</link>
+      <link>https://d00k.net/blog/quickscreen_rockbox_tags/</link>
       <pubDate>Wed, 24 Jul 2024 14:48:28 +0100</pubDate>
-      <guid>http://localhost:1313/blog/quickscreen_rockbox_tags/</guid>
-      <description>&lt;p&gt;For the past year, I&amp;rsquo;ve been working on a major redesign of &lt;a href=&#34;http://localhost:1313/design/themify&#34;&gt;Themify&lt;/a&gt;, my user-customisable Rockbox theme. It&amp;rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&amp;rsquo;s Quickscreen.&lt;/p&gt;&#xA;&#xA;&lt;span&gt;&lt;h2 id=&#34;what-is-the-quickscreen&#34;&gt;What is the Quickscreen?&lt;/h2 id=&#34;what-is-the-quickscreen&#34;&gt;&lt;a href=&#34;#what-is-the-quickscreen&#34; class=&#34;header_link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 13.2 13.2&#34; height=&#34;21&#34;&gt;&lt;path d=&#34;m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3&#34; style=&#34;fill:none;stroke-linecap:round;stroke-width:2;&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;&lt;p&gt;For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&amp;rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&amp;rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&amp;rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.&lt;/p&gt;</description>
+      <guid>https://d00k.net/blog/quickscreen_rockbox_tags/</guid>
+      <description>&lt;p&gt;For the past year, I&amp;rsquo;ve been working on a major redesign of &lt;a href=&#34;https://d00k.net/design/themify&#34;&gt;Themify&lt;/a&gt;, my user-customisable Rockbox theme. It&amp;rsquo;s proven to be my most ambitious Rockbox project yet, aiming to create a level of user-experience unseen before in any other UI theme. However, one of the major improvements in this rebuild has been the overhauling of Rockbox&amp;rsquo;s Quickscreen.&lt;/p&gt;&#xA;&#xA;&lt;span&gt;&lt;h2 id=&#34;what-is-the-quickscreen&#34;&gt;What is the Quickscreen?&lt;/h2 id=&#34;what-is-the-quickscreen&#34;&gt;&lt;a href=&#34;#what-is-the-quickscreen&#34; class=&#34;header_link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 13.2 13.2&#34; height=&#34;21&#34;&gt;&lt;path d=&#34;m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3&#34; style=&#34;fill:none;stroke-linecap:round;stroke-width:2;&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;&lt;p&gt;For the unfamiliar, Rockbox lets users choose up to four settings to be accessible from a screen known as the Quickscreen. By default, information on the Quickscreen is drawn by Rockbox in a plain manner. This isn&amp;rsquo;t something that can be changed, and so theme creators have recently begun to try working around it. Since Yuuiko&amp;rsquo;s Infomatrix, several themes have begun bringing more visual information to the Quickscreen. Often themes might show sliders for volume and brightness, or indicators for certain feature&amp;rsquo;s status. However, the actual Quickscreen items however have largely remained out of reach.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Re-designing my site, one more time</title>
-      <link>http://localhost:1313/blog/redesigning_again/</link>
+      <link>https://d00k.net/blog/redesigning_again/</link>
       <pubDate>Sat, 02 Sep 2023 14:52:19 +0100</pubDate>
-      <guid>http://localhost:1313/blog/redesigning_again/</guid>
+      <guid>https://d00k.net/blog/redesigning_again/</guid>
       <description>&lt;p&gt;Firstly, I&amp;rsquo;m so sorry for anyone subscribed to my RSS feed that just got spammed. I made some big changes to the site, but I&amp;rsquo;m confident this will be the final time.&lt;/p&gt;&#xA;&lt;p&gt;Secondly, I went and did it. At the end of my first-year celebration post in March, I talked about changing some core parts of this site. Namely new static site generation (SSG) and fixing the janky CSS. Quite frankly, I thought that would be all that was needed, but over the past few months I&amp;rsquo;ve grown less and less satisfied with everything. Since March I&amp;rsquo;ve barely used the site, even though I &lt;em&gt;wanted&lt;/em&gt; to add stuff to it. I also was growing quite dissatisfied with the aesthetic appearance, I don&amp;rsquo;t think the old design was terrible, but I felt like it was missing something important. At it&amp;rsquo;s core it lacked concept and identity, and figuring that out gave me the drive I needed to finally do this.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Celebrating a Year of d00k.net</title>
-      <link>http://localhost:1313/blog/one-year-of-dook-net/</link>
+      <link>https://d00k.net/blog/one-year-of-dook-net/</link>
       <pubDate>Tue, 28 Mar 2023 19:14:28 +0100</pubDate>
-      <guid>http://localhost:1313/blog/one-year-of-dook-net/</guid>
+      <guid>https://d00k.net/blog/one-year-of-dook-net/</guid>
       <description>&lt;div class=&#34;highlight info box&#34;&gt;This article was written in March 2023 and, since August 2023, is no longer an accurate reflection of the current site.&lt;/div&gt;&#xA;&lt;p&gt;This time a year ago, d00k.net opened for the first time. The dates are a bit fuzzy, the domain was purchased in early March around my birthday, but I consider the site&amp;rsquo;s first real day to be when it was added to the &lt;a href=&#34;https://webring.xxiivv.com/#d00k&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;XXIVV Webring&lt;/a&gt; on March 22nd. Dates aside, in just this one year the site has changed a lot. I tended to work on it sporadically, for reasons I&amp;rsquo;ll get to later, and it&amp;rsquo;s visual language, style and purpose has grown and changed as well over the past 12 months. I want to take this post to look over some of these changes, as well as take a look at where I want the site to go over the next year.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Look Inside Themify</title>
-      <link>http://localhost:1313/blog/inside_themify/</link>
+      <link>https://d00k.net/blog/inside_themify/</link>
       <pubDate>Tue, 14 Mar 2023 15:12:17 +0000</pubDate>
-      <guid>http://localhost:1313/blog/inside_themify/</guid>
+      <guid>https://d00k.net/blog/inside_themify/</guid>
       <description>&lt;p&gt;After a few months of working on and off, I finally finished my next Rockbox theme: Themify. Themify does a lot of things I haven&amp;rsquo;t done yet in Rockbox, I really tried to push myself to create something cool and unique and I think the results definitely speak for themselves! This time, I decided to make a post here going over some of these features and generally looking into the code a bit more for those who are interested in that kind of thing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leaving Spotify for Freer Pastures</title>
-      <link>http://localhost:1313/blog/leaving-spotify/</link>
+      <link>https://d00k.net/blog/leaving-spotify/</link>
       <pubDate>Wed, 30 Nov 2022 17:10:26 +0000</pubDate>
-      <guid>http://localhost:1313/blog/leaving-spotify/</guid>
+      <guid>https://d00k.net/blog/leaving-spotify/</guid>
       <description>&lt;p&gt;Over the past year, I&amp;rsquo;ve slowly worked on moving my listening activities away from Spotify and towards a setup where I have much more control over how I listen. As people will be checking out their Spotify Unwrapped, I thought it&amp;rsquo;d be a great time to talk about my thoughts on the platform and why I&amp;rsquo;m moving away from it.&lt;/p&gt;&#xA;&#xA;&lt;span&gt;&lt;h2 id=&#34;why-leave&#34;&gt;Why leave?&lt;/h2 id=&#34;why-leave&#34;&gt;&lt;a href=&#34;#why-leave&#34; class=&#34;header_link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 13.2 13.2&#34; height=&#34;21&#34;&gt;&lt;path d=&#34;m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3&#34; style=&#34;fill:none;stroke-linecap:round;stroke-width:2;&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;&lt;p&gt;Don&amp;rsquo;t get me wrong, Spotify is pretty great. Being able to listen to just about whatever I want, whenever I want and in decent quality is a great privilege. In recent years, there&amp;rsquo;s been less and less songs that aren&amp;rsquo;t available on the platform. And at face value, the price you pay is certainly worth the massive library of music available at your fingers. I quite frankly &lt;em&gt;wouldn&amp;rsquo;t&lt;/em&gt; have a music taste if it wasn&amp;rsquo;t for Spotify, being able to listen to recommended playlists and such have introduced me to artists and bands that I never would&amp;rsquo;ve come across without it. However as time moves on, the way I listen to music has changed considerably to something that is less compatible with Spotify&amp;rsquo;s formula.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Extreme Web Optimizations, without Compromising Style</title>
-      <link>http://localhost:1313/blog/web-optimisations/</link>
+      <link>https://d00k.net/blog/web-optimisations/</link>
       <pubDate>Wed, 05 Oct 2022 15:50:41 +0100</pubDate>
-      <guid>http://localhost:1313/blog/web-optimisations/</guid>
+      <guid>https://d00k.net/blog/web-optimisations/</guid>
       <description>&lt;p&gt;Over the past 10 months, I&amp;rsquo;ve worked on and off tweaking my site to get it closer to how I want it to look and perform. The main goal was simple: make a site that looks good, and loads fast. A quick solution would&amp;rsquo;ve been to keep the css to a minimum, use browser defaults for fonts etc. However that would&amp;rsquo;ve made my vision of a styled site difficult if not impossible. This pushed me to seek gains elsewhere as much as I could.&lt;/p&gt;</description>
     </item>
   </channel>
