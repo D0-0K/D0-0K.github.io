@@ -2,208 +2,211 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://d00k.net/wiki/websites/glyphhanger/</loc>
+    <loc>http://localhost:1313/blog/migrating-from-github-to-sourcehut/</loc>
+    <lastmod>2025-12-28T22:58:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wiki/websites/glyphhanger/</loc>
     <lastmod>2025-10-26T01:29:22+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_theming/the_viewport/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_theming/the_viewport/</loc>
     <lastmod>2025-10-21T19:50:20+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_advanced/album_art_notes/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_advanced/album_art_notes/</loc>
     <lastmod>2025-10-04T18:42:22+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/design/design_library/</loc>
+    <loc>http://localhost:1313/wiki/design/design_library/</loc>
     <lastmod>2025-09-19T16:11:44+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/design/aesthetic_resources/</loc>
+    <loc>http://localhost:1313/wiki/design/aesthetic_resources/</loc>
     <lastmod>2025-09-19T16:06:34+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/design/font_resources/</loc>
+    <loc>http://localhost:1313/wiki/design/font_resources/</loc>
     <lastmod>2025-10-19T23:57:55+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/websites/cheatsheet/</loc>
+    <loc>http://localhost:1313/wiki/websites/cheatsheet/</loc>
     <lastmod>2025-10-19T23:54:55+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/quickscreen_rockbox_tags/</loc>
+    <loc>http://localhost:1313/blog/quickscreen_rockbox_tags/</loc>
     <lastmod>2024-08-02T18:37:52+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_advanced/vector_graphics/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_advanced/vector_graphics/</loc>
     <lastmod>2025-10-20T00:12:47+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/colophon/site_stats/</loc>
+    <loc>http://localhost:1313/about/colophon/site_stats/</loc>
     <lastmod>2025-09-27T17:15:54+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_advanced/themed_lists_notes/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_advanced/themed_lists_notes/</loc>
     <lastmod>2024-09-30T01:27:10+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_theming/introduction/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_theming/introduction/</loc>
     <lastmod>2025-10-21T20:37:12+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_advanced/missing_features/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_advanced/missing_features/</loc>
     <lastmod>2025-09-12T01:14:51+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/compacticons/</loc>
+    <loc>http://localhost:1313/design/compacticons/</loc>
     <lastmod>2023-09-15T21:19:30+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/connections/</loc>
+    <loc>http://localhost:1313/about/connections/</loc>
     <lastmod>2025-10-25T19:23:40+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_theming/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_theming/</loc>
     <lastmod>2025-10-21T19:04:47+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/colophon/</loc>
+    <loc>http://localhost:1313/about/colophon/</loc>
     <lastmod>2025-10-26T22:10:40+00:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/redesigning_again/</loc>
+    <loc>http://localhost:1313/blog/redesigning_again/</loc>
     <lastmod>2023-10-15T11:23:10+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/tindra_grove/</loc>
+    <loc>http://localhost:1313/design/tindra_grove/</loc>
     <lastmod>2023-09-13T20:32:28+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/beryl_logo/</loc>
+    <loc>http://localhost:1313/design/beryl_logo/</loc>
     <lastmod>2023-09-13T20:05:50+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/</loc>
-    <lastmod>2025-11-16T21:38:36+00:00</lastmod>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-12-28T23:01:03+00:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-08-25T23:34:44+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/web/images/</loc>
+    <loc>http://localhost:1313/wiki/web/images/</loc>
     <lastmod>2025-10-20T00:21:06+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/adw/</loc>
+    <loc>http://localhost:1313/adw/</loc>
     <lastmod>2023-07-04T10:06:36+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_advanced/rockbox_image_optimisation/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_advanced/rockbox_image_optimisation/</loc>
     <lastmod>2023-09-13T10:28:38+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/one-year-of-dook-net/</loc>
+    <loc>http://localhost:1313/blog/one-year-of-dook-net/</loc>
     <lastmod>2023-09-14T16:36:00+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/inside_themify/</loc>
+    <loc>http://localhost:1313/blog/inside_themify/</loc>
     <lastmod>2023-09-14T16:35:46+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/themify/</loc>
+    <loc>http://localhost:1313/design/themify/</loc>
     <lastmod>2025-11-16T21:39:29+00:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/websites/</loc>
+    <loc>http://localhost:1313/wiki/websites/</loc>
     <lastmod>2023-02-08T17:06:26+00:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/digicam/sunsets/</loc>
+    <loc>http://localhost:1313/photos/digicam/sunsets/</loc>
     <lastmod>2023-09-12T15:13:18+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/linux/pdf/</loc>
+    <loc>http://localhost:1313/wiki/linux/pdf/</loc>
     <lastmod>2023-09-13T12:46:42+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/linux/sftp/</loc>
+    <loc>http://localhost:1313/wiki/linux/sftp/</loc>
     <lastmod>2025-10-20T00:13:52+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/linux/imagemagick/</loc>
+    <loc>http://localhost:1313/wiki/linux/imagemagick/</loc>
     <lastmod>2023-09-13T12:15:24+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/leaving-spotify/</loc>
+    <loc>http://localhost:1313/blog/leaving-spotify/</loc>
     <lastmod>2023-09-14T16:35:10+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/timetwistpop/</loc>
+    <loc>http://localhost:1313/design/timetwistpop/</loc>
     <lastmod>2023-09-13T20:09:04+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/adwaitapod/</loc>
+    <loc>http://localhost:1313/design/adwaitapod/</loc>
     <lastmod>2023-09-13T20:00:26+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/vivid_flowers/</loc>
+    <loc>http://localhost:1313/photos/trichrome/vivid_flowers/</loc>
     <lastmod>2023-09-14T17:02:52+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/lockdown/</loc>
+    <loc>http://localhost:1313/photos/trichrome/lockdown/</loc>
     <lastmod>2023-09-14T17:02:22+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/places/westport/</loc>
+    <loc>http://localhost:1313/photos/places/westport/</loc>
     <lastmod>2023-09-12T15:14:32+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/blog/web-optimisations/</loc>
+    <loc>http://localhost:1313/blog/web-optimisations/</loc>
     <lastmod>2023-09-14T16:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/pico8-games/</loc>
+    <loc>http://localhost:1313/wiki/pico8-games/</loc>
     <lastmod>2023-09-20T20:41:26+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/rebble_weather/</loc>
+    <loc>http://localhost:1313/design/rebble_weather/</loc>
     <lastmod>2023-09-13T19:53:20+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/seedharvesting/</loc>
+    <loc>http://localhost:1313/wiki/seedharvesting/</loc>
     <lastmod>2023-09-13T14:34:56+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/bees/</loc>
+    <loc>http://localhost:1313/wiki/bees/</loc>
     <lastmod>2025-10-25T23:13:36+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/rockbox_advanced/font_combining/</loc>
+    <loc>http://localhost:1313/wiki/rockbox_advanced/font_combining/</loc>
     <lastmod>2025-09-12T00:28:15+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/ecovillage/</loc>
+    <loc>http://localhost:1313/wiki/ecovillage/</loc>
     <lastmod>2023-09-14T17:04:34+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/places/loughderg/</loc>
+    <loc>http://localhost:1313/photos/places/loughderg/</loc>
     <lastmod>2023-09-12T15:14:28+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/spring/</loc>
+    <loc>http://localhost:1313/photos/trichrome/spring/</loc>
     <lastmod>2023-09-14T17:02:30+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/winter/</loc>
+    <loc>http://localhost:1313/photos/trichrome/winter/</loc>
     <lastmod>2023-09-14T17:03:00+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/bookmarks/</loc>
+    <loc>http://localhost:1313/about/bookmarks/</loc>
     <lastmod>2023-02-28T18:37:56+00:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/streetwalker/</loc>
+    <loc>http://localhost:1313/design/streetwalker/</loc>
     <lastmod>2023-09-13T19:53:52+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/virtual_gallery/</loc>
+    <loc>http://localhost:1313/design/virtual_gallery/</loc>
     <lastmod>2023-09-13T20:13:44+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/origami-designs/</loc>
+    <loc>http://localhost:1313/wiki/origami-designs/</loc>
     <lastmod>2023-09-14T17:04:44+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/games/gamejams/</loc>
+    <loc>http://localhost:1313/design/games/gamejams/</loc>
     <lastmod>2025-10-20T12:01:55+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/famicase/</loc>
+    <loc>http://localhost:1313/design/famicase/</loc>
     <lastmod>2023-09-13T20:06:50+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/setup/</loc>
+    <loc>http://localhost:1313/about/setup/</loc>
     <lastmod>2025-10-19T23:41:21+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/trichrome_notes/</loc>
+    <loc>http://localhost:1313/photos/trichrome/trichrome_notes/</loc>
     <lastmod>2023-09-12T15:13:58+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/beachfossils/</loc>
+    <loc>http://localhost:1313/wiki/beachfossils/</loc>
     <lastmod>2023-09-14T17:04:36+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/experiments/selfportraiture/</loc>
+    <loc>http://localhost:1313/photos/experiments/selfportraiture/</loc>
     <lastmod>2023-09-12T15:15:00+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/experiments/lowres/</loc>
+    <loc>http://localhost:1313/photos/experiments/lowres/</loc>
     <lastmod>2023-09-12T15:14:56+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/experiments/light/</loc>
+    <loc>http://localhost:1313/photos/experiments/light/</loc>
     <lastmod>2023-09-12T15:14:46+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/autumn/</loc>
+    <loc>http://localhost:1313/photos/trichrome/autumn/</loc>
     <lastmod>2023-09-14T17:02:14+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/design/</loc>
+    <loc>http://localhost:1313/design/</loc>
     <lastmod>2025-09-19T22:31:22+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/colophon/testpage/</loc>
+    <loc>http://localhost:1313/about/colophon/testpage/</loc>
     <lastmod>2025-10-25T18:06:03+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/wiki/</loc>
+    <loc>http://localhost:1313/wiki/</loc>
     <lastmod>2025-10-26T00:00:08+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/trichrome/summer/</loc>
+    <loc>http://localhost:1313/photos/trichrome/summer/</loc>
     <lastmod>2023-09-14T17:02:38+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/photos/</loc>
+    <loc>http://localhost:1313/photos/</loc>
     <lastmod>2023-09-14T17:01:38+01:00</lastmod>
   </url><url>
-    <loc>https://d00k.net/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-09-27T17:24:13+01:00</lastmod>
   </url>
 </urlset>

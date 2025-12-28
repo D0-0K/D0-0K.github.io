@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adw on d00k</title>
-    <link>https://d00k.net/adw/</link>
+    <link>http://localhost:1313/adw/</link>
     <description>Recent content in Adw on d00k</description>
     <generator>Hugo</generator>
     <language>en-ie</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://d00k.net/adw/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/adw/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
