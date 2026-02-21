@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="/css/style.css" rel="stylesheet"><link rel="shortcut icon" type="image/png" href="/img/assets/favicon.png">
+
+<meta property="og:description" 
+  content="Notes from learning and getting familiar with Rust"/><link rel="me" href="https://post.lurk.org/@dook">
+<title> Rust Notes  • d00k.net</title></head>
+
+<body><div class="header"><nav><a class="logo" href="/" aria-label="Homepage"><svg viewBox="0 0 219 172" aria-hidden="true" stroke="none"><rect id="r1" width="25" height="61" x="153" y="-67" fill="#aaa" rx="7" transform="rotate(27)"/><circle cx="197" cy="100" r="22" fill="#fcfcfc"/><rect id="r2" width="221" height="50" x="-26" y="-66" fill="none" stroke="#f0f0f0" stroke-width="32" rx="25" transform="rotate(62)"/></svg></a><div class="menu">
+<ul><li><a href="/design/">Design</a></li><li><a href="/wiki/">Wiki</a></li><li><a href="/photos/">Photos</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
+</div></nav></div>
+
+<div class="main layout">
+
+<div class="title"><h1 id="top">Rust Notes</h1><hr></div>
+<p>Notes from learning the Rust language. Using the Brown University <a href="https://rust-book.cs.brown.edu/" target="_blank" rel="noopener">experimental fork</a> of &ldquo;<em>The Rust Programming Language</em>&rdquo; book.</p>
+<hr>
+<div class="listbox box"><div><h2>Rust Basics</h2><p>Some of the basic bits of information.</p></div><hr><ul>
+
+<li><code>rustc</code> command builds rust executables.</li>
+
+<li>The <code>rustup</code> command can be used to update rust on your system..</li>
+
+</ul></div>
+
+<span><h2 id="cargo">Cargo</h2 id="cargo"><a href="#cargo" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Cargo is a build system and package manager for Rust. It also does a number of project management tasks like creating git repos, config files and setting up directory structures for a project automatically.</p>
+<div class="listbox box"><div><h3>Cargo Commands</h3></div><hr><ul>
+
+<li><code>cargo new project_name</code> creates a new project with cargo.</li>
+
+<li><code>cargo build</code> builds a project, an executable will be placed in the <em>target/debug</em> directory.</li>
+
+<li><code>cargo run</code> builds a project and executes it.</li>
+
+<li><code>cargo check</code> checks the code without building.</li>
+
+<li>To build a project with optimisations, the <code>--release</code> flag can be added. This will place the executable in <em>target/release</em>.</li>
+
+</ul></div>
+
+<span><h2 id="syntax-and-writing-rust">Syntax and writing Rust</h2 id="syntax-and-writing-rust"><a href="#syntax-and-writing-rust" class="header_link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.2 13.2" height="21"><path d="m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3" style="fill:none;stroke-linecap:round;stroke-width:2;"/></svg></a></span><p>Rust syntax has some similarities to other programming languages like C.</p>
+<div class="listbox box"><div><h2>Rust Basics</h2><p>Some of the basic bits of information.</p></div><hr><ul>
+
+<li>Functions in rust are denoted by <code>fn</code>, the contents must be contained by <code>{}</code> brackets..</li>
+
+<li>The <code>main</code> function is the first one ran in a rust program.</li>
+
+</ul></div>
+<div class="listbox box"><div><h2>Using Libraries</h2><p>Only a subset of Rust&rsquo;s standard library is available automatically in a project, this set is known as the <em>prelude</em>. The following is information on how to use other part of the standard library, or other libraries.</p></div><hr><ul>
+
+<li>The <code>use</code> statement allows you to bring specific types from the standard library into a project. This is done by calling it&rsquo;s specific library after the parent library like <code>std::io</code>.</li>
+
+<li>The <code>main</code> function is the first one ran in a rust program.</li>
+
+</ul></div>
+<pre><code>use std::io;
+#use library_name::sub_library;</code></pre>
+<nav class="navbut"><a class="prev" href="/wiki/"><img style="margin:0 8px -2px -6px" src="/img/assets/left.svg"> Back to  Wiki </a><a class="up" href="#"><img style="margin:0 0 -2px" src="/img/assets/up.svg"></a></nav>
+</div>
+<footer class="footer layout">
+	<div>
+	<div>
+	<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/assets/cc.svg" loading="lazy" alt="copyright" width="28"height="28"></a><a class="icon" href="https://webring.xxiivv.com/" target="_blank" style="margin-left:-6px"><img src="/img/assets/webring.svg" loading="lazy" alt="webring" width="30"height="27"></a>
+	</div>
+	<details>
+		<summary>Info</summary>
+			<div>
+				Originally Published: <strong>January 2026</strong><br/>
+				
+				
+				
+			</div>
+			<div>© 2022—2026
+			<span> BY-NC-SA 4.0</span>
+</div>
+</details>
+</div>
+	</div>
+</footer>
+</body>

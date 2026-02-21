@@ -6,8 +6,15 @@
     <description>Recent content in Wiki on d00k</description>
     <generator>Hugo</generator>
     <language>en-ie</language>
-    <lastBuildDate>Sat, 25 Oct 2025 23:13:36 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 17:01:43 +0000</lastBuildDate>
     <atom:link href="https://d00k.net/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Notes</title>
+      <link>https://d00k.net/wiki/programming/rust_notes/</link>
+      <pubDate>Sun, 04 Jan 2026 13:31:58 +0000</pubDate>
+      <guid>https://d00k.net/wiki/programming/rust_notes/</guid>
+      <description>&lt;p&gt;Notes from learning the Rust language. Using the Brown University &lt;a href=&#34;https://rust-book.cs.brown.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;experimental fork&lt;/a&gt; of &amp;ldquo;&lt;em&gt;The Rust Programming Language&lt;/em&gt;&amp;rdquo; book.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;div class=&#34;listbox box&#34;&gt;&lt;div&gt;&lt;h2&gt;Rust Basics&lt;/h2&gt;&lt;p&gt;Some of the basic bits of information.&lt;/p&gt;&lt;/div&gt;&lt;hr&gt;&lt;ul&gt;&#xA;&#xA;&lt;li&gt;&lt;code&gt;rustc&lt;/code&gt; command builds rust executables.&lt;/li&gt;&#xA;&#xA;&lt;li&gt;The &lt;code&gt;rustup&lt;/code&gt; command can be used to update rust on your system..&lt;/li&gt;&#xA;&#xA;&lt;/ul&gt;&lt;/div&gt;&#xA;&#xA;&lt;span&gt;&lt;h2 id=&#34;cargo&#34;&gt;Cargo&lt;/h2 id=&#34;cargo&#34;&gt;&lt;a href=&#34;#cargo&#34; class=&#34;header_link&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 13.2 13.2&#34; height=&#34;21&#34;&gt;&lt;path d=&#34;m5.51 2.99 1.06-1.06a3.17 3.17 0 0 1 4.5-.004 3.187 3.187 0 0 1 0 4.5L10 7.496m-2.5 2.5-1.09 1.08a3.186 3.186 0 0 1-4.5-.001 3.19 3.19 0 0 1-.001-4.5l.585-.585M7.974 5l-3 3&#34; style=&#34;fill:none;stroke-linecap:round;stroke-width:2;&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/span&gt;&lt;p&gt;Cargo is a build system and package manager for Rust. It also does a number of project management tasks like creating git repos, config files and setting up directory structures for a project automatically.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Album Art Tag Exploration</title>
       <link>https://d00k.net/wiki/rockbox_advanced/album_art_notes/</link>
