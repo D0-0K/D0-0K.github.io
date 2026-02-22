@@ -18,19 +18,19 @@ li a,.footer a,.header div,.navbut a,kbd,span,span>*,.title{display:inline-block
 .menu li{display:inline-block;margin:0;padding:0}
 .menu a{padding:20px 27px 18px;margin:0;border-radius:29px;width:55px;text-align:left;&:hover{background:#bbb;color:#111;&:active{background:#aaa;scale:.98}}}
 .menu{padding:2ex;padding:clamp(4%,175vw - 1280px,60px) min(4%,26px)}
-.logo{width:60vw;height:auto;max-width:240px;margin-left:-35px;float:left;padding:0;transition:filter .75s;border-radius:0;svg{overflow:visible}transition:.3s cubic-bezier(0.8, -0.5, 0.2, 1.8)}
-.logo:hover{background:none;#r1{rotate:3deg}circle{rotate:4deg}#r2{rotate:8deg;transition-duration:.2s}}
-.logo:hover:active{#r1{rotate:-25deg}circle{rotate:-30deg}#r2{rotate:-14deg}}
+.logo{svg{overflow:visible}width:60vw;height:auto;max-width:240px;margin-left:-35px;float:left;padding:0;border-radius:0}
+.logo:hover{transition:.2s .03s cubic-bezier(0.8, -0.5, 0.2, 1.8);background:none;#r1{rotate:3deg}circle{rotate:4deg}#r2{rotate:2deg;transition:.05s ease-out}}
+.logo:active{#r1{rotate:-25deg}circle{rotate:-32deg;translate:30px}#r2{rotate:-14deg}}
 .layout{padding:2ex;padding:min(4%,32px)}
 .footer{line-height:175%}
-.footer details{direction:rtl;margin-top:-63px;div{direction:ltr}div:nth-child(2){margin:14px 2% 16px;line-height:170%}div:nth-child(3){padding:12px 24px 7px;background:#acacac;border-radius:24px;display:flex;justify-content:space-between}}
+.footer details{direction:rtl;margin-top:-63px;div{direction:ltr}div:nth-child(2){margin:14px 2%;line-height:2}div:nth-child(3){padding:15px 24px 10px;background:#acacac;border-radius:24px;display:flex;justify-content:space-between}}
 .footer>div{background:#bbb;padding:12px 12px 11px;border-radius:36px;min-height:52px}
 h1,h2,h3,h4,h5{font-family:Barlow,sans-serif}
 h1{font-size:3.3rem;font-size:clamp(2.5em,10vw,3.3rem);line-height:1.1em}
 h2{font-size:2.4rem;margin:2px 0 4px}
 h3{font-size:2rem;margin:0 0 8px}
-h4{font-size:1.6rem}
-h5{font-size:1.5rem;margin:16px 0}
+h4{font-size:2rem}
+h5{font-size:1.8rem;margin:16px 0}
 .main>span h2{border-bottom:6px solid #bbb}
 .main>span h3{border-left:8px solid #bbb;padding-left:8px;margin:18px 0 0}
 .main>h4{margin:0 0 8px}
@@ -82,10 +82,10 @@ code{font-family:monospace;font-size:.9rem;background:#bbb;padding:1px 7px 2px;b
 .info,pre code{color:#eee}
 .info{border-left:min(4vw,32px) solid #555;background:#444;line-height:1.8}
 q{font-size:1.1rem;line-height:1.6}
-figure{background:#c4c4c4;margin-inline:auto;display:table;border-radius:32px}
+figure{background:#c4c4c4;margin-inline:auto;display:table;border-radius:28px}
 figcaption{padding:16px 4% 14px;text-align:center}
 img,iframe{max-width:100%;height:auto}
-.main > img,figure img,pre{border-radius:21px}
+.main > img,figure img,pre{border-radius:21px;background:#ccc}
 picture img{width:auto}
 .highlight{margin:16px 0 16px -26px;margin-left:calc(-1 * min(4vw,26px));border-radius:clamp(0px,230vw - 1280px,12px) 32px 32px clamp(0px,230vw - 1786px,12px) !important}
 kbd{border:1px solid;padding:4px 14px 3px;border-radius:10px;border-bottom:2px solid;background:#ccc;border-color:#777;margin:0 2px;text-indent:0;line-height:1}
@@ -98,7 +98,7 @@ span:hover{.header_link{visibility:visible}}
 .border_button{padding:18px 21px 18px 24px;border-radius:36px;border:3px solid #888;margin:18px 16px 8px -4px;display:inline-flex;align-items:center;gap:12px}
 .border_button:hover{background:#bbb;color:#111;stroke:#111}
 .border_button:active{background:#aaa}
-@media (prefers-color-scheme: dark){.layout,.clickbox img,.main > img,figure img,.cardbox img,.menu{filter:invert(1)}body{background:#222}.four04{content:url(/img/assets/404_dark.svg)}#r1{fill:#444}#r2{stroke:#777}circle{fill:#7f7f7f}}
+@media (prefers-color-scheme:dark){.layout,.clickbox img,.main > img,figure img,.cardbox img,.menu{filter:invert(1)}body{background:#222}.four04{content:url(/img/assets/404_dark.svg)}#r1{fill:#444}#r2{stroke:#777}circle{fill:#7f7f7f}}
 .table{padding:0 !important;border:2px solid gray;width:fit-content;border-radius:14px;margin:12px 0 16px;display:flex;flex-flow:row wrap;gap:2px;overflow:hidden;background:gray;span{padding:7px 14px;flex:auto;background:#ccc}}
 @media screen and (min-width:720px){*{font-size:1.02rem}.header ul{border-radius:34px}.menu a{width:unset}.header_link{display:inherit}.cardbox{max-height:90vh}}
 @media screen and (max-width:720px){.border_button{margin:8px 0 0}}
